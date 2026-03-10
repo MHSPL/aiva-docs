@@ -7,7 +7,7 @@ description: Apply ACMG/AMP variant classification criteria interactively in AIV
 
 AIVA includes an interactive ACMG/AMP variant classifier that lets you apply evidence-based criteria to individual variants. The classifier automatically calculates the five-tier pathogenicity classification based on the criteria you select.
 
-For details on the ACMG/AMP framework and criteria definitions, see the [ACMG/AMP Guidelines](../classification/acmg-amp-guidelines.md) reference.
+For details on the ACMG/AMP framework and how to use the public classifier, see [Using the Variant Classifier](../classification/using-the-classifier.md).
 
 ---
 

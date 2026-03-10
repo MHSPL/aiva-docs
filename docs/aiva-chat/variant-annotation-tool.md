@@ -77,7 +77,7 @@ These scores provide computational predictions of variant impact:
 - **PolyPhen >= 0.85** predicts the variant is "Probably Damaging."
 
 !!! warning "In silico predictions are supportive evidence only"
-    Computational predictions should not be used as the sole basis for clinical classification. Always consider them alongside clinical data, population frequencies, and functional studies per [ACMG/AMP guidelines](../classification/acmg-amp-guidelines.md).
+    Computational predictions should not be used as the sole basis for clinical classification. Always consider them alongside clinical data, population frequencies, and functional studies per [ACMG/AMP guidelines](../classification/using-the-classifier.md).
 
 ---
 

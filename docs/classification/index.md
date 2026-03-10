@@ -35,12 +35,6 @@ Step-by-step guide to entering variant information, selecting ACMG criteria, and
 
 <div class="card" markdown>
 
-### ACMG/AMP Guidelines
-
-Reference for the ACMG/AMP classification framework, evidence categories, and criteria descriptions.
-
-[:octicons-arrow-right-24: ACMG/AMP Guidelines](acmg-amp-guidelines.md)
-
 </div>
 
 </div>

@@ -3,9 +3,18 @@ title: Using the Classifier
 description: Step-by-step guide to using AIVA's public ACMG variant classification tool for evidence-based variant interpretation.
 ---
 
-# Using the Classifier
+# Using the Variant Classifier
 
-This guide walks you through the AIVA Variant Classifier, a public tool for classifying variants according to ACMG/AMP guidelines. No login is required.
+The AIVA Variant Classifier is a public tool for classifying variants according to ACMG/AMP guidelines. No login is required.
+
+The classifier follows the ACMG/AMP framework as described in the 2015 joint consensus recommendation:
+
+> Richards S, Aziz N, Bale S, et al. "Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology." *Genet Med*. 2015;17(5):405-424.
+
+For the full criteria definitions, refer to the original publication or the [ClinGen Sequence Variant Interpretation resources](https://clinicalgenome.org/working-groups/sequence-variant-interpretation/).
+
+!!! note "Gene-specific guidelines"
+    Several genes and gene groups have published modifications to the standard ACMG/AMP criteria (e.g., TP53, RASopathy genes, CDH1, PTEN). When available, gene-specific guidelines should take precedence over the general framework.
 
 ---
 
@@ -56,52 +65,11 @@ For each criterion:
 2. **Click the criterion** to select or deselect it.
 3. Selected criteria are highlighted and contribute to the classification calculation.
 
-See [ACMG/AMP Guidelines](acmg-amp-guidelines.md) for detailed descriptions of each criterion.
-
 ---
 
 ## Step 4: Review the Classification
 
-As you select criteria, the classifier automatically calculates the classification:
-
-- The current classification is displayed prominently (Pathogenic, Likely Pathogenic, VUS, Likely Benign, or Benign).
-- A summary shows which criteria are selected and how they combine to produce the classification.
-- The classification updates in real time as you add or remove criteria.
-
-### Classification Rules
-
-The classifier follows the standard ACMG/AMP combining rules:
-
-**Pathogenic** requires any of:
-
-- 1 Very Strong AND >= 1 Strong
-- 1 Very Strong AND >= 2 Moderate
-- 1 Very Strong AND 1 Moderate AND 1 Supporting
-- 1 Very Strong AND >= 2 Supporting
-- >= 2 Strong
-- 1 Strong AND >= 3 Moderate
-- 1 Strong AND 2 Moderate AND >= 2 Supporting
-- 1 Strong AND 1 Moderate AND >= 4 Supporting
-
-**Likely Pathogenic** requires any of:
-
-- 1 Very Strong AND 1 Moderate
-- 1 Strong AND 1-2 Moderate
-- 1 Strong AND >= 2 Supporting
-- >= 3 Moderate
-- 2 Moderate AND >= 2 Supporting
-- 1 Moderate AND >= 4 Supporting
-
-**Benign** requires any of:
-
-- 1 Stand-Alone
-- >= 2 Strong
-
-**Likely Benign** requires:
-
-- 1 Strong AND 1 Supporting
-
-**VUS** is assigned when criteria do not meet the thresholds for any other classification, or when pathogenic and benign criteria conflict.
+As you select criteria, the classifier automatically calculates the classification in real time. The current classification is displayed prominently: Pathogenic, Likely Pathogenic, VUS, Likely Benign, or Benign.
 
 ---
 
@@ -116,7 +84,6 @@ The classifier allows you to add notes for each selected criterion, documenting 
 - **Apply criteria conservatively** -- Only select a criterion when the evidence clearly supports it.
 - **Use multiple evidence types** -- A robust classification draws on population data, computational predictions, functional studies, and clinical observations.
 - **Consider conflicting evidence** -- If both pathogenic and benign criteria apply, the variant may be classified as VUS pending additional evidence.
-- **Consult the guidelines** -- When uncertain about a criterion, refer to the [ACMG/AMP Guidelines](acmg-amp-guidelines.md) for detailed descriptions and examples.
 
 !!! warning "Classification responsibility"
     The Variant Classifier is a decision-support tool. Clinical variant classifications should be performed by qualified professionals in the context of established laboratory protocols and clinical information.

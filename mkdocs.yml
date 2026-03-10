@@ -169,7 +169,6 @@ nav:
       - Variant Classifier:
           - classification/index.md
           - Using the Classifier: classification/using-the-classifier.md
-          - ACMG/AMP Guidelines: classification/acmg-amp-guidelines.md
   - API Reference:
       - api/index.md
       - API Keys: api/api-keys.md

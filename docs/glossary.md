@@ -12,7 +12,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 ## A
 
 **ACMG (American College of Medical Genetics and Genomics)**
-:   A professional organization that publishes standards and guidelines for clinical genetics, including the widely used framework for [variant classification](classification/acmg-amp-guidelines.md).
+:   A professional organization that publishes standards and guidelines for clinical genetics, including the widely used framework for [variant classification](classification/using-the-classifier.md).
 
 **ACMG/AMP Guidelines**
 :   The 2015 joint consensus recommendation by ACMG and AMP providing a standardized framework for interpreting sequence variants. Variants are classified into five tiers: Pathogenic, Likely Pathogenic, Uncertain Significance (VUS), Likely Benign, and Benign.
