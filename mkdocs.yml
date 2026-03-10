@@ -13,15 +13,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: teal
+      primary: teal
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: teal
+      primary: teal
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -34,8 +34,6 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.top
     - navigation.indexes
@@ -112,65 +110,66 @@ nav:
       - Navigating the UI: getting-started/navigating-the-ui.md
       - Your First Sample: getting-started/uploading-your-first-sample.md
       - Subscription Tiers: getting-started/subscription-tiers.md
-  - Samples:
-      - samples/index.md
-      - Uploading Files: samples/uploading-files.md
-      - Cloud URLs: samples/cloud-urls.md
-      - Variant Effect Prediction: samples/vep-annotation.md
-      - Structural Variant Annotation: samples/annotsv-annotation.md
-      - Job Monitoring: samples/job-monitoring.md
-      - Managing Samples: samples/managing-samples.md
-  - AIVA Chat:
-      - aiva-chat/index.md
-      - Starting a Conversation: aiva-chat/starting-a-conversation.md
-      - AI Tools: aiva-chat/ai-tools.md
-      - Querying Your Data: aiva-chat/querying-data.md
-      - Web Search: aiva-chat/web-search.md
-      - Variant Annotation: aiva-chat/variant-annotation-tool.md
-      - Knowledge Graph: aiva-chat/knowledge-graph.md
-      - Code Interpreter: aiva-chat/code-interpreter.md
-      - Clinical Trials: aiva-chat/clinical-trials.md
-      - Biomedical Literature: aiva-chat/pubtator.md
-      - Phenotype-Gene Prioritization: aiva-chat/phen2gene.md
-      - MCP Integration: aiva-chat/mcp-integration.md
-      - Model Selection: aiva-chat/model-selection.md
-      - Example Workflows: aiva-chat/example-workflows.md
-  - Data Table:
-      - data-table/index.md
-      - Navigation & Layout: data-table/navigation-and-layout.md
-      - Filtering: data-table/filtering.md
-      - Exporting Data: data-table/exporting-data.md
-      - Large Datasets: data-table/virtualization.md
-  - Analysis:
-      - analysis/index.md
-      - Tertiary Analysis: analysis/tertiary-analysis.md
-      - Analysis Hub: analysis/analysis-hub.md
-      - Categories: analysis/categories.md
-      - Analysis Cards: analysis/analysis-cards.md
-      - Pharmacogenomics: analysis/pharmacogenomics.md
-      - ACMG Classification: analysis/acmg-classification.md
-  - Collaboration:
-      - collaboration/index.md
-      - Projects: collaboration/projects.md
-      - Sharing & Roles: collaboration/sharing-and-roles.md
-      - Variant Flagging: collaboration/variant-flagging.md
-      - Threaded Comments: collaboration/threaded-comments.md
-      - Exporting Annotations: collaboration/exporting-flags-comments.md
-  - Reports:
-      - reports/index.md
-      - Creating a Report: reports/creating-a-report.md
-      - AI Auto-Fill: reports/ai-auto-fill.md
-      - Templates: reports/templates.md
-      - Sample Linking: reports/sample-linking.md
-  - Playbooks:
-      - playbooks/index.md
-      - Browsing Playbooks: playbooks/browsing-playbooks.md
-      - Creating Playbooks: playbooks/creating-playbooks.md
-      - Sharing Playbooks: playbooks/sharing-playbooks.md
-  - Variant Classifier:
-      - classification/index.md
-      - Using the Classifier: classification/using-the-classifier.md
-      - ACMG/AMP Guidelines: classification/acmg-amp-guidelines.md
+  - User Guide:
+      - Samples:
+          - samples/index.md
+          - Uploading Files: samples/uploading-files.md
+          - Cloud URLs: samples/cloud-urls.md
+          - Variant Effect Prediction: samples/vep-annotation.md
+          - Structural Variant Annotation: samples/annotsv-annotation.md
+          - Job Monitoring: samples/job-monitoring.md
+          - Managing Samples: samples/managing-samples.md
+      - AIVA Chat:
+          - aiva-chat/index.md
+          - Starting a Conversation: aiva-chat/starting-a-conversation.md
+          - AI Tools: aiva-chat/ai-tools.md
+          - Querying Your Data: aiva-chat/querying-data.md
+          - Web Search: aiva-chat/web-search.md
+          - Variant Annotation: aiva-chat/variant-annotation-tool.md
+          - Knowledge Graph: aiva-chat/knowledge-graph.md
+          - Code Interpreter: aiva-chat/code-interpreter.md
+          - Clinical Trials: aiva-chat/clinical-trials.md
+          - Biomedical Literature: aiva-chat/pubtator.md
+          - Phenotype-Gene Prioritization: aiva-chat/phen2gene.md
+          - MCP Integration: aiva-chat/mcp-integration.md
+          - Model Selection: aiva-chat/model-selection.md
+          - Example Workflows: aiva-chat/example-workflows.md
+      - Data Table:
+          - data-table/index.md
+          - Navigation & Layout: data-table/navigation-and-layout.md
+          - Filtering: data-table/filtering.md
+          - Exporting Data: data-table/exporting-data.md
+          - Large Datasets: data-table/virtualization.md
+      - Analysis:
+          - analysis/index.md
+          - Tertiary Analysis: analysis/tertiary-analysis.md
+          - Analysis Hub: analysis/analysis-hub.md
+          - Categories: analysis/categories.md
+          - Analysis Cards: analysis/analysis-cards.md
+          - Pharmacogenomics: analysis/pharmacogenomics.md
+          - ACMG Classification: analysis/acmg-classification.md
+      - Collaboration:
+          - collaboration/index.md
+          - Projects: collaboration/projects.md
+          - Sharing & Roles: collaboration/sharing-and-roles.md
+          - Variant Flagging: collaboration/variant-flagging.md
+          - Threaded Comments: collaboration/threaded-comments.md
+          - Exporting Annotations: collaboration/exporting-flags-comments.md
+      - Reports:
+          - reports/index.md
+          - Creating a Report: reports/creating-a-report.md
+          - AI Auto-Fill: reports/ai-auto-fill.md
+          - Templates: reports/templates.md
+          - Sample Linking: reports/sample-linking.md
+      - Playbooks:
+          - playbooks/index.md
+          - Browsing Playbooks: playbooks/browsing-playbooks.md
+          - Creating Playbooks: playbooks/creating-playbooks.md
+          - Sharing Playbooks: playbooks/sharing-playbooks.md
+      - Variant Classifier:
+          - classification/index.md
+          - Using the Classifier: classification/using-the-classifier.md
+          - ACMG/AMP Guidelines: classification/acmg-amp-guidelines.md
   - API Reference:
       - api/index.md
       - API Keys: api/api-keys.md
@@ -181,14 +180,15 @@ nav:
       - Classification API: api/classification-api.md
       - Export API: api/export-api.md
       - MCP Setup: api/mcp-setup.md
-  - Compliance:
-      - compliance/index.md
-      - HIPAA: compliance/hipaa.md
-      - Audit Trail: compliance/audit-trail.md
   - Administration:
       - admin/index.md
+      - Compliance:
+          - compliance/index.md
+          - HIPAA: compliance/hipaa.md
+          - Audit Trail: compliance/audit-trail.md
       - User Management: admin/user-management.md
       - Announcements: admin/announcements.md
-  - FAQ: faq.md
-  - Glossary: glossary.md
-  - Changelog: changelog.md
+  - Resources:
+      - FAQ: faq.md
+      - Glossary: glossary.md
+      - Changelog: changelog.md

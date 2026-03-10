@@ -3,81 +3,87 @@ title: AIVA User Guide
 description: Comprehensive documentation for AIVA - AI-powered genomic data visualization and analysis platform
 ---
 
-<div class="hero" markdown>
-
 # AIVA User Guide
 
-**AI-powered genomic analysis, from upload to clinical report.**
-
-AIVA is a cloud-based platform that combines high-performance variant data management with an AI assistant (AIVA) purpose-built for genomics. Upload VCF, CSV, or TSV files, annotate variants with Variant Effect Prediction or Structural Variant Annotation, explore millions of rows in real time, and generate clinical-grade reports -- all from a single interface.
-
-</div>
+AIVA is a cloud-based platform that combines high-performance variant data management with an AI assistant purpose-built for genomics. Upload VCF, CSV, or TSV files, annotate variants with Variant Effect Prediction or Structural Variant Annotation, explore millions of rows in real time, and generate clinical-grade reports -- all from a single interface.
 
 ---
 
 ## Core Capabilities
 
-<div class="grid-cards" markdown>
+<div class="grid cards" markdown>
 
-<div class="card" markdown>
+-   :material-rocket-launch:{ .lg .middle } **Getting Started**
 
-### Getting Started
+    ---
 
-Create your account, learn the interface, upload your first sample, and choose a subscription tier.
+    Create your account, learn the interface, upload your first sample, and choose a subscription tier.
 
-[:octicons-arrow-right-24: Get started](getting-started/index.md)
+    [:octicons-arrow-right-24: Get started](getting-started/index.md)
 
-</div>
+-   :material-file-upload:{ .lg .middle } **Samples and Uploads**
 
-<div class="card" markdown>
+    ---
 
-### Samples and Uploads
+    Upload VCF, CSV, and TSV files via drag-and-drop or cloud URLs. Optionally annotate with Variant Effect Prediction or Structural Variant Annotation during upload.
 
-Upload VCF, CSV, and TSV files via drag-and-drop or cloud URLs. Optionally annotate with Variant Effect Prediction or Structural Variant Annotation during upload.
+    [:octicons-arrow-right-24: Manage samples](samples/index.md)
 
-[:octicons-arrow-right-24: Manage samples](samples/index.md)
+-   :material-chat-processing:{ .lg .middle } **AIVA Chat**
 
-</div>
+    ---
 
-<div class="card" markdown>
+    Ask your AI assistant to query data, search literature, annotate variants, run Python code, explore knowledge graphs, and more.
 
-### AIVA Chat
+    [:octicons-arrow-right-24: Start chatting](aiva-chat/index.md)
 
-Ask your AI assistant to query data, search literature, annotate variants, run Python code, explore knowledge graphs, and more.
+-   :material-table-large:{ .lg .middle } **Data Table**
 
-[:octicons-arrow-right-24: Start chatting](aiva-chat/index.md)
+    ---
 
-</div>
+    Filter, sort, and explore variant data at scale with a virtualized table built for millions of rows.
 
-<div class="card" markdown>
+    [:octicons-arrow-right-24: Explore data](data-table/index.md)
 
-### Analysis
+-   :material-magnify:{ .lg .middle } **Analysis**
 
-Perform tertiary analysis with category-based workflows, pharmacogenomics insights, and ACMG variant classification.
+    ---
 
-[:octicons-arrow-right-24: Analyze data](analysis/index.md)
+    Perform tertiary analysis with category-based workflows, pharmacogenomics insights, and ACMG variant classification.
 
-</div>
+    [:octicons-arrow-right-24: Analyze data](analysis/index.md)
 
-<div class="card" markdown>
+-   :material-account-group:{ .lg .middle } **Collaboration**
 
-### Collaboration
+    ---
 
-Create projects, invite team members with role-based access, flag variants, and hold threaded discussions at the row level.
+    Create projects, invite team members with role-based access, flag variants, and hold threaded discussions at the row level.
 
-[:octicons-arrow-right-24: Collaborate](collaboration/index.md)
+    [:octicons-arrow-right-24: Collaborate](collaboration/index.md)
 
-</div>
+-   :material-file-document-edit:{ .lg .middle } **Reports**
 
-<div class="card" markdown>
+    ---
 
-### Reports
+    Generate clinical reports with AI-assisted auto-fill, link samples, and export publication-ready documents.
 
-Generate clinical reports with AI-assisted auto-fill, link samples, and export publication-ready documents.
+    [:octicons-arrow-right-24: Build reports](reports/index.md)
 
-[:octicons-arrow-right-24: Build reports](reports/index.md)
+-   :material-play-box-multiple:{ .lg .middle } **Playbooks**
 
-</div>
+    ---
+
+    Browse, create, and share reusable analysis workflows.
+
+    [:octicons-arrow-right-24: Browse playbooks](playbooks/index.md)
+
+-   :material-api:{ .lg .middle } **API Reference**
+
+    ---
+
+    Programmatic access for uploads, chat, classification, exports, and MCP integration.
+
+    [:octicons-arrow-right-24: View API docs](api/index.md)
 
 </div>
 
@@ -91,10 +97,7 @@ Generate clinical reports with AI-assisted auto-fill, link samples, and export p
 | [Uploading Your First Sample](getting-started/uploading-your-first-sample.md) | End-to-end walkthrough from file selection to data table |
 | [Subscription Tiers](getting-started/subscription-tiers.md) | Compare Free, Trial, Plus, and Pro plans |
 | [AI Tools Reference](aiva-chat/ai-tools.md) | Full list of tools available to the AIVA assistant |
-| [Data Table](data-table/index.md) | Navigate, filter, and export variant data at scale |
-| [Playbooks](playbooks/index.md) | Browse and create reusable analysis workflows |
 | [Variant Classifier](classification/index.md) | Public ACMG/AMP variant classification tool |
-| [API Reference](api/index.md) | Programmatic access with API keys and MCP integration |
 | [HIPAA Compliance](compliance/hipaa.md) | PHI detection, audit trails, and data security |
 | [FAQ](faq.md) | Answers to common questions |
 
