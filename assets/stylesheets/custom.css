@@ -1,0 +1,110 @@
+/* Subscription tier badges */
+.tier-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tier-free {
+  background-color: #e0e0e0;
+  color: #424242;
+}
+
+.tier-trial {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.tier-plus {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.tier-pro {
+  background-color: #ede7f6;
+  color: #4527a0;
+}
+
+/* Custom admonition for subscription-gated features */
+:root {
+  --md-admonition-icon--subscription: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>');
+}
+
+.md-typeset .admonition.subscription,
+.md-typeset details.subscription {
+  border-color: #7c4dff;
+}
+
+.md-typeset .subscription > .admonition-title,
+.md-typeset .subscription > summary {
+  background-color: rgba(124, 77, 255, 0.1);
+}
+
+.md-typeset .subscription > .admonition-title::before,
+.md-typeset .subscription > summary::before {
+  background-color: #7c4dff;
+  -webkit-mask-image: var(--md-admonition-icon--subscription);
+  mask-image: var(--md-admonition-icon--subscription);
+}
+
+/* Feature comparison table styling */
+.feature-table th {
+  text-align: center;
+}
+
+.feature-table td:not(:first-child) {
+  text-align: center;
+}
+
+/* Hero section on home page */
+.md-typeset .hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.md-typeset .hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .hero p {
+  font-size: 1.2rem;
+  color: var(--md-default-fg-color--light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grid layout for feature cards */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.grid-cards .card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1.25rem;
+  transition: box-shadow 0.2s;
+}
+
+.grid-cards .card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.grid-cards .card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.grid-cards .card p {
+  font-size: 0.875rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0;
+}
