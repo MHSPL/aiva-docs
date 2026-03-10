@@ -1,6 +1,8 @@
 ---
 title: AIVA User Guide
 description: Comprehensive documentation for AIVA - AI-powered genomic data visualization and analysis platform
+hide:
+  - navigation
 ---
 
 # AIVA User Guide
