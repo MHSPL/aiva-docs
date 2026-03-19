@@ -18,7 +18,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     AIVA offers four tiers: **Free**, **Trial**, **Plus**, and **Pro**. Each tier provides progressively more features, higher upload limits, and additional AI capabilities. See [Subscription Tiers](getting-started/subscription-tiers.md) for a detailed comparison.
 
 ??? question "How do I upgrade my subscription?"
-    Click your user avatar in the top-right corner, select **Upgrade Plan**, and follow the payment flow powered by Stripe. Your new tier is activated immediately upon successful payment.
+    Click your user avatar in the top-right corner, select **Upgrade Plan**, and follow the secure payment flow. Your new tier is activated immediately upon successful payment.
 
 ??? question "Can I try all features before paying?"
     Yes. The **Trial** tier gives you temporary access to the complete feature set, including Small Variant Annotation, cloud URL imports, project collaboration, and all AI tools. Sign up for a free account and request a trial from your account settings.
@@ -27,7 +27,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Your data is never deleted when you change tiers. All previously uploaded samples, conversations, and analysis results remain accessible. However, features exclusive to higher tiers (such as Small Variant Annotation, cloud URL imports, or API access) will be unavailable until you upgrade again.
 
 ??? question "Is my payment information secure?"
-    All payment processing is handled by [Stripe](https://stripe.com), a PCI-DSS Level 1 certified payment processor. AIVA does not store your credit card information.
+    All payment processing is handled by a PCI-DSS Level 1 certified payment processor. AIVA does not store your credit card information.
 
 ??? question "Do you offer institutional or enterprise pricing?"
     For teams larger than 10 users or organizations with custom requirements, contact us for enterprise pricing options. Reach out through the support channel in the application.

@@ -80,7 +80,7 @@ End-to-end examples showing how to combine multiple tools for common genomic ana
 
 ## How It Works
 
-AIVA is powered by the OpenAI Agents SDK with streaming server-sent events (SSE), which means:
+AIVA uses streaming server-sent events (SSE), which means:
 
 - **Responses stream in real time** -- You see the answer as it is generated, word by word, rather than waiting for the entire response.
 - **Tool calls are transparent** -- When AIVA invokes a tool (e.g., querying your database), you see the tool name and a summary of what it did, so you can verify the approach.

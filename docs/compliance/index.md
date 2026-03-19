@@ -45,7 +45,7 @@ AIVA implements security measures across multiple layers:
 |-------|----------|
 | **Data at Rest** | AES-256 encryption for stored data, encrypted backups |
 | **Data in Transit** | TLS 1.2+ for all connections, HTTPS enforced |
-| **Authentication** | Firebase Authentication with multi-factor authentication support |
+| **Authentication** | Secure authentication with multi-factor authentication support |
 | **Authorization** | Role-based access controls, per-sample and per-project permissions |
 | **PHI Protection** | Automated detection of 20+ PHI entity types, configurable data handling |
 | **Audit** | Comprehensive logging of all user actions with IP tracking |

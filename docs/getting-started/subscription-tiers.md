@@ -102,7 +102,7 @@ You can upgrade your subscription at any time:
 
 1. Click your **user avatar** or **name** in the top-right corner of the header.
 2. Select **Upgrade Plan** from the dropdown menu.
-3. The payment modal opens, powered by **Stripe** for secure payment processing.
+3. The payment modal opens, for secure payment processing.
 4. Select your desired tier and enter your payment details.
 5. Your new tier is activated immediately upon successful payment.
 
@@ -126,7 +126,7 @@ You can upgrade your subscription at any time:
     Yes. The Trial tier gives you temporary access to the full feature set. Sign up for a free account and request a trial from your account settings or the upgrade modal.
 
 ??? question "Is payment information secure?"
-    All payment processing is handled by [Stripe](https://stripe.com), a PCI-DSS Level 1 certified payment processor. AIVA does not store your credit card details.
+    All payment processing is handled by a PCI-DSS Level 1 certified payment processor. AIVA does not store your credit card details.
 
 ??? question "Do you offer institutional or volume pricing?"
     For teams larger than 10 users or organizations with custom requirements, contact us for enterprise pricing options.

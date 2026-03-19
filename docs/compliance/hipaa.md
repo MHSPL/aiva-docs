@@ -59,7 +59,7 @@ The system detects 20+ PHI entity types, including:
 
 ### Authentication
 
-- **Firebase Authentication** provides the identity layer with support for:
+- **Secure authentication** provides the identity layer with support for:
     - Email and password authentication
     - Multi-factor authentication (MFA)
     - Single sign-on (SSO) integration for enterprise deployments

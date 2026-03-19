@@ -5,7 +5,7 @@ description: Create your AIVA account, verify your email, log in, and configure 
 
 # Account Setup
 
-AIVA uses Firebase Authentication to manage accounts. You can sign up with an email and password or use Google single sign-on.
+AIVA uses secure authentication to manage accounts. You can sign up with an email and password or use Google single sign-on.
 
 ---
 
@@ -28,7 +28,7 @@ AIVA uses Firebase Authentication to manage accounts. You can sign up with an em
         - Your account is created and verified automatically.
 
 !!! tip "Password requirements"
-    Use at least 8 characters with a mix of uppercase, lowercase, numbers, and symbols. Firebase enforces minimum complexity rules and will reject weak passwords.
+    Use at least 8 characters with a mix of uppercase, lowercase, numbers, and symbols. The system enforces minimum complexity rules and will reject weak passwords.
 
 ---
 
