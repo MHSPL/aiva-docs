@@ -19,7 +19,7 @@ When you ask a data-related question, AIVA uses the **Genomic Data Query tool** 
 4. **Results are returned** and rendered as a formatted table, a summary, or a chart -- depending on what best fits the answer.
 
 !!! info "Schema awareness"
-    AIVA knows the column names and data types of your uploaded samples. When you ask about "pathogenic variants" or "allele frequency," it maps your natural language terms to the correct database columns. For samples with Variant Effect Prediction applied, this includes all annotation fields such as `Consequence`, `SYMBOL`, `SIFT`, `PolyPhen`, and `CADD_PHRED`.
+    AIVA knows the column names and data types of your uploaded samples. When you ask about "pathogenic variants" or "allele frequency," it maps your natural language terms to the correct database columns. For samples with Small Variant Annotation applied, this includes all annotation fields such as `Consequence`, `SYMBOL`, `SIFT`, `PolyPhen`, and `CADD_PHRED`.
 
 ---
 
@@ -147,7 +147,7 @@ AIVA can chain multiple tools in a single response. For example:
 
 - [:octicons-arrow-right-24: Explore all AI tools](ai-tools.md)
 - [:octicons-arrow-right-24: Annotate variants on demand](variant-annotation-tool.md)
-- [:octicons-arrow-right-24: Search biomedical literature](pubtator.md)
+- [:octicons-arrow-right-24: Search biomedical literature](biomedical-literature.md)
 
 - [:octicons-arrow-right-24: Run custom Python analysis](code-interpreter.md)
 - [:octicons-arrow-right-24: See example workflows](example-workflows.md)

@@ -60,7 +60,7 @@ After selecting your file, a configuration panel appears. Depending on the file 
 
 ### VCF-Specific Options
 
-- **Variant Effect Prediction** -- Check this box to run variant effect predictions on your VCF file during processing. This adds consequence predictions, gene symbols, transcript information, and more. This option is available on <span class="tier-badge tier-plus">Plus</span> and <span class="tier-badge tier-pro">Pro</span> tiers.
+- **Small Variant Annotation** -- Check this box to run small variant annotation on your VCF file during processing. This adds consequence predictions, gene symbols, transcript information, and more. This option is available on <span class="tier-badge tier-plus">Plus</span> and <span class="tier-badge tier-pro">Pro</span> tiers.
 
 - **Structural Variant Annotation** -- Check this box to run structural variant annotation on your VCF file. Also restricted to <span class="tier-badge tier-plus">Plus</span> and <span class="tier-badge tier-pro">Pro</span> tiers.
 
@@ -79,7 +79,7 @@ After selecting your file, a configuration panel appears. Depending on the file 
 Click the **Upload** or **Submit** button to start the process. AIVA handles the rest in the background:
 
 1. The file is uploaded to the server.
-2. If Variant Effect Prediction or Structural Variant Annotation was selected, the annotation job runs first.
+2. If Small Variant Annotation or Structural Variant Annotation was selected, the annotation job runs first.
 3. The file is parsed and loaded into the database using optimized bulk operations.
 
 ---
@@ -141,8 +141,8 @@ For full details on the data table, see [Data Table](../data-table/index.md).
     - **Upload limit reached** -- Free accounts have a limited number of uploads. Upgrade your tier to continue.
     - **Malformed VCF** -- The file must include a valid VCF header. Check that the `#CHROM` header line is present.
 
-??? question "My Variant Effect Prediction is taking a long time."
-    Variant Effect Prediction involves running each variant through the Ensembl prediction pipeline. For whole-genome VCF files with millions of variants, this can take several minutes. The job will complete in the background -- you can continue using other features while it processes.
+??? question "My Small Variant Annotation is taking a long time."
+    Small Variant Annotation involves running each variant through the annotation pipeline. For whole-genome VCF files with millions of variants, this can take several minutes. The job will complete in the background -- you can continue using other features while it processes.
 
 ??? question "I uploaded a CSV but the columns look wrong."
     Ensure your CSV file uses commas as delimiters and that the first row contains column headers. If your file uses a different delimiter, rename it with the appropriate extension (`.tsv` for tab-separated).

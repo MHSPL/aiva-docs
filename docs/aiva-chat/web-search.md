@@ -1,11 +1,11 @@
 ---
 title: Web Search
-description: Use AIVA's Firecrawl-powered Web Search tool to find the latest research, clinical guidelines, gene information, and disease associations from across the web.
+description: Use AIVA's Web Search tool to find the latest research, clinical guidelines, gene information, and disease associations from across the web.
 ---
 
 # Web Search
 
-The Web Search tool gives AIVA the ability to search the internet and extract content from web pages in real time. Powered by Firecrawl, it retrieves up-to-date information that may not be present in your uploaded data or in AIVA's built-in knowledge bases.
+The Web Search tool gives AIVA the ability to search the internet and extract content from web pages in real time. It retrieves up-to-date information that may not be present in your uploaded data or in AIVA's built-in knowledge bases.
 
 ---
 
@@ -20,7 +20,7 @@ Web Search is most valuable when you need:
 - **Variant interpretation context** -- Published case reports or functional studies for specific variants.
 
 !!! tip "Complement with Biomedical Literature"
-    For structured biomedical literature searches (PubMed-indexed articles with entity annotations), use the [Biomedical Literature](pubtator.md) tool. Web Search is better for general web content, guidelines hosted on organization websites, and non-PubMed sources.
+    For structured biomedical literature searches (PubMed-indexed articles with entity annotations), use the [Biomedical Literature](biomedical-literature.md) tool. Web Search is better for general web content, guidelines hosted on organization websites, and non-PubMed sources.
 
 ---
 
@@ -50,7 +50,7 @@ Web Search is most valuable when you need:
 
 1. You ask AIVA a question that requires external information.
 2. AIVA formulates a search query based on your question.
-3. The Firecrawl engine searches the web and returns relevant pages.
+3. The search engine queries the web and returns relevant pages.
 4. AIVA reads and synthesizes the content from those pages.
 5. The response includes a summary with source URLs.
 

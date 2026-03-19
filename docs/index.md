@@ -42,8 +42,8 @@ hide:
     <span class="aiva-metric__label">Supported file formats</span>
   </div>
   <div class="aiva-metric">
-    <span class="aiva-metric__value">VEP + AnnotSV</span>
-    <span class="aiva-metric__label">Annotation engines</span>
+    <span class="aiva-metric__value">Automated</span>
+    <span class="aiva-metric__label">Variant annotation</span>
   </div>
   <div class="aiva-metric">
     <span class="aiva-metric__value">ACMG/AMP</span>
@@ -94,8 +94,8 @@ hide:
     <p class="aiva-feature__desc">AIVA Chat is a purpose-built AI assistant that understands your variant data. Ask natural-language questions, run Python code, search literature, and annotate variants — without leaving the platform.</p>
     <ul class="aiva-feature__bullets">
       <li>Query millions of rows with plain-English prompts</li>
-      <li>PubTator biomedical literature search built-in</li>
-      <li>Phenotype-to-gene prioritization via Phen2Gene</li>
+      <li>Biomedical literature search built-in</li>
+      <li>Phenotype-to-gene prioritization</li>
       <li>Knowledge graph exploration for variant context</li>
       <li>Code interpreter for custom analysis scripts</li>
     </ul>
@@ -265,7 +265,7 @@ hide:
     <a href="samples/" class="aiva-card">
       <span class="aiva-card__icon aiva-icon--upload"></span>
       <span class="aiva-card__title">Samples &amp; Uploads</span>
-      <span class="aiva-card__desc">Drag-and-drop or cloud URL uploads with optional VEP and AnnotSV annotation.</span>
+      <span class="aiva-card__desc">Drag-and-drop or cloud URL uploads with optional variant annotation.</span>
     </a>
     <a href="collaboration/" class="aiva-card">
       <span class="aiva-card__icon aiva-icon--collab"></span>

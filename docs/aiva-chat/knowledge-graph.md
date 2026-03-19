@@ -53,7 +53,7 @@ AIVA returns knowledge graph results as structured descriptions of the entities 
 - **Path descriptions** -- For multi-hop queries, AIVA describes the chain of relationships connecting your query entities.
 
 !!! note "Graph scope"
-    The knowledge graph is curated from established databases and may not include every known interaction. For the most current or comprehensive interaction data, consider combining Knowledge Graph queries with [Web Search](web-search.md) or [Biomedical Literature](pubtator.md) lookups.
+    The knowledge graph is curated from established databases and may not include every known interaction. For the most current or comprehensive interaction data, consider combining Knowledge Graph queries with [Web Search](web-search.md) or [Biomedical Literature](biomedical-literature.md) lookups.
 
 ---
 

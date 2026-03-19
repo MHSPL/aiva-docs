@@ -27,7 +27,7 @@ The side-by-side layout enables a continuous interpretation workflow:
 
 The left panel provides the full data table experience:
 
-- **All columns** are available via the [column chooser](../data-table/navigation-and-layout.md#column-chooser), including VCF fields, INFO subfields, and Variant Effect Prediction / Structural Variant Annotation columns.
+- **All columns** are available via the [column chooser](../data-table/navigation-and-layout.md#column-chooser), including VCF fields, INFO subfields, and Small Variant Annotation / Structural Variant Annotation columns.
 - **Filtering** lets you narrow the variant list using [text, numeric, date, and multi-select filters](../data-table/filtering.md).
 - **Sorting** by any column to prioritize variants of interest.
 - **Variant flagging** directly in the table to mark variants as Pathogenic, VUS, Benign, etc. See [Variant Flagging](../collaboration/variant-flagging.md).

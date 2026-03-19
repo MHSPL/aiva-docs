@@ -1,37 +1,37 @@
 ---
-title: Variant Effect Prediction
-description: Enrich VCF files with variant effect predictions (VEP) during upload for consequence predictions, gene symbols, and transcript-level information.
+title: Small Variant Annotation
+description: Enrich VCF files with small variant annotations during upload for consequence predictions, gene symbols, and transcript-level information.
 ---
 
-# Variant Effect Prediction
+# Small Variant Annotation
 
-AIVA integrates Ensembl's Variant Effect Predictor (VEP) to annotate VCF files during upload. Variant Effect Prediction adds consequence predictions, gene symbols, transcript information, and links to external databases for every variant in your file.
+AIVA integrates a small variant annotation engine to annotate VCF files during upload. Small Variant Annotation adds consequence predictions, gene symbols, transcript information, and links to external databases for every variant in your file.
 
 ---
 
-## What Variant Effect Prediction Adds
+## What Small Variant Annotation Adds
 
-When Variant Effect Prediction is applied, the following information is added to each variant and made available as individual columns in the [Data Table](../data-table/index.md):
+When Small Variant Annotation is applied, the following information is added to each variant and made available as individual columns in the [Data Table](../data-table/index.md):
 
 | Annotation | Description |
 |------------|-------------|
 | **Consequence** | The predicted effect of the variant on the transcript (e.g., missense_variant, frameshift_variant, synonymous_variant). |
 | **Gene Symbol** | The HGNC gene symbol associated with the variant. |
 | **IMPACT** | Severity classification: HIGH, MODERATE, LOW, or MODIFIER. |
-| **Transcript** | The Ensembl transcript ID affected by the variant. |
+| **Transcript** | The transcript ID affected by the variant. |
 | **Protein Position** | The amino acid position affected in the protein product. |
 | **Amino Acid Change** | The reference and alternate amino acids (e.g., R/H). |
 | **SIFT** | Prediction of whether the amino acid change affects protein function (Tolerated / Deleterious) with a confidence score. |
 | **PolyPhen** | Prediction of the structural and functional impact of the amino acid change (Benign / Possibly Damaging / Probably Damaging) with a score. |
 | **Existing Variation** | Known variant identifiers (e.g., rsIDs from dbSNP). |
 
-These fields are parsed from the VEP CSQ (consequence) string and broken out into individual, sortable, filterable columns.
+These fields are parsed from the consequence annotation (CSQ) string and broken out into individual, sortable, filterable columns.
 
 ---
 
 ## Subscription Requirements
 
-Variant Effect Prediction is available on the following subscription tiers:
+Small Variant Annotation is available on the following subscription tiers:
 
 | Tier | Available |
 |------|-----------|
@@ -44,30 +44,30 @@ See [Subscription Tiers](../getting-started/subscription-tiers.md) for a full co
 
 ---
 
-## How to Enable Variant Effect Prediction
+## How to Enable Small Variant Annotation
 
 1. Navigate to the **Samples** section and open the upload dialog.
 2. Select or drag-and-drop a **VCF file** (`.vcf` or `.vcf.gz`).
-3. Check the **Enable Variant Effect Prediction** checkbox.
+3. Check the **Enable Small Variant Annotation** checkbox.
 4. Click **Upload** to submit the file.
 
 The system creates a multi-step background job:
 
 1. **Upload/Download** -- The file is uploaded (or downloaded from a [cloud URL](cloud-urls.md)).
-2. **Variant Effect Prediction** -- The VEP engine runs against the VCF file, adding CSQ annotations.
+2. **Small Variant Annotation** -- The annotation engine runs against the VCF file, adding CSQ annotations.
 3. **Parsing** -- The annotated file is parsed, and CSQ subfields are extracted into individual columns.
 4. **Ready** -- The sample appears in your sample list with all annotation columns available.
 
 Monitor progress in the [Job Manager](job-monitoring.md).
 
 !!! note "VCF files only"
-    Variant Effect Prediction is available only for VCF files. CSV and TSV files cannot be annotated, as VEP requires the VCF format to interpret variant calls correctly.
+    Small Variant Annotation is available only for VCF files. CSV and TSV files cannot be annotated, as the annotation engine requires the VCF format to interpret variant calls correctly.
 
 ---
 
 ## Assembly Support
 
-AIVA supports two reference genome assemblies for Variant Effect Prediction:
+AIVA supports two reference genome assemblies for Small Variant Annotation:
 
 - **GRCh38** (hg38) -- The current human reference genome assembly. This is the default.
 - **GRCh37** (hg19) -- The previous assembly, still widely used in clinical settings.
@@ -78,7 +78,7 @@ The assembly is configured at the server level. Ensure your VCF files are aligne
 
 ## Processing Time
 
-Variant Effect Prediction processing time depends on the number of variants in your file:
+Small Variant Annotation processing time depends on the number of variants in your file:
 
 | File Size | Approximate Time |
 |-----------|-----------------|
@@ -87,8 +87,8 @@ Variant Effect Prediction processing time depends on the number of variants in y
 | 100,000 -- 1,000,000 variants | 5 to 30 minutes |
 | > 1,000,000 variants | 30 minutes or more |
 
-!!! tip "Continue working while prediction runs"
-    Variant Effect Prediction runs as a background job. You can navigate away, upload additional files, chat with AIVA, or work on other samples while the annotation completes. You will receive a notification when the job finishes.
+!!! tip "Continue working while annotation runs"
+    Small Variant Annotation runs as a background job. You can navigate away, upload additional files, chat with AIVA, or work on other samples while the annotation completes. You will receive a notification when the job finishes.
 
 ---
 
@@ -106,4 +106,4 @@ Once annotation is complete and the sample is ready:
 ## Server-Side Requirements
 
 !!! info "Administrator note"
-    Variant Effect Prediction requires a local VEP cache on the server. The cache is approximately 18 GB in size and must be downloaded separately. See the VEP setup documentation for installation instructions. The feature will not function if the cache is not present.
+    Small Variant Annotation requires a local annotation cache on the server. The cache is approximately 18 GB in size and must be downloaded separately. See the setup documentation for installation instructions. The feature will not function if the cache is not present.

@@ -18,7 +18,7 @@ Navigate to the **Samples** section to see a list of all your samples. Each entr
 - **Row count** -- The number of data rows (variants or records) in the sample.
 - **Upload date** -- When the sample was uploaded.
 - **Status** -- Processing status (e.g., Ready, Processing, Error).
-- **Annotations** -- Whether Variant Effect Prediction or Structural Variant Annotation annotation was applied.
+- **Annotations** -- Whether Small Variant Annotation or Structural Variant Annotation annotation was applied.
 
 Click on any sample to open it in the [Data Table](../data-table/index.md) for exploration and analysis.
 
@@ -33,7 +33,7 @@ Each sample has associated metadata that you can view:
 - **Format** -- VCF, CSV, or TSV.
 - **Total variants/rows** -- The number of records loaded into the database.
 - **Upload timestamp** -- The date and time the file was uploaded.
-- **Annotation status** -- Whether Variant Effect Prediction or Structural Variant Annotation was applied, and the annotation job status.
+- **Annotation status** -- Whether Small Variant Annotation or Structural Variant Annotation was applied, and the annotation job status.
 - **Project assignment** -- Which [project](../collaboration/projects.md) the sample belongs to, if any.
 
 ---
@@ -77,7 +77,7 @@ Samples progress through the following states during processing:
 |-------|-------------|
 | **Uploading** | The file is being uploaded to the server. |
 | **Downloading** | The file is being downloaded from a [cloud URL](cloud-urls.md). |
-| **Annotating** | Variant Effect Prediction or Structural Variant Annotation annotation is running. |
+| **Annotating** | Small Variant Annotation or Structural Variant Annotation annotation is running. |
 | **Parsing** | The file is being parsed and loaded into the database. |
 | **Ready** | Processing is complete. The sample is available for exploration. |
 | **Error** | An error occurred during processing. Check the [Job Manager](job-monitoring.md) for details. |

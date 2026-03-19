@@ -37,7 +37,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   An ACMG classification indicating strong evidence that a variant does not cause disease.
 
 **Biomedical Literature**
-:   AIVA's literature search tool. Searches PubMed-indexed articles with entity-level annotations for genes, diseases, chemicals, mutations, and species. See [Biomedical Literature](aiva-chat/pubtator.md).
+:   AIVA's literature search tool. Searches PubMed-indexed articles with entity-level annotations for genes, diseases, chemicals, mutations, and species. See [Biomedical Literature](aiva-chat/biomedical-literature.md).
 
 ---
 
@@ -85,9 +85,6 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 
 ## F
 
-**Firecrawl**
-:   The web search and scraping engine used by AIVA's [Web Search](aiva-chat/web-search.md) tool.
-
 **Frameshift Variant**
 :   An insertion or deletion of nucleotides that is not a multiple of three, disrupting the reading frame of the gene and typically resulting in a truncated or nonfunctional protein.
 
@@ -102,7 +99,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   A large-scale database of exome and genome sequencing data from over 140,000 individuals. Used to assess variant population frequencies. Variants common in gnomAD are less likely to cause rare disease.
 
 **GRCh37 / GRCh38**
-:   Human reference genome assemblies. GRCh37 (hg19) and GRCh38 (hg38) are the two commonly used versions. AIVA supports both for [Variant Effect Prediction](samples/vep-annotation.md).
+:   Human reference genome assemblies. GRCh37 (hg19) and GRCh38 (hg38) are the two commonly used versions. AIVA supports both for [Small Variant Annotation](samples/small-variant-annotation.md).
 
 ---
 
@@ -112,7 +109,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   A standardized system for describing variants in DNA, RNA, and protein sequences. Examples: c.5266dupC (coding DNA), p.Gln1756Profs*74 (protein).
 
 **HPO (Human Phenotype Ontology)**
-:   A standardized vocabulary for describing clinical phenotypes (observable characteristics) in human disease. Used by the [Phenotype-Gene Prioritization](aiva-chat/phen2gene.md) tool for phenotype-to-gene mapping via a phenotype-gene mapping algorithm.
+:   A standardized vocabulary for describing clinical phenotypes (observable characteristics) in human disease. Used by the [Phenotype-Gene Prioritization](aiva-chat/phenotype-gene-prioritization.md) tool for phenotype-to-gene mapping via a phenotype-gene mapping algorithm.
 
 ---
 
@@ -182,7 +179,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   A database of pharmacogenomic information including drug-gene associations, clinical annotations, and prescribing guidelines.
 
 **Phenotype-Gene Prioritization**
-:   AIVA's tool for mapping clinical phenotypes (HPO terms) to ranked candidate genes using a phenotype-gene mapping algorithm. Assists in rare disease diagnosis and gene panel design. See [Phenotype-Gene Prioritization](aiva-chat/phen2gene.md).
+:   AIVA's tool for mapping clinical phenotypes (HPO terms) to ranked candidate genes using a phenotype-gene mapping algorithm. Assists in rare disease diagnosis and gene panel design. See [Phenotype-Gene Prioritization](aiva-chat/phenotype-gene-prioritization.md).
 
 **PolyPhen-2 (Polymorphism Phenotyping v2)**
 :   A computational tool that predicts the impact of amino acid substitutions on protein structure and function. Results are classified as Benign, Possibly Damaging, or Probably Damaging.
@@ -201,6 +198,9 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 **SIFT (Sorting Intolerant From Tolerant)**
 :   A computational tool that predicts whether an amino acid substitution affects protein function based on sequence conservation. Scores below 0.05 are predicted to be deleterious.
 
+**Small Variant Annotation**
+:   AIVA's annotation feature for small variants (SNVs and indels) during file upload. Adds gene symbols, transcript information, SIFT/PolyPhen scores, population frequencies, and more. See [Small Variant Annotation](samples/small-variant-annotation.md).
+
 **SNV (Single Nucleotide Variant)**
 :   A change in a single nucleotide at a specific position in the genome.
 
@@ -211,7 +211,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   A large-scale genomic alteration including deletions, duplications, inversions, and translocations, typically affecting 50 or more base pairs.
 
 **Structural Variant Annotation**
-:   AIVA's annotation feature for structural variants during upload, using a structural variant annotation engine. Adds clinical and functional annotations including gene overlap, population SV frequency, regulatory impact, and ACMG SV classification. See [Structural Variant Annotation](samples/annotsv-annotation.md).
+:   AIVA's annotation feature for structural variants during upload, using a structural variant annotation engine. Adds clinical and functional annotations including gene overlap, population SV frequency, regulatory impact, and ACMG SV classification. See [Structural Variant Annotation](samples/structural-variant-annotation.md).
 
 ---
 
@@ -226,9 +226,6 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 ---
 
 ## V
-
-**Variant Effect Prediction**
-:   AIVA's annotation feature that uses Ensembl's Variant Effect Predictor (VEP) to predict functional consequences of variants during file upload. Adds consequence predictions, gene symbols, transcript information, SIFT/PolyPhen scores, and more. See [Variant Effect Prediction](samples/vep-annotation.md).
 
 **VCF (Variant Call Format)**
 :   The standard file format for storing variant data from genome sequencing. VCF files contain header lines (metadata) and data lines (one per variant) with fields for chromosome, position, reference allele, alternate allele, quality, filter status, and additional information. See [Uploading Files](samples/uploading-files.md).

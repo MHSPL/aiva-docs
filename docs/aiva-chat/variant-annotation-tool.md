@@ -5,7 +5,7 @@ description: Real-time variant lookups against ClinVar, gnomAD, CADD, SIFT, and 
 
 # Variant Annotation Tool
 
-The Variant Annotation tool performs real-time lookups for individual variants against multiple curated genomic databases. Unlike batch annotation during upload (Variant Effect Prediction), this tool is used interactively during a conversation to retrieve detailed information about specific variants on demand.
+The Variant Annotation tool performs real-time lookups for individual variants against multiple curated genomic databases. Unlike batch annotation during upload (Small Variant Annotation), this tool is used interactively during a conversation to retrieve detailed information about specific variants on demand.
 
 ---
 
@@ -83,15 +83,15 @@ These scores provide computational predictions of variant impact:
 
 ## Batch vs. Real-Time Annotation
 
-| Feature | Variant Annotation Tool (Chat) | Variant Effect Prediction (Upload) |
+| Feature | Variant Annotation Tool (Chat) | Small Variant Annotation (Upload) |
 |---------|-------------------------------|------------------------|
 | **Scope** | Individual variants, on demand | Entire VCF file |
 | **Speed** | Seconds per variant | Minutes to hours for large files |
-| **Databases** | ClinVar, gnomAD, CADD, SIFT, PolyPhen | Ensembl VEP (consequence, gene, transcript, plus plugins) |
+| **Databases** | ClinVar, gnomAD, CADD, SIFT, PolyPhen | Small variant annotation engine (consequence, gene, transcript, and more) |
 | **Availability** | All subscription tiers | Plus, Pro, and Trial tiers |
 | **Use case** | Focused investigation of specific variants | Comprehensive annotation of all variants in a sample |
 
-For batch annotation, see [Variant Effect Prediction](../samples/vep-annotation.md).
+For batch annotation, see [Small Variant Annotation](../samples/small-variant-annotation.md).
 
 ---
 

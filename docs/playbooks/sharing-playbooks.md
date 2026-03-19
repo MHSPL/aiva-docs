@@ -82,7 +82,7 @@ When a user forks your playbook:
 
 ## Best Practices for Shared Playbooks
 
-- **Write clear descriptions** -- Explain what the playbook does, what type of data it works best with, and any prerequisites (e.g., "Requires VCF with Variant Effect Prediction applied").
+- **Write clear descriptions** -- Explain what the playbook does, what type of data it works best with, and any prerequisites (e.g., "Requires VCF with Small Variant Annotation applied").
 - **Test thoroughly** -- Run the playbook against several samples to ensure steps work correctly in different scenarios.
 - **Use meaningful step titles** -- Step titles help users understand the workflow at a glance.
 - **Include a recommended sample type** -- Note whether the playbook is designed for WGS, WES, gene panel, or other data types.

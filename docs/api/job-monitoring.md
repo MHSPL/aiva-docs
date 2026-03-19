@@ -85,7 +85,7 @@ GET /jobs/events?token=<API_KEY>
 Events are streamed in standard SSE format:
 
 ```
-data: {"job_id": "job_abc123", "status": "processing", "progress": 45, "message": "Running VEP annotation..."}
+data: {"job_id": "job_abc123", "status": "processing", "progress": 45, "message": "Running variant annotation..."}
 
 data: {"job_id": "job_abc123", "status": "completed", "message": "Job completed successfully."}
 ```
@@ -145,7 +145,7 @@ GET /jobs/{job_id}/status
   "job_id": "job_abc123",
   "status": "processing",
   "progress": 65,
-  "message": "Running VEP annotation...",
+  "message": "Running variant annotation...",
   "created_at": "2026-03-09T10:30:00Z",
   "updated_at": "2026-03-09T10:35:00Z"
 }

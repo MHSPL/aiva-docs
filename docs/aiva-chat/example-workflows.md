@@ -163,7 +163,7 @@ This page provides step-by-step workflows demonstrating how to combine AIVA's to
 
     > "Are there any variants already classified as pathogenic or likely pathogenic in ClinVar?"
 
-    *Tools used*: Genomic Data Query (if Variant Effect Prediction was applied) or Variant Annotation
+    *Tools used*: Genomic Data Query (if Small Variant Annotation was applied) or Variant Annotation
 
 ---
 

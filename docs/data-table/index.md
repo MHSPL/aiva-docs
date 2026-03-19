@@ -35,7 +35,7 @@ When you upload a VCF file, AIVA automatically parses and displays standard VCF 
 - **FILTER** -- Filter status (PASS, low quality, etc.)
 - **INFO subfields** -- Individual INFO fields are broken out into separate, sortable columns
 
-If Variant Effect Prediction was applied during upload, additional CSQ (consequence) columns are available, including gene symbol, consequence type, impact, SIFT and PolyPhen predictions, allele frequencies, and more. See [Variant Effect Prediction](../samples/vep-annotation.md) for details on how these columns are generated.
+If Small Variant Annotation was applied during upload, additional CSQ (consequence) columns are available, including gene symbol, consequence type, impact, SIFT and PolyPhen predictions, allele frequencies, and more. See [Small Variant Annotation](../samples/small-variant-annotation.md) for details on how these columns are generated.
 
 ---
 

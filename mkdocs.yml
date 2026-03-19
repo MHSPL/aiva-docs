@@ -115,8 +115,8 @@ nav:
           - samples/index.md
           - Uploading Files: samples/uploading-files.md
           - Cloud URLs: samples/cloud-urls.md
-          - Variant Effect Prediction: samples/vep-annotation.md
-          - Structural Variant Annotation: samples/annotsv-annotation.md
+          - Small Variant Annotation: samples/small-variant-annotation.md
+          - Structural Variant Annotation: samples/structural-variant-annotation.md
           - Job Monitoring: samples/job-monitoring.md
           - Managing Samples: samples/managing-samples.md
       - AIVA Chat:
@@ -129,8 +129,8 @@ nav:
           - Knowledge Graph: aiva-chat/knowledge-graph.md
           - Code Interpreter: aiva-chat/code-interpreter.md
           - Clinical Trials: aiva-chat/clinical-trials.md
-          - Biomedical Literature: aiva-chat/pubtator.md
-          - Phenotype-Gene Prioritization: aiva-chat/phen2gene.md
+          - Biomedical Literature: aiva-chat/biomedical-literature.md
+          - Phenotype-Gene Prioritization: aiva-chat/phenotype-gene-prioritization.md
           - MCP Integration: aiva-chat/mcp-integration.md
           - Model Selection: aiva-chat/model-selection.md
           - Example Workflows: aiva-chat/example-workflows.md

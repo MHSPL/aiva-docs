@@ -62,6 +62,6 @@ Compare Free, Trial, Plus, and Pro plans to find the right level of access for y
 1. **[Create your account](account-setup.md)** and verify your email.
 2. **[Explore the interface](navigating-the-ui.md)** to understand where things live.
 3. **[Upload a sample file](uploading-your-first-sample.md)** and see your data in the table.
-4. **[Review subscription tiers](subscription-tiers.md)** if you need Variant Effect Prediction, larger upload limits, or team collaboration features.
+4. **[Review subscription tiers](subscription-tiers.md)** if you need Small Variant Annotation, larger upload limits, or team collaboration features.
 
 Once you are comfortable with the basics, continue to [Samples](../samples/index.md) for advanced upload options or [AIVA Chat](../aiva-chat/index.md) to start asking your AI assistant questions about your data.

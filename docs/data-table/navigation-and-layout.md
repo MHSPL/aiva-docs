@@ -27,7 +27,7 @@ The column chooser is a panel that lists every available column for the current 
 Changes take effect immediately. Hidden columns are not removed from the dataset -- they are simply not displayed.
 
 !!! info "VCF and annotation columns"
-    For VCF files, columns include standard fields (CHROM, POS, REF, ALT, QUAL, FILTER) plus any INFO subfields parsed from the file. If Variant Effect Prediction was applied, CSQ subfields such as `Gene`, `Consequence`, `IMPACT`, `SIFT`, and `PolyPhen` also appear as individual columns.
+    For VCF files, columns include standard fields (CHROM, POS, REF, ALT, QUAL, FILTER) plus any INFO subfields parsed from the file. If Small Variant Annotation was applied, CSQ subfields such as `Gene`, `Consequence`, `IMPACT`, `SIFT`, and `PolyPhen` also appear as individual columns.
 
 ### Reordering Columns
 

@@ -21,7 +21,7 @@ AIVA offers four subscription tiers designed to scale from individual exploratio
 | **Data Table (Virtualized)** | Yes | Yes | Yes | Yes |
 | **Variant Flagging** | Yes | Yes | Yes | Yes |
 | **Threaded Comments** | Yes | Yes | Yes | Yes |
-| **Variant Effect Prediction** | -- | Yes | Yes | Yes |
+| **Small Variant Annotation** | -- | Yes | Yes | Yes |
 | **Structural Variant Annotation** | -- | Yes | Yes | Yes |
 | **Cloud URL Uploads** | -- | Yes | Yes | Yes |
 | **ACMG Classification** | -- | Yes | Yes | Yes |
@@ -65,7 +65,7 @@ The Trial tier provides temporary full-platform access so you can evaluate the c
 - When the trial expires, your account reverts to the Free tier. All your data is preserved.
 
 !!! warning "Trial expiration"
-    Samples and data created during your trial are not deleted when the trial ends. However, features like Variant Effect Prediction and API access will no longer be available until you upgrade to a paid tier.
+    Samples and data created during your trial are not deleted when the trial ends. However, features like Small Variant Annotation and API access will no longer be available until you upgrade to a paid tier.
 
 ---
 
@@ -75,7 +75,7 @@ The Plus tier is designed for active researchers and clinical users who need ann
 
 - **Increased upload limits** -- Upload more and larger files than the Free tier.
 - **Increased AI query limits** -- More conversations and tool calls per day.
-- **Variant Effect Prediction** -- Run variant effect predictions on VCF uploads to add consequence predictions, gene symbols, and transcript-level information.
+- **Small Variant Annotation** -- Run small variant annotation on VCF uploads to add consequence predictions, gene symbols, and transcript-level information.
 - **Structural Variant Annotation** -- Annotate structural variants during upload with clinical and functional context.
 - **Cloud URL Uploads** -- Ingest files directly from Google Cloud Storage (`gs://`), Amazon S3 (`s3://`), Azure Blob Storage (`az://`), or public HTTPS URLs.
 - **Project Collaboration** -- Create projects, invite team members, and assign roles.
@@ -91,7 +91,7 @@ The Pro tier is built for high-throughput laboratories, clinical teams, and orga
 
 - **Unlimited uploads** -- No caps on file count or size.
 - **Unlimited AI queries** -- No daily limits on conversations or tool invocations.
-- **All Plus features included** -- Variant Effect Prediction, Structural Variant Annotation, cloud URLs, collaboration, reports, API, and advanced tools.
+- **All Plus features included** -- Small Variant Annotation, Structural Variant Annotation, cloud URLs, collaboration, reports, API, and advanced tools.
 - **Priority support** -- Faster response times from the AIVA support team.
 
 ---
@@ -120,7 +120,7 @@ You can upgrade your subscription at any time:
 ## Frequently Asked Questions
 
 ??? question "What happens to my data if I downgrade?"
-    Your data is never deleted when you change tiers. You retain access to all previously uploaded samples and conversations. However, features tied to higher tiers (such as Variant Effect Prediction or API access) will no longer be available until you upgrade again.
+    Your data is never deleted when you change tiers. You retain access to all previously uploaded samples and conversations. However, features tied to higher tiers (such as Small Variant Annotation or API access) will no longer be available until you upgrade again.
 
 ??? question "Can I try Plus or Pro features before paying?"
     Yes. The Trial tier gives you temporary access to the full feature set. Sign up for a free account and request a trial from your account settings or the upgrade modal.

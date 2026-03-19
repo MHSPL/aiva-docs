@@ -21,10 +21,10 @@ Find answers to the most common questions about using AIVA. If your question is 
     Click your user avatar in the top-right corner, select **Upgrade Plan**, and follow the payment flow powered by Stripe. Your new tier is activated immediately upon successful payment.
 
 ??? question "Can I try all features before paying?"
-    Yes. The **Trial** tier gives you temporary access to the complete feature set, including Variant Effect Prediction, cloud URL imports, project collaboration, and all AI tools. Sign up for a free account and request a trial from your account settings.
+    Yes. The **Trial** tier gives you temporary access to the complete feature set, including Small Variant Annotation, cloud URL imports, project collaboration, and all AI tools. Sign up for a free account and request a trial from your account settings.
 
 ??? question "What happens to my data if I downgrade?"
-    Your data is never deleted when you change tiers. All previously uploaded samples, conversations, and analysis results remain accessible. However, features exclusive to higher tiers (such as Variant Effect Prediction, cloud URL imports, or API access) will be unavailable until you upgrade again.
+    Your data is never deleted when you change tiers. All previously uploaded samples, conversations, and analysis results remain accessible. However, features exclusive to higher tiers (such as Small Variant Annotation, cloud URL imports, or API access) will be unavailable until you upgrade again.
 
 ??? question "Is my payment information secure?"
     All payment processing is handled by [Stripe](https://stripe.com), a PCI-DSS Level 1 certified payment processor. AIVA does not store your credit card information.
@@ -51,11 +51,11 @@ Find answers to the most common questions about using AIVA. If your question is 
 ??? question "Can I upload files from cloud storage?"
     Yes. Plus, Pro, and Trial accounts can import files directly from Google Cloud Storage (`gs://`), Amazon S3 (`s3://`), Azure Blob Storage (`az://`), or public HTTPS URLs. See [Cloud URL Imports](samples/cloud-urls.md).
 
-??? question "What is Variant Effect Prediction?"
-    Variant Effect Prediction uses Ensembl's Variant Effect Predictor (VEP) to predict the functional consequences of genomic variants. When enabled during upload, it adds columns such as gene symbol, consequence type, SIFT and PolyPhen predictions, and more. It is available on Trial, Plus, and Pro tiers. See [Variant Effect Prediction](samples/vep-annotation.md).
+??? question "What is Small Variant Annotation?"
+    Small Variant Annotation uses AIVA's annotation engine to predict the functional consequences of genomic variants. When enabled during upload, it adds columns such as gene symbol, consequence type, SIFT and PolyPhen predictions, and more. It is available on Trial, Plus, and Pro tiers. See [Small Variant Annotation](samples/small-variant-annotation.md).
 
 ??? question "Can I upload without annotation and annotate later?"
-    Yes. You can upload files without Variant Effect Prediction or Structural Variant Annotation and explore the raw data immediately. For on-demand annotation of specific variants, use the AIVA Chat [Variant Annotation tool](aiva-chat/variant-annotation-tool.md), which performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen.
+    Yes. You can upload files without Small Variant Annotation or Structural Variant Annotation and explore the raw data immediately. For on-demand annotation of specific variants, use the AIVA Chat [Variant Annotation tool](aiva-chat/variant-annotation-tool.md), which performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen.
 
 ??? question "My upload failed. What should I do?"
     Open the [Job Manager](samples/job-monitoring.md) and review the error message on the failed job. Common causes include unsupported file formats, malformed headers (VCF files must include the `#CHROM` line), exceeding your tier's upload limits, or network interruptions during transfer. Fix the underlying issue and re-upload.
@@ -115,7 +115,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     The Free tier includes: limited file uploads (VCF, CSV, TSV), limited AI chat queries per day, the interactive data table with virtualization, variant flagging, threaded comments, and read-only access to the Playbooks marketplace. See [Subscription Tiers](getting-started/subscription-tiers.md) for the full comparison.
 
 ??? question "What do I gain by upgrading to Plus?"
-    Plus adds: increased upload and query limits, Variant Effect Prediction and Structural Variant Annotation, cloud URL imports, project collaboration, clinical reports with AI auto-fill, API access, and advanced AI tools (Knowledge Graph, pharmacogenomics, Biomedical Literature, Clinical Trials). See [Subscription Tiers](getting-started/subscription-tiers.md).
+    Plus adds: increased upload and query limits, Small Variant Annotation and Structural Variant Annotation, cloud URL imports, project collaboration, clinical reports with AI auto-fill, API access, and advanced AI tools (Knowledge Graph, pharmacogenomics, Biomedical Literature, Clinical Trials). See [Subscription Tiers](getting-started/subscription-tiers.md).
 
 ??? question "What is the difference between Plus and Pro?"
     Pro removes all usage caps -- unlimited uploads, unlimited AI queries -- and includes priority support. All Plus features are included. Pro is designed for high-throughput labs and clinical teams.
@@ -155,8 +155,8 @@ Find answers to the most common questions about using AIVA. If your question is 
 ??? question "I cannot find a conversation I had previously."
     Use the search bar in the conversation sidebar to filter by title. If you cannot find the conversation, it may have been deleted. Deleted conversations cannot be recovered. Consider renaming important conversations with descriptive titles to make them easier to find in the future.
 
-??? question "My Variant Effect Prediction job has been running for a long time."
-    Variant Effect Prediction processes each variant through the Ensembl prediction pipeline. For large files (whole-genome VCFs with millions of variants), this can take a significant amount of time. The job continues processing in the background. Check the [Job Manager](samples/job-monitoring.md) for the current status. If the job appears stuck in the same state for an extended period, it may have encountered an error -- contact support if needed.
+??? question "My Small Variant Annotation job has been running for a long time."
+    Small Variant Annotation processes each variant through the annotation pipeline. For large files (whole-genome VCFs with millions of variants), this can take a significant amount of time. The job continues processing in the background. Check the [Job Manager](samples/job-monitoring.md) for the current status. If the job appears stuck in the same state for an extended period, it may have encountered an error -- contact support if needed.
 
 ??? question "How do I report a bug or request a feature?"
     Use the **Help** modal in the application header to access support channels. Include details about the issue: what you were trying to do, what happened, any error messages, and your browser/OS information.

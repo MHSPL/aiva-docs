@@ -37,7 +37,7 @@ The Genomic Data Query tool allows AIVA to query your uploaded variant data dire
 
 ## Web Search
 
-The Web Search tool uses Firecrawl to search the web and scrape pages for up-to-date genomic information. Use it when you need information beyond what is in your data or in the knowledge graph.
+The Web Search tool searches the web and scrapes pages for up-to-date genomic information. Use it when you need information beyond what is in your data or in the knowledge graph.
 
 **Capabilities**:
 
@@ -74,7 +74,7 @@ The Variant Annotation tool performs real-time lookups for individual variants a
 - "Get CADD, SIFT, and PolyPhen scores for this variant: chr7:117559590 T>G."
 
 !!! tip "Batch vs. real-time annotation"
-    The Variant Annotation tool annotates individual variants in real time during a conversation. For batch annotation of entire VCF files, use [Variant Effect Prediction](../samples/vep-annotation.md) during upload instead.
+    The Variant Annotation tool annotates individual variants in real time during a conversation. For batch annotation of entire VCF files, use [Small Variant Annotation](../samples/small-variant-annotation.md) during upload instead.
 
 ---
 

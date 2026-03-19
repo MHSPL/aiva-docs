@@ -44,7 +44,7 @@ Monitor job progress in the [Job Manager](job-monitoring.md).
 
 ## Subscription Requirements
 
-Structural Variant Annotation availability follows the same tier structure as Variant Effect Prediction:
+Structural Variant Annotation availability follows the same tier structure as Small Variant Annotation:
 
 | Tier | Available |
 |------|-----------|
@@ -65,15 +65,15 @@ After annotation completes, the generated columns are available in the [Data Tab
 
 ---
 
-## Structural Variant Annotation vs. Variant Effect Prediction
+## Structural Variant Annotation vs. Small Variant Annotation
 
-| Feature | Variant Effect Prediction (VEP) | Structural Variant Annotation |
+| Feature | Small Variant Annotation | Structural Variant Annotation |
 |---------|--------------------------------|----------------------------------------|
 | **Target** | SNVs and small indels | Structural variants (CNVs, inversions, translocations) |
 | **Annotations** | Consequence, gene, transcript, SIFT, PolyPhen | Gene overlap, population SV frequency, regulatory impact, ACMG SV class |
 | **Input** | VCF with SNV/indel calls | VCF with SV calls |
 
-You can enable Variant Effect Prediction and Structural Variant Annotation independently depending on the variant types in your file. For files containing both SNVs and SVs, you may use both annotation pipelines.
+You can enable Small Variant Annotation and Structural Variant Annotation independently depending on the variant types in your file. For files containing both SNVs and SVs, you may use both annotation pipelines.
 
 !!! tip "Choose the right annotation"
-    If your VCF contains only short variants (SNVs and small insertions/deletions), use [Variant Effect Prediction](vep-annotation.md). If it contains structural variants, use Structural Variant Annotation. Check your VCF's SVTYPE or ALT field to determine which variant types are present.
+    If your VCF contains only short variants (SNVs and small insertions/deletions), use [Small Variant Annotation](small-variant-annotation.md). If it contains structural variants, use Structural Variant Annotation. Check your VCF's SVTYPE or ALT field to determine which variant types are present.
