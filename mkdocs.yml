@@ -93,10 +93,24 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+copyright: "&copy; 2026 Mamidi Health. All rights reserved."
+
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/MHSPL
+    - icon: fontawesome/solid/globe
+      link: https://mamidi.ai
+      name: About Us
+    - icon: fontawesome/solid/envelope
+      link: https://mamidi.ai/#contact
+      name: Contact
+    - icon: fontawesome/solid/shield-halved
+      link: https://mamidi.ai/privacy-policy
+      name: Privacy Policy
+    - icon: fontawesome/solid/file-contract
+      link: https://mamidi.ai/terms-of-service
+      name: Terms of Service
   generator: false
 
 extra_css:

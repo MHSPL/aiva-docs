@@ -132,7 +132,7 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
     <h2 class="aiva-feature__title">Your AI Clinical Analyst, not just an assistant</h2>
     <p class="aiva-feature__desc">AIVA Chat does the work a clinical analyst does in seconds instead of hours. Ask a question in plain English and get classified, evidence-backed answers grounded in your samples' data.</p>
     <ul class="aiva-feature__bullets">
-      <li>Triage and classify variants with a single prompt</li>
+      <li>Review and classify variants with a single prompt</li>
       <li>Automated literature review with cited evidence</li>
       <li>HPO-driven gene prioritization</li>
       <li>Knowledge graph associations between genes, diseases, drugs, etc.</li>
@@ -276,14 +276,16 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
   </div>
 </div>
 
+---
+
 <!-- AUDIENCE -->
 <div class="aiva-section">
   <span class="aiva-section__label">Built for Genomics Teams</span>
-  <h2 class="aiva-section__title">Designed for every role in the workflow</h2>
+  <h2 class="aiva-section__title" style="border:none;">Designed for every role in the workflow</h2>
   <div class="aiva-audience">
     <div class="aiva-audience__card">
       <div class="aiva-audience__role">Clinical Geneticists</div>
-      <p class="aiva-audience__desc">Triage variants, apply ACMG/AMP criteria, and generate diagnostic reports with AI-assisted drafting.</p>
+      <p class="aiva-audience__desc">Review variants, apply ACMG/AMP criteria, and generate diagnostic reports with AI-assisted drafting.</p>
     </div>
     <div class="aiva-audience__card">
       <div class="aiva-audience__role">Research Scientists</div>
@@ -300,10 +302,12 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
   </div>
 </div>
 
+---
+
 <!-- QUICK LINKS -->
 <div class="aiva-section">
   <span class="aiva-section__label">Quick Access</span>
-  <h2 class="aiva-section__title">Popular starting points</h2>
+  <h2 class="aiva-section__title" style="border:none;">Popular starting points</h2>
   <div class="aiva-quicklinks">
     <a href="getting-started/account-setup/" class="aiva-quicklink">
       <div class="aiva-quicklink__inner">
@@ -361,15 +365,5 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
       </div>
       <span class="aiva-quicklink__arrow">→</span>
     </a>
-  </div>
-</div>
-
-<!-- CTA BANNER -->
-<div class="aiva-cta">
-  <h2>Ready to analyze your first sample?</h2>
-  <p>Upload a VCF in seconds and let AIVA do the heavy lifting — annotation, analysis, and reporting all in one place.</p>
-  <div class="aiva-hero__actions">
-    <a href="getting-started/uploading-your-first-sample/" class="aiva-btn aiva-btn--primary">Upload Your First Sample →</a>
-    <a href="faq/" class="aiva-btn aiva-btn--ghost">Read the FAQ</a>
   </div>
 </div>
