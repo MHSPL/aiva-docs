@@ -1,62 +1,101 @@
 ---
-title: AIVA – AI-Powered Genomics Platform
-description: Comprehensive documentation for AIVA - AI-powered genomic data visualization and analysis platform
+title: AIVA – Whole Genome Interpretation in Minutes
+description: Documentation for AIVA - your AI Clinical Analyst for whole genome interpretation, variant classification, and clinical reporting
 hide:
   - navigation
   - toc
 ---
 
-<!-- HERO -->
-<section class="aiva-hero">
-  <span class="aiva-hero__eyebrow">AI-Powered Genomics</span>
-  <h1>Precision genomics, <span>reimagined with AI</span></h1>
-  <p class="aiva-hero__sub">Upload VCFs, explore millions of variants in real time, chat with an AI assistant that understands your data, and generate clinical-grade reports — all in one platform.</p>
-  <div class="aiva-hero__actions">
-    <a href="getting-started/" class="aiva-btn aiva-btn--primary">Get Started →</a>
-    <a href="aiva-chat/" class="aiva-btn aiva-btn--ghost">Explore AIVA Chat</a>
-  </div>
-  <div class="aiva-hero__stats">
-    <div class="aiva-hero__stat">
-      <span class="aiva-stat__value">50M+</span>
-      <span class="aiva-stat__label">Variants per sample</span>
-    </div>
-    <div class="aiva-hero__stat">
-      <span class="aiva-stat__value">&lt;&thinsp;2s</span>
-      <span class="aiva-stat__label">Query response time</span>
-    </div>
-    <div class="aiva-hero__stat">
-      <span class="aiva-stat__value">HIPAA</span>
-      <span class="aiva-stat__label">Compliant &amp; auditable</span>
-    </div>
-    <div class="aiva-hero__stat">
-      <span class="aiva-stat__value">10+</span>
-      <span class="aiva-stat__label">AI tools built-in</span>
-    </div>
-  </div>
-</section>
+# Whole Genome Interpretation in Minutes, Not Weeks
 
-<!-- METRICS BAR -->
-<div class="aiva-metrics">
-  <div class="aiva-metric">
-    <span class="aiva-metric__value">VCF · CSV · TSV</span>
-    <span class="aiva-metric__label">Supported file formats</span>
+AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report in under 1 hour, or drop a VCF and have classified, annotated results in approximately 5 minutes. AIVA automates variant annotation, ACMG/AMP classification, literature review, and report generation -- delivering 90%+ pathogenic sensitivity in a single platform built for clinical-grade genomics.
+
+---
+
+<!-- FEATURES HEADER -->
+<div class="aiva-section" style="text-align:center;">
+  <h2 class="aiva-section__title" style="border:none;">From sample to signed report</h2>
+</div>
+
+<!-- FEATURE 1 – SECONDARY ANALYSIS -->
+<div class="aiva-feature">
+  <div class="aiva-feature__visual">
+    <div class="aiva-feature__mockup">
+      <div class="aiva-mockup__bar">
+        <span class="aiva-mockup__dot aiva-mockup__dot--red"></span>
+        <span class="aiva-mockup__dot aiva-mockup__dot--yellow"></span>
+        <span class="aiva-mockup__dot aiva-mockup__dot--green"></span>
+        <span class="aiva-mockup__title">Pipeline</span>
+      </div>
+      <div class="aiva-mockup__body">
+        <div class="aiva-flow">
+          <svg class="aiva-flow__svg" viewBox="0 0 340 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Connector lines -->
+            <g stroke="rgba(0,188,212,.35)" stroke-width="1.5" fill="none">
+              <!-- FASTQ → Variant Calling -->
+              <line x1="100" y1="36" x2="100" y2="68"/>
+              <!-- Variant Calling → BAM -->
+              <line x1="100" y1="98" x2="100" y2="128"/>
+              <!-- BAM → PGx (straight down) -->
+              <line x1="80" y1="158" x2="80" y2="196"/>
+              <!-- BAM → Annotation (right branch) -->
+              <path d="M120,158 L120,168 L235,168 L235,196"/>
+              <!-- VCF → Annotation (straight down, merges) -->
+              <line x1="260" y1="36" x2="260" y2="168"/>
+              <line x1="260" y1="168" x2="235" y2="168"/>
+            </g>
+            <!-- Arrowheads (all pointing down) -->
+            <g fill="rgba(0,188,212,.4)">
+              <polygon points="96,64 100,72 104,64"/>
+              <polygon points="96,124 100,132 104,124"/>
+              <polygon points="76,190 80,198 84,190"/>
+              <polygon points="231,190 235,198 239,190"/>
+            </g>
+            <!-- Step boxes -->
+            <g>
+              <!-- FASTQ -->
+              <rect x="35" y="6" width="130" height="30" rx="6" fill="rgba(0,188,212,.08)" stroke="rgba(0,188,212,.3)"/>
+              <text x="100" y="26" text-anchor="middle" fill="currentColor" font-size="12" font-weight="600">FASTQ</text>
+              <!-- Variant Calling -->
+              <rect x="25" y="68" width="150" height="30" rx="6" fill="rgba(0,188,212,.08)" stroke="rgba(0,188,212,.3)"/>
+              <text x="100" y="88" text-anchor="middle" fill="currentColor" font-size="12" font-weight="600">Variant Calling</text>
+              <!-- BAM -->
+              <rect x="35" y="128" width="130" height="30" rx="6" fill="rgba(0,188,212,.08)" stroke="rgba(0,188,212,.3)"/>
+              <text x="100" y="148" text-anchor="middle" fill="currentColor" font-size="12" font-weight="600">BAM</text>
+              <!-- PGx -->
+              <rect x="20" y="196" width="120" height="30" rx="6" fill="rgba(0,150,136,.12)" stroke="rgba(0,150,136,.4)"/>
+              <text x="80" y="216" text-anchor="middle" fill="currentColor" font-size="12" font-weight="600">PGx</text>
+              <!-- Annotation -->
+              <rect x="170" y="196" width="130" height="30" rx="6" fill="rgba(0,150,136,.12)" stroke="rgba(0,150,136,.4)"/>
+              <text x="235" y="216" text-anchor="middle" fill="currentColor" font-size="12" font-weight="600">Annotation</text>
+              <!-- VCF -->
+              <rect x="200" y="6" width="120" height="30" rx="6" fill="rgba(0,188,212,.08)" stroke="rgba(0,188,212,.3)"/>
+              <text x="260" y="26" text-anchor="middle" fill="currentColor" font-size="12" font-weight="600">VCF</text>
+            </g>
+            <!-- Path labels -->
+            <text x="80" y="270" text-anchor="middle" fill="currentColor" font-size="9" opacity=".4" font-weight="500" letter-spacing="1">GPU PIPELINE</text>
+            <text x="260" y="270" text-anchor="middle" fill="currentColor" font-size="9" opacity=".4" font-weight="500" letter-spacing="1">DIRECT UPLOAD</text>
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="aiva-metric">
-    <span class="aiva-metric__value">Automated</span>
-    <span class="aiva-metric__label">Variant annotation</span>
-  </div>
-  <div class="aiva-metric">
-    <span class="aiva-metric__value">ACMG/AMP</span>
-    <span class="aiva-metric__label">Classification standard</span>
-  </div>
-  <div class="aiva-metric">
-    <span class="aiva-metric__value">REST API</span>
-    <span class="aiva-metric__label">Full programmatic access</span>
+  <div class="aiva-feature__body">
+    <span class="aiva-feature__label">Get Started</span>
+    <h2 class="aiva-feature__title">Start from FASTQ or VCF.</h2>
+    <p class="aiva-feature__desc">Upload raw sequencing data and let GPU-accelerated Parabricks pipelines call variants, generate BAMs, and assign PGx star alleles. Or skip the pipeline entirely -- drop a VCF (small or structural variants) and AIVA annotates it for analysis.</p>
+    <ul class="aiva-feature__bullets">
+      <li>Small variant calling powered by NVIDIA Parabricks on GPUs</li>
+      <li>BAM file generation with direct IGV links for visual review</li>
+      <li>Pharmacogenomic variant calling and star-allele assignment</li>
+      <li>Automated annotation with ClinVar, gnomAD, and DITTO scoring</li>
+    </ul>
+    <a href="samples/" class="aiva-feature__link">Samples & Uploads →</a>
   </div>
 </div>
 
-<!-- FEATURE 1 – AIVA CHAT -->
-<div class="aiva-feature">
+<!-- FEATURE 2 – AIVA CHAT (reversed) -->
+<div class="aiva-feature aiva-feature--reverse">
   <div class="aiva-feature__visual">
     <div class="aiva-feature__mockup">
       <div class="aiva-mockup__bar">
@@ -69,7 +108,7 @@ hide:
         <div class="aiva-chat__msg aiva-chat__msg--user">Which variants have ACMG class ≥ 4?</div>
         <div class="aiva-chat__msg aiva-chat__msg--ai">
           <span class="aiva-chat__label">AIVA</span>
-          Found 12 pathogenic variants. Showing top results by CADD score…
+          Found 12 pathogenic variants. Showing top results by classification…
         </div>
         <div class="aiva-chat__rows">
           <div class="aiva-chat__row">
@@ -89,22 +128,21 @@ hide:
     </div>
   </div>
   <div class="aiva-feature__body">
-    <span class="aiva-feature__label">AI Assistant</span>
-    <h2 class="aiva-feature__title">Your genomics expert, always on</h2>
-    <p class="aiva-feature__desc">AIVA Chat is a purpose-built AI assistant that understands your variant data. Ask natural-language questions, run Python code, search literature, and annotate variants — without leaving the platform.</p>
+    <span class="aiva-feature__label">AIVA Chat</span>
+    <h2 class="aiva-feature__title">Your AI Clinical Analyst, not just an assistant</h2>
+    <p class="aiva-feature__desc">AIVA Chat does the work a clinical analyst does in seconds instead of hours. Ask a question in plain English and get classified, evidence-backed answers grounded in your samples' data.</p>
     <ul class="aiva-feature__bullets">
-      <li>Query millions of rows with plain-English prompts</li>
-      <li>Biomedical literature search built-in</li>
-      <li>Phenotype-to-gene prioritization</li>
-      <li>Knowledge graph exploration for variant context</li>
-      <li>Code interpreter for custom analysis scripts</li>
+      <li>Triage and classify variants with a single prompt</li>
+      <li>Automated literature review with cited evidence</li>
+      <li>HPO-driven gene prioritization</li>
+      <li>Knowledge graph associations between genes, diseases, drugs, etc.</li>
     </ul>
-    <a href="aiva-chat/" class="aiva-feature__link">Explore AIVA Chat →</a>
+    <a href="aiva-chat/" class="aiva-feature__link">AIVA Chat →</a>
   </div>
 </div>
 
-<!-- FEATURE 2 – DATA TABLE (reversed) -->
-<div class="aiva-feature aiva-feature--reverse">
+<!-- FEATURE 3 – MANUAL ANALYSIS -->
+<div class="aiva-feature">
   <div class="aiva-feature__visual">
     <div class="aiva-feature__mockup">
       <div class="aiva-mockup__bar">
@@ -115,92 +153,38 @@ hide:
       </div>
       <div class="aiva-mockup__body">
         <div class="aiva-tbl__head">
-          <span>Gene</span><span>CHROM</span><span>CADD</span><span>Class</span>
+          <span>Gene</span><span>HGVS</span><span>DITTO</span><span>Class</span>
         </div>
         <div class="aiva-tbl__row">
-          <span>BRCA2</span><span>13q12</span><span>34.2</span>
+          <span>BRCA2</span><span>c.5946delT</span><span>0.97</span>
           <span class="aiva-badge aiva-badge--path">Path</span>
         </div>
         <div class="aiva-tbl__row aiva-tbl__row--alt">
-          <span>PTEN</span><span>10q23</span><span>28.7</span>
+          <span>PTEN</span><span>c.388C>T</span><span>0.91</span>
           <span class="aiva-badge aiva-badge--lpath">LP</span>
         </div>
         <div class="aiva-tbl__row">
-          <span>APC</span><span>5q22</span><span>22.1</span>
+          <span>APC</span><span>c.3920T>A</span><span>0.54</span>
           <span class="aiva-badge aiva-badge--vus">VUS</span>
         </div>
         <div class="aiva-tbl__row aiva-tbl__row--alt">
-          <span>RB1</span><span>13q14</span><span>19.4</span>
+          <span>RB1</span><span>c.2117G>A</span><span>0.42</span>
           <span class="aiva-badge aiva-badge--vus">VUS</span>
         </div>
-        <div class="aiva-tbl__foot">50M+ rows · real-time filtering</div>
+        <div class="aiva-tbl__foot">whole genome scale · real-time filtering</div>
       </div>
     </div>
   </div>
   <div class="aiva-feature__body">
-    <span class="aiva-feature__label">Data Table</span>
-    <h2 class="aiva-feature__title">Millions of rows. Zero lag.</h2>
-    <p class="aiva-feature__desc">AIVA's virtualized data table renders large cohorts instantly. Filter, sort, flag, and comment at the row level — with full keyboard navigation and one-click exports.</p>
+    <span class="aiva-feature__label">Manual Analysis</span>
+    <h2 class="aiva-feature__title">Prefer hands-on? Analyze variants yourself.</h2>
+    <p class="aiva-feature__desc">Whole genome sequencing produces millions of variants per sample. Filter by gene, consequence, frequency, or ACMG class and see results in real time.</p>
     <ul class="aiva-feature__bullets">
-      <li>Handles 50M+ variant rows without pagination</li>
-      <li>Multi-column filters with Boolean logic</li>
-      <li>Export filtered views to CSV or TSV</li>
-      <li>Inline threaded comments per variant row</li>
+      <li>Virtualized rendering with zero performance degradation</li>
+      <li>One-click export of filtered views to CSV, TSV, or direct to report</li>
+      <li>Per-variant flagging, comments, and threaded review for clinical sign-off</li>
     </ul>
-    <a href="data-table/" class="aiva-feature__link">Explore the Data Table →</a>
-  </div>
-</div>
-
-<!-- FEATURE 3 – ANALYSIS -->
-<div class="aiva-feature">
-  <div class="aiva-feature__visual">
-    <div class="aiva-feature__mockup">
-      <div class="aiva-mockup__bar">
-        <span class="aiva-mockup__dot aiva-mockup__dot--red"></span>
-        <span class="aiva-mockup__dot aiva-mockup__dot--yellow"></span>
-        <span class="aiva-mockup__dot aiva-mockup__dot--green"></span>
-        <span class="aiva-mockup__title">Analysis Hub</span>
-      </div>
-      <div class="aiva-mockup__body">
-        <div class="aiva-hub__grid">
-          <div class="aiva-hub__card">
-            <div class="aiva-hub__icon aiva-hub__icon--acmg"></div>
-            <span>ACMG/AMP</span>
-          </div>
-          <div class="aiva-hub__card">
-            <div class="aiva-hub__icon aiva-hub__icon--pgx"></div>
-            <span>PGx Panel</span>
-          </div>
-          <div class="aiva-hub__card">
-            <div class="aiva-hub__icon aiva-hub__icon--sv"></div>
-            <span>Struct. Vars</span>
-          </div>
-          <div class="aiva-hub__card">
-            <div class="aiva-hub__icon aiva-hub__icon--cat"></div>
-            <span>Categories</span>
-          </div>
-        </div>
-        <div class="aiva-hub__bar-chart">
-          <div class="aiva-hub__bar" style="height:70%"></div>
-          <div class="aiva-hub__bar" style="height:45%"></div>
-          <div class="aiva-hub__bar" style="height:85%"></div>
-          <div class="aiva-hub__bar" style="height:55%"></div>
-          <div class="aiva-hub__bar" style="height:30%"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="aiva-feature__body">
-    <span class="aiva-feature__label">Tertiary Analysis</span>
-    <h2 class="aiva-feature__title">From raw variants to clinical insight</h2>
-    <p class="aiva-feature__desc">Category-based analysis workflows, ACMG/AMP variant classification, and pharmacogenomics insights — structured to match clinical review standards.</p>
-    <ul class="aiva-feature__bullets">
-      <li>ACMG/AMP evidence-based variant scoring</li>
-      <li>Pharmacogenomics (PGx) panel interpretation</li>
-      <li>Analysis Hub with curated category cards</li>
-      <li>Public classifier available without login</li>
-    </ul>
-    <a href="analysis/" class="aiva-feature__link">Explore Analysis →</a>
+    <a href="data-table/" class="aiva-feature__link">Data Table →</a>
   </div>
 </div>
 
@@ -248,18 +232,20 @@ hide:
     <p class="aiva-feature__desc">AI-assisted auto-fill populates report sections from your variant data and analysis findings. Customizable templates, sample linking, and one-click export.</p>
     <ul class="aiva-feature__bullets">
       <li>AI Auto-Fill drafts interpretations automatically</li>
-      <li>Link multiple samples to a single report</li>
-      <li>Custom report templates per assay type</li>
-      <li>Export to PDF or Word-compatible formats</li>
+      <li>Edit and refine auto-generated content</li>
+      <li>Upload custom report templates per assay type</li>
+      <li>Sign and export reports</li>
     </ul>
-    <a href="reports/" class="aiva-feature__link">Explore Reports →</a>
+    <a href="reports/" class="aiva-feature__link">Reports →</a>
   </div>
 </div>
+
+---
 
 <!-- CAPABILITIES GRID -->
 <div class="aiva-section">
   <span class="aiva-section__label">Full Platform</span>
-  <h2 class="aiva-section__title">Everything you need, nothing you don't</h2>
+  <h2 class="aiva-section__title" style="border:none;">Everything you need in one platform</h2>
   <p class="aiva-section__desc">Every module works together — no stitching tools, no manual data handoff.</p>
   <div class="aiva-cards">
     <a href="samples/" class="aiva-card">
@@ -286,11 +272,6 @@ hide:
       <span class="aiva-card__icon aiva-icon--shield"></span>
       <span class="aiva-card__title">HIPAA Compliance</span>
       <span class="aiva-card__desc">PHI detection, full audit trail, and enterprise-grade data security.</span>
-    </a>
-    <a href="admin/" class="aiva-card">
-      <span class="aiva-card__icon aiva-icon--admin"></span>
-      <span class="aiva-card__title">Administration</span>
-      <span class="aiva-card__desc">User management, announcements, and org-level configuration.</span>
     </a>
   </div>
 </div>

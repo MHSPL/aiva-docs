@@ -179,14 +179,10 @@ nav:
       - Classification API: api/classification-api.md
       - Export API: api/export-api.md
       - MCP Setup: api/mcp-setup.md
-  - Administration:
-      - admin/index.md
-      - Compliance:
-          - compliance/index.md
-          - HIPAA: compliance/hipaa.md
-          - Audit Trail: compliance/audit-trail.md
-      - User Management: admin/user-management.md
-      - Announcements: admin/announcements.md
+  - Compliance:
+      - compliance/index.md
+      - HIPAA: compliance/hipaa.md
+      - Audit Trail: compliance/audit-trail.md
   - Resources:
       - FAQ: faq.md
       - Glossary: glossary.md
