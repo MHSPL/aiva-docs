@@ -5,7 +5,7 @@ description: Browse, create, and share reusable AI analysis playbooks in AIVA fo
 
 # Playbooks
 
-Playbooks are reusable, step-by-step instructions that guide the AIVA AI assistant through standardized analysis workflows. Instead of typing the same sequence of prompts for every sample, you can create or select a playbook that automates the process -- ensuring consistency and saving time.
+Playbooks are reusable, step-by-step instructions that guide the AIVA AI assistant through standardized analysis workflows. Instead of typing the same sequence of prompts for every sample, you can create or select a playbook that automates the process, ensuring consistency and saving time.
 
 ---
 
@@ -13,10 +13,10 @@ Playbooks are reusable, step-by-step instructions that guide the AIVA AI assista
 
 A playbook is a structured set of instructions that tells AIVA:
 
-- **What to analyze** -- Which aspects of the data to examine.
-- **In what order** -- The sequence of analysis steps.
-- **Using which tools** -- The specific AIVA tools to invoke at each step.
-- **How to report** -- The format and detail level of the output.
+- **What to analyze**: Which aspects of the data to examine.
+- **In what order**: The sequence of analysis steps.
+- **Using which tools**: The specific AIVA tools to invoke at each step.
+- **How to report**: The format and detail level of the output.
 
 When you run a playbook, AIVA follows the instructions step by step, invoking the appropriate tools and presenting results in a structured format.
 
@@ -24,11 +24,11 @@ When you run a playbook, AIVA follows the instructions step by step, invoking th
 
 ## Key Features
 
-- **Marketplace** -- Browse community-contributed playbooks for common analysis scenarios.
-- **Custom creation** -- Write your own playbooks with step-by-step instructions.
-- **Forking** -- Copy and modify existing playbooks to suit your needs.
-- **Version control** -- Track changes to playbooks over time.
-- **Sharing** -- Publish playbooks publicly or share within your team.
+- **Marketplace**: Browse community-contributed playbooks for common analysis scenarios.
+- **Custom creation**: Write your own playbooks with step-by-step instructions.
+- **Forking**: Copy and modify existing playbooks to suit your needs.
+- **Version control**: Track changes to playbooks over time.
+- **Sharing**: Publish playbooks publicly or share within your team.
 
 ---
 

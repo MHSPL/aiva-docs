@@ -505,12 +505,12 @@ Upload a VCF file with Small Variant Annotation enabled.
 
 Small Variant Annotation adds the following fields to your variant data:
 
-- **Consequence** -- predicted variant consequence (e.g., missense_variant, stop_gained)
-- **Gene Symbol** -- HGNC gene symbol
-- **SIFT** -- SIFT prediction and score
-- **gnomAD** -- Population allele frequencies
-- **ClinVar** -- Clinical significance
-- **Amino Acid** -- Amino acid change information
+- **Consequence**: predicted variant consequence (e.g., missense_variant, stop_gained)
+- **Gene Symbol**: HGNC gene symbol
+- **SIFT**: SIFT prediction and score
+- **gnomAD**: Population allele frequencies
+- **ClinVar**: Clinical significance
+- **Amino Acid**: Amino acid change information
 
 ### Request
 
@@ -684,12 +684,12 @@ Upload a VCF file with Structural Variant Annotation enabled.
 
 Structural Variant Annotation is designed for structural variant VCF files containing variant types such as:
 
-- **DEL** -- Deletions
-- **DUP** -- Duplications
-- **INS** -- Insertions
-- **INV** -- Inversions
-- **BND** -- Breakends
-- **CNV** -- Copy number variants
+- **DEL**: Deletions
+- **DUP**: Duplications
+- **INS**: Insertions
+- **INV**: Inversions
+- **BND**: Breakends
+- **CNV**: Copy number variants
 
 Structural Variant Annotation adds the following annotations:
 

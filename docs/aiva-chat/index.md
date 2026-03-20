@@ -1,6 +1,6 @@
 ---
 title: AIVA Chat
-description: Overview of AIVA's AI assistant -- AIVA -- with specialized genomic analysis tools, natural language queries, and real-time streaming responses.
+description: Overview of AIVA's AI assistant (AIVA) with specialized genomic analysis tools, natural language queries, and real-time streaming responses.
 ---
 
 # AIVA Chat
@@ -15,7 +15,7 @@ AIVA is more than a chatbot. It has access to a suite of specialized tools that 
 
 | Tool | What It Does |
 |------|-------------|
-| **Genomic Data Query** | Queries your uploaded variant data directly. Ask about specific genes, filter by allele frequency, count variants by consequence -- all in natural language. |
+| **Genomic Data Query** | Queries your uploaded variant data directly. Ask about specific genes, filter by allele frequency, count variants by consequence, all in natural language. |
 | **Web Search** | Searches the web and scrapes pages for up-to-date information on genes, diseases, therapies, and guidelines. |
 | **Variant Annotation** | Performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen for individual variants. |
 | **Biomedical Literature** | Searches biomedical literature by gene, disease, chemical, or mutation to find relevant publications. |
@@ -82,18 +82,18 @@ End-to-end examples showing how to combine multiple tools for common genomic ana
 
 AIVA uses streaming server-sent events (SSE), which means:
 
-- **Responses stream in real time** -- You see the answer as it is generated, word by word, rather than waiting for the entire response.
-- **Tool calls are transparent** -- When AIVA invokes a tool (e.g., querying your database), you see the tool name and a summary of what it did, so you can verify the approach.
-- **Results are richly formatted** -- Tool outputs are rendered as interactive tables, charts, JSON, or formatted markdown depending on the data type.
+- **Responses stream in real time**: You see the answer as it is generated, word by word, rather than waiting for the entire response.
+- **Tool calls are transparent**: When AIVA invokes a tool (e.g., querying your database), you see the tool name and a summary of what it did, so you can verify the approach.
+- **Results are richly formatted**: Tool outputs are rendered as interactive tables, charts, JSON, or formatted markdown depending on the data type.
 
 ### Tool Selection
 
 You do not need to tell AIVA which tool to use. Based on your question, it automatically selects the appropriate tool or combination of tools. For example:
 
-- "How many pathogenic variants are in my sample?" -- AIVA uses the **Genomic Data Query** tool to query your data.
-- "What does the latest literature say about BRCA1?" -- AIVA uses **Biomedical Literature** and/or **Web Search**.
-- "Plot the allele frequency distribution" -- AIVA uses the **Code Interpreter** to generate a matplotlib chart.
-- "Are there any clinical trials for TP53 mutations in breast cancer?" -- AIVA uses the **Clinical Trials** tool.
+- "How many pathogenic variants are in my sample?": AIVA uses the **Genomic Data Query** tool to query your data.
+- "What does the latest literature say about BRCA1?": AIVA uses **Biomedical Literature** and/or **Web Search**.
+- "Plot the allele frequency distribution": AIVA uses the **Code Interpreter** to generate a matplotlib chart.
+- "Are there any clinical trials for TP53 mutations in breast cancer?": AIVA uses the **Clinical Trials** tool.
 
 ### Enabling and Disabling Tools
 

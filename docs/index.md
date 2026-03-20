@@ -8,7 +8,7 @@ hide:
 
 # Whole Genome Interpretation in Minutes, Not Weeks
 
-AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report in under 1 hour, or drop a VCF and have classified, annotated results in approximately 5 minutes. AIVA automates variant annotation, ACMG/AMP classification, literature review, and report generation -- delivering 90%+ pathogenic sensitivity in a single platform built for clinical-grade genomics.
+AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report in under 1 hour, or drop a VCF and have classified, annotated results in approximately 5 minutes. AIVA automates variant annotation, ACMG/AMP classification, literature review, and report generation, delivering 90%+ pathogenic sensitivity in a single platform built for clinical-grade genomics.
 
 ---
 
@@ -83,7 +83,7 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
   <div class="aiva-feature__body">
     <span class="aiva-feature__label">Get Started</span>
     <h2 class="aiva-feature__title">Start from FASTQ or VCF.</h2>
-    <p class="aiva-feature__desc">Upload raw sequencing data and let GPU-accelerated Parabricks pipelines call variants, generate BAMs, and assign PGx star alleles. Or skip the pipeline entirely -- drop a VCF (small or structural variants) and AIVA annotates it for analysis.</p>
+    <p class="aiva-feature__desc">Upload raw sequencing data and let GPU-accelerated Parabricks pipelines call variants, generate BAMs, and assign PGx star alleles. Or skip the pipeline entirely: drop a VCF (small or structural variants) and AIVA annotates it for analysis.</p>
     <ul class="aiva-feature__bullets">
       <li>Small variant calling powered by NVIDIA Parabricks on GPUs</li>
       <li>BAM file generation with direct IGV links for visual review</li>
@@ -242,7 +242,7 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
 <div class="aiva-section">
   <span class="aiva-section__label">Full Platform</span>
   <h2 class="aiva-section__title" style="border:none;">Everything you need in one platform</h2>
-  <p class="aiva-section__desc">Every module works together — no stitching tools, no manual data handoff.</p>
+  <p class="aiva-section__desc">Every module works together. No stitching tools, no manual data handoff.</p>
   <div class="aiva-cards">
     <a href="samples/" class="aiva-card">
       <span class="aiva-card__title">Samples &amp; Uploads</span>
@@ -331,7 +331,7 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
     <a href="classification/" class="aiva-quicklink">
       <div class="aiva-quicklink__inner">
         <span class="aiva-quicklink__title">Variant Classifier</span>
-        <span class="aiva-quicklink__desc">Public ACMG/AMP variant classification tool — no login needed</span>
+        <span class="aiva-quicklink__desc">Public ACMG/AMP variant classification tool, no login needed</span>
       </div>
       <span class="aiva-quicklink__arrow">→</span>
     </a>

@@ -33,10 +33,10 @@ Structural Variant Annotation provides annotations across multiple categories:
 
 The system creates a background job pipeline:
 
-1. **Upload/Download** -- The file is uploaded or downloaded from a [cloud URL](cloud-urls.md).
-2. **Structural Variant Annotation** -- The structural variant annotation engine processes the file, annotating each structural variant.
-3. **Parsing** -- The annotated output is parsed and loaded into the database.
-4. **Ready** -- The sample appears in your sample list with annotation columns available.
+1. **Upload/Download**: The file is uploaded or downloaded from a [cloud URL](cloud-urls.md).
+2. **Structural Variant Annotation**: The structural variant annotation engine processes the file, annotating each structural variant.
+3. **Parsing**: The annotated output is parsed and loaded into the database.
+4. **Ready**: The sample appears in your sample list with annotation columns available.
 
 Monitor job progress in the [Job Manager](job-monitoring.md).
 
@@ -60,7 +60,7 @@ Structural Variant Annotation availability follows the same tier structure as Sm
 After annotation completes, the generated columns are available in the [Data Table](../data-table/index.md):
 
 - Use the [column chooser](../data-table/navigation-and-layout.md#column-chooser) to add annotation columns to your view.
-- [Filter](../data-table/filtering.md) on annotation fields to isolate SVs of interest -- for example, filter by ACMG class or by overlap with known pathogenic SVs.
+- [Filter](../data-table/filtering.md) on annotation fields to isolate SVs of interest (for example, filter by ACMG class or by overlap with known pathogenic SVs).
 - Ask [AIVA](../aiva-chat/index.md) to query these annotations. For example: "Which structural variants overlap known pathogenic CNVs in ClinGen?"
 
 ---

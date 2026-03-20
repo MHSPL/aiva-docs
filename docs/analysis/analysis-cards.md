@@ -40,7 +40,7 @@ The Protein Interactions card visualizes protein-protein interaction networks fo
 - Known functional relationships (activation, inhibition, binding)
 - Links to drug targets within the interaction network
 
-**When to use**: When you want to understand the broader molecular context of a variant -- which proteins the affected gene product interacts with, and whether those interactions have therapeutic relevance.
+**When to use**: When you want to understand the broader molecular context of a variant, including which proteins the affected gene product interacts with and whether those interactions have therapeutic relevance.
 
 **How to use**:
 
@@ -138,9 +138,9 @@ The Gene Summary card provides a comprehensive overview of a gene.
 
 Most cards accept input parameters:
 
-- **Gene symbol** -- The primary gene to analyze.
-- **Variant** -- A specific variant for focused analysis.
-- **Filters** -- Narrow results by evidence level, data source, or other criteria.
+- **Gene symbol**: The primary gene to analyze.
+- **Variant**: A specific variant for focused analysis.
+- **Filters**: Narrow results by evidence level, data source, or other criteria.
 
 ### Interacting with Results
 

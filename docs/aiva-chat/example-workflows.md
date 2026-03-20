@@ -245,8 +245,8 @@ This page provides step-by-step workflows demonstrating how to combine AIVA's to
 
 ## Tips for Building Your Own Workflows
 
-- **Start broad, then narrow** -- Begin with overview queries, then drill into specific variants or genes.
-- **Let AIVA chain tools** -- You can ask compound questions and AIVA will use multiple tools in sequence.
-- **Save important findings** -- [Flag variants](../collaboration/variant-flagging.md) and add [comments](../collaboration/threaded-comments.md) as you go.
-- **Use playbooks** -- For recurring workflows, create a [Playbook](../playbooks/index.md) that guides AIVA through the steps automatically.
-- **Export results** -- Use the [export features](../collaboration/exporting-flags-comments.md) to save your analysis for reports or downstream use.
+- **Start broad, then narrow**: Begin with overview queries, then drill into specific variants or genes.
+- **Let AIVA chain tools**: You can ask compound questions and AIVA will use multiple tools in sequence.
+- **Save important findings**: [Flag variants](../collaboration/variant-flagging.md) and add [comments](../collaboration/threaded-comments.md) as you go.
+- **Use playbooks**: For recurring workflows, create a [Playbook](../playbooks/index.md) that guides AIVA through the steps automatically.
+- **Export results**: Use the [export features](../collaboration/exporting-flags-comments.md) to save your analysis for reports or downstream use.

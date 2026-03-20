@@ -156,9 +156,9 @@ The API uses standard HTTP status codes:
 |------|---------|
 | `200` | Success |
 | `201` | Resource created |
-| `400` | Bad request -- check your parameters |
-| `401` | Unauthorized -- invalid or missing API key |
-| `403` | Forbidden -- insufficient permissions or subscription tier |
+| `400` | Bad request: check your parameters |
+| `401` | Unauthorized: invalid or missing API key |
+| `403` | Forbidden: insufficient permissions or subscription tier |
 | `404` | Resource not found |
 | `429` | Rate limit exceeded |
 | `500` | Internal server error |

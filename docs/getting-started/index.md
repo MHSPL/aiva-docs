@@ -27,7 +27,7 @@ Create your account with email or Google sign-in, verify your email address, and
 
 ### Navigating the UI
 
-Understand the main layout -- header, navigation tabs, sidebar, and content area -- along with theme switching and helpful shortcuts.
+Understand the main layout (header, navigation tabs, sidebar, and content area) along with theme switching and helpful shortcuts.
 
 [:octicons-arrow-right-24: Navigating the UI](navigating-the-ui.md)
 

@@ -62,16 +62,16 @@ Once logged in, access your profile settings from the user menu in the top-right
 
 ### User Menu Options
 
-- **Settings** -- Opens the configuration panel where you can manage model preferences and API settings.
-- **Upgrade Plan** -- Opens the payment modal to change your subscription tier. See [Subscription Tiers](subscription-tiers.md) for details.
-- **Log Out** -- Signs you out and returns you to the login page.
+- **Settings**: Opens the configuration panel where you can manage model preferences and API settings.
+- **Upgrade Plan**: Opens the payment modal to change your subscription tier. See [Subscription Tiers](subscription-tiers.md) for details.
+- **Log Out**: Signs you out and returns you to the login page.
 
 ### Model Configuration
 
 From the Settings panel, you can:
 
-- **Select your default AI model** -- Choose from available language models grouped by provider. This controls which model powers the AIVA assistant in your conversations.
-- **Manage API keys** -- Configure your own API keys for external services if your workflow requires it.
+- **Select your default AI model**: Choose from available language models grouped by provider. This controls which model powers the AIVA assistant in your conversations.
+- **Manage API keys**: Configure your own API keys for external services if your workflow requires it.
 
 !!! tip "Model selection is per-session"
     You can also switch models on the fly from the Chat interface without opening Settings. Your choice persists for the current session.

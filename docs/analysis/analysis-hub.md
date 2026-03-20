@@ -11,13 +11,13 @@ The Analysis Hub is a dedicated workspace for running structured, category-based
 
 ## Overview
 
-Unlike the free-form chat or the data table view, the Analysis Hub organizes your analysis into predefined **categories** -- each containing specialized **analysis cards** that target specific aspects of variant interpretation.
+Unlike the free-form chat or the data table view, the Analysis Hub organizes your analysis into predefined **categories**, each containing specialized **analysis cards** that target specific aspects of variant interpretation.
 
 Key concepts:
 
-- **Categories** -- Groupings of related analysis types (e.g., Clinical Significance, Pharmacogenomics, Protein Function). See [Categories](categories.md).
-- **Analysis Cards** -- Individual analysis panels within a category (e.g., PGx Card, Protein Interactions, Pathway Analysis). See [Analysis Cards](analysis-cards.md).
-- **Layout Management** -- Arrange, resize, and save panel layouts to match your workflow.
+- **Categories**: Groupings of related analysis types (e.g., Clinical Significance, Pharmacogenomics, Protein Function). See [Categories](categories.md).
+- **Analysis Cards**: Individual analysis panels within a category (e.g., PGx Card, Protein Interactions, Pathway Analysis). See [Analysis Cards](analysis-cards.md).
+- **Layout Management**: Arrange, resize, and save panel layouts to match your workflow.
 
 ---
 
@@ -69,7 +69,7 @@ Run several analysis cards simultaneously:
 1. Select an analysis card from the category.
 2. Configure any required inputs (e.g., gene name, variant identifier, phenotype terms).
 3. The card executes the analysis and displays results inline.
-4. Interact with results -- click on genes, variants, or drugs for more detail.
+4. Interact with results. Click on genes, variants, or drugs for more detail.
 
 ### Combining Analyses
 
@@ -85,10 +85,10 @@ The Analysis Hub is designed for multi-faceted interpretation:
 
 The Analysis Hub integrates with other AIVA features:
 
-- **Data Table** -- Variants identified in analysis cards can be located in the [Data Table](../data-table/index.md) for detailed examination.
-- **Variant Flagging** -- Flag variants directly from analysis card results using the [flagging system](../collaboration/variant-flagging.md).
-- **ACMG Classification** -- Apply [ACMG criteria](acmg-classification.md) to variants surfaced by analysis cards.
-- **Reports** -- Include analysis findings in [clinical reports](../reports/index.md).
+- **Data Table**: Variants identified in analysis cards can be located in the [Data Table](../data-table/index.md) for detailed examination.
+- **Variant Flagging**: Flag variants directly from analysis card results using the [flagging system](../collaboration/variant-flagging.md).
+- **ACMG Classification**: Apply [ACMG criteria](acmg-classification.md) to variants surfaced by analysis cards.
+- **Reports**: Include analysis findings in [clinical reports](../reports/index.md).
 
 !!! tip "Use presets for efficiency"
     Pre-configured category presets are available for common workflows like clinical variant interpretation, pharmacogenomic analysis, and rare disease gene prioritization. See [Categories](categories.md) for details.

@@ -5,7 +5,7 @@ description: Perform per-sample tertiary analysis in AIVA with a side-by-side da
 
 # Tertiary Analysis
 
-Tertiary analysis in AIVA provides a unified workspace where the data table and AI chat are displayed side by side. This layout is designed for focused, per-sample variant interpretation -- you can filter, sort, and flag variants in the table while simultaneously querying AIVA for context, literature, and computational analysis.
+Tertiary analysis in AIVA provides a unified workspace where the data table and AI chat are displayed side by side. This layout is designed for focused, per-sample variant interpretation. You can filter, sort, and flag variants in the table while simultaneously querying AIVA for context, literature, and computational analysis.
 
 ---
 

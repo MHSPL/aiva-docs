@@ -13,11 +13,11 @@ The Biomedical Literature tool searches NCBI's biomedical literature database, a
 
 The Biomedical Literature tool uses NCBI's entity annotation service, which automatically annotates PubMed abstracts and full-text articles with biomedical entities:
 
-- **Genes** -- Gene symbols and identifiers
-- **Diseases** -- Disease names and MeSH terms
-- **Chemicals** -- Drug names, compounds, and chemical identifiers
-- **Mutations** -- Specific variants and mutation types
-- **Species** -- Organism names
+- **Genes**: Gene symbols and identifiers
+- **Diseases**: Disease names and MeSH terms
+- **Chemicals**: Drug names, compounds, and chemical identifiers
+- **Mutations**: Specific variants and mutation types
+- **Species**: Organism names
 
 These annotations enable precise, entity-aware literature searches that go beyond simple keyword matching.
 
@@ -25,10 +25,10 @@ These annotations enable precise, entity-aware literature searches that go beyon
 
 ## Capabilities
 
-- **Entity-based search** -- Search by gene name, disease, chemical, or specific mutation with entity recognition.
-- **Article retrieval** -- Return PubMed article titles, abstracts, and publication metadata (authors, journal, year).
-- **Entity co-occurrence** -- Find articles that mention two or more entities together (e.g., a gene AND a disease).
-- **Annotated results** -- Returned abstracts include highlighted biomedical entities for quick scanning.
+- **Entity-based search**: Search by gene name, disease, chemical, or specific mutation with entity recognition.
+- **Article retrieval**: Return PubMed article titles, abstracts, and publication metadata (authors, journal, year).
+- **Entity co-occurrence**: Find articles that mention two or more entities together (e.g., a gene AND a disease).
+- **Annotated results**: Returned abstracts include highlighted biomedical entities for quick scanning.
 
 ---
 
@@ -71,8 +71,8 @@ AIVA summarizes the most relevant findings and provides PMIDs for further readin
 | Feature | Biomedical Literature | Web Search |
 |---------|----------------------|------------|
 | **Source** | PubMed-indexed literature | Entire web |
-| **Entity recognition** | Yes -- genes, diseases, chemicals, mutations | No |
-| **Structured metadata** | Yes -- PMID, authors, journal | Limited |
+| **Entity recognition** | Yes (genes, diseases, chemicals, mutations) | No |
+| **Structured metadata** | Yes (PMID, authors, journal) | Limited |
 | **Content type** | Peer-reviewed biomedical literature | Any web content |
 | **Best for** | Finding published evidence for variant interpretation | Finding guidelines, news, non-journal sources |
 
@@ -106,9 +106,9 @@ When exploring pharmacogenomic implications, find published evidence for drug-ge
 
 The Biomedical Literature tool pairs naturally with other AIVA tools:
 
-- **Variant Annotation + Biomedical Literature** -- Look up a variant's ClinVar classification, then find supporting literature.
-- **Knowledge Graph + Biomedical Literature** -- Explore a gene's interaction network, then find publications for specific interactions.
-- **Genomic Data Query + Biomedical Literature** -- Identify genes with the most variants in your sample, then search for literature on each.
-- **Clinical Trials + Biomedical Literature** -- Find published results from completed clinical trials.
+- **Variant Annotation + Biomedical Literature**: Look up a variant's ClinVar classification, then find supporting literature.
+- **Knowledge Graph + Biomedical Literature**: Explore a gene's interaction network, then find publications for specific interactions.
+- **Genomic Data Query + Biomedical Literature**: Identify genes with the most variants in your sample, then search for literature on each.
+- **Clinical Trials + Biomedical Literature**: Find published results from completed clinical trials.
 
 See [Example Workflows](example-workflows.md) for multi-tool analysis patterns.

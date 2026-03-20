@@ -60,17 +60,17 @@ After selecting your file, a configuration panel appears. Depending on the file 
 
 ### VCF-Specific Options
 
-- **Small Variant Annotation** -- Check this box to run small variant annotation on your VCF file during processing. This adds consequence predictions, gene symbols, transcript information, and more. This option is available on <span class="tier-badge tier-plus">Plus</span> and <span class="tier-badge tier-pro">Pro</span> tiers.
+- **Small Variant Annotation**: Check this box to run small variant annotation on your VCF file during processing. This adds consequence predictions, gene symbols, transcript information, and more. This option is available on <span class="tier-badge tier-plus">Plus</span> and <span class="tier-badge tier-pro">Pro</span> tiers.
 
-- **Structural Variant Annotation** -- Check this box to run structural variant annotation on your VCF file. Also restricted to <span class="tier-badge tier-plus">Plus</span> and <span class="tier-badge tier-pro">Pro</span> tiers.
+- **Structural Variant Annotation**: Check this box to run structural variant annotation on your VCF file. Also restricted to <span class="tier-badge tier-plus">Plus</span> and <span class="tier-badge tier-pro">Pro</span> tiers.
 
 !!! tip "Not sure about annotation?"
     You can always upload without annotation first and examine your raw data. Annotation can add significant processing time depending on file size, but it enriches your dataset with clinically relevant information that the AI assistant can then use for analysis.
 
 ### General Options
 
-- **Sample Name** -- Optionally provide a human-readable name for the sample. If left blank, the filename is used.
-- **Project** -- Optionally assign the upload to an existing project for organization and collaboration.
+- **Sample Name**: Optionally provide a human-readable name for the sample. If left blank, the filename is used.
+- **Project**: Optionally assign the upload to an existing project for organization and collaboration.
 
 ---
 
@@ -92,13 +92,13 @@ After submission, the upload enters the job processing pipeline. You can monitor
 
 Click the **Job Manager** icon in the header to open the jobs panel. Here you will see:
 
-- **Job status** -- Queued, Processing, Completed, or Failed.
-- **Progress details** -- The current stage of processing (downloading, annotating, parsing).
-- **Estimated time** -- For longer jobs, a rough estimate of remaining time.
+- **Job status**: Queued, Processing, Completed, or Failed.
+- **Progress details**: The current stage of processing (downloading, annotating, parsing).
+- **Estimated time**: For longer jobs, a rough estimate of remaining time.
 
 ### Real-Time Updates
 
-AIVA uses server-sent events (SSE) to push job status updates to your browser in real time. You do not need to refresh the page -- the status updates automatically.
+AIVA uses server-sent events (SSE) to push job status updates to your browser in real time. You do not need to refresh the page. The status updates automatically.
 
 !!! warning "Do not close your browser tab"
     While the job runs on the server and will complete even if you navigate away, keeping the tab open ensures you receive real-time status updates and are notified immediately when the job finishes.
@@ -115,9 +115,9 @@ Once the job completes successfully:
 
 The data table provides:
 
-- **Virtualized scrolling** -- Smoothly browse datasets with millions of rows without performance degradation.
-- **Column sorting and filtering** -- Click column headers to sort, or use the filter controls to narrow down to variants of interest.
-- **Server-side pagination** -- Data is fetched in pages from the server, keeping the interface responsive regardless of dataset size.
+- **Virtualized scrolling**: Smoothly browse datasets with millions of rows without performance degradation.
+- **Column sorting and filtering**: Click column headers to sort, or use the filter controls to narrow down to variants of interest.
+- **Server-side pagination**: Data is fetched in pages from the server, keeping the interface responsive regardless of dataset size.
 
 From the data table, you can:
 
@@ -136,13 +136,13 @@ For full details on the data table, see [Data Table](../data-table/index.md).
 ??? question "My upload failed. What should I do?"
     Open the Job Manager and check the error message on the failed job. Common causes include:
 
-    - **Unsupported file format** -- Ensure the file extension matches one of the supported types and the content is valid.
-    - **File too large** -- Your subscription tier may have a file size limit. See [Subscription Tiers](subscription-tiers.md).
-    - **Upload limit reached** -- Free accounts have a limited number of uploads. Upgrade your tier to continue.
-    - **Malformed VCF** -- The file must include a valid VCF header. Check that the `#CHROM` header line is present.
+    - **Unsupported file format**: Ensure the file extension matches one of the supported types and the content is valid.
+    - **File too large**: Your subscription tier may have a file size limit. See [Subscription Tiers](subscription-tiers.md).
+    - **Upload limit reached**: Free accounts have a limited number of uploads. Upgrade your tier to continue.
+    - **Malformed VCF**: The file must include a valid VCF header. Check that the `#CHROM` header line is present.
 
 ??? question "My Small Variant Annotation is taking a long time."
-    Small Variant Annotation involves running each variant through the annotation pipeline. For whole-genome VCF files with millions of variants, this can take several minutes. The job will complete in the background -- you can continue using other features while it processes.
+    Small Variant Annotation involves running each variant through the annotation pipeline. For whole-genome VCF files with millions of variants, this can take several minutes. The job will complete in the background, and you can continue using other features while it processes.
 
 ??? question "I uploaded a CSV but the columns look wrong."
     Ensure your CSV file uses commas as delimiters and that the first row contains column headers. If your file uses a different delimiter, rename it with the appropriate extension (`.tsv` for tab-separated).

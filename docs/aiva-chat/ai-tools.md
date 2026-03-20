@@ -5,7 +5,7 @@ description: Comprehensive reference for all tools available to the AIVA AI assi
 
 # AI Tools Reference
 
-AIVA has access to a suite of specialized tools that it invokes automatically based on your questions. You do not need to specify which tool to use -- AIVA selects the appropriate tool (or combination of tools) based on the context of your query.
+AIVA has access to a suite of specialized tools that it invokes automatically based on your questions. You do not need to specify which tool to use. AIVA selects the appropriate tool (or combination of tools) based on the context of your query.
 
 This page provides a detailed reference for each available tool.
 
@@ -20,8 +20,8 @@ The Genomic Data Query tool allows AIVA to query your uploaded variant data dire
 - Query any column in your uploaded samples, including VCF fields, INFO subfields, and annotation columns.
 - Aggregate data with counts, averages, grouping, and statistical summaries.
 - Filter and sort results based on any combination of criteria.
-- Access-controlled per user -- AIVA can only query data belonging to the current user's samples.
-- Read-only -- AIVA cannot modify or delete your data.
+- Access-controlled per user: AIVA can only query data belonging to the current user's samples.
+- Read-only: AIVA cannot modify or delete your data.
 
 **Example prompts**:
 
@@ -102,10 +102,10 @@ The Code Interpreter tool executes Python code in a sandboxed environment with a
 
 **Available libraries**:
 
-- `pandas` -- Data manipulation and analysis
-- `numpy` -- Numerical computing
-- `scipy` -- Statistical tests and scientific computing
-- `matplotlib` -- Chart and plot generation
+- `pandas`: Data manipulation and analysis
+- `numpy`: Numerical computing
+- `scipy`: Statistical tests and scientific computing
+- `matplotlib`: Chart and plot generation
 
 **Capabilities**:
 
@@ -181,7 +181,7 @@ The Phenotype-Gene Prioritization tool maps clinical phenotype terms (HPO terms)
 
 ---
 
-## MCP -- Custom Tool Integration
+## MCP: Custom Tool Integration
 
 The Model Context Protocol (MCP) integration allows you to connect your own external tools and servers to AIVA. This is an advanced feature for users who want to extend AIVA's capabilities with custom or proprietary data sources.
 

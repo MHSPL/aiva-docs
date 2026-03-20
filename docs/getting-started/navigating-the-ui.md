@@ -17,19 +17,19 @@ The interface is divided into three regions:
 
 The header bar runs across the top of every page and contains:
 
-- **Navigation Tabs** -- The primary way to move between sections (see below).
-- **Theme Toggle** -- Switch between light and dark mode using the palette button in the header.
-- **Job Manager** -- Opens a panel showing the status of all active and recent background jobs (uploads, annotations, parsing).
-- **What's New** -- A bell-style indicator that appears when there are unread platform announcements. Click to open the What's New modal.
-- **Help** -- Opens the Help modal with quick-reference information and links.
-- **User Menu** -- Access your profile settings, subscription upgrade, and sign-out option.
+- **Navigation Tabs**: The primary way to move between sections (see below).
+- **Theme Toggle**: Switch between light and dark mode using the palette button in the header.
+- **Job Manager**: Opens a panel showing the status of all active and recent background jobs (uploads, annotations, parsing).
+- **What's New**: A bell-style indicator that appears when there are unread platform announcements. Click to open the What's New modal.
+- **Help**: Opens the Help modal with quick-reference information and links.
+- **User Menu**: Access your profile settings, subscription upgrade, and sign-out option.
 
 ### Sidebar (Chat Mode)
 
 When you are on the Chat page, a collapsible sidebar appears on the left side of the screen:
 
-- **Expanded view** -- Shows your full conversation history with titles, timestamps, and a search/filter capability. Click any conversation to reload it. Use the **New Conversation** button at the top to start fresh.
-- **Collapsed view** -- Displays a narrow icon strip with quick-access buttons for your recent conversations and a button to expand the full sidebar.
+- **Expanded view**: Shows your full conversation history with titles, timestamps, and a search/filter capability. Click any conversation to reload it. Use the **New Conversation** button at the top to start fresh.
+- **Collapsed view**: Displays a narrow icon strip with quick-access buttons for your recent conversations and a button to expand the full sidebar.
 
 The sidebar is only visible on Chat pages. On other sections (Samples, Reports, Playbooks, API, etc.), the full width is given to the content area.
 
@@ -59,8 +59,8 @@ Administrators also see:
 
 Additional sections accessible from within pages:
 
-- **Analysis** -- Reached by clicking "Analyze" on a sample. Opens the tertiary analysis workspace with category-based views.
-- **API** -- Accessed from the header or user menu. Contains API documentation, key management, and MCP setup instructions.
+- **Analysis**: Reached by clicking "Analyze" on a sample. Opens the tertiary analysis workspace with category-based views.
+- **API**: Accessed from the header or user menu. Contains API documentation, key management, and MCP setup instructions.
 
 !!! info "Active tab indicator"
     The currently active tab is highlighted with an accent-colored underline. If the AIVA agent is running in the background while you are on another tab, the Chat tab shows a subtle glow effect so you know a response is being generated.
@@ -101,8 +101,8 @@ Click the **Help** icon in the header to open an overlay with:
 
 AIVA adapts to different screen sizes:
 
-- **Desktop** -- Full tab labels with icons, expanded sidebar available in chat mode.
-- **Mobile** -- Tabs become a horizontally scrollable strip with compact labels. The sidebar collapses to save space.
+- **Desktop**: Full tab labels with icons, expanded sidebar available in chat mode.
+- **Mobile**: Tabs become a horizontally scrollable strip with compact labels. The sidebar collapses to save space.
 
 !!! tip "Navigating on mobile"
     On smaller screens, swipe the navigation tab bar horizontally to reveal tabs that do not fit on screen.

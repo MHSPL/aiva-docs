@@ -17,7 +17,7 @@ API keys authenticate your requests to the AIVA API. Each key is tied to your us
 4. Enter a **name** for the key (e.g., "Lab Pipeline," "Research Script").
 5. Optionally set an **expiration date**.
 6. Click **Create**.
-7. **Copy the key immediately** -- it is only displayed once.
+7. **Copy the key immediately**: it is only displayed once.
 
 !!! warning "Store your key securely"
     The full API key is shown only at the time of creation. AIVA does not store the complete key and cannot retrieve it later. If you lose a key, revoke it and create a new one.
@@ -95,11 +95,11 @@ If the key is invalid or missing, you will receive a `401 Unauthorized` response
 
 View all active API keys from the **API Keys** section in Settings. Each key displays:
 
-- **Name** -- The label you assigned.
-- **Created** -- Date the key was created.
-- **Last used** -- Date and time of the most recent API call with this key.
-- **Expires** -- Expiration date (if set).
-- **Key prefix** -- The first few characters of the key for identification.
+- **Name**: The label you assigned.
+- **Created**: Date the key was created.
+- **Last used**: Date and time of the most recent API call with this key.
+- **Expires**: Expiration date (if set).
+- **Key prefix**: The first few characters of the key for identification.
 
 ### Revoking a Key
 

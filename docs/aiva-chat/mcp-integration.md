@@ -15,10 +15,10 @@ The Model Context Protocol is an open standard for connecting AI assistants to e
 
 Common use cases for MCP integration:
 
-- **Internal databases** -- Connect AIVA to institutional variant databases, LIMS, or EHR systems.
-- **Custom analysis pipelines** -- Expose bioinformatics pipelines or custom scoring algorithms as tools.
-- **Proprietary knowledge bases** -- Make internal curated knowledge (e.g., institutional classification databases) available to AIVA.
-- **Third-party APIs** -- Integrate external services not included in AIVA's default tool set.
+- **Internal databases**: Connect AIVA to institutional variant databases, LIMS, or EHR systems.
+- **Custom analysis pipelines**: Expose bioinformatics pipelines or custom scoring algorithms as tools.
+- **Proprietary knowledge bases**: Make internal curated knowledge (e.g., institutional classification databases) available to AIVA.
+- **Third-party APIs**: Integrate external services not included in AIVA's default tool set.
 
 ---
 
@@ -38,9 +38,9 @@ Your MCP server must implement the Model Context Protocol specification. Each to
 2. Navigate to the tool configuration panel.
 3. Select **MCP Servers** or **Custom Tools**.
 4. Provide the server connection details:
-    - **Server URL** -- The endpoint where your MCP server is running.
-    - **Server name** -- A display name for the server.
-    - **Authentication** (if required) -- API key or token for server access.
+    - **Server URL**: The endpoint where your MCP server is running.
+    - **Server name**: A display name for the server.
+    - **Authentication** (if required): API key or token for server access.
 5. Save the configuration.
 
 ### Step 3: Verify the Connection

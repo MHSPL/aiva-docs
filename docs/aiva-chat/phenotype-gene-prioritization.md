@@ -5,7 +5,7 @@ description: Map clinical phenotypes to candidate genes using HPO terms for rare
 
 # Phenotype-Gene Prioritization
 
-The Phenotype-Gene Prioritization tool maps clinical phenotype descriptions to ranked candidate genes using a phenotype-gene mapping algorithm. By inputting Human Phenotype Ontology (HPO) terms or plain-language phenotype descriptions, you receive a prioritized list of genes most likely associated with the observed phenotypes -- a powerful aid for rare disease diagnosis and gene panel prioritization.
+The Phenotype-Gene Prioritization tool maps clinical phenotype descriptions to ranked candidate genes using a phenotype-gene mapping algorithm. By inputting Human Phenotype Ontology (HPO) terms or plain-language phenotype descriptions, you receive a prioritized list of genes most likely associated with the observed phenotypes, a powerful aid for rare disease diagnosis and gene panel prioritization.
 
 ---
 
@@ -23,11 +23,11 @@ Key properties:
 
 ## Capabilities
 
-- **HPO term input** -- Provide specific HPO identifiers (e.g., HP:0001250 for "Seizures").
-- **Plain-language input** -- Describe phenotypes in natural language; AIVA maps them to HPO terms.
-- **Multiple phenotypes** -- Combine several phenotype terms for more specific gene ranking.
-- **Scored results** -- Each candidate gene receives a score reflecting the strength of its phenotype match.
-- **Gene details** -- Results include gene symbols, scores, and associated conditions.
+- **HPO term input**: Provide specific HPO identifiers (e.g., HP:0001250 for "Seizures").
+- **Plain-language input**: Describe phenotypes in natural language; AIVA maps them to HPO terms.
+- **Multiple phenotypes**: Combine several phenotype terms for more specific gene ranking.
+- **Scored results**: Each candidate gene receives a score reflecting the strength of its phenotype match.
+- **Gene details**: Results include gene symbols, scores, and associated conditions.
 
 ---
 
@@ -88,10 +88,10 @@ Verify that a gene panel covers the most relevant genes for a phenotype combinat
 
 The Phenotype-Gene Prioritization tool is most effective as the starting point in a multi-tool workflow:
 
-- **Phenotype-Gene Prioritization + Genomic Data Query** -- Identify candidate genes, then search your variant data for variants in those genes.
-- **Phenotype-Gene Prioritization + Variant Annotation** -- Prioritize candidate genes, then look up ClinVar classifications for variants found in those genes.
-- **Phenotype-Gene Prioritization + Biomedical Literature** -- Get candidate genes, then search for supporting literature linking those genes to the patient's phenotype.
-- **Phenotype-Gene Prioritization + Knowledge Graph** -- Explore the protein interaction network for top candidate genes.
+- **Phenotype-Gene Prioritization + Genomic Data Query**: Identify candidate genes, then search your variant data for variants in those genes.
+- **Phenotype-Gene Prioritization + Variant Annotation**: Prioritize candidate genes, then look up ClinVar classifications for variants found in those genes.
+- **Phenotype-Gene Prioritization + Biomedical Literature**: Get candidate genes, then search for supporting literature linking those genes to the patient's phenotype.
+- **Phenotype-Gene Prioritization + Knowledge Graph**: Explore the protein interaction network for top candidate genes.
 
 See [Example Workflows](example-workflows.md) for end-to-end analysis patterns.
 

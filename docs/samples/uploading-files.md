@@ -59,9 +59,9 @@ Optionally assign the sample to an existing [project](../collaboration/projects.
 
 For VCF files, two optional annotation checkboxes appear:
 
-- **Small Variant Annotation** -- Runs small variant annotation to add consequence predictions, gene symbols, transcript information, and clinical significance. Available on <span class="tier-badge tier-trial">Trial</span>, <span class="tier-badge tier-plus">Plus</span>, and <span class="tier-badge tier-pro">Pro</span> tiers.
+- **Small Variant Annotation**: Runs small variant annotation to add consequence predictions, gene symbols, transcript information, and clinical significance. Available on <span class="tier-badge tier-trial">Trial</span>, <span class="tier-badge tier-plus">Plus</span>, and <span class="tier-badge tier-pro">Pro</span> tiers.
 
-- **Structural Variant Annotation** -- Annotates structural variants (CNVs, inversions, translocations) with clinical and functional context. Available on <span class="tier-badge tier-trial">Trial</span>, <span class="tier-badge tier-plus">Plus</span>, and <span class="tier-badge tier-pro">Pro</span> tiers.
+- **Structural Variant Annotation**: Annotates structural variants (CNVs, inversions, translocations) with clinical and functional context. Available on <span class="tier-badge tier-trial">Trial</span>, <span class="tier-badge tier-plus">Plus</span>, and <span class="tier-badge tier-pro">Pro</span> tiers.
 
 !!! note "Annotation adds processing time"
     Annotation enriches your data with clinically relevant information but increases processing time. For a whole-exome VCF with ~50,000 variants, Small Variant Annotation typically adds a few minutes. Whole-genome files with millions of variants may take longer. You can always upload without annotation and examine the raw data first.
@@ -89,13 +89,13 @@ graph LR
 
 ### Processing Pipeline
 
-1. **File Transfer** -- Your file is uploaded to the AIVA server and stored securely.
+1. **File Transfer**: Your file is uploaded to the AIVA server and stored securely.
 
-2. **Annotation** (if selected) -- Small Variant Annotation and/or Structural Variant Annotation processes your variants. New columns are appended to the data with annotation results (consequence, gene symbol, clinical significance scores, etc.).
+2. **Annotation** (if selected): Small Variant Annotation and/or Structural Variant Annotation processes your variants. New columns are appended to the data with annotation results (consequence, gene symbol, clinical significance scores, etc.).
 
-3. **Parsing** -- The file is parsed and loaded into the database using optimized bulk operations. This approach handles millions of rows efficiently.
+3. **Parsing**: The file is parsed and loaded into the database using optimized bulk operations. This approach handles millions of rows efficiently.
 
-4. **Completion** -- The sample appears in your sample list and is ready to open in the data table.
+4. **Completion**: The sample appears in your sample list and is ready to open in the data table.
 
 You can monitor each stage in real time using the [Job Manager](job-monitoring.md).
 
@@ -123,9 +123,9 @@ For full plan details, see [Subscription Tiers](../getting-started/subscription-
 ??? question "My upload failed immediately. What went wrong?"
     Check the error message in the [Job Manager](job-monitoring.md). Common causes include:
 
-    - **Unsupported file type** -- Only `.vcf`, `.vcf.gz`, `.csv`, `.tsv`, and `.txt` extensions are accepted.
-    - **Empty file** -- The file must contain data beyond the header row.
-    - **Upload limit reached** -- Your subscription tier may restrict the number of active samples. See [Subscription Tiers](../getting-started/subscription-tiers.md).
+    - **Unsupported file type**: Only `.vcf`, `.vcf.gz`, `.csv`, `.tsv`, and `.txt` extensions are accepted.
+    - **Empty file**: The file must contain data beyond the header row.
+    - **Upload limit reached**: Your subscription tier may restrict the number of active samples. See [Subscription Tiers](../getting-started/subscription-tiers.md).
 
 ??? question "My VCF file was rejected as malformed."
     VCF files must include a valid header section. Verify that your file contains the `#CHROM` header line with the required columns (`CHROM`, `POS`, `ID`, `REF`, `ALT`, `QUAL`, `FILTER`, `INFO`). Files produced by standard variant callers (GATK, DeepVariant, bcftools) are fully compatible.

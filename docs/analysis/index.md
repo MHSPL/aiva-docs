@@ -41,12 +41,12 @@ Apply ACMG/AMP criteria to variants with an interactive evidence-based classifie
 
 A typical analysis workflow in AIVA proceeds through the following stages:
 
-1. **Upload and annotate** -- Upload a VCF file with optional [Small Variant Annotation](../samples/small-variant-annotation.md) or [Structural Variant Annotation](../samples/structural-variant-annotation.md).
-2. **Explore in the data table** -- Use the [Data Table](../data-table/index.md) to browse, filter, and sort variants.
-3. **Tertiary analysis** -- Open the [Tertiary Analysis](tertiary-analysis.md) view to work with the data table and AI chat simultaneously.
-4. **Flag and comment** -- [Flag variants](../collaboration/variant-flagging.md) of interest and add [comments](../collaboration/threaded-comments.md) documenting your interpretation.
-5. **Classify** -- Apply [ACMG criteria](acmg-classification.md) to variants requiring formal evidence-based classification.
-6. **Export and report** -- [Export](../collaboration/exporting-flags-comments.md) your findings and generate clinical reports.
+1. **Upload and annotate**: Upload a VCF file with optional [Small Variant Annotation](../samples/small-variant-annotation.md) or [Structural Variant Annotation](../samples/structural-variant-annotation.md).
+2. **Explore in the data table**: Use the [Data Table](../data-table/index.md) to browse, filter, and sort variants.
+3. **Tertiary analysis**: Open the [Tertiary Analysis](tertiary-analysis.md) view to work with the data table and AI chat simultaneously.
+4. **Flag and comment**: [Flag variants](../collaboration/variant-flagging.md) of interest and add [comments](../collaboration/threaded-comments.md) documenting your interpretation.
+5. **Classify**: Apply [ACMG criteria](acmg-classification.md) to variants requiring formal evidence-based classification.
+6. **Export and report**: [Export](../collaboration/exporting-flags-comments.md) your findings and generate clinical reports.
 
 ---
 

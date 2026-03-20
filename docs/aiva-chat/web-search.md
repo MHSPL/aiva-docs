@@ -13,11 +13,11 @@ The Web Search tool gives AIVA the ability to search the internet and extract co
 
 Web Search is most valuable when you need:
 
-- **Current guidelines** -- ACMG, NCCN, or consortium recommendations that are updated periodically.
-- **Gene and disease summaries** -- Comprehensive overviews from OMIM, GeneReviews, or UniProt.
-- **Recent publications or news** -- Findings published after the training cutoff of the underlying language model.
-- **Drug and therapy information** -- FDA approvals, prescribing information, or mechanism-of-action details.
-- **Variant interpretation context** -- Published case reports or functional studies for specific variants.
+- **Current guidelines**: ACMG, NCCN, or consortium recommendations that are updated periodically.
+- **Gene and disease summaries**: Comprehensive overviews from OMIM, GeneReviews, or UniProt.
+- **Recent publications or news**: Findings published after the training cutoff of the underlying language model.
+- **Drug and therapy information**: FDA approvals, prescribing information, or mechanism-of-action details.
+- **Variant interpretation context**: Published case reports or functional studies for specific variants.
 
 !!! tip "Complement with Biomedical Literature"
     For structured biomedical literature searches (PubMed-indexed articles with entity annotations), use the [Biomedical Literature](biomedical-literature.md) tool. Web Search is better for general web content, guidelines hosted on organization websites, and non-PubMed sources.
@@ -26,10 +26,10 @@ Web Search is most valuable when you need:
 
 ## Capabilities
 
-- **Full-text web search** -- Search the open web for any topic and receive summarized results.
-- **Page scraping** -- Extract and parse the content of specific URLs, including tables and structured data.
-- **Content summarization** -- AIVA reads the retrieved content and distills it into a focused answer to your question.
-- **Source attribution** -- Results include the URLs of the pages consulted, so you can verify the information.
+- **Full-text web search**: Search the open web for any topic and receive summarized results.
+- **Page scraping**: Extract and parse the content of specific URLs, including tables and structured data.
+- **Content summarization**: AIVA reads the retrieved content and distills it into a focused answer to your question.
+- **Source attribution**: Results include the URLs of the pages consulted, so you can verify the information.
 
 ---
 
@@ -69,8 +69,8 @@ You can enable or disable Web Search from the tool configuration panel in the ch
 
 Web Search works well in combination with other AIVA tools:
 
-- **Web Search + Genomic Data Query** -- Find a gene's known disease associations on the web, then query your data for variants in that gene.
-- **Web Search + Variant Annotation** -- Look up published functional studies for a variant, then retrieve its ClinVar and gnomAD data.
-- **Web Search + Code Interpreter** -- Retrieve numerical data from a web source, then plot or analyze it with Python.
+- **Web Search + Genomic Data Query**: Find a gene's known disease associations on the web, then query your data for variants in that gene.
+- **Web Search + Variant Annotation**: Look up published functional studies for a variant, then retrieve its ClinVar and gnomAD data.
+- **Web Search + Code Interpreter**: Retrieve numerical data from a web source, then plot or analyze it with Python.
 
 See [Example Workflows](example-workflows.md) for end-to-end analysis patterns.

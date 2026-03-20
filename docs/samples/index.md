@@ -81,10 +81,10 @@ View, rename, delete, and organize your samples. Assign samples to projects for 
 
 The sample lifecycle in AIVA follows a straightforward pipeline:
 
-1. **Upload** -- Submit a local file or provide a cloud URL.
-2. **Annotate** (optional) -- Small Variant Annotation or Structural Variant Annotation runs in the background if selected.
-3. **Parse** -- The file is parsed and loaded into the database using high-speed bulk operations.
-4. **Explore** -- Your data appears in the interactive data table, ready for analysis.
+1. **Upload**: Submit a local file or provide a cloud URL.
+2. **Annotate** (optional): Small Variant Annotation or Structural Variant Annotation runs in the background if selected.
+3. **Parse**: The file is parsed and loaded into the database using high-speed bulk operations.
+4. **Explore**: Your data appears in the interactive data table, ready for analysis.
 
 Each step is handled as a background job, so you can continue working while processing completes. Real-time status updates are pushed to your browser automatically.
 

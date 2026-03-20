@@ -39,9 +39,9 @@ Find answers to the most common questions about using AIVA. If your question is 
 ??? question "What file formats does AIVA support?"
     AIVA supports three formats:
 
-    - **VCF** (`.vcf`, `.vcf.gz`) -- Variant Call Format, including gzip-compressed files.
-    - **CSV** (`.csv`) -- Comma-separated values with a header row.
-    - **TSV** (`.tsv`, `.txt`) -- Tab-separated values with a header row.
+    - **VCF** (`.vcf`, `.vcf.gz`): Variant Call Format, including gzip-compressed files.
+    - **CSV** (`.csv`): Comma-separated values with a header row.
+    - **TSV** (`.tsv`, `.txt`): Tab-separated values with a header row.
 
     See [Uploading Files](samples/uploading-files.md) for detailed format requirements.
 
@@ -68,7 +68,7 @@ Find answers to the most common questions about using AIVA. If your question is 
 ## AIVA Chat
 
 ??? question "What is AIVA?"
-    AIVA (AI Virtual Assistant) is AIVA's built-in AI assistant. It can query your uploaded data, search biomedical literature, annotate variants, generate charts, explore gene-drug interactions, and more -- all through natural language conversation. See [AIVA Chat](aiva-chat/index.md) for a full overview.
+    AIVA (AI Virtual Assistant) is AIVA's built-in AI assistant. It can query your uploaded data, search biomedical literature, annotate variants, generate charts, explore gene-drug interactions, and more, all through natural language conversation. See [AIVA Chat](aiva-chat/index.md) for a full overview.
 
 ??? question "What tools does AIVA have access to?"
     AIVA has access to 10+ specialized tools: Genomic Data Query, Web Search, Variant Annotation (ClinVar, gnomAD, CADD, SIFT, PolyPhen), Biomedical Literature search, Code Interpreter, Knowledge Graph, Clinical Trials search, Phenotype-Gene Prioritization, MCP custom integrations, and Task Manager. See [AI Tools](aiva-chat/ai-tools.md) for details on each.
@@ -105,7 +105,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Yes. You can delete individual samples from the [sample management](samples/managing-samples.md) interface. Deleted samples and their associated data are permanently removed from the database.
 
 ??? question "Does AIVA send my data to external services?"
-    When AIVA uses tools like Web Search, Biomedical Literature, or Clinical Trials, it sends search queries to external APIs -- but it does **not** send your raw variant data. The Genomic Data Query tool runs queries locally against your database. Variant annotation lookups send individual variant identifiers (chromosome, position, alleles) to annotation services for lookup but do not transmit your full dataset.
+    When AIVA uses tools like Web Search, Biomedical Literature, or Clinical Trials, it sends search queries to external APIs, but it does **not** send your raw variant data. The Genomic Data Query tool runs queries locally against your database. Variant annotation lookups send individual variant identifiers (chromosome, position, alleles) to annotation services for lookup but do not transmit your full dataset.
 
 ---
 
@@ -118,7 +118,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Plus adds: increased upload and query limits, Small Variant Annotation and Structural Variant Annotation, cloud URL imports, project collaboration, clinical reports with AI auto-fill, API access, and advanced AI tools (Knowledge Graph, pharmacogenomics, Biomedical Literature, Clinical Trials). See [Subscription Tiers](getting-started/subscription-tiers.md).
 
 ??? question "What is the difference between Plus and Pro?"
-    Pro removes all usage caps -- unlimited uploads, unlimited AI queries -- and includes priority support. All Plus features are included. Pro is designed for high-throughput labs and clinical teams.
+    Pro removes all usage caps (unlimited uploads, unlimited AI queries) and includes priority support. All Plus features are included. Pro is designed for high-throughput labs and clinical teams.
 
 ??? question "What is the MCP integration?"
     The Model Context Protocol (MCP) allows you to connect AIVA to external tools and services that you configure. This enables custom workflows tailored to your specific bioinformatics pipeline. MCP is available on Trial, Plus, and Pro tiers. See [MCP Integration](aiva-chat/mcp-integration.md).
@@ -130,7 +130,7 @@ Find answers to the most common questions about using AIVA. If your question is 
 ??? question "The data table is slow or unresponsive."
     AIVA's data table uses virtualized rendering and server-side pagination to handle datasets with millions of rows. If you experience slowness:
 
-    - Check your internet connection -- data is fetched page by page from the server.
+    - Check your internet connection. Data is fetched page by page from the server.
     - Try reducing the number of visible columns using the column visibility controls.
     - Close other browser tabs to free up memory.
     - If the issue persists, contact support with your browser version and dataset size.
@@ -138,9 +138,9 @@ Find answers to the most common questions about using AIVA. If your question is 
 ??? question "AIVA is not responding or responses are very slow."
     Possible causes:
 
-    - **High server load** -- During peak usage, responses may take longer. Wait a moment and try again.
-    - **Complex query** -- Some queries (e.g., aggregations over millions of rows) require more processing time. AIVA will stream the response as it becomes available.
-    - **Network issues** -- SSE streaming requires a stable connection. If your connection is intermittent, responses may appear to stall. Refresh the page and try again.
+    - **High server load**: During peak usage, responses may take longer. Wait a moment and try again.
+    - **Complex query**: Some queries (e.g., aggregations over millions of rows) require more processing time. AIVA will stream the response as it becomes available.
+    - **Network issues**: SSE streaming requires a stable connection. If your connection is intermittent, responses may appear to stall. Refresh the page and try again.
 
 ??? question "I see an error about exceeding my usage limit."
     Your subscription tier determines how many uploads and AI queries you can perform. Check your current usage via the usage indicator in the header. To continue, either wait for your limits to reset or [upgrade your plan](getting-started/subscription-tiers.md).
@@ -156,7 +156,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Use the search bar in the conversation sidebar to filter by title. If you cannot find the conversation, it may have been deleted. Deleted conversations cannot be recovered. Consider renaming important conversations with descriptive titles to make them easier to find in the future.
 
 ??? question "My Small Variant Annotation job has been running for a long time."
-    Small Variant Annotation processes each variant through the annotation pipeline. For large files (whole-genome VCFs with millions of variants), this can take a significant amount of time. The job continues processing in the background. Check the [Job Manager](samples/job-monitoring.md) for the current status. If the job appears stuck in the same state for an extended period, it may have encountered an error -- contact support if needed.
+    Small Variant Annotation processes each variant through the annotation pipeline. For large files (whole-genome VCFs with millions of variants), this can take a significant amount of time. The job continues processing in the background. Check the [Job Manager](samples/job-monitoring.md) for the current status. If the job appears stuck in the same state for an extended period, it may have encountered an error. Contact support if needed.
 
 ??? question "How do I report a bug or request a feature?"
     Use the **Help** modal in the application header to access support channels. Include details about the issue: what you were trying to do, what happened, any error messages, and your browser/OS information.

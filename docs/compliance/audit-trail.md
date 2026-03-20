@@ -80,14 +80,14 @@ Use the search bar to find specific events by keyword, such as a user email, sam
 
 Click on any audit log entry to see full details:
 
-- **Timestamp** -- Exact date and time (UTC) of the event.
-- **User** -- The account that performed the action.
-- **Action** -- The type of action performed.
-- **Resource** -- The sample, report, or other resource affected.
-- **IP Address** -- The source IP address of the request.
-- **User Agent** -- The browser or client that made the request.
-- **Details** -- Additional context specific to the action type.
-- **Status** -- Whether the action succeeded or failed.
+- **Timestamp**: Exact date and time (UTC) of the event.
+- **User**: The account that performed the action.
+- **Action**: The type of action performed.
+- **Resource**: The sample, report, or other resource affected.
+- **IP Address**: The source IP address of the request.
+- **User Agent**: The browser or client that made the request.
+- **Details**: Additional context specific to the action type.
+- **Status**: Whether the action succeeded or failed.
 
 ---
 
@@ -95,9 +95,9 @@ Click on any audit log entry to see full details:
 
 Every audit event includes the IP address of the originating request. This enables:
 
-- **Geographic analysis** -- Identify access from unexpected locations.
-- **Anomaly detection** -- Spot logins from new or unusual IP addresses.
-- **Investigation support** -- Trace specific actions to network locations.
+- **Geographic analysis**: Identify access from unexpected locations.
+- **Anomaly detection**: Spot logins from new or unusual IP addresses.
+- **Investigation support**: Trace specific actions to network locations.
 
 !!! tip "Monitor for anomalies"
     Regularly review login events for your organization's accounts. Logins from unexpected IP addresses or at unusual times may indicate unauthorized access attempts.
@@ -139,9 +139,9 @@ To export audit data for external analysis or archival:
 
 The audit trail supports compliance requirements by providing:
 
-- **Access accountability** -- Every data access is attributed to a specific user.
-- **Change tracking** -- Modifications to classifications, flags, and comments are logged with before and after states.
-- **Incident investigation** -- Detailed logs support forensic analysis of security events.
-- **Regulatory reporting** -- Exportable logs can be provided to auditors and regulators.
+- **Access accountability**: Every data access is attributed to a specific user.
+- **Change tracking**: Modifications to classifications, flags, and comments are logged with before and after states.
+- **Incident investigation**: Detailed logs support forensic analysis of security events.
+- **Regulatory reporting**: Exportable logs can be provided to auditors and regulators.
 
 See [HIPAA Compliance](hipaa.md) for how the audit trail supports HIPAA requirements.

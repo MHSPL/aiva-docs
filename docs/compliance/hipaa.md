@@ -27,13 +27,13 @@ The system detects 20+ PHI entity types, including:
 
 ### How PHI Detection Works
 
-1. **On upload** -- File contents are scanned for PHI patterns during the parsing stage.
-2. **In chat** -- User messages and AI responses are monitored for PHI content.
-3. **In comments** -- Variant comments and annotations are checked for PHI.
-4. **Flagged content** -- Detected PHI is flagged with the entity type and location.
+1. **On upload**: File contents are scanned for PHI patterns during the parsing stage.
+2. **In chat**: User messages and AI responses are monitored for PHI content.
+3. **In comments**: Variant comments and annotations are checked for PHI.
+4. **Flagged content**: Detected PHI is flagged with the entity type and location.
 
 !!! warning "Detection limitations"
-    Automated PHI detection uses pattern matching and natural language processing. It may not catch all instances of PHI, especially in unusual formats or contexts. Do not rely solely on automated detection -- review data before sharing and follow your organization's PHI handling policies.
+    Automated PHI detection uses pattern matching and natural language processing. It may not catch all instances of PHI, especially in unusual formats or contexts. Do not rely solely on automated detection. Review data before sharing and follow your organization's PHI handling policies.
 
 ---
 
@@ -74,7 +74,7 @@ Access to data is controlled at multiple levels:
 | **Project** | Samples shared through [projects](../collaboration/projects.md) are accessible to project members based on their role. |
 | **Role** | Project roles (Owner, Admin, Editor, Viewer) define what actions a user can perform. |
 | **API** | [API keys](../api/api-keys.md) inherit the permissions of the creating user. |
-| **AI Tools** | The Genomic Data Query tool is scoped to the user's accessible data -- AIVA cannot query other users' data. |
+| **AI Tools** | The Genomic Data Query tool is scoped to the user's accessible data. AIVA cannot query other users' data. |
 
 ### Session Management
 

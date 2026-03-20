@@ -65,7 +65,7 @@ When a sample is part of a [project](projects.md):
 
 - **Editors and Owners** can add, change, and remove flags.
 - **Viewers** can see flags but cannot modify them.
-- Flags include **user attribution** -- you can see who flagged each variant.
+- Flags include **user attribution**, so you can see who flagged each variant.
 - All flag actions are timestamped for audit purposes.
 
 ---

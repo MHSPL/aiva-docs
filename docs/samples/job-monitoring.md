@@ -35,9 +35,9 @@ Each job moves through a series of states as it progresses through the processin
 
 Jobs are processed in priority order to minimize wait times:
 
-1. **Parsing jobs** (highest priority) -- These are the fastest to complete and unlock data for analysis.
-2. **Download jobs** -- Cloud URL retrieval runs at the next priority level.
-3. **Annotation jobs** (lowest priority) -- Small Variant Annotation and Structural Variant Annotation are computationally intensive and run at the lowest priority to avoid blocking simpler jobs.
+1. **Parsing jobs** (highest priority): These are the fastest to complete and unlock data for analysis.
+2. **Download jobs**: Cloud URL retrieval runs at the next priority level.
+3. **Annotation jobs** (lowest priority): Small Variant Annotation and Structural Variant Annotation are computationally intensive and run at the lowest priority to avoid blocking simpler jobs.
 
 ---
 
@@ -58,12 +58,12 @@ AIVA uses **server-sent events (SSE)** to push job status changes to your browse
 
 Click on any job entry in the Job Manager to expand its details. The detail view includes:
 
-- **File name** -- The original name of the uploaded file.
-- **Sample name** -- The human-readable name you assigned (or the filename if none was provided).
-- **Created at** -- Timestamp when the job was submitted.
-- **Current state** -- The active processing stage.
-- **Processing stages** -- A timeline showing which stages have completed and which remain.
-- **Error message** (failed jobs only) -- A description of what went wrong.
+- **File name**: The original name of the uploaded file.
+- **Sample name**: The human-readable name you assigned (or the filename if none was provided).
+- **Created at**: Timestamp when the job was submitted.
+- **Current state**: The active processing stage.
+- **Processing stages**: A timeline showing which stages have completed and which remain.
+- **Error message** (failed jobs only): A description of what went wrong.
 
 ---
 

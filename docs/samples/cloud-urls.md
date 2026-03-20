@@ -57,9 +57,9 @@ If the download fails due to access permissions, the job will report an error in
 
 Cloud URL imports support the same file formats as local uploads:
 
-- **VCF** (`.vcf`, `.vcf.gz`) -- Variant Call Format files, optionally gzipped.
-- **CSV** (`.csv`) -- Comma-separated values.
-- **TSV** (`.tsv`, `.txt`) -- Tab-separated values.
+- **VCF** (`.vcf`, `.vcf.gz`): Variant Call Format files, optionally gzipped.
+- **CSV** (`.csv`): Comma-separated values.
+- **TSV** (`.tsv`, `.txt`): Tab-separated values.
 
 ---
 

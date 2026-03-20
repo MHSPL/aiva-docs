@@ -5,7 +5,7 @@ description: Use AIVA's AI to automatically generate report section content base
 
 # AI Auto-Fill
 
-AI Auto-Fill uses AIVA's AI assistant to generate content for report sections automatically. Instead of writing every section from scratch, you can let the AI draft content based on your sample data, flagged variants, comments, and classifications -- then review and refine as needed.
+AI Auto-Fill uses AIVA's AI assistant to generate content for report sections automatically. Instead of writing every section from scratch, you can let the AI draft content based on your sample data, flagged variants, comments, and classifications, then review and refine as needed.
 
 ---
 
@@ -26,12 +26,12 @@ AI Auto-Fill uses AIVA's AI assistant to generate content for report sections au
 
 When generating content, AIVA considers:
 
-- **Sample metadata** -- Sample name, file type, upload date, and annotation status.
-- **Variant data** -- Total variant counts, distributions by consequence, chromosome, and gene.
-- **Flagged variants** -- Variants you have flagged with their flag types and associated notes.
-- **ACMG classifications** -- Formal classifications applied to variants using [ACMG criteria](../analysis/acmg-classification.md).
-- **Comments** -- [Threaded comments](../collaboration/threaded-comments.md) attached to variants.
-- **Section context** -- The section type and title inform the tone and structure of the generated content.
+- **Sample metadata**: Sample name, file type, upload date, and annotation status.
+- **Variant data**: Total variant counts, distributions by consequence, chromosome, and gene.
+- **Flagged variants**: Variants you have flagged with their flag types and associated notes.
+- **ACMG classifications**: Formal classifications applied to variants using [ACMG criteria](../analysis/acmg-classification.md).
+- **Comments**: [Threaded comments](../collaboration/threaded-comments.md) attached to variants.
+- **Section context**: The section type and title inform the tone and structure of the generated content.
 
 ---
 
@@ -53,9 +53,9 @@ When generating content, AIVA considers:
 
 You can guide the AI's output by:
 
-- **Editing the section title** -- A more specific title (e.g., "BRCA1/BRCA2 Variant Analysis" instead of "Results") produces more focused content.
-- **Adding a prompt note** -- Some sections allow you to add a brief instruction for the AI (e.g., "Focus on pharmacogenomic implications").
-- **Pre-filling partial content** -- If you write the first paragraph, the AI continues from where you left off, maintaining your tone and focus.
+- **Editing the section title**: A more specific title (e.g., "BRCA1/BRCA2 Variant Analysis" instead of "Results") produces more focused content.
+- **Adding a prompt note**: Some sections allow you to add a brief instruction for the AI (e.g., "Focus on pharmacogenomic implications").
+- **Pre-filling partial content**: If you write the first paragraph, the AI continues from where you left off, maintaining your tone and focus.
 
 ---
 
@@ -73,10 +73,10 @@ Previous drafts are preserved in the section's version history.
 
 ## Best Practices
 
-- **Fill sections in order** -- The AI can reference previously filled sections for consistency. Fill the Summary first, then Results, then Interpretation.
-- **Link variants before auto-filling** -- [Link flagged variants](sample-linking.md) to the report before running Auto-Fill so the AI has access to your curated evidence.
-- **Review all clinical statements** -- Verify classifications, population frequencies, and clinical significance statements against the source databases.
-- **Use Auto-Fill as a starting point** -- The AI excels at drafting structured content and pulling together data. Your domain expertise is needed for final clinical judgment.
+- **Fill sections in order**: The AI can reference previously filled sections for consistency. Fill the Summary first, then Results, then Interpretation.
+- **Link variants before auto-filling**: [Link flagged variants](sample-linking.md) to the report before running Auto-Fill so the AI has access to your curated evidence.
+- **Review all clinical statements**: Verify classifications, population frequencies, and clinical significance statements against the source databases.
+- **Use Auto-Fill as a starting point**: The AI excels at drafting structured content and pulling together data. Your domain expertise is needed for final clinical judgment.
 
 !!! warning "Clinical responsibility"
     AI Auto-Fill is a productivity tool, not a substitute for clinical expertise. The signing clinician or researcher is responsible for the accuracy and completeness of the final report.

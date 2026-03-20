@@ -16,7 +16,7 @@ When you ask a data-related question, AIVA uses the **Genomic Data Query tool** 
 1. **You ask a question** in natural language (e.g., "How many variants in my sample have a CADD score above 20?").
 2. **AIVA generates a SQL query** based on your question and the schema of your uploaded sample.
 3. **The query executes** against the database where your parsed data is stored.
-4. **Results are returned** and rendered as a formatted table, a summary, or a chart -- depending on what best fits the answer.
+4. **Results are returned** and rendered as a formatted table, a summary, or a chart, depending on what best fits the answer.
 
 !!! info "Schema awareness"
     AIVA knows the column names and data types of your uploaded samples. When you ask about "pathogenic variants" or "allele frequency," it maps your natural language terms to the correct database columns. For samples with Small Variant Annotation applied, this includes all annotation fields such as `Consequence`, `SYMBOL`, `SIFT`, `PolyPhen`, and `CADD_PHRED`.
@@ -93,9 +93,9 @@ Charts are rendered inline in the conversation and can be viewed in full resolut
 
 AIVA shows you the tool it used and provides a summary of the operation. This transparency allows you to:
 
-- **Verify the query logic** -- Confirm that the SQL query matches your intent.
-- **Learn your data schema** -- See which columns are available and how they are named.
-- **Refine your questions** -- If the results are not what you expected, adjust your question using the column names you see in the tool output.
+- **Verify the query logic**: Confirm that the SQL query matches your intent.
+- **Learn your data schema**: See which columns are available and how they are named.
+- **Refine your questions**: If the results are not what you expected, adjust your question using the column names you see in the tool output.
 
 ---
 
@@ -120,16 +120,16 @@ AIVA understands standard genomic terms. Use specific language for more precise 
 
 Start with a broad query and narrow down:
 
-1. "How many pathogenic variants are in my sample?" -- Get the overall count.
-2. "Which genes are they in?" -- See the gene distribution.
-3. "Show me the ones in BRCA1 and BRCA2 with their ClinVar annotations." -- Drill into specific genes.
+1. "How many pathogenic variants are in my sample?": Get the overall count.
+2. "Which genes are they in?": See the gene distribution.
+3. "Show me the ones in BRCA1 and BRCA2 with their ClinVar annotations.": Drill into specific genes.
 
 ### Combine with Other Tools
 
 AIVA can chain multiple tools in a single response. For example:
 
-- "Find all pathogenic BRCA1 variants in my sample and search PubMed for recent publications about them." -- Uses **Genomic Data Query** for the data query and **Biomedical Literature** for the literature search.
-- "Calculate the average CADD score per consequence type and plot it as a bar chart." -- Uses **Genomic Data Query** for the aggregation and **Code Interpreter** for the chart.
+- "Find all pathogenic BRCA1 variants in my sample and search PubMed for recent publications about them." This uses **Genomic Data Query** for the data query and **Biomedical Literature** for the literature search.
+- "Calculate the average CADD score per consequence type and plot it as a bar chart." This uses **Genomic Data Query** for the aggregation and **Code Interpreter** for the chart.
 
 ---
 
@@ -137,9 +137,9 @@ AIVA can chain multiple tools in a single response. For example:
 
 !!! note "What AIVA cannot do with data queries"
 
-    - **Modify your data** -- AIVA has read-only access to your sample data. It cannot insert, update, or delete rows.
-    - **Access other users' data** -- Queries are scoped to samples you own or that are shared with you through a [project](../collaboration/projects.md). AIVA cannot access data belonging to other accounts.
-    - **Perform real-time variant calling** -- AIVA queries pre-processed data. It does not run alignment or variant calling pipelines.
+    - **Modify your data**: AIVA has read-only access to your sample data. It cannot insert, update, or delete rows.
+    - **Access other users' data**: Queries are scoped to samples you own or that are shared with you through a [project](../collaboration/projects.md). AIVA cannot access data belonging to other accounts.
+    - **Perform real-time variant calling**: AIVA queries pre-processed data. It does not run alignment or variant calling pipelines.
 
 ---
 

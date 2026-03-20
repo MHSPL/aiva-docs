@@ -53,10 +53,10 @@ See [Subscription Tiers](../getting-started/subscription-tiers.md) for a full co
 
 The system creates a multi-step background job:
 
-1. **Upload/Download** -- The file is uploaded (or downloaded from a [cloud URL](cloud-urls.md)).
-2. **Small Variant Annotation** -- The annotation engine runs against the VCF file, adding CSQ annotations.
-3. **Parsing** -- The annotated file is parsed, and CSQ subfields are extracted into individual columns.
-4. **Ready** -- The sample appears in your sample list with all annotation columns available.
+1. **Upload/Download**: The file is uploaded (or downloaded from a [cloud URL](cloud-urls.md)).
+2. **Small Variant Annotation**: The annotation engine runs against the VCF file, adding CSQ annotations.
+3. **Parsing**: The annotated file is parsed, and CSQ subfields are extracted into individual columns.
+4. **Ready**: The sample appears in your sample list with all annotation columns available.
 
 Monitor progress in the [Job Manager](job-monitoring.md).
 
@@ -69,8 +69,8 @@ Monitor progress in the [Job Manager](job-monitoring.md).
 
 AIVA supports two reference genome assemblies for Small Variant Annotation:
 
-- **GRCh38** (hg38) -- The current human reference genome assembly. This is the default.
-- **GRCh37** (hg19) -- The previous assembly, still widely used in clinical settings.
+- **GRCh38** (hg38): The current human reference genome assembly. This is the default.
+- **GRCh37** (hg19): The previous assembly, still widely used in clinical settings.
 
 The assembly is configured at the server level. Ensure your VCF files are aligned to the same reference assembly configured on your AIVA instance.
 
@@ -83,8 +83,8 @@ Small Variant Annotation processing time depends on the number of variants in yo
 | File Size | Approximate Time |
 |-----------|-----------------|
 | < 10,000 variants | Under 1 minute |
-| 10,000 -- 100,000 variants | 1 to 5 minutes |
-| 100,000 -- 1,000,000 variants | 5 to 30 minutes |
+| 10,000 to 100,000 variants | 1 to 5 minutes |
+| 100,000 to 1,000,000 variants | 5 to 30 minutes |
 | > 1,000,000 variants | 30 minutes or more |
 
 !!! tip "Continue working while annotation runs"

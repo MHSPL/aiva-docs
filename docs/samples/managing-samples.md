@@ -13,12 +13,12 @@ Once your files have been uploaded and processed, they appear in your sample lis
 
 Navigate to the **Samples** section to see a list of all your samples. Each entry displays:
 
-- **Sample name** -- The file name or a custom name you have assigned.
-- **File type** -- VCF, CSV, or TSV.
-- **Row count** -- The number of data rows (variants or records) in the sample.
-- **Upload date** -- When the sample was uploaded.
-- **Status** -- Processing status (e.g., Ready, Processing, Error).
-- **Annotations** -- Whether Small Variant Annotation or Structural Variant Annotation annotation was applied.
+- **Sample name**: The file name or a custom name you have assigned.
+- **File type**: VCF, CSV, or TSV.
+- **Row count**: The number of data rows (variants or records) in the sample.
+- **Upload date**: When the sample was uploaded.
+- **Status**: Processing status (e.g., Ready, Processing, Error).
+- **Annotations**: Whether Small Variant Annotation or Structural Variant Annotation annotation was applied.
 
 Click on any sample to open it in the [Data Table](../data-table/index.md) for exploration and analysis.
 
@@ -28,13 +28,13 @@ Click on any sample to open it in the [Data Table](../data-table/index.md) for e
 
 Each sample has associated metadata that you can view:
 
-- **File name** -- The original file name as uploaded.
-- **File size** -- The size of the uploaded file.
-- **Format** -- VCF, CSV, or TSV.
-- **Total variants/rows** -- The number of records loaded into the database.
-- **Upload timestamp** -- The date and time the file was uploaded.
-- **Annotation status** -- Whether Small Variant Annotation or Structural Variant Annotation was applied, and the annotation job status.
-- **Project assignment** -- Which [project](../collaboration/projects.md) the sample belongs to, if any.
+- **File name**: The original file name as uploaded.
+- **File size**: The size of the uploaded file.
+- **Format**: VCF, CSV, or TSV.
+- **Total variants/rows**: The number of records loaded into the database.
+- **Upload timestamp**: The date and time the file was uploaded.
+- **Annotation status**: Whether Small Variant Annotation or Structural Variant Annotation was applied, and the annotation job status.
+- **Project assignment**: Which [project](../collaboration/projects.md) the sample belongs to, if any.
 
 ---
 

@@ -28,10 +28,10 @@ Navigate to the Variant Classifier from the AIVA homepage or public navigation m
 
 Provide information about the variant you want to classify:
 
-- **Gene** -- The gene symbol (e.g., BRCA1, TP53, MLH1).
-- **Variant notation** -- HGVS coding or protein notation (e.g., c.5266dupC, p.Gln1756Profs*74).
-- **Genomic coordinates** (optional) -- Chromosome, position, reference allele, and alternate allele.
-- **Transcript** (optional) -- The reference transcript identifier (e.g., NM_007294.4).
+- **Gene**: The gene symbol (e.g., BRCA1, TP53, MLH1).
+- **Variant notation**: HGVS coding or protein notation (e.g., c.5266dupC, p.Gln1756Profs*74).
+- **Genomic coordinates** (optional): Chromosome, position, reference allele, and alternate allele.
+- **Transcript** (optional): The reference transcript identifier (e.g., NM_007294.4).
 
 !!! tip "Variant identifiers"
     You can enter the variant in any commonly used format. The classifier accepts HGVS nomenclature, genomic coordinates (GRCh37 or GRCh38), and rsIDs.
@@ -81,9 +81,9 @@ The classifier allows you to add notes for each selected criterion, documenting 
 
 ## Tips for Accurate Classification
 
-- **Apply criteria conservatively** -- Only select a criterion when the evidence clearly supports it.
-- **Use multiple evidence types** -- A robust classification draws on population data, computational predictions, functional studies, and clinical observations.
-- **Consider conflicting evidence** -- If both pathogenic and benign criteria apply, the variant may be classified as VUS pending additional evidence.
+- **Apply criteria conservatively**: Only select a criterion when the evidence clearly supports it.
+- **Use multiple evidence types**: A robust classification draws on population data, computational predictions, functional studies, and clinical observations.
+- **Consider conflicting evidence**: If both pathogenic and benign criteria apply, the variant may be classified as VUS pending additional evidence.
 
 !!! warning "Classification responsibility"
     The Variant Classifier is a decision-support tool. Clinical variant classifications should be performed by qualified professionals in the context of established laboratory protocols and clinical information.
