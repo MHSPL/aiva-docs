@@ -43,9 +43,6 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 
 ## C
 
-**CADD (Combined Annotation Dependent Depletion)**
-:   A computational tool that scores the deleteriousness of variants. CADD integrates multiple annotations into a single score. A CADD score >= 20 indicates the variant is in the top 1% of most deleterious substitutions in the genome.
-
 **ClinVar**
 :   An NCBI database of reported relationships between human variants and phenotypes, including clinical significance classifications submitted by clinical laboratories and research groups.
 
@@ -67,9 +64,6 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 
 **De Novo Variant**
 :   A variant present in an individual but not inherited from either parent. De novo status is a strong indicator of pathogenicity for certain disease types.
-
-**DPYD (Dihydropyrimidine Dehydrogenase)**
-:   A pharmacogene involved in the metabolism of fluoropyrimidine drugs (e.g., 5-fluorouracil). Variants in DPYD can cause severe toxicity.
 
 ---
 
