@@ -5,7 +5,7 @@ description: Link flagged variants, comments, and ACMG classifications from your
 
 # Sample Linking
 
-Sample linking connects your analysis evidence -- flagged variants, threaded comments, and ACMG classifications -- directly to report sections. This ensures reports are grounded in the specific data and interpretations from your analysis workflow.
+Sample linking connects your analysis evidence (flagged variants, threaded comments, and ACMG classifications) directly to report sections. This ensures reports are grounded in the specific data and interpretations from your analysis workflow.
 
 ---
 
@@ -50,7 +50,7 @@ Linked evidence is rendered in the report as structured blocks:
 - **Comment threads** appear as quoted text with author attribution and timestamps.
 - **Classification summaries** show the applied ACMG criteria and the resulting classification tier.
 
-These blocks are live references -- if you update a flag, comment, or classification in the analysis view, the linked evidence in the report reflects the update.
+These blocks are live references. If you update a flag, comment, or classification in the analysis view, the linked evidence in the report reflects the update.
 
 !!! note "Snapshots on export"
     When you export a report, linked evidence is rendered as static content at the time of export. Subsequent changes to flags or classifications will not appear in previously exported documents.
@@ -79,7 +79,7 @@ To remove linked evidence from a report section:
 
 ## Best Practices
 
-- **Flag and classify before reporting** -- Complete your variant interpretation workflow before creating the report. This ensures all relevant evidence is available for linking.
-- **Organize by section** -- Link pathogenic variants to the "Results" section, VUS variants to a "VUS" section, and pharmacogenomic findings to the appropriate section.
-- **Use AI Auto-Fill after linking** -- When you run [AI Auto-Fill](ai-auto-fill.md) on a section with linked variants, the AI uses those variants as context to generate more specific and accurate content.
-- **Review linked data** -- Verify that linked classifications and comments are current before finalizing the report.
+- **Flag and classify before reporting**: Complete your variant interpretation workflow before creating the report. This ensures all relevant evidence is available for linking.
+- **Organize by section**: Link pathogenic variants to the "Results" section, VUS variants to a "VUS" section, and pharmacogenomic findings to the appropriate section.
+- **Use AI Auto-Fill after linking**: When you run [AI Auto-Fill](ai-auto-fill.md) on a section with linked variants, the AI uses those variants as context to generate more specific and accurate content.
+- **Review linked data**: Verify that linked classifications and comments are current before finalizing the report.

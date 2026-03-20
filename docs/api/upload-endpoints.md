@@ -1,11 +1,11 @@
 ---
 title: Upload Endpoints
-description: API reference for uploading FASTQ, VCF, CSV, and TSV files to AIVA, including direct uploads, cloud URLs, VEP annotation, and Structural Variant Annotation.
+description: API reference for uploading FASTQ, VCF, CSV, and TSV files to AIVA, including direct uploads, cloud URLs, Small Variant Annotation, and Structural Variant Annotation.
 ---
 
 # Upload Endpoints
 
-Upload variant data files to AIVA programmatically. Supports FASTQ files for variant calling, direct VCF/CSV/TSV upload, cloud URL imports, and optional annotation with VEP or Structural Variant Annotation.
+Upload variant data files to AIVA programmatically. Supports FASTQ files for variant calling, direct VCF/CSV/TSV upload, cloud URL imports, and optional annotation with Small Variant Annotation or Structural Variant Annotation.
 
 ---
 
@@ -34,7 +34,7 @@ Content-Type: multipart/form-data
 | `sample_count` | integer | Yes | Number of samples being uploaded |
 | `sample_name` | string | Yes | Name for the sample |
 | `assembly` | string | Yes | Genome assembly (e.g., `GRCh38`, `GRCh37`) |
-| `vep_annotation` | boolean | No | Run VEP annotation on the output VCF. Default: `false` |
+| `vep_annotation` | boolean | No | Run Small Variant Annotation on the output VCF. Default: `false` |
 | `sample_1_r1` | file | Yes | Read 1 FASTQ file for sample 1 |
 | `sample_1_r2` | file | Conditional | Read 2 FASTQ file for sample 1 (required for paired-end reads) |
 | `samples_metadata` | JSON string | Yes | JSON array of sample metadata objects |
@@ -496,21 +496,21 @@ Content-Type: application/json
 
 ---
 
-## VCF VEP File Upload
+## VCF Small Variant Annotation File Upload
 
-Upload a VCF file with Variant Effect Prediction (VEP) annotation enabled.
+Upload a VCF file with Small Variant Annotation enabled.
 
 !!! info "Subscription required"
-    VEP annotation requires a **Plus**, **Pro**, or **Trial** subscription tier.
+    Small Variant Annotation requires a **Plus**, **Pro**, or **Trial** subscription tier.
 
-VEP annotation adds the following fields to your variant data:
+Small Variant Annotation adds the following fields to your variant data:
 
-- **Consequence** -- predicted variant consequence (e.g., missense_variant, stop_gained)
-- **Gene Symbol** -- HGNC gene symbol
-- **SIFT** -- SIFT prediction and score
-- **gnomAD** -- Population allele frequencies
-- **ClinVar** -- Clinical significance
-- **Amino Acid** -- Amino acid change information
+- **Consequence**: predicted variant consequence (e.g., missense_variant, stop_gained)
+- **Gene Symbol**: HGNC gene symbol
+- **SIFT**: SIFT prediction and score
+- **gnomAD**: Population allele frequencies
+- **ClinVar**: Clinical significance
+- **Amino Acid**: Amino acid change information
 
 ### Request
 
@@ -526,7 +526,7 @@ Content-Type: multipart/form-data
 | `file` | file | Yes | The VCF file to upload |
 | `sample_name` | string | No | Display name for the sample |
 | `assembly` | string | No | Genome assembly: `GRCh38` or `GRCh37`. Default: `GRCh38` |
-| `vep_annotation` | boolean | Yes | Set to `true` to enable VEP annotation |
+| `vep_annotation` | boolean | Yes | Set to `true` to enable Small Variant Annotation |
 | `enable_ditto` | boolean | No | Enable DITTO pathogenicity scoring. Default: `false` |
 | `split_by_sample` | boolean | No | Split multi-sample VCF. Default: `false` |
 
@@ -589,12 +589,12 @@ Content-Type: multipart/form-data
 
 ---
 
-## VCF VEP Cloud Upload
+## VCF Small Variant Annotation Cloud Upload
 
-Import a VCF file from a cloud URL with VEP annotation enabled.
+Import a VCF file from a cloud URL with Small Variant Annotation enabled.
 
 !!! info "Subscription required"
-    VEP annotation requires a **Plus**, **Pro**, or **Trial** subscription tier.
+    Small Variant Annotation requires a **Plus**, **Pro**, or **Trial** subscription tier.
 
 ### Request
 
@@ -610,7 +610,7 @@ Content-Type: application/json
 | `cloud_url` | string | Yes | Cloud storage URL of the VCF file |
 | `sample_name` | string | No | Display name for the sample |
 | `assembly` | string | No | Genome assembly: `GRCh38` or `GRCh37`. Default: `GRCh38` |
-| `vep_annotation` | boolean | Yes | Set to `true` to enable VEP annotation |
+| `vep_annotation` | boolean | Yes | Set to `true` to enable Small Variant Annotation |
 
 ### Examples
 
@@ -684,12 +684,12 @@ Upload a VCF file with Structural Variant Annotation enabled.
 
 Structural Variant Annotation is designed for structural variant VCF files containing variant types such as:
 
-- **DEL** -- Deletions
-- **DUP** -- Duplications
-- **INS** -- Insertions
-- **INV** -- Inversions
-- **BND** -- Breakends
-- **CNV** -- Copy number variants
+- **DEL**: Deletions
+- **DUP**: Duplications
+- **INS**: Insertions
+- **INV**: Inversions
+- **BND**: Breakends
+- **CNV**: Copy number variants
 
 Structural Variant Annotation adds the following annotations:
 

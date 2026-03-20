@@ -103,16 +103,16 @@ Drag categories in the category selector to change their display order.
 
 Categories are designed to support structured analysis workflows. A typical approach:
 
-1. **Start with Clinical Significance** -- Assess pathogenicity of key variants.
-2. **Move to Pharmacogenomics** -- Check for drug-gene implications.
-3. **Explore Protein Function** -- Understand the molecular impact.
-4. **Review Pathway Analysis** -- Place findings in biological context.
-5. **Document in Reports** -- Use findings from each category in your [report](../reports/index.md).
+1. **Start with Clinical Significance**: Assess pathogenicity of key variants.
+2. **Move to Pharmacogenomics**: Check for drug-gene implications.
+3. **Explore Protein Function**: Understand the molecular impact.
+4. **Review Pathway Analysis**: Place findings in biological context.
+5. **Document in Reports**: Use findings from each category in your [report](../reports/index.md).
 
 ---
 
 ## Tips
 
-- **Create task-specific categories** -- If you regularly perform a specific type of analysis (e.g., hereditary cancer panel review), create a category with exactly the cards you need.
-- **Share through projects** -- Custom categories created within a [project](../collaboration/projects.md) are available to all project members.
-- **Combine with AIVA Chat** -- Use categories for structured analysis and [AIVA Chat](../aiva-chat/index.md) for ad-hoc questions and deep dives.
+- **Create task-specific categories**: If you regularly perform a specific type of analysis (e.g., hereditary cancer panel review), create a category with exactly the cards you need.
+- **Share through projects**: Custom categories created within a [project](../collaboration/projects.md) are available to all project members.
+- **Combine with AIVA Chat**: Use categories for structured analysis and [AIVA Chat](../aiva-chat/index.md) for ad-hoc questions and deep dives.

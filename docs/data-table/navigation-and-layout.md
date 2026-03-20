@@ -24,10 +24,10 @@ The column chooser is a panel that lists every available column for the current 
 - **Check** a column name to add it to the table.
 - **Uncheck** a column name to remove it from the table.
 
-Changes take effect immediately. Hidden columns are not removed from the dataset -- they are simply not displayed.
+Changes take effect immediately. Hidden columns are not removed from the dataset; they are simply not displayed.
 
 !!! info "VCF and annotation columns"
-    For VCF files, columns include standard fields (CHROM, POS, REF, ALT, QUAL, FILTER) plus any INFO subfields parsed from the file. If Variant Effect Prediction was applied, CSQ subfields such as `Gene`, `Consequence`, `IMPACT`, `SIFT`, and `PolyPhen` also appear as individual columns.
+    For VCF files, columns include standard fields (CHROM, POS, REF, ALT, QUAL, FILTER) plus any INFO subfields parsed from the file. If Small Variant Annotation was applied, CSQ subfields such as `Gene`, `Consequence`, `IMPACT`, `SIFT`, and `PolyPhen` also appear as individual columns.
 
 ### Reordering Columns
 
@@ -58,9 +58,9 @@ Column resizing is useful when cell content is truncated or when you want to giv
 
 Click any column header to sort the table by that column:
 
-1. **First click** -- Sorts ascending (A to Z, lowest to highest).
-2. **Second click** -- Sorts descending (Z to A, highest to lowest).
-3. **Third click** -- Removes the sort and returns to the default order.
+1. **First click**: Sorts ascending (A to Z, lowest to highest).
+2. **Second click**: Sorts descending (Z to A, highest to lowest).
+3. **Third click**: Removes the sort and returns to the default order.
 
 A sort indicator arrow appears in the column header to show the current sort direction.
 
@@ -73,9 +73,9 @@ A sort indicator arrow appears in the column header to show the current sort dir
 
 The data table uses server-side pagination to manage large datasets efficiently. Pagination controls are located at the bottom of the table.
 
-- **Page size selector** -- Choose how many rows to display per page. Common options include 25, 50, 100, and 250 rows.
-- **Page navigation** -- Use the previous/next buttons or jump to a specific page number.
-- **Row count** -- The total number of rows matching the current filters is displayed alongside the pagination controls.
+- **Page size selector**: Choose how many rows to display per page. Common options include 25, 50, 100, and 250 rows.
+- **Page navigation**: Use the previous/next buttons or jump to a specific page number.
+- **Row count**: The total number of rows matching the current filters is displayed alongside the pagination controls.
 
 !!! tip "Balancing page size and performance"
     Smaller page sizes load faster. For initial exploration, start with 25 or 50 rows per page. Increase the page size when you need to scan more data at once.

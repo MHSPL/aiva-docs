@@ -40,8 +40,8 @@ See [API Keys](api-keys.md) for instructions on creating and managing API keys.
 | [FASTQ Cloud Upload](upload-endpoints.md#fastq-cloud-url-upload) | `POST` | `/jobs/upload/parabricks` | Upload FASTQ from cloud URLs |
 | [VCF Direct Upload](upload-endpoints.md#vcf-direct-file-upload) | `POST` | `/jobs/upload` | Upload VCF/CSV/TSV files directly |
 | [VCF Cloud Upload](upload-endpoints.md#vcf-direct-cloud-upload) | `POST` | `/jobs/upload/from-cloud-url` | Import VCF from cloud URL |
-| [VCF VEP Upload](upload-endpoints.md#vcf-vep-file-upload) | `POST` | `/jobs/upload` | Upload VCF with VEP annotation |
-| [VCF VEP Cloud Upload](upload-endpoints.md#vcf-vep-cloud-upload) | `POST` | `/jobs/upload/from-cloud-url` | Import VCF from cloud with VEP |
+| [VCF Annotated Upload](upload-endpoints.md#vcf-small-variant-annotation-file-upload) | `POST` | `/jobs/upload` | Upload VCF with Small Variant Annotation |
+| [VCF Annotated Cloud Upload](upload-endpoints.md#vcf-small-variant-annotation-cloud-upload) | `POST` | `/jobs/upload/from-cloud-url` | Import VCF from cloud with Small Variant Annotation |
 | [VCF SV Annotation Upload](upload-endpoints.md#vcf-structural-variant-annotation-file-upload) | `POST` | `/jobs/upload` | Upload VCF with Structural Variant Annotation |
 | [VCF SV Annotation Cloud Upload](upload-endpoints.md#vcf-structural-variant-annotation-cloud-upload) | `POST` | `/jobs/upload/from-cloud-url` | Import VCF from cloud with Structural Variant Annotation |
 | [Job Events (SSE)](job-monitoring.md#sse-real-time-events) | `GET` | `/jobs/events?token=<API_KEY>` | Real-time job status via SSE |
@@ -78,7 +78,7 @@ Create, manage, and revoke API keys. Verify connectivity with the health check e
 
 ### Upload Endpoints
 
-Upload FASTQ, VCF, CSV, and TSV files directly or via cloud URLs, with optional VEP or Structural Variant annotation.
+Upload FASTQ, VCF, CSV, and TSV files directly or via cloud URLs, with optional Small Variant Annotation or Structural Variant Annotation.
 
 [:octicons-arrow-right-24: Upload Endpoints](upload-endpoints.md)
 
@@ -156,9 +156,9 @@ The API uses standard HTTP status codes:
 |------|---------|
 | `200` | Success |
 | `201` | Resource created |
-| `400` | Bad request -- check your parameters |
-| `401` | Unauthorized -- invalid or missing API key |
-| `403` | Forbidden -- insufficient permissions or subscription tier |
+| `400` | Bad request: check your parameters |
+| `401` | Unauthorized: invalid or missing API key |
+| `403` | Forbidden: insufficient permissions or subscription tier |
 | `404` | Resource not found |
 | `429` | Rate limit exceeded |
 | `500` | Internal server error |

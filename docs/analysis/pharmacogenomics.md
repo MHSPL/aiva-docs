@@ -13,9 +13,9 @@ AIVA's pharmacogenomics features help you identify variants in drug-metabolizing
 
 Pharmacogenomics (PGx) examines how genetic variants influence drug metabolism, efficacy, and adverse reactions. AIVA supports PGx analysis through:
 
-- **PGx Analysis Card** -- A dedicated [analysis card](analysis-cards.md) in the Analysis Hub showing drug-variant interactions and metabolizer phenotypes.
-- **Knowledge Graph queries** -- Explore drug-gene-protein relationships through the [Knowledge Graph](../aiva-chat/knowledge-graph.md).
-- **AIVA Chat** -- Ask the AI assistant about specific drug-gene interactions, guidelines, and evidence.
+- **PGx Analysis Card**: A dedicated [analysis card](analysis-cards.md) in the Analysis Hub showing drug-variant interactions and metabolizer phenotypes.
+- **Knowledge Graph queries**: Explore drug-gene-protein relationships through the [Knowledge Graph](../aiva-chat/knowledge-graph.md).
+- **AIVA Chat**: Ask the AI assistant about specific drug-gene interactions, guidelines, and evidence.
 
 ---
 
@@ -52,18 +52,18 @@ The PGx card in the [Analysis Hub](analysis-hub.md) provides a structured view o
 
 The card displays:
 
-- **Variants found** -- Pharmacogene variants detected in your sample.
-- **Metabolizer phenotype** -- Predicted metabolizer status based on the variant(s) (e.g., Poor Metabolizer, Normal Metabolizer).
-- **Affected medications** -- Drugs whose metabolism or efficacy is affected by the detected variants.
-- **Clinical action** -- Recommended prescribing modifications (dose adjustment, alternative drug, contraindication).
+- **Variants found**: Pharmacogene variants detected in your sample.
+- **Metabolizer phenotype**: Predicted metabolizer status based on the variant(s) (e.g., Poor Metabolizer, Normal Metabolizer).
+- **Affected medications**: Drugs whose metabolism or efficacy is affected by the detected variants.
+- **Clinical action**: Recommended prescribing modifications (dose adjustment, alternative drug, contraindication).
 
 ### Step 3: Review Prescribing Guidelines
 
 For each drug-gene interaction, the card provides links to:
 
-- **CPIC guidelines** -- Clinical Pharmacogenetics Implementation Consortium recommendations.
-- **PharmGKB annotations** -- Detailed evidence summaries and clinical annotations.
-- **FDA label information** -- Pharmacogenomic biomarker information from FDA-approved drug labels.
+- **CPIC guidelines**: Clinical Pharmacogenetics Implementation Consortium recommendations.
+- **PharmGKB annotations**: Detailed evidence summaries and clinical annotations.
+- **FDA label information**: Pharmacogenomic biomarker information from FDA-approved drug labels.
 
 ---
 

@@ -5,18 +5,18 @@ description: Search ClinicalTrials.gov through AIVA Chat to find active, recruit
 
 # Clinical Trials
 
-The Clinical Trials tool searches ClinicalTrials.gov directly from AIVA Chat. Use it to find trials relevant to specific genes, variants, conditions, or interventions -- helping connect genomic findings to potential therapeutic opportunities.
+The Clinical Trials tool searches ClinicalTrials.gov directly from AIVA Chat. Use it to find trials relevant to specific genes, variants, conditions, or interventions, helping connect genomic findings to potential therapeutic opportunities.
 
 ---
 
 ## Capabilities
 
-- **Search by condition** -- Find trials for specific diseases or syndromes (e.g., "hereditary breast cancer," "Lynch syndrome").
-- **Search by gene** -- Locate trials that mention specific genes in their eligibility criteria or study descriptions.
-- **Search by intervention** -- Find trials testing a particular drug, therapy, or procedure.
-- **Filter by status** -- Focus on recruiting, active, or completed trials.
-- **Filter by phase** -- Narrow results to Phase 1, 2, 3, or 4 trials.
-- **Retrieve trial details** -- Get titles, NCT numbers, sponsors, phases, enrollment status, and eligibility summaries.
+- **Search by condition**: Find trials for specific diseases or syndromes (e.g., "hereditary breast cancer," "Lynch syndrome").
+- **Search by gene**: Locate trials that mention specific genes in their eligibility criteria or study descriptions.
+- **Search by intervention**: Find trials testing a particular drug, therapy, or procedure.
+- **Filter by status**: Focus on recruiting, active, or completed trials.
+- **Filter by phase**: Narrow results to Phase 1, 2, 3, or 4 trials.
+- **Retrieve trial details**: Get titles, NCT numbers, sponsors, phases, enrollment status, and eligibility summaries.
 
 ---
 
@@ -78,10 +78,10 @@ For uncommon conditions, clinical trials may represent the only therapeutic opti
 
 Clinical Trials integrates naturally with other AIVA tools:
 
-- **Genomic Data Query + Clinical Trials** -- Query your data for actionable variants, then search for trials targeting those variants.
-- **Knowledge Graph + Clinical Trials** -- Find drugs that target a specific gene, then search for trials testing those drugs.
-- **Variant Annotation + Clinical Trials** -- Look up a variant's clinical significance, then find relevant trials for the associated condition.
-- **Web Search + Clinical Trials** -- Search for the latest treatment guidelines, then find active trials for recommended therapies.
+- **Genomic Data Query + Clinical Trials**: Query your data for actionable variants, then search for trials targeting those variants.
+- **Knowledge Graph + Clinical Trials**: Find drugs that target a specific gene, then search for trials testing those drugs.
+- **Variant Annotation + Clinical Trials**: Look up a variant's clinical significance, then find relevant trials for the associated condition.
+- **Web Search + Clinical Trials**: Search for the latest treatment guidelines, then find active trials for recommended therapies.
 
 See [Example Workflows](example-workflows.md) for end-to-end analysis patterns.
 

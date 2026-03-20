@@ -26,13 +26,13 @@ AIVA can import files directly from cloud storage services and public URLs. Inst
 2. Click **Upload** or open the upload dialog.
 3. Select the **Cloud URL** import option.
 4. Paste the full URL of the file you want to import.
-5. (Optional) Enable [Variant Effect Prediction](vep-annotation.md) or [Structural Variant Annotation](annotsv-annotation.md) if the file is a VCF and you want annotation applied.
+5. (Optional) Enable [Small Variant Annotation](small-variant-annotation.md) or [Structural Variant Annotation](structural-variant-annotation.md) if the file is a VCF and you want annotation applied.
 6. Click **Submit**.
 
 AIVA creates a background job that:
 
 1. **Downloads** the file from the provided URL to the server.
-2. **Annotates** the file (if Variant Effect Prediction or Structural Variant Annotation was selected).
+2. **Annotates** the file (if Small Variant Annotation or Structural Variant Annotation was selected).
 3. **Parses** the file and loads it into the database.
 
 You can monitor progress in the [Job Manager](job-monitoring.md).
@@ -57,9 +57,9 @@ If the download fails due to access permissions, the job will report an error in
 
 Cloud URL imports support the same file formats as local uploads:
 
-- **VCF** (`.vcf`, `.vcf.gz`) -- Variant Call Format files, optionally gzipped.
-- **CSV** (`.csv`) -- Comma-separated values.
-- **TSV** (`.tsv`, `.txt`) -- Tab-separated values.
+- **VCF** (`.vcf`, `.vcf.gz`): Variant Call Format files, optionally gzipped.
+- **CSV** (`.csv`): Comma-separated values.
+- **TSV** (`.tsv`, `.txt`): Tab-separated values.
 
 ---
 
@@ -72,7 +72,7 @@ Download --> Annotate (optional) --> Parse --> Ready
 ```
 
 1. **Download**: The file is downloaded from the cloud URL to temporary server storage. Progress is reported as the download proceeds.
-2. **Annotate**: If Variant Effect Prediction or Structural Variant Annotation was requested, annotation runs against the downloaded file. This step is skipped for non-VCF files or if no annotation was selected.
+2. **Annotate**: If Small Variant Annotation or Structural Variant Annotation was requested, annotation runs against the downloaded file. This step is skipped for non-VCF files or if no annotation was selected.
 3. **Parse**: The file (original or annotated) is parsed and loaded into the database using bulk operations.
 4. **Ready**: The sample appears in your sample list and is available for exploration in the [Data Table](../data-table/index.md).
 

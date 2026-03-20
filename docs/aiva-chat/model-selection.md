@@ -68,5 +68,5 @@ Available models may vary based on your [subscription tier](../getting-started/s
 ## Tips
 
 - **Start with a faster model** for exploratory questions, then switch to a more capable model when you need deeper analysis.
-- **Model selection does not affect tool access** -- all models can use the same set of enabled tools. The difference is in how effectively the model selects and orchestrates those tools.
+- **Model selection does not affect tool access**: all models can use the same set of enabled tools. The difference is in how effectively the model selects and orchestrates those tools.
 - **Conversation history is preserved** when you switch models. Previous messages remain unchanged; only new messages use the selected model.

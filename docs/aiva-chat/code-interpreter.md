@@ -24,19 +24,19 @@ The Code Interpreter gives AIVA access to a sandboxed Python execution environme
 
 ### Statistical Analysis
 
-- **Hypothesis testing** -- t-tests, chi-squared tests, Fisher's exact test, Mann-Whitney U, Kruskal-Wallis.
-- **Descriptive statistics** -- Mean, median, standard deviation, percentiles, distributions.
-- **Correlation analysis** -- Pearson, Spearman, and Kendall correlation coefficients.
-- **Regression** -- Linear regression, logistic regression, curve fitting.
+- **Hypothesis testing**: t-tests, chi-squared tests, Fisher's exact test, Mann-Whitney U, Kruskal-Wallis.
+- **Descriptive statistics**: Mean, median, standard deviation, percentiles, distributions.
+- **Correlation analysis**: Pearson, Spearman, and Kendall correlation coefficients.
+- **Regression**: Linear regression, logistic regression, curve fitting.
 
 ### Data Visualization
 
-- **Histograms** -- Distribution of allele frequencies, quality scores, or any numeric field.
-- **Bar charts** -- Gene counts, variant categories, consequence types.
-- **Scatter plots** -- Correlations between numeric fields (e.g., CADD score vs. allele frequency).
-- **Box plots** -- Compare distributions across groups (e.g., quality scores by chromosome).
-- **Heatmaps** -- Correlation matrices, co-occurrence patterns.
-- **Pie charts** -- Proportional breakdowns of categorical data.
+- **Histograms**: Distribution of allele frequencies, quality scores, or any numeric field.
+- **Bar charts**: Gene counts, variant categories, consequence types.
+- **Scatter plots**: Correlations between numeric fields (e.g., CADD score vs. allele frequency).
+- **Box plots**: Compare distributions across groups (e.g., quality scores by chromosome).
+- **Heatmaps**: Correlation matrices, co-occurrence patterns.
+- **Pie charts**: Proportional breakdowns of categorical data.
 
 ### Custom Calculations
 
@@ -75,11 +75,11 @@ The Code Interpreter gives AIVA access to a sandboxed Python execution environme
 
 The Code Interpreter runs in a multi-layer sandbox with the following protections:
 
-- **Environment isolation** -- Code executes in a restricted environment separate from the AIVA backend.
-- **Resource limits** -- CPU time, memory usage, and execution duration are capped to prevent abuse.
-- **No network access** -- The Python environment cannot make outbound network requests.
-- **No filesystem access** -- Code cannot read or write files outside the sandbox.
-- **Pre-installed libraries only** -- Only the listed scientific libraries are available; arbitrary packages cannot be installed.
+- **Environment isolation**: Code executes in a restricted environment separate from the AIVA backend.
+- **Resource limits**: CPU time, memory usage, and execution duration are capped to prevent abuse.
+- **No network access**: The Python environment cannot make outbound network requests.
+- **No filesystem access**: Code cannot read or write files outside the sandbox.
+- **Pre-installed libraries only**: Only the listed scientific libraries are available; arbitrary packages cannot be installed.
 
 !!! note "Data access"
     The Code Interpreter does not have direct access to your database. To analyze your uploaded data with Python, AIVA first queries the data using the Genomic Data Query tool, then passes the results to the Code Interpreter. This happens automatically when you ask a question that requires both data retrieval and computation.
@@ -111,7 +111,7 @@ See [Example Workflows](example-workflows.md) for more multi-tool patterns.
 
 ## Tips for Best Results
 
-- **Be specific about the visualization type** -- "Create a histogram" or "Make a scatter plot" helps AIVA choose the right chart.
-- **Specify axes and labels** -- "Plot allele frequency on the x-axis and CADD score on the y-axis" produces clearer charts.
-- **Request statistical details** -- "Include the p-value and confidence interval" ensures the output includes the numbers you need.
-- **Ask for interpretation** -- "Run the test and explain what the result means" gets you both the computation and the context.
+- **Be specific about the visualization type**: "Create a histogram" or "Make a scatter plot" helps AIVA choose the right chart.
+- **Specify axes and labels**: "Plot allele frequency on the x-axis and CADD score on the y-axis" produces clearer charts.
+- **Request statistical details**: "Include the p-value and confidence interval" ensures the output includes the numbers you need.
+- **Ask for interpretation**: "Run the test and explain what the result means" gets you both the computation and the context.

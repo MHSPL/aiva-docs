@@ -93,10 +93,10 @@ A detailed report covering all aspects of genomic analysis.
 
 After creating a report from a template, you can customize it freely:
 
-- **Add sections** -- Insert additional sections not included in the template.
-- **Remove sections** -- Delete sections that are not relevant to your analysis.
-- **Rename sections** -- Change section titles to match your organization's conventions.
-- **Reorder sections** -- Drag and drop to rearrange the report structure.
+- **Add sections**: Insert additional sections not included in the template.
+- **Remove sections**: Delete sections that are not relevant to your analysis.
+- **Rename sections**: Change section titles to match your organization's conventions.
+- **Reorder sections**: Drag and drop to rearrange the report structure.
 
 ---
 

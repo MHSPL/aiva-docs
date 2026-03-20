@@ -18,7 +18,7 @@ AIVA uses **row virtualization** (also called windowed rendering) to keep the da
 - This means the browser never needs to manage millions of DOM nodes at once, keeping memory usage low and interactions snappy.
 
 !!! info "What this means for you"
-    You can scroll through a dataset with 10 million or more rows as smoothly as a dataset with 100 rows. There is no need to paginate through results one page at a time if you prefer to scroll -- the table handles it.
+    You can scroll through a dataset with 10 million or more rows as smoothly as a dataset with 100 rows. There is no need to paginate through results one page at a time if you prefer to scroll. The table handles it.
 
 ---
 

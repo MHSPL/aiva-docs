@@ -26,7 +26,7 @@ Each job moves through a series of states as it progresses through the processin
 |-------|-------------|
 | **Queued** | The job has been created and is waiting for an available processing slot. Jobs are claimed atomically using database-level locking to prevent conflicts. |
 | **Downloading** | The file is being retrieved from a cloud URL (GCS, S3, Azure, or HTTPS). This state applies only to [cloud URL imports](cloud-urls.md); local uploads skip this stage. |
-| **Annotating** | Variant Effect Prediction or Structural Variant Annotation is running against the file. This stage appears only when annotation was selected during upload. |
+| **Annotating** | Small Variant Annotation or Structural Variant Annotation is running against the file. This stage appears only when annotation was selected during upload. |
 | **Parsing** | The file is being parsed and loaded into the database using high-speed bulk insertion. |
 | **Completed** | The job finished successfully. The sample is ready to view in the data table. |
 | **Failed** | An error occurred during processing. See the error details on the job entry for diagnostic information. |
@@ -35,9 +35,9 @@ Each job moves through a series of states as it progresses through the processin
 
 Jobs are processed in priority order to minimize wait times:
 
-1. **Parsing jobs** (highest priority) -- These are the fastest to complete and unlock data for analysis.
-2. **Download jobs** -- Cloud URL retrieval runs at the next priority level.
-3. **Annotation jobs** (lowest priority) -- Variant Effect Prediction and Structural Variant Annotation are computationally intensive and run at the lowest priority to avoid blocking simpler jobs.
+1. **Parsing jobs** (highest priority): These are the fastest to complete and unlock data for analysis.
+2. **Download jobs**: Cloud URL retrieval runs at the next priority level.
+3. **Annotation jobs** (lowest priority): Small Variant Annotation and Structural Variant Annotation are computationally intensive and run at the lowest priority to avoid blocking simpler jobs.
 
 ---
 
@@ -58,12 +58,12 @@ AIVA uses **server-sent events (SSE)** to push job status changes to your browse
 
 Click on any job entry in the Job Manager to expand its details. The detail view includes:
 
-- **File name** -- The original name of the uploaded file.
-- **Sample name** -- The human-readable name you assigned (or the filename if none was provided).
-- **Created at** -- Timestamp when the job was submitted.
-- **Current state** -- The active processing stage.
-- **Processing stages** -- A timeline showing which stages have completed and which remain.
-- **Error message** (failed jobs only) -- A description of what went wrong.
+- **File name**: The original name of the uploaded file.
+- **Sample name**: The human-readable name you assigned (or the filename if none was provided).
+- **Created at**: Timestamp when the job was submitted.
+- **Current state**: The active processing stage.
+- **Processing stages**: A timeline showing which stages have completed and which remain.
+- **Error message** (failed jobs only): A description of what went wrong.
 
 ---
 
@@ -99,7 +99,7 @@ AIVA processes multiple jobs in parallel. The system allocates processing slots 
 
 - **Parsing**: Up to 10 concurrent jobs.
 - **Downloading**: Up to 10 concurrent jobs.
-- **Annotation** (Variant Effect Prediction / Structural Variant Annotation): Up to 10 concurrent jobs.
+- **Annotation** (Small Variant Annotation / Structural Variant Annotation): Up to 10 concurrent jobs.
 
 If all slots for a given type are occupied, new jobs of that type remain in the **Queued** state until a slot becomes available. Jobs of other types continue processing independently.
 

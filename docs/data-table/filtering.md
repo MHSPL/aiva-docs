@@ -25,9 +25,9 @@ Each column in the data table has its own filter control:
 
 Text filters apply to string-based columns such as CHROM, REF, ALT, Gene, and Consequence.
 
-- **Contains** -- Matches rows where the cell value contains the entered text.
-- **Exact match** -- Matches rows where the cell value is exactly equal to the entered text.
-- **Starts with / Ends with** -- Matches based on the beginning or end of the cell value.
+- **Contains**: Matches rows where the cell value contains the entered text.
+- **Exact match**: Matches rows where the cell value is exactly equal to the entered text.
+- **Starts with / Ends with**: Matches based on the beginning or end of the cell value.
 
 **Example**: Filter the `Consequence` column to `missense_variant` to see only missense mutations.
 
@@ -35,9 +35,9 @@ Text filters apply to string-based columns such as CHROM, REF, ALT, Gene, and Co
 
 Numeric filters apply to columns with numerical data such as POS, QUAL, allele frequency, CADD score, and depth.
 
-- **Equals** -- Matches a specific number.
-- **Greater than / Less than** -- Matches values above or below a threshold.
-- **Between** -- Matches values within a specified range (inclusive).
+- **Equals**: Matches a specific number.
+- **Greater than / Less than**: Matches values above or below a threshold.
+- **Between**: Matches values within a specified range (inclusive).
 
 **Example**: Filter `gnomAD_AF` to values less than `0.01` to find rare variants with a population allele frequency below 1%.
 
@@ -61,7 +61,7 @@ Multi-select filters apply to columns with a finite set of categorical values, s
 
 ## Combining Filters
 
-You can apply filters to multiple columns simultaneously. When multiple filters are active, they operate as a logical **AND** -- only rows that satisfy all active filters are displayed.
+You can apply filters to multiple columns simultaneously. When multiple filters are active, they operate as a logical **AND**, meaning only rows that satisfy all active filters are displayed.
 
 **Example workflow for finding clinically relevant rare variants**:
 

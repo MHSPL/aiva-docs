@@ -13,7 +13,7 @@ For real-time update notifications, check the "What's New" announcements in the 
 
 ## Version 2.x (Current)
 
-### 2.x.x -- YYYY-MM-DD
+### 2.x.x, YYYY-MM-DD
 
 **New Features**
 
@@ -35,7 +35,7 @@ For real-time update notifications, check the "What's New" announcements in the 
 
 <!-- Template for new releases:
 
-### X.Y.Z -- YYYY-MM-DD
+### X.Y.Z, YYYY-MM-DD
 
 **New Features**
 
@@ -74,6 +74,6 @@ Each release entry includes the following sections as applicable:
 
 ## Staying Updated
 
-- **In-app announcements** -- The "What's New" notification in the AIVA navigation bar highlights the most important changes. See [Announcements](admin/announcements.md).
-- **This changelog** -- Comprehensive release notes for all versions.
-- **API versioning** -- Breaking API changes are communicated through API version headers and this changelog. See [API Reference](api/index.md).
+- **In-app announcements**: The "What's New" notification in the AIVA navigation bar highlights the most important changes. See [Announcements](admin/announcements.md).
+- **This changelog**: Comprehensive release notes for all versions.
+- **API versioning**: Breaking API changes are communicated through API version headers and this changelog. See [API Reference](api/index.md).

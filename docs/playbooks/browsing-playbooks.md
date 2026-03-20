@@ -22,12 +22,12 @@ The playbook marketplace is a curated collection of reusable analysis workflows 
 
 Playbooks are organized into categories based on analysis type:
 
-- **Clinical Variant Interpretation** -- Workflows for classifying and interpreting variants in clinical settings.
-- **Rare Disease Diagnosis** -- Phenotype-driven gene prioritization and candidate gene analysis.
-- **Pharmacogenomics** -- Drug-gene interaction analysis and prescribing recommendation workflows.
-- **Cancer Genomics** -- Somatic variant analysis, actionable mutation identification, and therapy matching.
-- **Research Analysis** -- Exploratory workflows for population genetics, statistical analysis, and data quality assessment.
-- **Quality Control** -- Sample QC checks, coverage analysis, and data validation workflows.
+- **Clinical Variant Interpretation**: Workflows for classifying and interpreting variants in clinical settings.
+- **Rare Disease Diagnosis**: Phenotype-driven gene prioritization and candidate gene analysis.
+- **Pharmacogenomics**: Drug-gene interaction analysis and prescribing recommendation workflows.
+- **Cancer Genomics**: Somatic variant analysis, actionable mutation identification, and therapy matching.
+- **Research Analysis**: Exploratory workflows for population genetics, statistical analysis, and data quality assessment.
+- **Quality Control**: Sample QC checks, coverage analysis, and data validation workflows.
 
 ### Search
 
@@ -37,10 +37,10 @@ Use the search bar to find playbooks by keyword, gene name, disease, or analysis
 
 Narrow results using filters:
 
-- **Category** -- Select one or more categories.
-- **Popularity** -- Sort by most used or highest rated.
-- **Recency** -- Sort by newest or most recently updated.
-- **Author** -- Filter by playbook creator.
+- **Category**: Select one or more categories.
+- **Popularity**: Sort by most used or highest rated.
+- **Recency**: Sort by newest or most recently updated.
+- **Author**: Filter by playbook creator.
 
 ---
 
@@ -48,12 +48,12 @@ Narrow results using filters:
 
 Click on any playbook to see its details:
 
-- **Title and description** -- What the playbook does and when to use it.
-- **Steps** -- The sequence of instructions the AI will follow.
-- **Tools used** -- Which AIVA tools the playbook invokes.
-- **Author** -- Who created the playbook.
-- **Version** -- Current version number and changelog.
-- **Usage count** -- How many times the playbook has been used.
+- **Title and description**: What the playbook does and when to use it.
+- **Steps**: The sequence of instructions the AI will follow.
+- **Tools used**: Which AIVA tools the playbook invokes.
+- **Author**: Who created the playbook.
+- **Version**: Current version number and changelog.
+- **Usage count**: How many times the playbook has been used.
 
 ---
 

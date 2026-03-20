@@ -14,8 +14,8 @@ This guide walks you through creating a new report, adding and organizing sectio
 1. Navigate to the **Reports** section from the main navigation.
 2. Click **New Report**.
 3. Choose a starting point:
-    - **Blank report** -- Start with an empty document.
-    - **From template** -- Select a pre-built [template](templates.md) with pre-defined sections.
+    - **Blank report**: Start with an empty document.
+    - **From template**: Select a pre-built [template](templates.md) with pre-defined sections.
 4. Enter a **report title** and optional **description**.
 5. Select the **sample(s)** to associate with the report.
 6. Click **Create**.
@@ -30,12 +30,12 @@ The report editor provides a full-featured rich text editing experience:
 
 ### Formatting Options
 
-- **Text formatting** -- Bold, italic, underline, strikethrough.
-- **Headings** -- Multiple heading levels for document structure.
-- **Lists** -- Ordered and unordered lists.
-- **Tables** -- Insert and edit tables with customizable rows and columns.
-- **Links** -- Add hyperlinks to external resources.
-- **Code blocks** -- Format technical content or variant notation.
+- **Text formatting**: Bold, italic, underline, strikethrough.
+- **Headings**: Multiple heading levels for document structure.
+- **Lists**: Ordered and unordered lists.
+- **Tables**: Insert and edit tables with customizable rows and columns.
+- **Links**: Add hyperlinks to external resources.
+- **Code blocks**: Format technical content or variant notation.
 
 ### Working with Sections
 
@@ -47,9 +47,9 @@ Reports are organized into sections. Each section has:
 
 To manage sections:
 
-- **Add a section** -- Click the "Add Section" button and choose a section type or create a custom one.
-- **Reorder sections** -- Drag and drop sections to rearrange the report structure.
-- **Delete a section** -- Remove sections you do not need.
+- **Add a section**: Click the "Add Section" button and choose a section type or create a custom one.
+- **Reorder sections**: Drag and drop sections to rearrange the report structure.
+- **Delete a section**: Remove sections you do not need.
 
 ---
 

@@ -7,147 +7,103 @@ description: Step-by-step guide to uploading a VCF, CSV, or TSV file into AIVA a
 
 This walkthrough takes you from file selection to viewing your data in the interactive table. The entire process typically takes a few seconds for small files and a few minutes for larger datasets or files that require annotation.
 
----
-
 ## Prerequisites
 
 - A [verified AIVA account](account-setup.md).
-- A genomic data file in one of the supported formats: **VCF**, **CSV**, or **TSV**.
-- An active internet connection.
+- A sample file in one of the supported formats: **VCF**, **CSV**, or **TSV**.
+- An active internet connection, lol.
 
 !!! info "File size limits"
-    Upload limits depend on your [subscription tier](subscription-tiers.md). Free accounts have restricted upload counts and file sizes. Plus and Pro tiers support larger files and more uploads.
-
----
+    Upload limits depend on your [subscription tier](subscription-tiers.md).
 
 ## Step 1: Navigate to Samples
 
 Click the **Samples** tab in the header navigation bar. This opens the Samples page where you can manage projects and upload files.
 
----
-
 ## Step 2: Start a New Upload
 
-Click the **Upload** button or use the drag-and-drop zone on the page. You can also create a new project first and upload into it, or upload directly to your personal sample library.
+Click the **Upload** button in the top right corner of the page. The upload dialog has two tabs:
 
----
+=== "Local Upload"
 
-## Step 3: Choose Your File
+    Drag your file onto the upload zone, or click to browse your file system. Supported file types:
 
-You have two options:
+    | Format | Extensions | Notes |
+    |--------|-----------|-------|
+    | VCF | `.vcf`, `.vcf.gz` | Variant Call Format. Supports both uncompressed and gzip-compressed files. |
+    | CSV | `.csv` | Comma-separated values. First row must contain column headers. |
+    | TSV | `.tsv`, `.txt` | Tab-separated values. First row must contain column headers. |
 
-=== "Drag and Drop"
+=== "Cloud Import"
 
-    Drag your file from your file manager and drop it onto the upload zone. The zone highlights when a valid file is detected.
+    Paste a file URL from a cloud storage bucket to import directly. Supported providers:
 
-=== "Browse"
+    - Google Cloud Storage (`gs://`)
+    - Amazon S3 (`s3://`)
+    - Azure Blob Storage (`az://`)
+    - Public HTTPS URLs
 
-    Click the upload zone or the **Browse** button to open your system file picker. Navigate to your file and select it.
+## Step 3: Configure Upload Options
 
-Supported file types:
+After selecting your file, configuration options appear below:
 
-| Format | Extensions | Notes |
-|--------|-----------|-------|
-| VCF | `.vcf`, `.vcf.gz` | Variant Call Format. Supports both uncompressed and gzip-compressed files. |
-| CSV | `.csv` | Comma-separated values. First row must contain column headers. |
-| TSV | `.tsv`, `.txt` | Tab-separated values. First row must contain column headers. |
+### Split by sample
 
----
+For multi-sample VCF files, check **Split by sample** to create separate tables for each sample. Each split sample counts toward your weekly sample limit (max 100 samples per file). Leave unchecked to analyze all samples together in a single table.
 
-## Step 4: Configure Upload Options
+### Variant Annotation (VCF files)
 
-After selecting your file, a configuration panel appears. Depending on the file type and your subscription tier, you may see the following options:
+Choose one of three annotation options:
 
-### VCF-Specific Options
+- **Skip**: Select this if your VCF is already annotated from your own pipeline. AIVA will recognize and display your existing annotations.
+- **Small Variants (SNVs/Indels)**: Runs small variant annotation to add consequence predictions, gene symbols, and transcript-level information.
+- **Structural Variants (CNVs/SVs)**: Runs structural variant annotation with clinical and functional context.
 
-- **Variant Effect Prediction** -- Check this box to run variant effect predictions on your VCF file during processing. This adds consequence predictions, gene symbols, transcript information, and more. This option is available on <span class="tier-badge tier-plus">Plus</span> and <span class="tier-badge tier-pro">Pro</span> tiers.
+!!! warning "hg38 only"
+    Variant annotation is currently supported only for VCF files aligned to the **hg38** (GRCh38) reference genome build.
 
-- **Structural Variant Annotation** -- Check this box to run structural variant annotation on your VCF file. Also restricted to <span class="tier-badge tier-plus">Plus</span> and <span class="tier-badge tier-pro">Pro</span> tiers.
-
-!!! tip "Not sure about annotation?"
-    You can always upload without annotation first and examine your raw data. Annotation can add significant processing time depending on file size, but it enriches your dataset with clinically relevant information that the AI assistant can then use for analysis.
-
-### General Options
-
-- **Sample Name** -- Optionally provide a human-readable name for the sample. If left blank, the filename is used.
-- **Project** -- Optionally assign the upload to an existing project for organization and collaboration.
-
----
-
-## Step 5: Submit the Upload
+## Step 4: Submit the Upload
 
 Click the **Upload** or **Submit** button to start the process. AIVA handles the rest in the background:
 
 1. The file is uploaded to the server.
-2. If Variant Effect Prediction or Structural Variant Annotation was selected, the annotation job runs first.
-3. The file is parsed and loaded into the database using optimized bulk operations.
+2. If Small Variant Annotation or Structural Variant Annotation was selected, the annotation job runs first.
+3. The file is parsed and loaded into the database.
 
----
+## Step 5: Monitor Job Progress
 
-## Step 6: Monitor Job Progress
+After submission, the upload enters the job processing pipeline. You can monitor progress by clicking the **Job Manager** icon in the header to open the jobs panel. Here you will see:
 
-After submission, the upload enters the job processing pipeline. You can monitor progress in two ways:
+- **Job status**: Queued, Processing, Completed, or Failed.
+- **Progress details**: The current stage of processing (downloading, annotating, parsing).
 
-### Job Manager
+## Step 6: Start exploring your data
 
-Click the **Job Manager** icon in the header to open the jobs panel. Here you will see:
+Once the job completes, head to the **Chat** tab to start exploring your data. Type `@sample:` followed by your sample name to attach it to the conversation, then ask AIVA questions. For example:
 
-- **Job status** -- Queued, Processing, Completed, or Failed.
-- **Progress details** -- The current stage of processing (downloading, annotating, parsing).
-- **Estimated time** -- For longer jobs, a rough estimate of remaining time.
+- "Summarize the variants in this sample"
+- "Show me all pathogenic variants in BRCA1"
+- "What are the most clinically significant findings?"
 
-### Real-Time Updates
+AIVA can query your data, run analyses, generate visualizations, and help you interpret results, all through conversation. See [AIVA Chat](../aiva-chat/index.md) to learn more.
 
-AIVA uses server-sent events (SSE) to push job status updates to your browser in real time. You do not need to refresh the page -- the status updates automatically.
-
-!!! warning "Do not close your browser tab"
-    While the job runs on the server and will complete even if you navigate away, keeping the tab open ensures you receive real-time status updates and are notified immediately when the job finishes.
-
----
-
-## Step 7: View Your Data
-
-Once the job completes successfully:
-
-1. Navigate to the **Samples** tab if you are not already there.
-2. Find your sample in the list. Newly completed samples appear at the top.
-3. Click on the sample to open it in the interactive data table.
-
-The data table provides:
-
-- **Virtualized scrolling** -- Smoothly browse datasets with millions of rows without performance degradation.
-- **Column sorting and filtering** -- Click column headers to sort, or use the filter controls to narrow down to variants of interest.
-- **Server-side pagination** -- Data is fetched in pages from the server, keeping the interface responsive regardless of dataset size.
-
-From the data table, you can:
-
-- **Flag variants** for follow-up review.
-- **Add comments** to individual rows with threaded discussions.
-- **Classify variants** using the ACMG framework.
-- **Open in Chat** to ask AIVA questions about the data.
-- **Launch Analysis** to enter the tertiary analysis workspace.
-
-For full details on the data table, see [Data Table](../data-table/index.md).
-
----
+You can also browse your data directly in the [Data Table](../data-table/index.md) from the **Samples** tab.
 
 ## Troubleshooting
 
 ??? question "My upload failed. What should I do?"
     Open the Job Manager and check the error message on the failed job. Common causes include:
 
-    - **Unsupported file format** -- Ensure the file extension matches one of the supported types and the content is valid.
-    - **File too large** -- Your subscription tier may have a file size limit. See [Subscription Tiers](subscription-tiers.md).
-    - **Upload limit reached** -- Free accounts have a limited number of uploads. Upgrade your tier to continue.
-    - **Malformed VCF** -- The file must include a valid VCF header. Check that the `#CHROM` header line is present.
+    - **Unsupported file format**: Ensure the file extension matches one of the supported types and the content is valid.
+    - **File too large**: Your subscription tier may have a file size limit. See [Subscription Tiers](subscription-tiers.md).
+    - **Upload limit reached**: Free accounts have a limited number of uploads. Upgrade your tier to continue.
+    - **Malformed VCF**: The file must include a valid VCF header. Check that the `#CHROM` header line is present.
 
-??? question "My Variant Effect Prediction is taking a long time."
-    Variant Effect Prediction involves running each variant through the Ensembl prediction pipeline. For whole-genome VCF files with millions of variants, this can take several minutes. The job will complete in the background -- you can continue using other features while it processes.
+??? question "My Small Variant Annotation is taking a long time."
+    Small Variant Annotation involves running each variant through the annotation pipeline. For whole-genome VCF files with millions of variants, this can take several minutes. The job will complete in the background, and you can continue using other features while it processes.
 
 ??? question "I uploaded a CSV but the columns look wrong."
     Ensure your CSV file uses commas as delimiters and that the first row contains column headers. If your file uses a different delimiter, rename it with the appropriate extension (`.tsv` for tab-separated).
-
----
 
 ## Next Steps
 

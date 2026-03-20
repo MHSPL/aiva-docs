@@ -71,7 +71,7 @@ To remove a conversation you no longer need:
 
 AIVA maintains awareness of the full conversation history. This means you can:
 
-- **Ask follow-up questions** without repeating context. For example, after asking "What pathogenic variants are in BRCA1?", you can follow up with "Show me the allele frequencies for those" -- AIVA understands "those" refers to the BRCA1 variants from the previous answer.
+- **Ask follow-up questions** without repeating context. For example, after asking "What pathogenic variants are in BRCA1?", you can follow up with "Show me the allele frequencies for those." AIVA understands "those" refers to the BRCA1 variants from the previous answer.
 
 - **Refine results iteratively**. Start with a broad question, then narrow down. For example: "List all missense variants" followed by "Filter those to only variants with CADD score above 25."
 

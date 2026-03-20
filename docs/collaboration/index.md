@@ -71,11 +71,11 @@ Download flagged variants and comment threads as CSV for clinical reports and au
 
 The collaboration workflow in AIVA follows a straightforward pattern:
 
-1. **Create a project** -- Define a project with a name and description to group related samples.
-2. **Add samples** -- Assign uploaded samples to the project. See [Managing Samples](../samples/managing-samples.md).
-3. **Invite collaborators** -- Share the project with team members by email, assigning appropriate roles.
-4. **Annotate together** -- Team members flag variants, leave comments, and classify variants using ACMG criteria.
-5. **Export results** -- Download flags and comments for clinical reports, publications, or audit documentation.
+1. **Create a project**: Define a project with a name and description to group related samples.
+2. **Add samples**: Assign uploaded samples to the project. See [Managing Samples](../samples/managing-samples.md).
+3. **Invite collaborators**: Share the project with team members by email, assigning appropriate roles.
+4. **Annotate together**: Team members flag variants, leave comments, and classify variants using ACMG criteria.
+5. **Export results**: Download flags and comments for clinical reports, publications, or audit documentation.
 
 !!! info "Role-based access"
     Each collaborator has a role that determines what they can do within the project. See [Sharing and Roles](sharing-and-roles.md) for a breakdown of permissions by role.

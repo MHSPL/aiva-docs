@@ -13,21 +13,21 @@ The Knowledge Graph tool queries a curated network of gene-protein-drug interact
 
 The knowledge graph contains interconnected entities representing:
 
-- **Genes** -- Human genes with identifiers, symbols, and functional annotations.
-- **Proteins** -- Gene products with structural and functional information.
-- **Drugs** -- Approved and investigational compounds with target information.
-- **Interactions** -- Edges connecting genes to proteins, proteins to other proteins, and drugs to their molecular targets.
-- **Pathways** -- Biological pathway memberships linking genes and proteins to known signaling and metabolic pathways.
+- **Genes**: Human genes with identifiers, symbols, and functional annotations.
+- **Proteins**: Gene products with structural and functional information.
+- **Drugs**: Approved and investigational compounds with target information.
+- **Interactions**: Edges connecting genes to proteins, proteins to other proteins, and drugs to their molecular targets.
+- **Pathways**: Biological pathway memberships linking genes and proteins to known signaling and metabolic pathways.
 
 ---
 
 ## Capabilities
 
-- **Drug-target lookups** -- Find which drugs target a specific gene or protein.
-- **Protein interaction networks** -- Explore which proteins interact with a protein of interest.
-- **Pathway analysis** -- Identify which biological pathways a gene or protein participates in.
-- **Network traversal** -- Trace multi-hop relationships (e.g., from a gene to its protein product to interacting proteins to drugs targeting those proteins).
-- **Drug repurposing candidates** -- Identify approved drugs that target proteins in the same pathway as your gene of interest.
+- **Drug-target lookups**: Find which drugs target a specific gene or protein.
+- **Protein interaction networks**: Explore which proteins interact with a protein of interest.
+- **Pathway analysis**: Identify which biological pathways a gene or protein participates in.
+- **Network traversal**: Trace multi-hop relationships (e.g., from a gene to its protein product to interacting proteins to drugs targeting those proteins).
+- **Drug repurposing candidates**: Identify approved drugs that target proteins in the same pathway as your gene of interest.
 
 ---
 
@@ -48,12 +48,12 @@ The knowledge graph contains interconnected entities representing:
 
 AIVA returns knowledge graph results as structured descriptions of the entities and relationships found. A typical response includes:
 
-- **Entity details** -- Gene symbol, protein name, drug name, and identifiers.
-- **Relationship types** -- "targets," "interacts with," "participates in," "encodes."
-- **Path descriptions** -- For multi-hop queries, AIVA describes the chain of relationships connecting your query entities.
+- **Entity details**: Gene symbol, protein name, drug name, and identifiers.
+- **Relationship types**: "targets," "interacts with," "participates in," "encodes."
+- **Path descriptions**: For multi-hop queries, AIVA describes the chain of relationships connecting your query entities.
 
 !!! note "Graph scope"
-    The knowledge graph is curated from established databases and may not include every known interaction. For the most current or comprehensive interaction data, consider combining Knowledge Graph queries with [Web Search](web-search.md) or [Biomedical Literature](pubtator.md) lookups.
+    The knowledge graph is curated from established databases and may not include every known interaction. For the most current or comprehensive interaction data, consider combining Knowledge Graph queries with [Web Search](web-search.md) or [Biomedical Literature](biomedical-literature.md) lookups.
 
 ---
 
@@ -83,9 +83,9 @@ For pharmacogenomic analysis, trace the connection between a mutated gene and po
 
 The Knowledge Graph is most powerful when combined with other AIVA tools:
 
-- **Genomic Data Query + Knowledge Graph** -- Query your data for variants in a gene, then explore that gene's interaction network.
-- **Knowledge Graph + Clinical Trials** -- Find drugs that target your gene of interest, then search for clinical trials testing those drugs.
-- **Knowledge Graph + Biomedical Literature** -- Explore interactions in the graph, then find supporting literature for specific relationships.
-- **Knowledge Graph + Code Interpreter** -- Retrieve interaction data, then visualize the network or compute network statistics.
+- **Genomic Data Query + Knowledge Graph**: Query your data for variants in a gene, then explore that gene's interaction network.
+- **Knowledge Graph + Clinical Trials**: Find drugs that target your gene of interest, then search for clinical trials testing those drugs.
+- **Knowledge Graph + Biomedical Literature**: Explore interactions in the graph, then find supporting literature for specific relationships.
+- **Knowledge Graph + Code Interpreter**: Retrieve interaction data, then visualize the network or compute network statistics.
 
 See [Example Workflows](example-workflows.md) for multi-tool analysis patterns.

@@ -26,10 +26,10 @@ Each step in a playbook is an instruction that tells AIVA what to do. Steps are 
 
 Each step includes:
 
-- **Step title** -- A short label describing the step (e.g., "Identify pathogenic variants").
-- **Instruction** -- The detailed instruction for the AI. Write this as you would write a prompt in AIVA Chat.
-- **Expected tool** (optional) -- Indicate which tool the step should use (Genomic Data Query, Variant Annotation, Biomedical Literature, etc.). This is a hint for the AI but not a hard requirement.
-- **Output format** (optional) -- Specify how the results should be presented (table, list, summary, chart).
+- **Step title**: A short label describing the step (e.g., "Identify pathogenic variants").
+- **Instruction**: The detailed instruction for the AI. Write this as you would write a prompt in AIVA Chat.
+- **Expected tool** (optional): Indicate which tool the step should use (Genomic Data Query, Variant Annotation, Biomedical Literature, etc.). This is a hint for the AI but not a hard requirement.
+- **Output format** (optional): Specify how the results should be presented (table, list, summary, chart).
 
 ### Example Steps
 
@@ -57,11 +57,11 @@ Each step includes:
 
 ## Best Practices for Writing Steps
 
-- **Be specific** -- "List all missense variants with CADD > 20 and gnomAD AF < 0.001" is better than "Find important variants."
-- **Reference previous steps** -- Steps can build on results from earlier steps. Use phrases like "For each variant found in the previous step..." to chain analyses.
-- **Specify output format** -- Tell AIVA whether you want a table, a list, a paragraph summary, or a chart.
-- **Include context** -- If a step requires domain knowledge, include it in the instruction. For example: "Classify the variant using ACMG criteria. Consider PP3 (computational evidence supports a deleterious effect) if CADD > 25."
-- **Keep steps focused** -- Each step should accomplish one task. Split complex analyses into multiple steps for clarity.
+- **Be specific**: "List all missense variants with CADD > 20 and gnomAD AF < 0.001" is better than "Find important variants."
+- **Reference previous steps**: Steps can build on results from earlier steps. Use phrases like "For each variant found in the previous step..." to chain analyses.
+- **Specify output format**: Tell AIVA whether you want a table, a list, a paragraph summary, or a chart.
+- **Include context**: If a step requires domain knowledge, include it in the instruction. For example: "Classify the variant using ACMG criteria. Consider PP3 (computational evidence supports a deleterious effect) if CADD > 25."
+- **Keep steps focused**: Each step should accomplish one task. Split complex analyses into multiple steps for clarity.
 
 ---
 
@@ -69,10 +69,10 @@ Each step includes:
 
 Playbooks support version control:
 
-- **Save as draft** -- Work on a playbook without publishing it.
-- **Publish** -- Make the playbook available for use (and optionally visible in the marketplace).
-- **Version history** -- Each published version is tracked. You can view the change history and revert to a previous version.
-- **Edit and republish** -- Update a published playbook by editing it and publishing a new version.
+- **Save as draft**: Work on a playbook without publishing it.
+- **Publish**: Make the playbook available for use (and optionally visible in the marketplace).
+- **Version history**: Each published version is tracked. You can view the change history and revert to a previous version.
+- **Edit and republish**: Update a published playbook by editing it and publishing a new version.
 
 !!! note "Version numbering"
     Versions are numbered sequentially (v1, v2, v3, etc.). When you fork another user's playbook, version numbering starts fresh on your copy.

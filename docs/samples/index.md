@@ -35,11 +35,11 @@ Ingest files directly from Google Cloud Storage, Amazon S3, Azure Blob Storage, 
 
 <div class="card" markdown>
 
-### Variant Effect Prediction
+### Small Variant Annotation
 
 Enrich VCF files with variant effect predictions during upload for consequence predictions, gene symbols, and transcript-level detail.
 
-[:octicons-arrow-right-24: Variant Effect Prediction](vep-annotation.md)
+[:octicons-arrow-right-24: Small Variant Annotation](small-variant-annotation.md)
 
 </div>
 
@@ -49,7 +49,7 @@ Enrich VCF files with variant effect predictions during upload for consequence p
 
 Annotate structural variants during upload to add clinical and functional annotations for CNVs, inversions, and translocations.
 
-[:octicons-arrow-right-24: Structural Variant Annotation](annotsv-annotation.md)
+[:octicons-arrow-right-24: Structural Variant Annotation](structural-variant-annotation.md)
 
 </div>
 
@@ -81,10 +81,10 @@ View, rename, delete, and organize your samples. Assign samples to projects for 
 
 The sample lifecycle in AIVA follows a straightforward pipeline:
 
-1. **Upload** -- Submit a local file or provide a cloud URL.
-2. **Annotate** (optional) -- Variant Effect Prediction or Structural Variant Annotation runs in the background if selected.
-3. **Parse** -- The file is parsed and loaded into the database using high-speed bulk operations.
-4. **Explore** -- Your data appears in the interactive data table, ready for analysis.
+1. **Upload**: Submit a local file or provide a cloud URL.
+2. **Annotate** (optional): Small Variant Annotation or Structural Variant Annotation runs in the background if selected.
+3. **Parse**: The file is parsed and loaded into the database using high-speed bulk operations.
+4. **Explore**: Your data appears in the interactive data table, ready for analysis.
 
 Each step is handled as a background job, so you can continue working while processing completes. Real-time status updates are pushed to your browser automatically.
 

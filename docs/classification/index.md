@@ -11,11 +11,11 @@ The AIVA Variant Classifier is a public, no-login-required tool for classifying 
 
 ## Key Features
 
-- **Public access** -- No account or login required. Available to anyone.
-- **ACMG/AMP compliant** -- Implements the 2015 ACMG/AMP standards and guidelines for variant interpretation.
-- **Interactive criteria selection** -- Select applicable evidence criteria from a comprehensive list.
-- **Automatic classification** -- Classification is calculated automatically as criteria are selected.
-- **Educational tool** -- Learn how ACMG criteria combine to produce classifications.
+- **Public access**: No account or login required. Available to anyone.
+- **ACMG/AMP compliant**: Implements the 2015 ACMG/AMP standards and guidelines for variant interpretation.
+- **Interactive criteria selection**: Select applicable evidence criteria from a comprehensive list.
+- **Automatic classification**: Classification is calculated automatically as criteria are selected.
+- **Educational tool**: Learn how ACMG criteria combine to produce classifications.
 
 ---
 
@@ -65,8 +65,8 @@ The classification follows the standard ACMG/AMP five-tier system:
 | Feature | Public Classifier | In-App ACMG Classification |
 |---------|-------------------|---------------------------|
 | **Login required** | No | Yes |
-| **Sample data access** | No -- manual entry only | Yes -- auto-populated from sample |
-| **Save classifications** | No | Yes -- saved to variant |
+| **Sample data access** | No (manual entry only) | Yes (auto-populated from sample) |
+| **Save classifications** | No | Yes (saved to variant) |
 | **Integration with flags/comments** | No | Yes |
 | **Report linking** | No | Yes |
 

@@ -5,7 +5,7 @@ description: Real-time variant lookups against ClinVar, gnomAD, CADD, SIFT, and 
 
 # Variant Annotation Tool
 
-The Variant Annotation tool performs real-time lookups for individual variants against multiple curated genomic databases. Unlike batch annotation during upload (Variant Effect Prediction), this tool is used interactively during a conversation to retrieve detailed information about specific variants on demand.
+The Variant Annotation tool performs real-time lookups for individual variants against multiple curated genomic databases. Unlike batch annotation during upload (Small Variant Annotation), this tool is used interactively during a conversation to retrieve detailed information about specific variants on demand.
 
 ---
 
@@ -25,10 +25,10 @@ The Variant Annotation tool performs real-time lookups for individual variants a
 
 You can query variants using several identifier formats:
 
-- **Gene and HGVS notation** -- `BRCA1 c.5266dupC`
-- **Genomic coordinates** -- `chr17:41245466 G>A`
-- **rsID** -- `rs80357906`
-- **Gene name** (for general information) -- `TP53`
+- **Gene and HGVS notation**: `BRCA1 c.5266dupC`
+- **Genomic coordinates**: `chr17:41245466 G>A`
+- **rsID**: `rs80357906`
+- **Gene name** (for general information): `TP53`
 
 AIVA interprets the identifier and routes it to the appropriate databases.
 
@@ -52,11 +52,11 @@ AIVA interprets the identifier and routes it to the appropriate databases.
 
 ClinVar assigns one of five clinical significance tiers:
 
-1. **Pathogenic** -- Strong evidence that the variant causes disease.
-2. **Likely Pathogenic** -- Sufficient evidence to support a disease-causing role.
-3. **Uncertain Significance (VUS)** -- Insufficient evidence to classify.
-4. **Likely Benign** -- Evidence suggests the variant does not cause disease.
-5. **Benign** -- Strong evidence that the variant is not disease-causing.
+1. **Pathogenic**: Strong evidence that the variant causes disease.
+2. **Likely Pathogenic**: Sufficient evidence to support a disease-causing role.
+3. **Uncertain Significance (VUS)**: Insufficient evidence to classify.
+4. **Likely Benign**: Evidence suggests the variant does not cause disease.
+5. **Benign**: Strong evidence that the variant is not disease-causing.
 
 The review status (number of stars) indicates the level of evidence supporting the classification.
 
@@ -83,15 +83,15 @@ These scores provide computational predictions of variant impact:
 
 ## Batch vs. Real-Time Annotation
 
-| Feature | Variant Annotation Tool (Chat) | Variant Effect Prediction (Upload) |
+| Feature | Variant Annotation Tool (Chat) | Small Variant Annotation (Upload) |
 |---------|-------------------------------|------------------------|
 | **Scope** | Individual variants, on demand | Entire VCF file |
 | **Speed** | Seconds per variant | Minutes to hours for large files |
-| **Databases** | ClinVar, gnomAD, CADD, SIFT, PolyPhen | Ensembl VEP (consequence, gene, transcript, plus plugins) |
+| **Databases** | ClinVar, gnomAD, CADD, SIFT, PolyPhen | Small variant annotation engine (consequence, gene, transcript, and more) |
 | **Availability** | All subscription tiers | Plus, Pro, and Trial tiers |
 | **Use case** | Focused investigation of specific variants | Comprehensive annotation of all variants in a sample |
 
-For batch annotation, see [Variant Effect Prediction](../samples/vep-annotation.md).
+For batch annotation, see [Small Variant Annotation](../samples/small-variant-annotation.md).
 
 ---
 
@@ -99,9 +99,9 @@ For batch annotation, see [Variant Effect Prediction](../samples/vep-annotation.
 
 The Variant Annotation tool is frequently used alongside:
 
-- **Genomic Data Query** -- Query your data to identify variants of interest, then annotate them individually.
-- **Biomedical Literature** -- After retrieving ClinVar data, search for supporting literature.
-- **Knowledge Graph** -- Explore the gene-protein-drug network for the gene harboring the variant.
-- **Clinical Trials** -- Find trials relevant to the variant's associated condition.
+- **Genomic Data Query**: Query your data to identify variants of interest, then annotate them individually.
+- **Biomedical Literature**: After retrieving ClinVar data, search for supporting literature.
+- **Knowledge Graph**: Explore the gene-protein-drug network for the gene harboring the variant.
+- **Clinical Trials**: Find trials relevant to the variant's associated condition.
 
 See [Example Workflows](example-workflows.md) for multi-tool analysis patterns.
