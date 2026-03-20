@@ -60,7 +60,7 @@ Administrators also see:
 Additional sections accessible from within pages:
 
 - **Analysis**: Reached by clicking "Analyze" on a sample. Opens the tertiary analysis workspace with category-based views.
-- **API**: Accessed from the header or user menu. Contains API documentation, key management, and MCP setup instructions.
+- **API**: Accessed from the user menu in the top-right corner. Contains API documentation, key management, and MCP setup instructions.
 
 !!! info "Active tab indicator"
     The currently active tab is highlighted with an accent-colored underline. If the AIVA agent is running in the background while you are on another tab, the Chat tab shows a subtle glow effect so you know a response is being generated.

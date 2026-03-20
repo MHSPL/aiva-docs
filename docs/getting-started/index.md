@@ -11,19 +11,11 @@ This section walks you through everything you need to go from a brand-new accoun
 
 ## In This Section
 
-<div class="grid-cards" markdown>
-
-<div class="card" markdown>
-
 ### Account Setup
 
 Create your account with email or Google sign-in, verify your email address, and configure profile settings.
 
 [:octicons-arrow-right-24: Account Setup](account-setup.md)
-
-</div>
-
-<div class="card" markdown>
 
 ### Navigating the UI
 
@@ -31,29 +23,17 @@ Understand the main layout (header, navigation tabs, sidebar, and content area) 
 
 [:octicons-arrow-right-24: Navigating the UI](navigating-the-ui.md)
 
-</div>
-
-<div class="card" markdown>
-
 ### Uploading Your First Sample
 
 A step-by-step walkthrough: choose a file, configure options, monitor the upload job, and view your data in the interactive table.
 
 [:octicons-arrow-right-24: Upload a Sample](uploading-your-first-sample.md)
 
-</div>
-
-<div class="card" markdown>
-
 ### Subscription Tiers
 
-Compare Free, Trial, Plus, and Pro plans to find the right level of access for your workflow.
+Compare Free, Trial, Plus, Pro, and Enterprise plans to find the right level of access for your workflow.
 
 [:octicons-arrow-right-24: Subscription Tiers](subscription-tiers.md)
-
-</div>
-
-</div>
 
 ---
 
