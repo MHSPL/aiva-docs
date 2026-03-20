@@ -100,6 +100,22 @@ Access to data is controlled at multiple levels:
 
 ---
 
+## AI Model Provider Agreements
+
+AIVA maintains Business Associate Agreements (BAAs) with all AI model providers used by the platform:
+
+- **Anthropic** (Claude)
+- **OpenAI** (GPT)
+- **Google** (Gemini)
+
+Under these agreements:
+
+- Your data is **not stored** on provider servers beyond the duration of a request.
+- Your data is **not used** for model training or improvement.
+- All API communication is encrypted in transit.
+
+---
+
 ## Compliance Responsibilities
 
 !!! note "Shared responsibility"
