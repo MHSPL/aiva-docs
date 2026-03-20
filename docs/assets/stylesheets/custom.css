@@ -167,28 +167,35 @@
   margin-bottom: 3px;
 }
 
-.aiva-chat__rows {
+.aiva-chat__table {
+  width: 100%;
   margin-top: 8px;
+  border-collapse: collapse;
+  font-size: 0.72rem;
   border: 1px solid var(--md-typeset-table-color);
   border-radius: 6px;
   overflow: hidden;
 }
 
-.aiva-chat__row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.aiva-chat__table th {
+  text-align: left;
   padding: 5px 9px;
-  font-size: 0.73rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: .55;
   border-bottom: 1px solid var(--md-typeset-table-color);
 }
-.aiva-chat__row:last-child { border-bottom: none; }
 
-.aiva-chat__gene {
-  font-weight: 600;
+.aiva-chat__table td {
+  padding: 5px 9px;
+  border-bottom: 1px solid var(--md-typeset-table-color);
   font-family: var(--md-code-font-family, monospace);
   font-size: 0.71rem;
 }
+
+.aiva-chat__table tr:last-child td { border-bottom: none; }
 
 /* ── Table mockup ──────────────────────────────────────────── */
 .aiva-tbl__head {
@@ -414,9 +421,15 @@
    ============================================================ */
 .aiva-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 14px;
   margin-top: 24px;
+}
+@media (max-width: 900px) {
+  .aiva-cards { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 480px) {
+  .aiva-cards { grid-template-columns: 1fr; }
 }
 
 .aiva-card {
@@ -437,23 +450,6 @@
 [data-md-color-scheme="slate"] .aiva-card:hover {
   box-shadow: 0 6px 20px rgba(0,0,0,.32);
 }
-
-.aiva-card__icon {
-  display: block;
-  width: 32px;
-  height: 32px;
-  border-radius: 7px;
-  margin-bottom: 12px;
-  background: linear-gradient(135deg, var(--md-primary-fg-color), #00695c);
-}
-
-/* Distinct icon colors per type */
-.aiva-icon--upload { background: linear-gradient(135deg,#0097a7,#00695c); }
-.aiva-icon--collab { background: linear-gradient(135deg,#5e35b1,#3949ab); }
-.aiva-icon--book   { background: linear-gradient(135deg,#00838f,#006064); }
-.aiva-icon--api    { background: linear-gradient(135deg,#1565c0,#0d47a1); }
-.aiva-icon--shield { background: linear-gradient(135deg,#2e7d32,#1b5e20); }
-.aiva-icon--admin  { background: linear-gradient(135deg,#558b2f,#33691e); }
 
 .aiva-card__title {
   font-size: 0.9rem;

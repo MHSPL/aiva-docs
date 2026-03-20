@@ -105,25 +105,21 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
         <span class="aiva-mockup__title">AIVA Chat</span>
       </div>
       <div class="aiva-mockup__body">
-        <div class="aiva-chat__msg aiva-chat__msg--user">Which variants have ACMG class ≥ 4?</div>
+        <div class="aiva-chat__msg aiva-chat__msg--user">List P/LP variants in @sample:patient007</div>
         <div class="aiva-chat__msg aiva-chat__msg--ai">
           <span class="aiva-chat__label">AIVA</span>
           Found 12 pathogenic variants. Showing top results by classification…
         </div>
-        <div class="aiva-chat__rows">
-          <div class="aiva-chat__row">
-            <span class="aiva-chat__gene">BRCA1</span>
-            <span class="aiva-badge aiva-badge--path">Pathogenic</span>
-          </div>
-          <div class="aiva-chat__row">
-            <span class="aiva-chat__gene">TP53</span>
-            <span class="aiva-badge aiva-badge--path">Pathogenic</span>
-          </div>
-          <div class="aiva-chat__row">
-            <span class="aiva-chat__gene">MLH1</span>
-            <span class="aiva-badge aiva-badge--lpath">Likely Pathogenic</span>
-          </div>
-        </div>
+        <table class="aiva-chat__table">
+          <thead>
+            <tr><th>Gene</th><th>Variant</th><th>Class</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>BRCA1</td><td>c.5266dupC (p.Gln1756fs)</td><td><span class="aiva-badge aiva-badge--path">Pathogenic</span></td></tr>
+            <tr><td>TP53</td><td>c.718C>T (p.Gln240*)</td><td><span class="aiva-badge aiva-badge--path">Pathogenic</span></td></tr>
+            <tr><td>MLH1</td><td>c.1972dupC (p.Gln658fs)</td><td><span class="aiva-badge aiva-badge--lpath">Likely Path.</span></td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -249,27 +245,22 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
   <p class="aiva-section__desc">Every module works together — no stitching tools, no manual data handoff.</p>
   <div class="aiva-cards">
     <a href="samples/" class="aiva-card">
-      <span class="aiva-card__icon aiva-icon--upload"></span>
       <span class="aiva-card__title">Samples &amp; Uploads</span>
       <span class="aiva-card__desc">Drag-and-drop or cloud URL uploads with optional variant annotation.</span>
     </a>
     <a href="collaboration/" class="aiva-card">
-      <span class="aiva-card__icon aiva-icon--collab"></span>
       <span class="aiva-card__title">Collaboration</span>
       <span class="aiva-card__desc">Projects, role-based access, variant flagging, and threaded comments.</span>
     </a>
     <a href="playbooks/" class="aiva-card">
-      <span class="aiva-card__icon aiva-icon--book"></span>
       <span class="aiva-card__title">Playbooks</span>
       <span class="aiva-card__desc">Reusable analysis workflows you can share across your team or institution.</span>
     </a>
     <a href="api/" class="aiva-card">
-      <span class="aiva-card__icon aiva-icon--api"></span>
       <span class="aiva-card__title">REST API</span>
       <span class="aiva-card__desc">Programmatic access for uploads, chat, classification, exports, and MCP.</span>
     </a>
     <a href="compliance/hipaa/" class="aiva-card">
-      <span class="aiva-card__icon aiva-icon--shield"></span>
       <span class="aiva-card__title">HIPAA Compliance</span>
       <span class="aiva-card__desc">PHI detection, full audit trail, and enterprise-grade data security.</span>
     </a>
