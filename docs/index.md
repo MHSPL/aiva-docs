@@ -260,9 +260,9 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
       <span class="aiva-card__title">REST API</span>
       <span class="aiva-card__desc">Programmatic access for uploads, chat, classification, exports, and MCP.</span>
     </a>
-    <a href="compliance/hipaa/" class="aiva-card">
-      <span class="aiva-card__title">HIPAA Compliance</span>
-      <span class="aiva-card__desc">PHI detection, full audit trail, and enterprise-grade data security.</span>
+    <a href="compliance/" class="aiva-card">
+      <span class="aiva-card__title">Compliance</span>
+      <span class="aiva-card__desc">PHI detection, access controls, and data security.</span>
     </a>
   </div>
 </div>
@@ -335,10 +335,10 @@ AIVA is your AI Clinical Analyst. Go from FASTQ to a finalized clinical report i
       </div>
       <span class="aiva-quicklink__arrow">→</span>
     </a>
-    <a href="compliance/hipaa/" class="aiva-quicklink">
+    <a href="compliance/" class="aiva-quicklink">
       <div class="aiva-quicklink__inner">
-        <span class="aiva-quicklink__title">HIPAA Compliance</span>
-        <span class="aiva-quicklink__desc">PHI detection, audit trails, and data security</span>
+        <span class="aiva-quicklink__title">Compliance</span>
+        <span class="aiva-quicklink__desc">PHI detection, access controls, and data security</span>
       </div>
       <span class="aiva-quicklink__arrow">→</span>
     </a>

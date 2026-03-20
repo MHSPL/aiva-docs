@@ -193,10 +193,7 @@ nav:
       - Classification API: api/classification-api.md
       - Export API: api/export-api.md
       - MCP Setup: api/mcp-setup.md
-  - Compliance:
-      - compliance/index.md
-      - HIPAA: compliance/hipaa.md
-      - Audit Trail: compliance/audit-trail.md
+  - Compliance: compliance/index.md
   - Resources:
       - FAQ: faq.md
       - Glossary: glossary.md

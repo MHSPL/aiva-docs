@@ -100,7 +100,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Only you can access your data by default. If you create a [project](collaboration/projects.md) and invite collaborators, they gain access to the samples assigned to that project based on their assigned role. AIVA staff do not access your data except as required for technical support with your explicit consent.
 
 ??? question "Is AIVA HIPAA compliant?"
-    AIVA includes features designed for HIPAA compliance, including PHI detection, audit trails, and access controls. See [HIPAA Compliance](compliance/hipaa.md) for details on the security measures in place.
+    AIVA includes features designed for HIPAA compliance, including PHI detection and access controls. See [Compliance](compliance/index.md) for details on the security measures in place.
 
 ??? question "Can I delete my data?"
     Yes. You can delete samples and projects from the [samples](samples/managing-samples.md) and [projects](collaboration/projects.md) tabs. Deleted samples and their associated data (flags, comments, etc.) are permanently removed from the database.
