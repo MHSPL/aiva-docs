@@ -13,7 +13,7 @@ This section walks you through everything you need to go from a brand-new accoun
 
 ### Account Setup
 
-Create your account with email or Google sign-in, verify your email address, and configure profile settings.
+Create your account with a valid email, verify your email address, and configure profile settings.
 
 [:octicons-arrow-right-24: Account Setup](account-setup.md)
 
@@ -25,7 +25,7 @@ Understand the main layout (header, navigation tabs, sidebar, and content area) 
 
 ### Uploading Your First Sample
 
-A step-by-step walkthrough: choose a file, configure options, monitor the upload job, and view your data in the interactive table.
+A step-by-step walkthrough: choose a file, configure options, and monitor the upload job.
 
 [:octicons-arrow-right-24: Upload a Sample](uploading-your-first-sample.md)
 
@@ -41,7 +41,7 @@ Compare Free, Trial, Plus, Pro, and Enterprise plans to find the right level of 
 
 1. **[Create your account](account-setup.md)** and verify your email.
 2. **[Explore the interface](navigating-the-ui.md)** to understand where things live.
-3. **[Upload a sample file](uploading-your-first-sample.md)** and see your data in the table.
-4. **[Review subscription tiers](subscription-tiers.md)** if you need Small Variant Annotation, larger upload limits, or team collaboration features.
+3. **[Upload a sample file](uploading-your-first-sample.md)** and see your data in the samples tab.
+4. **[Review subscription tiers](subscription-tiers.md)** for more features and capabilities.
 
-Once you are comfortable with the basics, continue to [Samples](../samples/index.md) for advanced upload options or [AIVA Chat](../aiva-chat/index.md) to start asking your AI assistant questions about your data.
+Once you are comfortable with the basics, continue to [Samples](../samples/index.md) for advanced upload options or [AIVA Chat](../aiva-chat/index.md) to start asking your AI assistant questions about your samples.
