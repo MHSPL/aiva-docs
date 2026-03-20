@@ -120,6 +120,7 @@ nav:
   - Home: index.md
   - Getting Started:
       - getting-started/index.md
+      - Platform Overview: getting-started/platform-overview.md
       - Account Setup: getting-started/account-setup.md
       - Navigating the UI: getting-started/navigating-the-ui.md
       - Your First Sample: getting-started/uploading-your-first-sample.md
