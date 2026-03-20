@@ -16,7 +16,7 @@ AIVA offers five subscription tiers designed to scale from individual exploratio
 | **Price** | - | - | $20/month | $60/month | [Contact us](https://mamidi.ai/#contact) |
 | **Samples per Week** | 0 | 1 | 3 | 10 | * |
 | **Sample Storage Limit** | 0 | 1 | 5 | 10 | * |
-| **Max File Size** | 250 MB | 500 MB | 750 MB | 1 GB | * |
+| **Max File Size** | - | 500 MB | 750 MB | 1 GB | * |
 | **AI Queries per Day** | 50 | 100 | 200 | 500 | * |
 | **Max API Keys** | 1 | 3 | 5 | 10 | * |
 | **Data Export** | No | Yes | Yes | Yes | Yes |
