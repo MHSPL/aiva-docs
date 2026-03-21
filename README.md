@@ -1,8 +1,12 @@
 # AIVA User Guide
 
-Public documentation site for the [AIVA](https://aivaportal.com) platform, built with [MkDocs Material](https://squidfund.github.io/mkdocs-material/).
+Public documentation site for the [AIVA](https://chat.aivaportal.com) platform, built with [MkDocs Material](https://squidfund.github.io/mkdocs-material/).
 
-**Live site:** [https://mhspl.github.io/aiva-docs/](https://mhspl.github.io/aiva-docs/)
+**Live site:** [https://docs.aivaportal.com](https://docs.aivaportal.com)
+
+**Demo:**
+
+[![AIVA Demo](https://img.youtube.com/vi/scOVl_SwwD4/maxresdefault.jpg)](https://www.youtube.com/watch?v=scOVl_SwwD4)
 
 ## Local Development
 

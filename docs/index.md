@@ -9,6 +9,10 @@ hide:
 
 AIVA is your AI Clinical Analyst for whole genome interpretation. Upload FASTQ or VCF files, annotate and classify variants, review evidence with an AI agent that understands your data, and generate clinical-grade reports, all from a single platform.
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
+  <iframe src="https://www.youtube.com/embed/scOVl_SwwD4?controls=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen title="AIVA Platform Demo"></iframe>
+</div>
+
 ---
 
 ## Core Capabilities
