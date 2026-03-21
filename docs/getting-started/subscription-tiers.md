@@ -1,6 +1,8 @@
 ---
 title: Subscription Tiers
 description: Compare AIVA subscription plans (Free, Trial, Plus, Pro, and Enterprise) and learn how to upgrade.
+hide:
+  - toc
 ---
 
 # Subscription Tiers
