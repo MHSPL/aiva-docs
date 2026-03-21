@@ -88,4 +88,4 @@ Samples progress through the following states during processing:
 
 - **Name your samples meaningfully**: Use patient IDs, experiment names, or descriptive labels so you can quickly find samples later.
 - **Check status before analysis**: Ensure a sample is in the **Ready** state before attempting to open it in the data table or reference it in AIVA queries.
-- **Clean up old samples**: Delete samples you no longer need to keep your workspace organized and within your [subscription tier's](../getting-started/subscription-tiers.md) upload limits.
+- **Clean up old samples**: Delete samples you no longer need to keep your workspace organized and within your [subscription tier's](../getting-started/subscription-tiers.md) storage limit.

@@ -49,7 +49,7 @@ After selecting your file, configuration options appear below:
 
 ### Split by sample
 
-For multi-sample VCF files, check **Split by sample** to create separate tables for each sample. Each split sample counts toward your weekly sample limit (max 100 samples per file). Leave unchecked to analyze all samples together in a single table.
+For multi-sample VCF files, check **Split by sample** to create separate tables for each sample. Each split sample consumes one credit from your weekly allowance (max 100 samples per file). Leave unchecked to analyze all samples together in a single table.
 
 ### Variant Annotation (VCF files)
 
@@ -96,7 +96,7 @@ You can also browse your data directly in the [Data Table](../data-table/index.m
 
     - **Unsupported file format**: Ensure the file extension matches one of the supported types and the content is valid.
     - **File too large**: Your subscription tier may have a file size limit. See [Subscription Tiers](subscription-tiers.md).
-    - **Upload limit reached**: Free accounts have a limited number of uploads. Upgrade your tier to continue.
+    - **Upload limit reached**: Free accounts cannot upload. Upgrade to Trial or a paid tier to continue.
     - **Malformed VCF**: The file must include a valid VCF header. Check that the `#CHROM` header line is present.
 
 ??? question "My Small Variant Annotation is taking a long time."

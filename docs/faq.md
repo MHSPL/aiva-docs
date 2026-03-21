@@ -15,7 +15,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Visit the AIVA sign-up page and register using your email address. After signing up, verify your email address by clicking the link sent to your inbox. See [Account Setup](getting-started/account-setup.md) for a full walkthrough.
 
 ??? question "What subscription plans are available?"
-    AIVA offers five tiers: **Free**, **Trial**, **Plus**, **Pro**, and **Enterprise**. Each tier provides progressively more features, higher upload limits, and additional AI capabilities. See [Subscription Tiers](getting-started/subscription-tiers.md) for a detailed comparison.
+    AIVA offers five tiers: **Free**, **Trial**, **Plus**, **Pro**, and **Enterprise**. Each tier provides progressively more features, more weekly credits, and additional AI capabilities. See [Subscription Tiers](getting-started/subscription-tiers.md) for a detailed comparison.
 
 ??? question "How do I upgrade my subscription?"
     Click the tier indicator in the top-right corner of the navigation bar, select **Manage Subscription**, select tier by clicking **Upgrade**, and follow the secure payment flow. Your new tier is activated immediately upon successful payment.
@@ -47,7 +47,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     See [Uploading Files](samples/uploading-files.md) for detailed format requirements.
 
 ??? question "What are the file size limits?"
-    File size and upload count limits depend on your subscription tier. Free accounts cannot upload files, while Plus and Pro accounts have limits on file count and size. Check your current usage via the usage indicator in the header, or see [Subscription Tiers](getting-started/subscription-tiers.md).
+    Each upload consumes credits from your weekly allowance. Free accounts cannot upload. Check your credit balance via the usage indicator in the header, or see [Subscription Tiers](getting-started/subscription-tiers.md#credit-system) for credit costs and file size limits per tier.
 
 ??? question "Can I upload files from cloud storage?"
     Yes. Plus, Pro, Trial, and Enterprise accounts can import files directly from Google Cloud Storage (`gs://`), Amazon S3 (`s3://`), Azure Blob Storage (`az://`), or public HTTPS URLs. See [Cloud URL Imports](samples/cloud-urls.md).
@@ -59,7 +59,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Limited. You can upload files without Small Variant Annotation or Structural Variant Annotation and explore the raw data immediately. On-demand annotation only supports handful of variants at a time, use the AIVA Chat [Variant Annotation tool](aiva-chat/variant-annotation-tool.md), which performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen.
 
 ??? question "My upload failed. What should I do?"
-    Open the [Job Manager](samples/job-monitoring.md) and review the error message on the failed job. Common causes include unsupported file formats, malformed headers (VCF files must include the `#CHROM` line), exceeding your tier's upload limits, or network interruptions during transfer. Fix the underlying issue and re-upload. Please reach out to tarun@mamidi.ai for more assistance.
+    Open the [Job Manager](samples/job-monitoring.md) and review the error message on the failed job. Common causes include unsupported file formats, malformed headers (VCF files must include the `#CHROM` line), insufficient credits or exceeding file size limits, or network interruptions during transfer. Fix the underlying issue and re-upload. Please reach out to tarun@mamidi.ai for more assistance.
 
 ??? question "Can I upload multiple files at once?"
     AIVA processes one file upload at a time. You can submit multiple uploads in sequence, and each will be queued and processed independently. Monitor all jobs in the [Job Manager](samples/job-monitoring.md).
@@ -116,10 +116,10 @@ Find answers to the most common questions about using AIVA. If your question is 
     The Free tier includes: limited AI chat queries per day, limited API access, and read-only access to the Playbooks marketplace. See [Subscription Tiers](getting-started/subscription-tiers.md) for the full comparison.
 
 ??? question "What do I gain by upgrading to Plus?"
-    Plus adds: increased upload and query limits, clinical reports with AI auto-fill, API access, and advanced AI capabilities. See [Subscription Tiers](getting-started/subscription-tiers.md).
+    Plus adds: more weekly credits and higher query limits, clinical reports with AI auto-fill, API access, and advanced AI capabilities. See [Subscription Tiers](getting-started/subscription-tiers.md).
 
 ??? question "What is the difference between Plus and Pro?"
-    Pro increases all usage caps (uploads, AI queries) and includes priority support. All Plus features are included. Pro is designed for small to medium-sized teams.
+    Pro provides 10 credits per week and higher AI query limits, and includes standard support. All Plus features are included. Pro is designed for small to medium-sized teams.
 
 ??? question "What is the MCP integration?"
     The Model Context Protocol (MCP) allows you to connect AIVA to external tools and services that you configure. This enables custom workflows tailored to your specific bioinformatics pipeline. MCP is available on Trial, Plus, and Pro tiers. See [MCP Integration](aiva-chat/mcp-integration.md).
@@ -144,7 +144,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     - **Network issues**: SSE streaming requires a stable connection. If your connection is intermittent, responses may appear to stall. Refresh the page and try again.
 
 ??? question "I see an error about exceeding my usage limit."
-    Your subscription tier determines how many uploads and AI queries you can perform. Check your current usage via the usage indicator in the header. To continue, either wait for your limits to reset or [upgrade your plan](getting-started/subscription-tiers.md).
+    Your subscription tier determines your credit balance and AI query usage. Check your current usage via the usage indicator in the header. Credits reset every Sunday. To continue, either wait for your credits to reset or [upgrade your plan](getting-started/subscription-tiers.md).
 
 ??? question "Charts or plots are not rendering in the chat."
     AIVA generates charts using matplotlib in a sandboxed Python environment. If a chart fails to render:

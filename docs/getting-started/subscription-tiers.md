@@ -14,14 +14,15 @@ AIVA offers five subscription tiers designed to scale from individual exploratio
 | Feature | <span class="tier-badge tier-free">Free</span> | <span class="tier-badge tier-trial">Trial</span> | <span class="tier-badge tier-plus">Plus</span> | <span class="tier-badge tier-pro">Pro</span> | <span class="tier-badge tier-enterprise">Enterprise</span> |
 |---------|:----:|:-----:|:----:|:---:|:----------:|
 | **Price** | - | - | $20/month | $60/month | [Contact us](https://mamidi.ai/#contact) |
-| **Samples per Week** | 0 | 1 | 3 | 10 | * |
-| **Sample Storage Limit** | 0 | 1 | 5 | 10 | * |
-| **Max File Size** | - | 500 MB | 750 MB | 1 GB | * |
+| **Credits per Week** | 0 | 1 | 3 | 10 | * |
+| **Sample Storage** | 1 | 1 | 3 | 5 | * |
+| **Max File Size** | 250 MB | 500 MB | 750 MB | 1 GB | * |
 | **AI Queries per Day** | 50 | 100 | 200 | 500 | * |
 | **Max API Keys** | 1 | 3 | 5 | 10 | * |
+| **Secondary Analysis** | No | No | No | Yes | Yes |
 | **Data Export** | No | Yes | Yes | Yes | Yes |
 | **AI Auto-Fill (Reports)** | No | Yes | No | Yes | Yes |
-| **Priority Support** | No | No | No | Yes | Yes |
+| **Support** | - | - | Standard | Standard | Dedicated |
 
 *\* Enterprise limits are customized to your organization's needs. [Contact us](https://mamidi.ai/#contact) for details.*
 
@@ -33,7 +34,31 @@ AIVA offers five subscription tiers designed to scale from individual exploratio
 
 ---
 
-## Upgrading Your Plan
+## Credit system
+
+Credits control how many samples you can upload each week. Every upload consumes credits, and your tier determines how many credits you receive.
+
+### Credit costs
+
+| Upload type | Credits consumed |
+|-------------|-----------------|
+| VCF/CSV file upload | 1 credit per sample in the file |
+| Parabricks pipeline | 3 credits (2 at pipeline completion + 1 at parsing) |
+
+### How credits work
+
+- Credits **reset every Sunday** on a weekly cycle.
+- Credits are **checked at upload time** before the job starts. If you do not have enough credits, the upload is blocked.
+- Credits are **consumed at job completion**, not when the job is submitted.
+- The **Free tier cannot upload** samples. You must be on Trial or a paid tier to upload.
+- The **Trial tier expires after 7 days** and reverts to Free.
+
+!!! tip "Check your credit balance"
+    Click the **usage indicator** in the header to see how many credits remain for the current week and when they reset.
+
+---
+
+## Upgrading your plan
 
 You can upgrade your subscription at any time:
 
@@ -45,7 +70,7 @@ You can upgrade your subscription at any time:
 !!! tip "Subscription changes take effect instantly"
     As soon as payment is confirmed, your account limits and feature access are updated. Refresh the page, if needed.
 
-### Managing Your Subscription
+### Managing your subscription
 
 - **View current plan**: Your active tier is displayed in the user menu and in account settings.
 - **Usage tracking**: Click the usage indicator in the header to see your current consumption against plan limits (uploads used, queries remaining, etc.).

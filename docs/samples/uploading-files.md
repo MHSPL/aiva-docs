@@ -101,20 +101,21 @@ You can monitor each stage in real time using the [Job Manager](job-monitoring.m
 
 ---
 
-## File Size and Upload Limits
+## File size and credit limits
 
-Upload limits vary by subscription tier:
+Each file upload consumes **1 credit per sample** in the file. Credits and file size limits vary by tier:
 
-| Tier | Upload Count | File Size |
-|------|-------------|-----------|
-| <span class="tier-badge tier-free">Free</span> | Limited | Restricted |
-| <span class="tier-badge tier-trial">Trial</span> | Unlimited | Unlimited |
-| <span class="tier-badge tier-plus">Plus</span> | Increased | Increased |
-| <span class="tier-badge tier-pro">Pro</span> | Unlimited | Unlimited |
+| Tier | Credits per Week | Max File Size |
+|------|:----------------:|:-------------:|
+| <span class="tier-badge tier-free">Free</span> | 0 (no uploads) | 250 MB |
+| <span class="tier-badge tier-trial">Trial</span> | 1 | 500 MB |
+| <span class="tier-badge tier-plus">Plus</span> | 3 | 750 MB |
+| <span class="tier-badge tier-pro">Pro</span> | 10 | 1 GB |
+| <span class="tier-badge tier-enterprise">Enterprise</span> | Unlimited | Unlimited |
 
-To check your current usage against your plan limits, click the usage indicator in the header.
+Credits are checked before the job starts and consumed when the job completes. Credits reset every Sunday.
 
-For full plan details, see [Subscription Tiers](../getting-started/subscription-tiers.md).
+For full plan details and credit costs, see [Subscription Tiers](../getting-started/subscription-tiers.md#credit-system).
 
 ---
 
