@@ -5,13 +5,13 @@ description: Export filtered and sorted variant data from AIVA as CSV files for 
 
 # Exporting Data
 
-AIVA allows you to export data from the data table as a CSV file. The export respects your current filters, sorting, and column selections, giving you a clean extract for downstream use in spreadsheets, statistical tools, or clinical reports.
+AIVA allows you to export data from the table view as a CSV file. The export respects your current filters, sorting, and column selections, giving you a clean extract for downstream use in spreadsheets, statistical tools, or clinical reports.
 
 ---
 
 ## How to Export
 
-1. Open a sample in the data table.
+1. Open a sample in the table view.
 2. Apply any desired [filters](filtering.md), [sorting](navigation-and-layout.md#sorting), and [column selections](navigation-and-layout.md#column-chooser).
 3. Click the **Export CSV** button in the table toolbar.
 4. The CSV file is generated and downloaded to your browser's default download location.
@@ -61,7 +61,7 @@ For tools that expect specific column formats, use the column chooser to arrange
 ## Tips
 
 !!! tip "Preview before exporting"
-    Review the data table after applying filters to confirm the result set looks correct before initiating an export. Check the row count at the bottom of the table to verify the expected number of records.
+    Review the table view after applying filters to confirm the result set looks correct before initiating an export. Check the row count at the bottom of the table to verify the expected number of records.
 
 - The CSV export uses UTF-8 encoding and comma delimiters.
 - Columns with commas or special characters in their values are properly quoted.

@@ -116,7 +116,7 @@ AIVA covers the full journey from raw sequencing data to a signed clinical repor
   </div>
 </div>
 
-<!-- STEP 3 – DATA TABLE -->
+<!-- STEP 3 – TABLE VIEW -->
 <div class="aiva-feature">
   <div class="aiva-feature__visual">
     <div class="aiva-feature__mockup">
@@ -153,13 +153,13 @@ AIVA covers the full journey from raw sequencing data to a signed clinical repor
   <div class="aiva-feature__body">
     <span class="aiva-feature__label">Step 3</span>
     <h2 class="aiva-feature__title">Analyze variants manually</h2>
-    <p class="aiva-feature__desc">Whole genome sequencing produces millions of variants per sample. The data table lets you filter by gene, consequence, frequency, or ACMG class and see results in real time.</p>
+    <p class="aiva-feature__desc">Whole genome sequencing produces millions of variants per sample. The table view lets you filter by gene, consequence, frequency, or ACMG class and see results in real time.</p>
     <ul class="aiva-feature__bullets">
       <li>Virtualized rendering with zero performance degradation at whole-genome scale</li>
       <li>One-click export of filtered views to CSV, TSV, or direct to report</li>
       <li>Per-variant flagging, comments, and threaded review for clinical sign-off</li>
     </ul>
-    <a href="../data-table/" class="aiva-feature__link">Data Table →</a>
+    <a href="../data-table/" class="aiva-feature__link">Table View →</a>
   </div>
 </div>
 
@@ -223,11 +223,11 @@ AIVA covers the full journey from raw sequencing data to a signed clinical repor
 flowchart LR
     A[FASTQ / VCF] --> B[Annotation]
     B --> C[AIVA Chat]
-    B --> D[Data Table]
+    B --> D[Table View]
     C --> E[Clinical Report]
     D --> E
 ```
 
-Every module connects. Upload a file, analyze it with chat or the data table (or both), and produce a report. No manual data handoff between tools.
+Every module connects. Upload a file, analyze it with chat or the table view (or both), and produce a report. No manual data handoff between tools.
 
 For collaboration features like projects, role-based access, and variant flagging, see [Collaboration](../collaboration/index.md). For automating workflows, see [Playbooks](../playbooks/index.md).

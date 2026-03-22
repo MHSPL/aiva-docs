@@ -29,7 +29,7 @@ Each job moves through a series of states as it progresses through the processin
 | **Processing** | The file is being processed (either parabricks or PGx calling). |
 | **Annotating** | Small Variant Annotation or Structural Variant Annotation is running against the file. This stage appears only when annotation was selected during upload. |
 | **Parsing** | The file is being parsed and loaded into the database for analysis. |
-| **Completed** | The job finished successfully. The sample is ready to view in the data table. |
+| **Completed** | The job finished successfully. The sample is ready to view in the table view. |
 | **Failed** | An error occurred during processing. See the error details on the job entry for diagnostic information. |
 
 !!! note "Browser tab behavior"

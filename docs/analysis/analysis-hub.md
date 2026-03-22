@@ -11,7 +11,7 @@ The Analysis Hub is a dedicated workspace for running structured, category-based
 
 ## Overview
 
-Unlike the free-form chat or the data table view, the Analysis Hub organizes your analysis into predefined **categories**, each containing specialized **analysis cards** that target specific aspects of variant interpretation.
+Unlike the free-form chat or the table view, the Analysis Hub organizes your analysis into predefined **categories**, each containing specialized **analysis cards** that target specific aspects of variant interpretation.
 
 Key concepts:
 
@@ -85,7 +85,7 @@ The Analysis Hub is designed for multi-faceted interpretation:
 
 The Analysis Hub integrates with other AIVA features:
 
-- **Data Table**: Variants identified in analysis cards can be located in the [Data Table](../data-table/index.md) for detailed examination.
+- **Table View**: Variants identified in analysis cards can be located in the [Table View](../data-table/index.md) for detailed examination.
 - **Variant Flagging**: Flag variants directly from analysis card results using the [flagging system](../collaboration/variant-flagging.md).
 - **ACMG Classification**: Apply [ACMG criteria](acmg-classification.md) to variants surfaced by analysis cards.
 - **Reports**: Include analysis findings in [clinical reports](../reports/index.md).

@@ -1,11 +1,11 @@
 ---
-title: Data Table
-description: Overview of AIVA's high-performance data table for exploring, filtering, and exporting genomic variant data at scale.
+title: Table View
+description: Overview of AIVA's high-performance table view for exploring, filtering, and exporting genomic variant data at scale.
 ---
 
-# Data Table
+# Table View
 
-The AIVA data table is the primary interface for exploring your uploaded genomic data. Built on TanStack Table with row virtualization, it handles datasets ranging from a handful of variants to over ten million rows without sacrificing responsiveness.
+The table view is the primary interface for exploring your uploaded genomic data. Built with row virtualization, it handles datasets ranging from a handful of variants to over ten million rows without sacrificing responsiveness.
 
 ---
 
@@ -87,12 +87,12 @@ Learn how AIVA handles datasets with millions of rows using row virtualization a
 
 ---
 
-## Accessing the Data Table
+## Accessing the table view
 
-The data table is available in two contexts:
+The table view is available in two contexts:
 
 1. **Sample view**: Select any sample from your sample list to open its data in the table.
-2. **Tertiary Analysis**: The [Analysis](../analysis/tertiary-analysis.md) view displays the data table alongside an integrated AI chat panel for side-by-side exploration.
+2. **Tertiary Analysis**: The [Analysis](../analysis/tertiary-analysis.md) view displays the table view alongside an integrated AI chat panel for side-by-side exploration.
 
 !!! tip "Customize your default view"
     Use the column chooser to set up a layout that matches your analysis workflow, then rely on per-column filters to zero in on variants of interest. The table remembers your column selections within a session.

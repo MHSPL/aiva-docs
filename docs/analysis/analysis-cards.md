@@ -146,7 +146,7 @@ Most cards accept input parameters:
 
 Card results are interactive:
 
-- **Click on genes** to open their summary or navigate to them in the data table.
+- **Click on genes** to open their summary or navigate to them in the table view.
 - **Click on drugs** to see prescribing information and clinical trial links.
 - **Click on pathways** to expand pathway membership details.
 - **Export** card results as tables or images.

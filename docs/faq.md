@@ -128,8 +128,8 @@ Find answers to the most common questions about using AIVA. If your question is 
 
 ## Troubleshooting
 
-??? question "The data table is slow or unresponsive."
-    AIVA's data table uses virtualized rendering and server-side pagination to handle datasets with millions of rows. If you experience slowness:
+??? question "The table view is slow or unresponsive."
+    AIVA's table view uses virtualized rendering and server-side pagination to handle datasets with millions of rows. If you experience slowness:
 
     - Check your internet connection. Data is fetched page by page from the server.
     - Try reducing the number of visible columns using the column visibility controls.
@@ -171,5 +171,5 @@ If your question is not answered here, reach out through the **Help** modal in t
 - [:octicons-arrow-right-24: Getting Started](getting-started/index.md)
 - [:octicons-arrow-right-24: Samples and Uploads](samples/index.md)
 - [:octicons-arrow-right-24: AIVA Chat](aiva-chat/index.md)
-- [:octicons-arrow-right-24: Data Table](data-table/index.md)
+- [:octicons-arrow-right-24: Table View](data-table/index.md)
 - [:octicons-arrow-right-24: Collaboration](collaboration/index.md)

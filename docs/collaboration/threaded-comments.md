@@ -5,13 +5,13 @@ description: Add discussion threads to individual variants in AIVA with reply ch
 
 # Threaded Comments
 
-Threaded comments let you attach discussions directly to individual variants. Each comment thread is tied to a specific row in the data table, creating a permanent record of the team's interpretation, questions, and decisions.
+Threaded comments let you attach discussions directly to individual variants. Each comment thread is tied to a specific row in the table view, creating a permanent record of the team's interpretation, questions, and decisions.
 
 ---
 
 ## Adding a Comment
 
-1. Open a sample in the [Data Table](../data-table/index.md).
+1. Open a sample in the [Table View](../data-table/index.md).
 2. Locate the variant you want to comment on.
 3. Click the **Comment** action on the variant row.
 4. Type your comment in the text input.
@@ -60,7 +60,7 @@ When a sample belongs to a [project](projects.md):
 
 ## Viewing Comment Indicators
 
-Variants that have comments display a comment indicator (icon or badge) in the data table. The indicator may show the number of comments in the thread.
+Variants that have comments display a comment indicator (icon or badge) in the table view. The indicator may show the number of comments in the thread.
 
 - Click the indicator to expand the comment thread.
 - Variants with no comments show no indicator.

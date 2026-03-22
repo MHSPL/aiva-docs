@@ -15,7 +15,7 @@ For details on the ACMG/AMP framework and how to use the public classifier, see 
 
 ### Step 1: Open the classifier
 
-1. Open a sample in the [Data Table](../data-table/index.md) or [Tertiary Analysis](tertiary-analysis.md) view.
+1. Open a sample in the [Table View](../data-table/index.md) or [Tertiary Analysis](tertiary-analysis.md) view.
 2. Locate the variant you want to classify.
 3. Click the **ACMG Classification** action on the variant row.
 4. The classification panel opens, displaying all 28 criteria organized by category.
@@ -42,7 +42,7 @@ As you select criteria, the classifier automatically calculates the resulting cl
 
 1. Review the selected criteria and the auto-calculated classification.
 2. Click **Save** to store the classification.
-3. The classification is associated with the variant and visible in the data table and to all project collaborators.
+3. The classification is associated with the variant and visible in the table view and to all project collaborators.
 
 ---
 

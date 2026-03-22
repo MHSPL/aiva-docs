@@ -65,7 +65,7 @@ The sample lifecycle in AIVA follows a straightforward pipeline:
 1. **Upload**: Submit a local file or provide a cloud URL.
 2. **Annotate** (optional): Small Variant Annotation or Structural Variant Annotation runs in the background if selected.
 3. **Parse**: The file is parsed and loaded into the database for analysis.
-4. **Explore**: Explore your sample in the interactive data table or via chat using natural language.
+4. **Explore**: Explore your sample in the interactive table view or via chat using natural language.
 5. **Delete**: Remove samples you no longer need to free up quota limits for new samples. Once deleted, the sample cannot be recovered.
 
 Each step is handled as a background job, so you can continue working while processing completes. Real-time status updates are pushed to your browser automatically.

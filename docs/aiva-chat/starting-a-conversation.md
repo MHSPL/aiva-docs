@@ -87,7 +87,7 @@ AIVA maintains awareness of the full conversation history. This means you can:
 When you ask AIVA a question about "your data," it needs to know which sample to query. There are several ways to establish this:
 
 - **Mention the sample by name** in your message (e.g., "In the BRCA_panel sample, how many variants are there?").
-- **Open Chat from a sample**. If you click the Chat action from within a data table view, a new conversation is created with that sample already in context.
+- **Open Chat from a sample**. If you click the Chat action from within a table view, a new conversation is created with that sample already in context.
 - **Let AIVA ask**. If your question is about data but no sample is specified, AIVA may ask you to clarify which sample to query.
 
 ---

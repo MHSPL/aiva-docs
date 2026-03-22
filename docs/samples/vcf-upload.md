@@ -18,7 +18,7 @@ Upload VCF, CSV, and TSV files to AIVA for interactive analysis. You can upload 
 | **TSV** | `.tsv`, `.txt` | Tab-separated values. The first row must contain column headers. |
 
 !!! warning "Column headers required"
-    CSV and TSV files **must** include a header row as the first line. AIVA uses these headers as column names in the data table. Files without headers will produce incorrect results.
+    CSV and TSV files **must** include a header row as the first line. AIVA uses these headers as column names in the table view. Files without headers will produce incorrect results.
 
 !!! tip "Have FASTQ files?"
     If you need to run variant calling from raw sequencing reads, see [Secondary Analysis](secondary-analysis.md) instead.
@@ -73,7 +73,7 @@ For VCF files, you can choose how annotation is handled:
 - **Structural Variant Annotation**: Annotates structural variants (CNVs, inversions, translocations) with clinical and functional context.
 
 !!! info "Your annotations are never overwritten"
-    All columns added by AIVA's annotation are prefixed with `aiva_csq_` (e.g., `aiva_csq_gene_symbol`, `aiva_csq_consequence`). If your VCF already contains annotations, they are preserved and you can use both side by side in the data table and AIVA Chat.
+    All columns added by AIVA's annotation are prefixed with `aiva_csq_` (e.g., `aiva_csq_gene_symbol`, `aiva_csq_consequence`). If your VCF already contains annotations, they are preserved and you can use both side by side in the table view and AIVA Chat.
 
 !!! note "Annotation adds processing time"
     Annotation enriches your data with clinically relevant information but increases processing time. For a whole-exome VCF with ~50,000 variants, Small Variant Annotation typically adds a few minutes. Whole-genome files with millions of variants may take longer. You cannot annotate samples from the chat interface.
@@ -129,7 +129,7 @@ graph LR
 1. **File transfer**: Your file is uploaded to the server or downloaded from the cloud URL.
 2. **Annotation** (if selected): Small Variant Annotation and/or Structural Variant Annotation processes your variants. New columns are appended to the data with annotation results.
 3. **Parsing**: The file is parsed and loaded into the database using optimized bulk operations.
-4. **Completion**: The sample appears in your sample list and is ready to open in the data table.
+4. **Completion**: The sample appears in your sample list and is ready to open in the table view.
 
 You can monitor each stage in real time using the [Job Manager](job-monitoring.md).
 

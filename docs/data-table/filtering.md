@@ -5,13 +5,13 @@ description: Apply advanced per-column filters to narrow down variant data using
 
 # Filtering
 
-AIVA's data table provides advanced per-column filtering so you can isolate the variants that matter most. Filters are applied server-side against the full dataset, ensuring accurate results even on tables with millions of rows.
+AIVA's table view provides advanced per-column filtering so you can isolate the variants that matter most. Filters are applied server-side against the full dataset, ensuring accurate results even on tables with millions of rows.
 
 ---
 
 ## Accessing Filters
 
-Each column in the data table has its own filter control:
+Each column in the table view has its own filter control:
 
 1. Locate the column you want to filter.
 2. Click the filter icon in the column header, or open the filter row beneath the header row.

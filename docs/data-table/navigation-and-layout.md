@@ -1,11 +1,11 @@
 ---
 title: Navigation and Layout
-description: Customize the data table layout using the column chooser, drag-and-drop reordering, column resizing, and sorting.
+description: Customize the table view layout using the column chooser, drag-and-drop reordering, column resizing, and sorting.
 ---
 
 # Navigation and Layout
 
-AIVA's data table gives you full control over which columns are visible, their order, their width, and how data is sorted. This page covers all layout customization options.
+AIVA's table view gives you full control over which columns are visible, their order, their width, and how data is sorted. This page covers all layout customization options.
 
 ---
 
@@ -15,7 +15,7 @@ The column chooser is a panel that lists every available column for the current 
 
 ### Opening the Column Chooser
 
-1. Open a sample in the data table view.
+1. Open a sample in the table view.
 2. Click the **Columns** button in the table toolbar.
 3. The column chooser panel opens, displaying all available columns with checkboxes.
 
@@ -71,7 +71,7 @@ A sort indicator arrow appears in the column header to show the current sort dir
 
 ## Pagination Controls
 
-The data table uses server-side pagination to manage large datasets efficiently. Pagination controls are located at the bottom of the table.
+The table view uses server-side pagination to manage large datasets efficiently. Pagination controls are located at the bottom of the table.
 
 - **Page size selector**: Choose how many rows to display per page. Common options include 25, 50, 100, and 250 rows.
 - **Page navigation**: Use the previous/next buttons or jump to a specific page number.

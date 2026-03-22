@@ -43,7 +43,7 @@ AIVA is your AI Clinical Analyst for whole genome interpretation. Upload FASTQ o
 
     [:octicons-arrow-right-24: Start chatting](aiva-chat/index.md)
 
--   :material-table-large:{ .lg .middle } **Data Table**
+-   :material-table-large:{ .lg .middle } **Table View**
 
     ---
 
@@ -100,7 +100,7 @@ AIVA is your AI Clinical Analyst for whole genome interpretation. Upload FASTQ o
 | Resource | Description |
 |----------|-------------|
 | [Account Setup](getting-started/account-setup.md) | Sign up, verify your email, and configure your profile |
-| [Uploading Your First Sample](getting-started/uploading-your-first-sample.md) | End-to-end walkthrough from file selection to data table |
+| [Uploading Your First Sample](getting-started/uploading-your-first-sample.md) | End-to-end walkthrough from file selection to table view |
 | [Subscription Tiers](getting-started/subscription-tiers.md) | Compare Free, Trial, Plus, and Pro plans |
 | [AI Tools Reference](aiva-chat/ai-tools.md) | Full list of tools available to the AIVA assistant |
 | [Variant Classifier](classification/index.md) | Public ACMG/AMP variant classification tool |

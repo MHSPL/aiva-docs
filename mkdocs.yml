@@ -148,7 +148,7 @@ nav:
           - MCP Integration: aiva-chat/mcp-integration.md
           - Model Selection: aiva-chat/model-selection.md
           - Example Workflows: aiva-chat/example-workflows.md
-      - Data Table:
+      - Table View:
           - data-table/index.md
           - Navigation & Layout: data-table/navigation-and-layout.md
           - Filtering: data-table/filtering.md

@@ -17,7 +17,7 @@ AIVA provides analysis tools that go beyond data exploration, supporting structu
 
 ### Tertiary Analysis
 
-Analyze samples with the data table and AI chat side by side. Filter, flag, and interpret variants in a unified workspace.
+Analyze samples with the table view and AI chat side by side. Filter, flag, and interpret variants in a unified workspace.
 
 [:octicons-arrow-right-24: Tertiary Analysis](tertiary-analysis.md)
 
@@ -42,8 +42,8 @@ Apply ACMG/AMP criteria to variants with an interactive evidence-based classifie
 A typical analysis workflow in AIVA proceeds through the following stages:
 
 1. **Upload and annotate**: [Upload a VCF file](../samples/vcf-upload.md) with optional Small Variant Annotation or Structural Variant Annotation.
-2. **Explore in the data table**: Use the [Data Table](../data-table/index.md) to browse, filter, and sort variants.
-3. **Tertiary analysis**: Open the [Tertiary Analysis](tertiary-analysis.md) view to work with the data table and AI chat simultaneously.
+2. **Explore in the table view**: Use the [Table View](../data-table/index.md) to browse, filter, and sort variants.
+3. **Tertiary analysis**: Open the [Tertiary Analysis](tertiary-analysis.md) view to work with the table view and AI chat simultaneously.
 4. **Flag and comment**: [Flag variants](../collaboration/variant-flagging.md) of interest and add [comments](../collaboration/threaded-comments.md) documenting your interpretation.
 5. **Classify**: Apply [ACMG criteria](acmg-classification.md) to variants requiring formal evidence-based classification.
 6. **Export and report**: [Export](../collaboration/exporting-flags-comments.md) your findings and generate clinical reports.

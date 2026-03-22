@@ -11,7 +11,7 @@ Variant flagging lets you mark individual variants with clinical significance ca
 
 ## Flagging a Variant
 
-1. Open a sample in the [Data Table](../data-table/index.md).
+1. Open a sample in the [Table View](../data-table/index.md).
 2. Locate the variant you want to flag.
 3. Click the **Flag** action on the variant row.
 4. Select a flag category from the dropdown.
@@ -41,7 +41,7 @@ These categories align with the ACMG/AMP five-tier classification system. For de
 
 ## Viewing Flagged Variants
 
-Flagged variants are indicated in the data table with a visual marker (colored indicator or icon) in the flag column. You can:
+Flagged variants are indicated in the table view with a visual marker (colored indicator or icon) in the flag column. You can:
 
 - **Sort by flag**: Click the flag column header to group flagged variants together.
 - **Filter by flag category**: Use the column filter on the flag column to view only variants flagged with a specific category (e.g., show only Pathogenic and Likely Pathogenic).
@@ -78,7 +78,7 @@ Flagged variants can be exported as a CSV file for clinical reports, lab records
 
 ## Tips
 
-- **Flag during initial review**: As you scan through the data table, flag variants that catch your attention. You can refine the flags later.
+- **Flag during initial review**: As you scan through the table view, flag variants that catch your attention. You can refine the flags later.
 - **Use VUS liberally**: When uncertain, flag as VUS. This ensures the variant is tracked for follow-up without prematurely classifying it.
 - **Combine with comments**: After flagging a variant, add a [threaded comment](threaded-comments.md) to explain your reasoning or note questions for the team.
-- **Filter to review flagged variants**: After completing an initial pass, filter the data table to show only flagged variants for focused secondary review.
+- **Filter to review flagged variants**: After completing an initial pass, filter the table view to show only flagged variants for focused secondary review.

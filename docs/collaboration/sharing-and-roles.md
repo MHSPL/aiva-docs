@@ -31,7 +31,7 @@ AIVA defines three roles for project collaboration:
 | Permission | Owner | Editor | Viewer |
 |------------|:-----:|:------:|:------:|
 | View samples and data | Yes | Yes | Yes |
-| Use the data table (filter, sort, export) | Yes | Yes | Yes |
+| Use the table view (filter, sort, export) | Yes | Yes | Yes |
 | Query data with AIVA | Yes | Yes | Yes |
 | Flag variants | Yes | Yes | No |
 | Add and reply to comments | Yes | Yes | No |
@@ -53,7 +53,7 @@ Editors can contribute to the analysis: flag variants, add comments, apply ACMG 
 
 ### Viewer
 
-Viewers have read-only access. They can view all samples and data, use the data table, and query data with AIVA. They cannot modify flags, comments, classifications, or project settings.
+Viewers have read-only access. They can view all samples and data, use the table view, and query data with AIVA. They cannot modify flags, comments, classifications, or project settings.
 
 ---
 

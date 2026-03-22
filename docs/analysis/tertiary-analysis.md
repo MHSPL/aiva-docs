@@ -1,11 +1,11 @@
 ---
 title: Tertiary Analysis
-description: Perform per-sample tertiary analysis in AIVA with a side-by-side data table and AI chat workspace.
+description: Perform per-sample tertiary analysis in AIVA with a side-by-side table view and AI chat workspace.
 ---
 
 # Tertiary Analysis
 
-Tertiary analysis in AIVA provides a unified workspace where the data table and AI chat are displayed side by side. This layout is designed for focused, per-sample variant interpretation. You can filter, sort, and flag variants in the table while simultaneously querying AIVA for context, literature, and computational analysis.
+Tertiary analysis in AIVA provides a unified workspace where the table view and AI chat are displayed side by side. This layout is designed for focused, per-sample variant interpretation. You can filter, sort, and flag variants in the table while simultaneously querying AIVA for context, literature, and computational analysis.
 
 ---
 
@@ -14,7 +14,7 @@ Tertiary analysis in AIVA provides a unified workspace where the data table and 
 1. Navigate to the **Analysis** section from the main navigation.
 2. Select a sample from the sample list.
 3. The tertiary analysis view opens with two panels:
-   - **Left panel**: The [Data Table](../data-table/index.md) displaying the sample's variant data.
+   - **Left panel**: The [Table View](../data-table/index.md) displaying the sample's variant data.
    - **Right panel**: An [AIVA Chat](../aiva-chat/index.md) session scoped to the selected sample.
 
 ---
@@ -23,9 +23,9 @@ Tertiary analysis in AIVA provides a unified workspace where the data table and 
 
 The side-by-side layout enables a continuous interpretation workflow:
 
-### Data Table Panel
+### Table View Panel
 
-The left panel provides the full data table experience:
+The left panel provides the full table view experience:
 
 - **All columns** are available via the [column chooser](../data-table/navigation-and-layout.md#column-chooser), including VCF fields, INFO subfields, and Small Variant Annotation / Structural Variant Annotation columns.
 - **Filtering** lets you narrow the variant list using [text, numeric, date, and multi-select filters](../data-table/filtering.md).

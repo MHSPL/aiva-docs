@@ -94,11 +94,11 @@ Full documentation for all AI tools, query patterns, and example workflows.
 
 <div class="card" markdown>
 
-### Data Table
+### Table View
 
 Browse, filter, and export your variant data interactively.
 
-[:octicons-arrow-right-24: Data Table](data-table/index.md)
+[:octicons-arrow-right-24: Table View](data-table/index.md)
 
 </div>
 

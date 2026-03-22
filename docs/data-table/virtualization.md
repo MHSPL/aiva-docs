@@ -11,7 +11,7 @@ Genomic datasets can be very large. A whole-genome sequencing VCF file may conta
 
 ## Row Virtualization
 
-AIVA uses **row virtualization** (also called windowed rendering) to keep the data table responsive regardless of dataset size. Here is how it works:
+AIVA uses **row virtualization** (also called windowed rendering) to keep the table view responsive regardless of dataset size. Here is how it works:
 
 - The table only renders the rows currently visible in the viewport, plus a small buffer above and below for smooth scrolling.
 - As you scroll, rows entering the viewport are rendered and rows leaving the viewport are removed from the DOM.
@@ -24,7 +24,7 @@ AIVA uses **row virtualization** (also called windowed rendering) to keep the da
 
 ## Server-Side Pagination
 
-In addition to virtualization, the data table uses **server-side pagination** to avoid loading the entire dataset into the browser at once:
+In addition to virtualization, the table view uses **server-side pagination** to avoid loading the entire dataset into the browser at once:
 
 - When you navigate to a page or scroll to a new section, the table fetches only the rows needed from the server.
 - **Filtering** is performed server-side, so filter operations run against the full dataset in the database rather than in the browser.
@@ -39,7 +39,7 @@ AIVA uses high-speed bulk loading to ingest variant data. This architecture prov
 
 - **Fast ingestion**: A VCF file with millions of variants is parsed and loaded in minutes, not hours.
 - **Indexed queries**: Columns commonly used for filtering (CHROM, POS, Gene, Consequence, allele frequency) are indexed for fast lookups.
-- **Efficient aggregation**: Server-side count, sum, and grouping operations run directly in the database, so the AI assistant and data table can summarize large datasets without transferring all rows to the browser.
+- **Efficient aggregation**: Server-side count, sum, and grouping operations run directly in the database, so the AI assistant and table view can summarize large datasets without transferring all rows to the browser.
 
 ---
 

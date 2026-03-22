@@ -60,7 +60,7 @@ See [Managing Samples](../samples/managing-samples.md) for more details on sampl
 
 The project view includes a **sample browser** that lists all samples assigned to the project:
 
-- Click a sample name to open it in the [Data Table](../data-table/index.md).
+- Click a sample name to open it in the [Table View](../data-table/index.md).
 - View sample metadata (file type, row count, annotation status) at a glance.
 - Collaborators see the same sample list according to their role.
 
