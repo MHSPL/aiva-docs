@@ -56,7 +56,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   An organization that creates guidelines for using pharmacogenomic test results to guide drug prescribing decisions.
 
 **CSV (Comma-Separated Values)**
-:   A plain text file format using commas to separate values. AIVA supports [CSV file uploads](samples/uploading-files.md).
+:   A plain text file format using commas to separate values. AIVA supports [CSV file uploads](samples/vcf-upload.md).
 
 ---
 
@@ -93,7 +93,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   A large-scale database of exome and genome sequencing data from over 140,000 individuals. Used to assess variant population frequencies. Variants common in gnomAD are less likely to cause rare disease.
 
 **GRCh37 / GRCh38**
-:   Human reference genome assemblies. GRCh37 (hg19) and GRCh38 (hg38) are the two commonly used versions. AIVA supports both for [Small Variant Annotation](samples/small-variant-annotation.md).
+:   Human reference genome assemblies. GRCh37 (hg19) and GRCh38 (hg38) are the two commonly used versions. AIVA supports both for variant annotation.
 
 ---
 
@@ -193,7 +193,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   A computational tool that predicts whether an amino acid substitution affects protein function based on sequence conservation. Scores below 0.05 are predicted to be deleterious.
 
 **Small Variant Annotation**
-:   AIVA's annotation feature for small variants (SNVs and indels) during file upload. Adds gene symbols, transcript information, SIFT/PolyPhen scores, population frequencies, and more. See [Small Variant Annotation](samples/small-variant-annotation.md).
+:   AIVA's annotation feature for small variants (SNVs and indels) during file upload. Adds gene symbols, transcript information, SIFT/PolyPhen scores, population frequencies, and more. See [VCF Upload](samples/vcf-upload.md#annotation-options-vcf-only).
 
 **SNV (Single Nucleotide Variant)**
 :   A change in a single nucleotide at a specific position in the genome.
@@ -205,7 +205,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   A large-scale genomic alteration including deletions, duplications, inversions, and translocations, typically affecting 50 or more base pairs.
 
 **Structural Variant Annotation**
-:   AIVA's annotation feature for structural variants during upload, using a structural variant annotation engine. Adds clinical and functional annotations including gene overlap, population SV frequency, regulatory impact, and ACMG SV classification. See [Structural Variant Annotation](samples/structural-variant-annotation.md).
+:   AIVA's annotation feature for structural variants during upload. Adds clinical and functional annotations including gene overlap, population SV frequency, regulatory impact, and ACMG SV classification. See [VCF Upload](samples/vcf-upload.md#annotation-options-vcf-only).
 
 ---
 
@@ -215,14 +215,14 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   AIVA's in-conversation task tracking tool for managing action items, next steps, and analysis checkpoints. See [AI Tools](aiva-chat/ai-tools.md#task-manager).
 
 **TSV (Tab-Separated Values)**
-:   A plain text file format using tabs to separate values. AIVA supports [TSV file uploads](samples/uploading-files.md).
+:   A plain text file format using tabs to separate values. AIVA supports [TSV file uploads](samples/vcf-upload.md).
 
 ---
 
 ## V
 
 **VCF (Variant Call Format)**
-:   The standard file format for storing variant data from genome sequencing. VCF files contain header lines (metadata) and data lines (one per variant) with fields for chromosome, position, reference allele, alternate allele, quality, filter status, and additional information. See [Uploading Files](samples/uploading-files.md).
+:   The standard file format for storing variant data from genome sequencing. VCF files contain header lines (metadata) and data lines (one per variant) with fields for chromosome, position, reference allele, alternate allele, quality, filter status, and additional information. See [VCF Upload](samples/vcf-upload.md).
 
 **VUS (Variant of Uncertain Significance)**
 :   An ACMG classification indicating insufficient evidence to determine whether the variant is pathogenic or benign. VUS variants require additional evidence before clinical action.

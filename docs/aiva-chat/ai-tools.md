@@ -74,7 +74,7 @@ The Variant Annotation tool performs real-time lookups for individual variants a
 - "Get CADD, SIFT, and PolyPhen scores for this variant: chr7:117559590 T>G."
 
 !!! tip "Batch vs. real-time annotation"
-    The Variant Annotation tool annotates individual variants in real time during a conversation. For batch annotation of entire VCF files, use [Small Variant Annotation](../samples/small-variant-annotation.md) during upload instead.
+    The Variant Annotation tool annotates individual variants in real time during a conversation. For batch annotation of entire VCF files, enable annotation during [VCF Upload](../samples/vcf-upload.md#annotation-options-vcf-only) instead.
 
 ---
 

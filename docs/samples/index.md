@@ -15,43 +15,24 @@ The Samples section is where you bring your genomic data into AIVA. Whether you 
 
 <div class="card" markdown>
 
-### Uploading Files
+### VCF Upload
 
-Upload VCF, CSV, and TSV files using drag-and-drop or the file browser. Configure annotation options and submit for processing.
+Upload VCF, CSV, and TSV files from your local machine or cloud storage. Configure annotation options and submit for processing.
 
-[:octicons-arrow-right-24: Uploading Files](uploading-files.md)
-
-</div>
-
-<div class="card" markdown>
-
-### Cloud URL Imports
-
-Ingest files directly from Google Cloud Storage, Amazon S3, Azure Blob Storage, or public HTTPS URLs without downloading them first.
-
-[:octicons-arrow-right-24: Cloud URLs](cloud-urls.md)
+[:octicons-arrow-right-24: VCF Upload](vcf-upload.md)
 
 </div>
 
 <div class="card" markdown>
 
-### Small Variant Annotation
+### Secondary Analysis
 
-Enrich VCF files with variant effect predictions during upload for consequence predictions, gene symbols, and transcript-level detail.
+Upload FASTQ files for GPU-accelerated variant calling, BAM generation, and pharmacogenomic analysis via the Parabricks pipeline.
 
-[:octicons-arrow-right-24: Small Variant Annotation](small-variant-annotation.md)
-
-</div>
-
-<div class="card" markdown>
-
-### Structural Variant Annotation
-
-Annotate structural variants during upload to add clinical and functional annotations for CNVs, inversions, and translocations.
-
-[:octicons-arrow-right-24: Structural Variant Annotation](structural-variant-annotation.md)
+[:octicons-arrow-right-24: Secondary Analysis](secondary-analysis.md)
 
 </div>
+
 
 <div class="card" markdown>
 
@@ -83,8 +64,9 @@ The sample lifecycle in AIVA follows a straightforward pipeline:
 
 1. **Upload**: Submit a local file or provide a cloud URL.
 2. **Annotate** (optional): Small Variant Annotation or Structural Variant Annotation runs in the background if selected.
-3. **Parse**: The file is parsed and loaded into the database using high-speed bulk operations.
-4. **Explore**: Your data appears in the interactive data table, ready for analysis.
+3. **Parse**: The file is parsed and loaded into the database for analysis.
+4. **Explore**: Explore your sample in the interactive data table or via chat using natural language.
+5. **Delete**: Remove samples you no longer need to free up quota limits for new samples. Once deleted, the sample cannot be recovered.
 
 Each step is handled as a background job, so you can continue working while processing completes. Real-time status updates are pushed to your browser automatically.
 

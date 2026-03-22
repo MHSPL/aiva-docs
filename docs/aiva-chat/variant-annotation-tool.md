@@ -91,7 +91,7 @@ These scores provide computational predictions of variant impact:
 | **Availability** | All subscription tiers | Plus, Pro, and Trial tiers |
 | **Use case** | Focused investigation of specific variants | Comprehensive annotation of all variants in a sample |
 
-For batch annotation, see [Small Variant Annotation](../samples/small-variant-annotation.md).
+For batch annotation, enable annotation during [VCF Upload](../samples/vcf-upload.md#annotation-options-vcf-only).
 
 ---
 

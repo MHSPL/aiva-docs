@@ -126,12 +126,11 @@ nav:
       - Your First Sample: getting-started/uploading-your-first-sample.md
       - Subscription Tiers: getting-started/subscription-tiers.md
   - User Guide:
+      - Quick Start: quick-start.md
       - Samples:
           - samples/index.md
-          - Uploading Files: samples/uploading-files.md
-          - Cloud URLs: samples/cloud-urls.md
-          - Small Variant Annotation: samples/small-variant-annotation.md
-          - Structural Variant Annotation: samples/structural-variant-annotation.md
+          - VCF Upload: samples/vcf-upload.md
+          - Secondary Analysis: samples/secondary-analysis.md
           - Job Monitoring: samples/job-monitoring.md
           - Managing Samples: samples/managing-samples.md
       - AIVA Chat:

@@ -44,16 +44,16 @@ Find answers to the most common questions about using AIVA. If your question is 
     - **CSV** (`.csv`): Comma-separated values with a header row.
     - **TSV** (`.tsv`, `.txt`): Tab-separated values with a header row.
 
-    See [Uploading Files](samples/uploading-files.md) for detailed format requirements.
+    See [VCF Upload](samples/vcf-upload.md) for VCF/CSV/TSV uploads, or [Secondary Analysis](samples/secondary-analysis.md) for FASTQ files.
 
 ??? question "What are the file size limits?"
     Each upload consumes credits from your weekly allowance. Free accounts cannot upload. Check your credit balance via the usage indicator in the header, or see [Subscription Tiers](getting-started/subscription-tiers.md#credit-system) for credit costs and file size limits per tier.
 
 ??? question "Can I upload files from cloud storage?"
-    Yes. Plus, Pro, Trial, and Enterprise accounts can import files directly from Google Cloud Storage (`gs://`), Amazon S3 (`s3://`), Azure Blob Storage (`az://`), or public HTTPS URLs. See [Cloud URL Imports](samples/cloud-urls.md).
+    Yes. Plus, Pro, Trial, and Enterprise accounts can import files directly from Google Cloud Storage (`gs://`), Amazon S3 (`s3://`), Azure Blob Storage (`az://`), or public HTTPS URLs. See [VCF Upload](samples/vcf-upload.md#cloud-url-import).
 
 ??? question "What is Small Variant Annotation?"
-    Small Variant Annotation uses AIVA's annotation engine to annotate variants with multiple databases. When enabled during upload, it adds columns such as gene symbol, consequence type, SIFT and Ditto predictions, and more. It is available on Trial, Plus, Pro, and Enterprise tiers. See [Small Variant Annotation](samples/small-variant-annotation.md).
+    Small Variant Annotation uses AIVA's annotation engine to annotate variants with multiple databases. When enabled during upload, it adds columns such as gene symbol, consequence type, SIFT and Ditto predictions, and more. It is available on Trial, Plus, Pro, and Enterprise tiers. See [VCF Upload](samples/vcf-upload.md#annotation-options-vcf-only).
 
 ??? question "Can I upload without annotation and annotate later?"
     Limited. You can upload files without Small Variant Annotation or Structural Variant Annotation and explore the raw data immediately. On-demand annotation only supports handful of variants at a time, use the AIVA Chat [Variant Annotation tool](aiva-chat/variant-annotation-tool.md), which performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen.

@@ -76,7 +76,7 @@ Samples progress through the following states during processing:
 | State | Description |
 |-------|-------------|
 | **Uploading** | The file is being uploaded to the server. |
-| **Downloading** | The file is being downloaded from a [cloud URL](cloud-urls.md). |
+| **Downloading** | The file is being downloaded from a cloud URL (see [VCF Upload](vcf-upload.md#cloud-url-import)). |
 | **Annotating** | Small Variant Annotation or Structural Variant Annotation annotation is running. |
 | **Parsing** | The file is being parsed and loaded into the database. |
 | **Ready** | Processing is complete. The sample is available for exploration. |

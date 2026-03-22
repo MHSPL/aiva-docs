@@ -49,7 +49,7 @@ After selecting your file, configuration options appear below:
 
 ### Split by sample
 
-For multi-sample VCF files, check **Split by sample** to create separate tables for each sample. Each split sample consumes one credit from your weekly allowance (max 100 samples per file). Leave unchecked to analyze all samples together in a single table.
+For multi-sample VCF files, check **Split by sample** to create a separate table for each sample (max 100 samples per file). Splitting makes it easier to analyze individual samples without navigating a much larger combined dataset. Leave unchecked to keep all samples together in a single table. Credits are charged per sample regardless of whether you split or not.
 
 ### Variant Annotation (VCF files)
 
