@@ -5,7 +5,7 @@ description: Overview of AIVA's AI assistant (AIVA) with specialized genomic ana
 
 # AIVA Chat
 
-AIVA (AI Virtual Assistant) is AIVA's built-in AI assistant, purpose-built for genomic data analysis. Instead of writing SQL queries or navigating complex bioinformatics tools manually, you can ask AIVA questions in plain English and receive answers backed by your actual data, published literature, and curated knowledge bases.
+AIVA (AI-assisted Variant Analysis) is our AI Clinical Analyst agent, purpose-built for clinical variant analysis and interpretation. Instead of manually applying filters and reviewing variants, you can ask AIVA questions in plain English and receive answers backed by your actual sample data, published literature, and curated knowledge bases.
 
 ---
 
