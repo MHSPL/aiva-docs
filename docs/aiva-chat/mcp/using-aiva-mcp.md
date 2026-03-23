@@ -15,7 +15,7 @@ AIVA exposes a Model Context Protocol (MCP) server that allows MCP-compatible AI
 https://api.aivaportal.com/mcp/sse
 ```
 
-The MCP server uses Server-Sent Events (SSE) transport for real-time communication. All requests require authentication with an AIVA API key. See [API Keys](../../api/api-keys.md) for instructions on creating a key.
+The MCP server uses Server-Sent Events (SSE) transport for real-time communication. All requests require authentication with an AIVA API key. See [API Reference](../../api/index.md) for instructions on creating a key.
 
 ---
 
@@ -110,7 +110,7 @@ In Windsurf, add the AIVA MCP server through the MCP configuration panel using t
 
 | Issue | Resolution |
 |-------|------------|
-| Connection fails | Verify your API key is valid using the [health check endpoint](../../api/api-keys.md#health-check). |
+| Connection fails | Verify your API key is valid. See [API Reference](../../api/index.md) for details. |
 | Invalid JSON | Ensure the configuration JSON is valid (no trailing commas, correct quoting). |
 | Tools not loading | Restart your AI agent after making configuration changes. |
 | Authentication errors | API keys are case-sensitive. Copy the key exactly as shown at creation time. If expired or revoked, create a new one from **Settings > API Keys** in AIVA. |

@@ -67,7 +67,7 @@ Access to data is controlled at multiple levels:
 | **User** | Each user can only access their own uploaded samples by default. |
 | **Project** | Samples shared through projects are accessible to project members based on their role. |
 | **Role** | Project roles (Owner, Admin, Editor, Viewer) define what actions a user can perform. |
-| **API** | [API keys](../api/api-keys.md) inherit the permissions of the creating user. |
+| **API** | [API keys](../api/index.md) inherit the permissions of the creating user. |
 | **AI Tools** | The Genomic Data Query tool is scoped to the user's accessible data. AIVA cannot query other users' data. |
 
 ### Session Management
@@ -94,7 +94,7 @@ Access to data is controlled at multiple levels:
 
 ### Data Export and Portability
 
-- Users can [export](../api/export-api.md) all their data at any time.
+- Users can export all their data at any time.
 - Exported data includes variants, flags, comments, and classifications.
 - Account deletion removes all associated data from the platform.
 

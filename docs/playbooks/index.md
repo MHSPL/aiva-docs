@@ -7,75 +7,47 @@ description: Browse, create, and share reusable AI analysis playbooks in AIVA fo
 
 Playbooks are reusable, step-by-step instructions that guide the AIVA AI assistant through standardized analysis workflows. Instead of typing the same sequence of prompts for every sample, you can create or select a playbook that automates the process, ensuring consistency and saving time.
 
----
+**Key features:**
 
-## What Is a Playbook?
-
-A playbook is a structured set of instructions that tells AIVA:
-
-- **What to analyze**: Which aspects of the data to examine.
-- **In what order**: The sequence of analysis steps.
-- **Using which tools**: The specific AIVA tools to invoke at each step.
-- **How to report**: The format and detail level of the output.
-
-When you run a playbook, AIVA follows the instructions step by step, invoking the appropriate tools and presenting results in a structured format.
+- **Marketplace**: browse community-contributed playbooks for common analysis scenarios
+- **Custom creation**: write your own playbooks with step-by-step instructions
+- **Forking**: copy and modify existing playbooks to suit your needs
+- **Sharing**: publish playbooks publicly or share within your team
 
 ---
 
-## Key Features
-
-- **Marketplace**: Browse community-contributed playbooks for common analysis scenarios.
-- **Custom creation**: Write your own playbooks with step-by-step instructions.
-- **Forking**: Copy and modify existing playbooks to suit your needs.
-- **Version control**: Track changes to playbooks over time.
-- **Sharing**: Publish playbooks publicly or share within your team.
-
----
-
-## In This Section
-
-<div class="grid-cards" markdown>
-
-<div class="card" markdown>
-
-### Browsing Playbooks
-
-Explore the playbook marketplace to find community playbooks for common workflows.
-
-[:octicons-arrow-right-24: Browsing Playbooks](browsing-playbooks.md)
-
-</div>
-
-<div class="card" markdown>
-
-### Creating Playbooks
-
-Write your own playbooks with step-by-step instructions for the AIVA AI assistant.
-
-[:octicons-arrow-right-24: Creating Playbooks](creating-playbooks.md)
-
-</div>
-
-<div class="card" markdown>
-
-### Sharing Playbooks
-
-Publish playbooks to the community marketplace or share within your team.
-
-[:octicons-arrow-right-24: Sharing Playbooks](sharing-playbooks.md)
-
-</div>
-
-</div>
-
----
-
-## Quick Start
+## Using a playbook
 
 1. Navigate to the **Playbooks** section from the main navigation.
-2. Browse the marketplace for a playbook that matches your workflow.
-3. Click **Use Playbook** to load it into a conversation.
-4. AIVA begins executing the playbook steps against your selected sample.
+2. Browse the marketplace by category (Clinical Variant Interpretation, Rare Disease, Pharmacogenomics, Cancer Genomics, Research, Quality Control) or search by keyword.
+3. Click a playbook to preview its steps, tools used, and author details.
+4. Click **Fork** if you want to save/modify the playbook before using it.
+5. Go to the **Chat** section and select the sample and playbook you want to analyze. Just type `@samples:sample1 @playbook:rare_disease_analysis` and hit enter.
 
-!!! tip "Playbooks save time on recurring analyses"
-    If you perform the same type of analysis regularly (e.g., hereditary cancer panel review, pharmacogenomic assessment, rare disease workup), creating a playbook automates the process and ensures no steps are missed.
+!!! note "Customizing on the fly"
+    You can intervene at any point during playbook execution. Add follow-up questions, skip steps, or ask AIVA to go deeper on a particular finding.
+
+---
+
+## Creating a playbook
+
+1. Navigate to **Playbooks** and click **New Playbook**.
+2. Enter a **title** and **description**.
+3. Add steps, each with a title and instruction written as you would a prompt in AIVA Chat.
+4. Optionally specify an expected tool and output format (table, list, summary) for each step.
+5. Save for yourself or publish it to the marketplace.
+
+!!! tip "Writing effective steps"
+    Be specific ("List all missense variants with CADD > 20 and gnomAD AF < 0.001") rather than vague ("Find important variants"). Reference previous steps to chain analyses, and keep each step focused on one task.
+
+---
+
+## Forking a playbook
+
+If a marketplace playbook is close to what you need but requires modifications:
+
+1. Click **Fork** on the playbook detail page.
+2. A copy is created in your personal library.
+3. Edit the steps as needed and save.
+
+The fork retains a link to the original. You can **Unpublish** a marketplace playbook at any time. Existing forks by other users are not affected.

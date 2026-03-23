@@ -7,77 +7,50 @@ description: Generate clinical and research reports in AIVA with a rich text edi
 
 AIVA provides a built-in report generation system for creating structured clinical and research reports. Reports pull together your analysis findings (flagged variants, comments, classifications, and AI-generated summaries) into a polished document suitable for clinical review, research documentation, or patient communication.
 
----
+**Key features:**
 
-## Key Features
-
-- **Rich text editor**: Full-featured editor with formatting, tables, lists, and structured sections.
-- **AI Auto-Fill**: Let AIVA generate content for report sections based on your sample data and analysis findings.
-- **Variant and sample linking**: Directly link flagged variants, comments, and ACMG classifications into report sections.
-- **Templates**: Use pre-built templates for common report types or create your own.
-- **Export**: Download completed reports for sharing or archival.
+- **Custom HTML templates**: upload your own templates to match your organization's report format
+- **AI Auto-Fill**: let AIVA generate report content based on your sample data and analysis findings
+- **Rich text editor**: edit and refine reports before exporting
+- **Export to HTML**: download completed reports for sharing or archival
 
 ---
 
-## In This Section
-
-<div class="grid-cards" markdown>
-
-<div class="card" markdown>
-
-### Creating a Report
-
-Step-by-step guide to creating a new report, adding content, and organizing sections.
-
-[:octicons-arrow-right-24: Creating a Report](creating-a-report.md)
-
-</div>
-
-<div class="card" markdown>
-
-### AI Auto-Fill
-
-Use AIVA's AI to automatically generate content for report sections based on your data and analysis.
-
-[:octicons-arrow-right-24: AI Auto-Fill](ai-auto-fill.md)
-
-</div>
-
-<div class="card" markdown>
-
-### Templates
-
-Browse and apply report templates for different clinical and research use cases.
-
-[:octicons-arrow-right-24: Templates](templates.md)
-
-</div>
-
-<div class="card" markdown>
-
-### Sample Linking
-
-Link flagged variants, comments, and classifications from your samples directly into reports.
-
-[:octicons-arrow-right-24: Sample Linking](sample-linking.md)
-
-</div>
-
-</div>
-
----
-
-## Report Workflow
+## Report workflow
 
 A typical report workflow in AIVA follows these stages:
 
-1. **Analyze your sample**: Use the [Table View](../analysis/index.md), [AIVA Chat](../aiva-chat/index.md), and analysis tools to explore your data.
-2. **Flag and classify variants**: Flag variants of interest and apply [ACMG classifications](../analysis/acmg-classification.md).
-3. **Add comments**: Document your interpretation with threaded comments.
-4. **Create a report**: Start from a [template](templates.md) or a blank report.
-5. **Link evidence**: [Connect flagged variants and comments](sample-linking.md) to the relevant report sections.
-6. **AI Auto-Fill**: Use [AI Auto-Fill](ai-auto-fill.md) to generate or refine section content.
-7. **Review and export**: Finalize the report and export it.
+1. **Select your sample**: Choose the sample you want to create a report for from the sample list on the left side panel.
+2. **Extract flagged variants**: Selecting the sample will pull in all flagged variants and their associated data, including [ACMG classifications](../analysis/acmg-classification.md).
+3. **Create a report**: Choose a template and either fill it in manually or use AI Auto-Fill.
+4. **Review and edit**: Refine the content in the rich text editor.
+5. **Export**: Download the final report as HTML.
 
-!!! tip "Reports and collaboration"
-    Reports created within a project are accessible to all project members based on their role permissions.
+---
+
+## Creating a report
+
+There are two ways to create a report in AIVA:
+
+### Manual entry
+
+Upload your own HTML template and manually fill in the report content using the rich text editor. A generic template is available for testing.
+
+1. Navigate to **Reports**
+2. Click **Use template** or select an existing template (upload your own HTML template).
+3. Fill in the report sections using the editor.
+4. Edit and review your content.
+5. Click **Export** to download the report as HTML.
+
+### AI Auto-Fill
+
+Let AIVA generate a report automatically based on your sample data, flagged variants, comments, and classifications.
+
+1. Navigate to **Reports**
+2. Click **Use template** or select an existing template (upload your own HTML template).
+3. Click **AI Auto-Fill** to have AIVA populate the report sections.
+4. Review and edit the generated content as needed.
+5. Click **Export** to download the report as HTML.
+
+!!! warning "Clinical responsibility"
+    AI Auto-Fill is a productivity tool, not a substitute for clinical expertise. Always review AI-generated content before finalizing, especially for clinical reports. The signing clinician or researcher is responsible for the accuracy and completeness of the final report.

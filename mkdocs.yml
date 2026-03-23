@@ -152,27 +152,11 @@ nav:
 
       - Reports:
           - reports/index.md
-          - Creating a Report: reports/creating-a-report.md
-          - AI Auto-Fill: reports/ai-auto-fill.md
-          - Templates: reports/templates.md
-          - Sample Linking: reports/sample-linking.md
       - Playbooks:
           - playbooks/index.md
-          - Browsing Playbooks: playbooks/browsing-playbooks.md
-          - Creating Playbooks: playbooks/creating-playbooks.md
-          - Sharing Playbooks: playbooks/sharing-playbooks.md
       - Variant Classifier:
           - classification/index.md
-  - API Reference:
-      - api/index.md
-      - API Keys: api/api-keys.md
-      - Upload Endpoints: api/upload-endpoints.md
-      - Job Monitoring: api/job-monitoring.md
-      - Chat API: api/chat-api.md
-      - Database Queries: api/database-queries.md
-      - Classification API: api/classification-api.md
-      - Export API: api/export-api.md
-      - MCP Setup: api/mcp-setup.md
+  - API Reference: api/index.md
   - Compliance: compliance/index.md
   - Resources:
       - FAQ: faq.md
