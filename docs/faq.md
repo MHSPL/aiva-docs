@@ -1,6 +1,7 @@
 ---
 title: Frequently Asked Questions
 description: Answers to common questions about AIVA accounts, uploads, AI chat, data privacy, subscriptions, and troubleshooting.
+schema: faqpage
 ---
 
 # Frequently Asked Questions
@@ -56,7 +57,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Small Variant Annotation uses AIVA's annotation engine to annotate variants with multiple databases. When enabled during upload, it adds columns such as gene symbol, consequence type, SIFT and Ditto predictions, and more. It is available on Trial, Plus, Pro, and Enterprise tiers. See [VCF Upload](samples/vcf-upload.md#annotation-options-vcf-only).
 
 ??? question "Can I upload without annotation and annotate later?"
-    Limited. You can upload files without Small Variant Annotation or Structural Variant Annotation and explore the raw data immediately. On-demand annotation only supports handful of variants at a time, use the AIVA Chat [Variant Annotation tool](aiva-chat/ai-tools.md#variant-annotation), which performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen.
+    Limited. You can upload files without Small Variant Annotation or Structural Variant Annotation and explore the raw data immediately. On-demand annotation only supports a handful of variants at a time. Use the AIVA Chat [Variant Annotation tool](aiva-chat/ai-tools.md#variant-annotation), which performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen.
 
 ??? question "My upload failed. What should I do?"
     Open the [Job Manager](samples/job-monitoring.md) and review the error message on the failed job. Common causes include unsupported file formats, malformed headers (VCF files must include the `#CHROM` line), insufficient credits or exceeding file size limits, or network interruptions during transfer. Fix the underlying issue and re-upload. Please reach out to tarun@mamidi.ai for more assistance.
@@ -154,13 +155,13 @@ Find answers to the most common questions about using AIVA. If your question is 
     - If the issue persists, ask AIVA to provide the data as a table instead.
 
 ??? question "I cannot find a conversation I had previously."
-    Use the search bar in the conversation sidebar to filter by title. If you cannot find the conversation, it may have been deleted. Deleted conversations cannot be recovered. Consider renaming important conversations with descriptive titles to make them easier to find in the future. You can also export the conversation as a html page.
+    Use the search bar in the conversation sidebar to filter by title. If you cannot find the conversation, it may have been deleted. Deleted conversations cannot be recovered. Consider renaming important conversations with descriptive titles to make them easier to find in the future. You can also export the conversation as an HTML page.
 
 ??? question "My Small Variant Annotation job has been running for a long time."
     Small Variant Annotation processes each variant through the annotation pipeline. For large files (whole-genome VCFs with millions of variants), this can take a significant amount of time. The job continues processing in the background. Check the [Jobs](samples/job-monitoring.md) tab for the current status. If the job appears stuck in the same state for an extended period, it may have encountered an error. Contact support if needed.
 
 ??? question "How do I report a bug or request a feature?"
-    Use the **Help** modal in the application header to access our slack channel. Include details about the issue: what you were trying to do, what happened, any error messages, and your browser/OS information.
+    Use the **Help** modal in the application header to access our Slack channel. Include details about the issue: what you were trying to do, what happened, any error messages, and your browser/OS information.
 
 ---
 

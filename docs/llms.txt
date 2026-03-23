@@ -1,0 +1,23 @@
+# AIVA User Guide
+
+> Comprehensive documentation for AIVA (AI-assisted Variant Analysis), a genomic variant analysis platform by Mamidi Health. AIVA enables clinical geneticists, research scientists, bioinformaticians, and lab directors to upload sequencing data, run annotation pipelines, analyze variants with an AI clinical analyst, classify variants using ACMG/AMP guidelines, and generate clinical reports.
+
+## Key pages
+
+- [Getting Started](https://docs.aivaportal.com/getting-started/): Account setup, platform overview, UI navigation, first sample upload, and subscription tiers
+- [Samples and Uploads](https://docs.aivaportal.com/samples/): Upload VCF, CSV, TSV, and FASTQ files with optional annotation pipelines
+- [AIVA Chat](https://docs.aivaportal.com/aiva-chat/): AI clinical analyst with 10+ specialized genomic tools and natural language queries
+- [Table View](https://docs.aivaportal.com/analysis/): Variant data exploration, tertiary analysis, analysis panel, categories, and ACMG classification
+- [Reports](https://docs.aivaportal.com/reports/): Clinical report generation with AI-assisted content and linked variant evidence
+- [Playbooks](https://docs.aivaportal.com/playbooks/): Reusable AI analysis workflows for standardized genomic analysis
+- [Variant Classifier](https://docs.aivaportal.com/classification/): Public ACMG/AMP variant classification tool (no login required)
+- [API Reference](https://docs.aivaportal.com/api/): Programmatic access to AIVA features
+- [Compliance](https://docs.aivaportal.com/compliance/): HIPAA-aligned PHI detection, encryption, and access controls
+- [FAQ](https://docs.aivaportal.com/faq/): Common questions about accounts, uploads, AI chat, privacy, and troubleshooting
+- [Glossary](https://docs.aivaportal.com/glossary/): Genomics and platform terminology definitions
+- [Changelog](https://docs.aivaportal.com/changelog/): Release notes and version history
+
+## Optional
+
+- [Quick Start](https://docs.aivaportal.com/quick-start/): Condensed guide from upload to AI-powered insights
+- [MCP Integration](https://docs.aivaportal.com/aiva-chat/mcp/): Model Context Protocol for connecting external tools to AIVA or using AIVA tools in other agents

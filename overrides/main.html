@@ -1,0 +1,311 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if page and page.meta and page.meta.schema == "faqpage" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I create an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Visit the AIVA sign-up page and register using your email address. After signing up, verify your email address by clicking the link sent to your inbox. See Account Setup for a full walkthrough."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What subscription plans are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIVA offers five tiers: Free, Trial, Plus, Pro, and Enterprise. Each tier provides progressively more features, more weekly credits, and additional AI capabilities. See Subscription Tiers for a detailed comparison."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I upgrade my subscription?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Click the tier indicator in the top-right corner of the navigation bar, select Manage Subscription, select tier by clicking Upgrade, and follow the secure payment flow. Your new tier is activated immediately upon successful payment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I try all features before paying?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Trial tier gives you temporary access to the complete feature set. Signing up with a new email address will automatically grant you a trial."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to my data if I downgrade?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your data is never deleted when you change tiers. All previously uploaded samples, conversations, and analysis results remain accessible. However, data is only retained for 30 days when downgrading to the Free tier."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my payment information secure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All payment processing is handled by Stripe, a PCI-DSS Level 1 certified payment processor. AIVA does not store your credit card information."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer institutional or enterprise pricing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For teams larger than 10 users or organizations with custom requirements, contact us for enterprise pricing options. Reach out to tarun@mamidi.ai."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What file formats does AIVA support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIVA supports the following formats: FASTQ (.fastq, .fastq.gz) including gzip-compressed files, VCF (.vcf, .vcf.gz) Variant Call Format including gzip-compressed files, CSV (.csv) comma-separated values with a header row, and TSV (.tsv, .txt) tab-separated values with a header row."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the file size limits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each upload consumes credits from your weekly allowance. Free accounts cannot upload. Check your credit balance via the usage indicator in the header, or see Subscription Tiers for credit costs and file size limits per tier."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I upload files from cloud storage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Plus, Pro, Trial, and Enterprise accounts can import files directly from Google Cloud Storage (gs://), Amazon S3 (s3://), Azure Blob Storage (az://), or public HTTPS URLs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Small Variant Annotation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Small Variant Annotation uses AIVA's annotation engine to annotate variants with multiple databases. When enabled during upload, it adds columns such as gene symbol, consequence type, SIFT and Ditto predictions, and more. It is available on Trial, Plus, Pro, and Enterprise tiers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I upload without annotation and annotate later?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Limited. You can upload files without Small Variant Annotation or Structural Variant Annotation and explore the raw data immediately. On-demand annotation only supports a handful of variants at a time using the AIVA Chat Variant Annotation tool, which performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My upload failed. What should I do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open the Job Manager and review the error message on the failed job. Common causes include unsupported file formats, malformed headers (VCF files must include the #CHROM line), insufficient credits or exceeding file size limits, or network interruptions during transfer. Fix the underlying issue and re-upload. Contact tarun@mamidi.ai for further assistance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I upload multiple files at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIVA processes one file upload at a time. You can submit multiple uploads in sequence, and each will be queued and processed independently. Monitor all jobs in the Job Manager."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is AIVA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIVA (AI assisted Variant Analysis) is our AI Clinical Analyst. It can query your uploaded samples, search biomedical literature, annotate variants, generate charts, explore gene-drug interactions, and more, all through natural language conversation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What tools does AIVA have access to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIVA has access to 10+ specialized tools: Genomic Data Query, Web Search, Variant Annotation (ClinVar, gnomAD, CADD, SIFT, PolyPhen), Biomedical Literature search, Code Interpreter, Knowledge Graph, Clinical Trials search, Phenotype-Gene Prioritization, MCP custom integrations, and Task Manager."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I control which tools AIVA uses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can enable or disable individual tools from the tool configuration panel in the chat input area. This lets you restrict AIVA to specific capabilities or reduce response latency."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I choose which AI model AIVA uses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. AIVA offers a selection of language models with different tradeoffs between speed, cost, and reasoning capability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can AIVA modify my data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. AIVA has read-only access to your sample data. It can query, analyze, and visualize your data but cannot insert, update, or delete rows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can AIVA access other users' data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. AIVA queries are scoped to samples you own or that have been shared with you through a project. It cannot access data belonging to other accounts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My conversation seems to lose context in long chats. What can I do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Very long conversations may exceed the language model's context window, causing it to lose track of earlier messages. Either switch to a model with 1M token capacity (for example, Gemini Pro models) or start a new conversation and re-establish the key context in your first message. Keeping conversations focused on a single topic also helps maintain coherence."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is my data stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uploaded files are processed and stored on AIVA's secure cloud infrastructure. Parsed variant data is stored in a secure database. RLS (Row Level Security) is enabled to ensure data isolation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who can access my data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Only you can access your data by default. If you create a project and invite collaborators, they gain access to the samples assigned to that project based on their assigned role. AIVA staff do not access your data except as required for technical support with your explicit consent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is AIVA HIPAA compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIVA includes features designed for HIPAA compliance, including PHI detection and access controls. See Compliance for details on the security measures in place."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I delete my data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can delete samples and projects from the Samples page. Deleted samples and their associated data (flags, comments, etc.) are permanently removed from the database."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does AIVA send my data to external services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When AIVA uses tools like Web Search, Biomedical Literature, or Clinical Trials, it sends search queries to external APIs, but it does not send your raw variant data. The Genomic Data Query tool runs queries locally against the database. Variant annotation lookups send individual variant identifiers (chromosome, position, alleles) to annotation services for lookup but do not transmit your full dataset."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What features are available on the Free tier?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Free tier includes limited AI chat queries per day, limited API access, and read-only access to the Playbooks marketplace. See Subscription Tiers for the full comparison."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do I gain by upgrading to Plus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Plus adds more weekly credits and higher query limits, clinical reports with AI auto-fill, API access, and advanced AI capabilities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Plus and Pro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pro provides 10 credits per week and higher AI query limits, and includes standard support. All Plus features are included. Pro is designed for small to medium-sized teams."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the MCP integration?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Model Context Protocol (MCP) allows you to connect AIVA to external tools and services that you configure. This enables custom workflows tailored to your specific bioinformatics pipeline. MCP is available on Trial, Plus, and Pro tiers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "The table view is slow or unresponsive.",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIVA's table view uses virtualized rendering and server-side pagination to handle datasets with millions of rows. If you experience slowness, check your internet connection, try reducing the number of visible columns, close other browser tabs to free up memory, or contact support with your browser version and dataset size."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AIVA is not responding or responses are very slow.",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Possible causes include high server load during peak usage, complex queries requiring more processing time, or network issues with SSE streaming. Wait a moment and try again, or refresh the page if your connection is intermittent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I see an error about exceeding my usage limit.",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your subscription tier determines your credit balance and AI query usage. Check your current usage via the usage indicator in the header. Credits reset every Sunday. To continue, either wait for your credits to reset or upgrade your plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Charts or plots are not rendering in the chat.",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIVA generates charts using matplotlib in a sandboxed Python environment. If a chart fails to render, check the error message in the chat, try rephrasing your request with more specific instructions, or ask AIVA to provide the data as a table instead."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I cannot find a conversation I had previously.",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the search bar in the conversation sidebar to filter by title. If you cannot find the conversation, it may have been deleted. Deleted conversations cannot be recovered. Consider renaming important conversations with descriptive titles to make them easier to find. You can also export the conversation as an HTML page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My Small Variant Annotation job has been running for a long time.",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Small Variant Annotation processes each variant through the annotation pipeline. For large files (whole-genome VCFs with millions of variants), this can take a significant amount of time. The job continues processing in the background. Check the Jobs tab for the current status. If the job appears stuck in the same state for an extended period, it may have encountered an error. Contact support if needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I report a bug or request a feature?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the Help modal in the application header to access the Slack channel. Include details about the issue: what you were trying to do, what happened, any error messages, and your browser/OS information."
+        }
+      }
+    ]
+  }
+  </script>
+  {% endif %}
+{% endblock %}

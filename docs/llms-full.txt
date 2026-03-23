@@ -1,0 +1,82 @@
+# AIVA User Guide
+
+> Comprehensive documentation for AIVA (AI-assisted Variant Analysis), a genomic variant analysis platform by Mamidi Health. AIVA enables clinical geneticists, research scientists, bioinformaticians, and lab directors to upload sequencing data (FASTQ, VCF, CSV, TSV), run annotation pipelines, analyze variants with an AI clinical analyst, classify variants using ACMG/AMP guidelines, and generate clinical-grade reports. The platform supports whole genome and whole exome sequencing workflows with HIPAA-aligned security features.
+
+## Getting Started
+
+Set up your AIVA account, learn the interface, upload your first sample, and choose the right subscription tier.
+
+- [Getting Started Overview](https://docs.aivaportal.com/getting-started/): Entry point for new users with guided setup steps
+- [Platform Overview](https://docs.aivaportal.com/getting-started/platform-overview/): Overview of the AIVA workflow from uploading sequencing data to delivering a signed clinical report
+- [Account Setup](https://docs.aivaportal.com/getting-started/account-setup/): Create your AIVA account, verify your email, log in, and configure your profile settings
+- [Navigating the UI](https://docs.aivaportal.com/getting-started/navigating-the-ui/): Understand the AIVA interface layout, navigation tabs, sidebar, theme switching, and help resources
+- [Uploading Your First Sample](https://docs.aivaportal.com/getting-started/uploading-your-first-sample/): Step-by-step guide to uploading a VCF, CSV, or TSV file and viewing results in the table view
+- [Subscription Tiers](https://docs.aivaportal.com/getting-started/subscription-tiers/): Compare Free, Trial, Plus, Pro, and Enterprise plans and learn how to upgrade
+
+## Samples and Uploads
+
+Upload, annotate, monitor, and manage genomic data samples.
+
+- [Samples Overview](https://docs.aivaportal.com/samples/): Central hub for managing all uploaded genomic data
+- [VCF Upload](https://docs.aivaportal.com/samples/vcf-upload/): Upload VCF, CSV, and TSV files from local machine or cloud storage (S3, GCS, Azure) with optional variant annotation
+- [Secondary Analysis](https://docs.aivaportal.com/samples/secondary-analysis/): Upload FASTQ files for GPU-accelerated variant calling, BAM generation, and pharmacogenomic analysis using NVIDIA Parabricks
+- [Job Monitoring](https://docs.aivaportal.com/samples/job-monitoring/): Track upload, annotation, and parsing jobs in real time using the Job Manager
+- [Managing Samples](https://docs.aivaportal.com/samples/managing-samples/): View, organize, delete, and assign genomic data samples to projects
+
+## AIVA Chat
+
+AI clinical analyst with specialized genomic analysis tools and natural language queries.
+
+- [AIVA Chat Overview](https://docs.aivaportal.com/aiva-chat/): Overview of the AI assistant with streaming responses and tool-based analysis
+- [AI Tools Reference](https://docs.aivaportal.com/aiva-chat/ai-tools/): Comprehensive reference for all tools available to the AI assistant including Genomic Data Query, Web Search, Variant Annotation (ClinVar, gnomAD, CADD, SIFT, PolyPhen), Biomedical Literature search, Code Interpreter, Knowledge Graph, Clinical Trials search, and Phenotype-Gene Prioritization
+- [Model Selection](https://docs.aivaportal.com/aiva-chat/model-selection/): Choose between different LLM models to balance speed, reasoning depth, and cost
+- [MCP Integration](https://docs.aivaportal.com/aiva-chat/mcp/): Extend AIVA with external tools via MCP, or connect AIVA's tools to other AI agents
+- [Adding MCP Servers to AIVA](https://docs.aivaportal.com/aiva-chat/mcp/adding-mcp-servers/): Connect external MCP tool servers to extend AIVA Chat with custom data sources and APIs
+- [Using AIVA MCP with Other Agents](https://docs.aivaportal.com/aiva-chat/mcp/using-aiva-mcp/): Connect AIVA's genomic analysis tools to Claude Desktop, OpenAI Codex, Claude Code, Cursor, and other MCP-compatible agents
+
+## Table View
+
+Explore and analyze variant data with filtering, sorting, and classification workflows.
+
+- [Table View Overview](https://docs.aivaportal.com/analysis/): Overview of table view capabilities for genomic data exploration
+- [Tertiary Analysis](https://docs.aivaportal.com/analysis/tertiary-analysis/): Per-sample tertiary analysis with the table view and a floating AI chat assistant
+- [Analysis Panel](https://docs.aivaportal.com/analysis/analysis-panel/): Run category-based analyses with customizable layouts and multiple panels in a unified workspace
+- [Analysis Categories](https://docs.aivaportal.com/analysis/categories/): Create and manage custom analysis categories for structured variant interpretation workflows
+- [Variant Classification](https://docs.aivaportal.com/analysis/acmg-classification/): Classify variants using ACMG/AMP germline or AMP/ASCO/CAP somatic guidelines with manual or AI-assisted classification
+
+## Reports
+
+Generate clinical and research reports with AI assistance.
+
+- [Reports](https://docs.aivaportal.com/reports/): Generate clinical reports with a rich text editor, AI-assisted content generation, and linked variant evidence
+
+## Playbooks
+
+Reusable AI analysis workflows for standardized genomic analysis.
+
+- [Playbooks](https://docs.aivaportal.com/playbooks/): Browse, create, and share reusable AI analysis playbooks for standardized genomic workflows
+
+## Variant Classifier
+
+Public ACMG/AMP variant classification tool.
+
+- [Variant Classifier](https://docs.aivaportal.com/classification/): Public, no-login-required tool for classifying genomic variants according to ACMG/AMP guidelines with interactive evidence criteria selection
+
+## API Reference
+
+Programmatic access to AIVA features.
+
+- [API Reference](https://docs.aivaportal.com/api/): Access the AIVA API documentation for uploads, chat, classification, exports, and MCP integration
+
+## Compliance
+
+Security and regulatory compliance features.
+
+- [Compliance](https://docs.aivaportal.com/compliance/): HIPAA-aligned PHI detection, data encryption, access controls, row-level security, and secure data handling practices
+
+## Resources
+
+- [Quick Start](https://docs.aivaportal.com/quick-start/): Condensed guide from first upload to AI-powered genomic insights
+- [FAQ](https://docs.aivaportal.com/faq/): Answers to common questions about accounts, uploads, AI chat, data privacy, subscriptions, and troubleshooting
+- [Glossary](https://docs.aivaportal.com/glossary/): Definitions of genomics, bioinformatics, and platform-specific terminology
+- [Changelog](https://docs.aivaportal.com/changelog/): Release notes and version history for the AIVA platform

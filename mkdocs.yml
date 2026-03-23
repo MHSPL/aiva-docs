@@ -8,6 +8,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/images/logo.svg
   favicon: assets/images/logo.svg
   palette:
@@ -51,6 +52,7 @@ theme:
 plugins:
   - search:
       separator: '[\s\-\.\,]+'
+  - meta
   - tags
   - glightbox
   - minify:
@@ -146,10 +148,7 @@ nav:
           - Tertiary Analysis: analysis/tertiary-analysis.md
           - Analysis Panel: analysis/analysis-panel.md
           - Categories: analysis/categories.md
-
-
           - ACMG Classification: analysis/acmg-classification.md
-
       - Reports:
           - reports/index.md
       - Playbooks:
