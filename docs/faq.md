@@ -56,7 +56,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Small Variant Annotation uses AIVA's annotation engine to annotate variants with multiple databases. When enabled during upload, it adds columns such as gene symbol, consequence type, SIFT and Ditto predictions, and more. It is available on Trial, Plus, Pro, and Enterprise tiers. See [VCF Upload](samples/vcf-upload.md#annotation-options-vcf-only).
 
 ??? question "Can I upload without annotation and annotate later?"
-    Limited. You can upload files without Small Variant Annotation or Structural Variant Annotation and explore the raw data immediately. On-demand annotation only supports handful of variants at a time, use the AIVA Chat [Variant Annotation tool](aiva-chat/variant-annotation-tool.md), which performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen.
+    Limited. You can upload files without Small Variant Annotation or Structural Variant Annotation and explore the raw data immediately. On-demand annotation only supports handful of variants at a time, use the AIVA Chat [Variant Annotation tool](aiva-chat/ai-tools.md#variant-annotation), which performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen.
 
 ??? question "My upload failed. What should I do?"
     Open the [Job Manager](samples/job-monitoring.md) and review the error message on the failed job. Common causes include unsupported file formats, malformed headers (VCF files must include the `#CHROM` line), insufficient credits or exceeding file size limits, or network interruptions during transfer. Fix the underlying issue and re-upload. Please reach out to tarun@mamidi.ai for more assistance.

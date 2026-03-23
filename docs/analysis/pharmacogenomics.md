@@ -14,7 +14,7 @@ AIVA's pharmacogenomics features help you identify variants in drug-metabolizing
 Pharmacogenomics (PGx) examines how genetic variants influence drug metabolism, efficacy, and adverse reactions. AIVA supports PGx analysis through:
 
 - **PGx Analysis Card**: A dedicated [analysis card](analysis-cards.md) in the Analysis Hub showing drug-variant interactions and metabolizer phenotypes.
-- **Knowledge Graph queries**: Explore drug-gene-protein relationships through the [Knowledge Graph](../aiva-chat/knowledge-graph.md).
+- **Knowledge Graph queries**: Explore drug-gene-protein relationships through the [Knowledge Graph](../aiva-chat/ai-tools.md#knowledge-graph).
 - **AIVA Chat**: Ask the AI assistant about specific drug-gene interactions, guidelines, and evidence.
 
 ---

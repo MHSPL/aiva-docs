@@ -60,10 +60,10 @@ You do not need to tell AIVA which tool to use. It selects the right tool (or co
 
 Once you are comfortable with the basics, explore these capabilities:
 
-- **[Knowledge Graph](aiva-chat/knowledge-graph.md)**: Explore gene-protein-drug interaction networks.
-- **[Clinical Trials](aiva-chat/clinical-trials.md)**: Search ClinicalTrials.gov for relevant trials by gene, disease, or drug.
-- **[Phenotype-Gene Prioritization](aiva-chat/phenotype-gene-prioritization.md)**: Map clinical phenotypes to candidate genes.
-- **[Code Interpreter](aiva-chat/code-interpreter.md)**: Run custom Python analysis with pandas, scipy, and matplotlib.
+- **[Knowledge Graph](aiva-chat/ai-tools.md#knowledge-graph)**: Explore gene-protein-drug interaction networks.
+- **[Clinical Trials](aiva-chat/ai-tools.md#clinical-trials)**: Search ClinicalTrials.gov for relevant trials by gene, disease, or drug.
+- **[Phenotype-Gene Prioritization](aiva-chat/ai-tools.md#phenotype-gene-prioritization)**: Map clinical phenotypes to candidate genes.
+- **[Code Interpreter](aiva-chat/ai-tools.md#code-interpreter)**: Run custom Python analysis with pandas, scipy, and matplotlib.
 - **[Playbooks](playbooks/index.md)**: Save and share multi-step analysis workflows.
 
 ---

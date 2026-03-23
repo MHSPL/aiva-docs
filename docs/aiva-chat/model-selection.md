@@ -7,6 +7,8 @@ description: Choose between different LLM models for the AIVA AI assistant to ba
 
 AIVA offers a choice of language models to power the AI assistant. Different models provide different tradeoffs between response speed, reasoning depth, and usage cost. You can switch models at any time based on the requirements of your current task.
 
+![AIVA Chat input bar](../assets/images/screenshots/chat/chat-input-bar.png)
+
 ---
 
 ## Choosing a Model
@@ -14,26 +16,12 @@ AIVA offers a choice of language models to power the AI assistant. Different mod
 To change the active model:
 
 1. Open the AIVA Chat interface.
-2. Locate the model selector in the chat input area or settings panel.
+2. Locate the model selector in the chat input area.
 3. Select your preferred model from the dropdown.
 4. The new model takes effect for your next message.
 
 !!! note "Per-conversation setting"
     Model selection applies to the current conversation. You can use different models in different conversations based on the complexity of each task.
-
----
-
-## Model Tradeoffs
-
-When selecting a model, consider the following factors:
-
-| Factor | Faster Models | More Capable Models |
-|--------|--------------|-------------------|
-| **Response speed** | Faster generation, lower latency | Slower generation, higher latency |
-| **Reasoning depth** | Good for straightforward queries | Better for complex multi-step analysis |
-| **Tool usage** | Effective for single-tool queries | Better at orchestrating multi-tool workflows |
-| **Cost** | Lower per-message cost | Higher per-message cost |
-| **Context handling** | Adequate for focused questions | Better at maintaining context in long conversations |
 
 ---
 
@@ -53,12 +41,6 @@ When selecting a model, consider the following factors:
 - Working through multi-step diagnostic workflows.
 - Needing detailed explanations with clinical context.
 - Orchestrating workflows that chain several tools together.
-
----
-
-## Model Availability
-
-Available models may vary based on your [subscription tier](../getting-started/subscription-tiers.md). Higher-tier subscriptions may include access to more capable models.
 
 !!! info "Model updates"
     The set of available models may change as new models are released and older models are retired. Check the model selector for the current list of available options.

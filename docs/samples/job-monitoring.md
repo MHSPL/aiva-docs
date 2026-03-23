@@ -45,7 +45,7 @@ When a job fails, the Job Manager displays the error message alongside the faile
     The VCF file is missing required header fields or the `#CHROM` line. Verify that your file was produced by a standard variant caller and contains the required columns. Fix the file and re-upload.
 
 ??? question "Annotation timeout"
-    Very large files (millions of variants) may exceed annotation time limits. Try uploading the file without annotation, then use the AIVA Chat [Variant Annotation tool](../aiva-chat/variant-annotation-tool.md) to annotate specific variants of interest on demand.
+    Very large files (millions of variants) may exceed annotation time limits. Try uploading the file without annotation, then use the AIVA Chat [Variant Annotation tool](../aiva-chat/ai-tools.md#variant-annotation) to annotate specific variants of interest on demand.
 
 ??? question "Parsing error"
     The file content does not match the expected format for its extension. For CSV/TSV files, ensure consistent column counts across all rows and that the header row is present. For VCF files, ensure the data lines match the header column definitions.

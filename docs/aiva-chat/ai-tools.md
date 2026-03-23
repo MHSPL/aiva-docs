@@ -7,8 +7,6 @@ description: Comprehensive reference for all tools available to the AIVA AI assi
 
 AIVA has access to a suite of specialized tools that it invokes automatically based on your questions. You do not need to specify which tool to use. AIVA selects the appropriate tool (or combination of tools) based on the context of your query.
 
-This page provides a detailed reference for each available tool.
-
 ---
 
 ## Genomic Data Query
@@ -25,202 +23,318 @@ The Genomic Data Query tool allows AIVA to query your uploaded variant data dire
 
 **Example prompts**:
 
-- "How many variants are in my sample?"
-- "Show me all missense variants on chromosome 17 with gnomAD allele frequency below 0.01."
-- "What are the top 10 most frequently mutated genes?"
-- "Count the number of pathogenic vs. benign variants grouped by chromosome."
+| Goal | Prompt |
+|------|--------|
+| Count variants | "How many variants are in my sample?" |
+| Filter by gene and frequency | "Show me all missense variants on chromosome 17 with gnomAD allele frequency below 0.01." |
+| Rank genes | "What are the top 10 genes based on the @samples:sample1 phenotype?" |
+| Interpretation | "Identify the most pathogenic variants in my sample." |
+| Cross-sample comparison | "Compare the variant counts between @samples:sample1, @samples:sample2." |
+| Shared variants | "Are there any variants shared between samples in @samples:multisample?" |
 
-!!! note "Access control"
-    AIVA can only access data from samples that belong to you or that have been shared with you through a [project](../collaboration/projects.md). It cannot access other users' data.
+### How queries work
 
----
+1. **You ask a question** in natural language.
+2. **AIVA generates a SQL query** based on your question and the schema of your uploaded sample.
+3. **The query executes** against the database where your parsed data is stored.
+4. **Results are returned** as a formatted table, summary, or chart, depending on what best fits the answer.
 
-## Web Search
-
-The Web Search tool searches the web and scrapes pages for up-to-date genomic information. Use it when you need information beyond what is in your data or in the knowledge graph.
-
-**Capabilities**:
-
-- Search the web for gene summaries, disease associations, treatment guidelines, and recent research.
-- Scrape and extract content from specific web pages.
-- Retrieve current clinical guidelines and consortium recommendations.
-
-**Example prompts**:
-
-- "What does the latest ACMG guidance say about classifying VUS?"
-- "Summarize the role of TP53 in Li-Fraumeni syndrome."
-- "Find the most recent NCCN guidelines for hereditary breast cancer."
+!!! info "Schema awareness"
+    AIVA knows the column names and data types of your uploaded samples. When you ask about "pathogenic variants" or "allele frequency," it maps your natural language terms to the correct database columns. For samples with Small Variant Annotation applied, this includes all annotation fields such as `Consequence`, `SYMBOL`, `SIFT`, etc.
 
 ---
 
 ## Variant Annotation
 
-The Variant Annotation tool performs real-time lookups for individual variants against curated genomic databases.
+The Variant Annotation tool performs real-time lookups for individual variants against multiple curated genomic databases. Unlike batch annotation during upload (Small Variant Annotation), this tool is used interactively during a conversation to retrieve detailed information about specific variants on demand.
 
-**Databases queried**:
+### Query formats
 
-| Database | Information Provided |
-|----------|---------------------|
-| **ClinVar** | Clinical significance classifications (Pathogenic, Likely Pathogenic, VUS, Likely Benign, Benign), review status, submitter information |
-| **gnomAD** | Population allele frequencies across global populations and subpopulations |
-| **CADD** | Combined Annotation Dependent Depletion scores for variant deleteriousness |
-| **SIFT** | Prediction of whether an amino acid substitution affects protein function (Tolerated / Deleterious) |
-| **PolyPhen-2** | Prediction of the impact of amino acid substitutions on protein structure and function (Benign / Possibly Damaging / Probably Damaging) |
+You can query variants using several identifier formats:
+
+- **Gene and HGVS notation**: `BRCA1 c.5266dupC`
+- **Genomic coordinates**: `chr17:41245466 G>A`
+- **rsID**: `rs80357906`
+- **Gene name** (for general information): `TP53`
 
 **Example prompts**:
 
-- "What is the ClinVar classification for BRCA1 c.5266dupC?"
-- "Look up the gnomAD allele frequency for chr17:41245466 G>A."
-- "Get CADD, SIFT, and PolyPhen scores for this variant: chr7:117559590 T>G."
+| Goal | Prompt |
+|------|--------|
+| Clinical significance | "What is the ClinVar classification for BRCA1 c.5266dupC?" |
+| Population frequency | "Look up the gnomAD allele frequency for chr17:41245466 G>A." |
+| Deleteriousness scores | "Get CADD, SIFT, and PolyPhen scores for chr7:117559590 T>G." |
+| Comprehensive lookup | "Give me the full annotation for rs80357906 including ClinVar, gnomAD, and in silico predictions." |
+| Multiple variants | "Look up ClinVar classifications for BRCA1 c.68_69delAG and BRCA2 c.5946delT." |
 
-!!! tip "Batch vs. real-time annotation"
-    The Variant Annotation tool annotates individual variants in real time during a conversation. For batch annotation of entire VCF files, enable annotation during [VCF Upload](../samples/vcf-upload.md#annotation-options-vcf-only) instead.
+!!! warning "In silico predictions are supportive evidence only"
+    Computational predictions should not be used as the sole basis for clinical classification. Always consider them alongside clinical data, population frequencies, and functional studies per [ACMG/AMP guidelines](../classification/using-the-classifier.md).
+
+### Batch vs. real-time annotation
+
+| Feature | Variant Annotation Tool (Chat) | Small Variant Annotation (Upload) |
+|---------|-------------------------------|------------------------|
+| **Scope** | Individual variants, on demand | Entire VCF file |
+| **Speed** | Seconds per variant | Minutes to hours for large files |
+| **Use case** | Focused investigation of specific variants | Comprehensive annotation of all variants in a sample |
+
+For batch annotation, enable annotation during [VCF Upload](../samples/vcf-upload.md#annotation-options-vcf-only).
+
+---
+
+## Web Search
+
+The Web Search tool searches the internet and extracts content from web pages in real time. It retrieves up-to-date information that may not be present in your uploaded data or in AIVA's built-in knowledge bases.
+
+**Capabilities**:
+
+- **Full-text web search**: Search the open web for any topic and receive summarized results.
+- **Page scraping**: Extract and parse the content of specific URLs, including tables and structured data.
+- **Content summarization**: AIVA reads retrieved content and distills it into a focused answer.
+- **Source attribution**: Results include the URLs of the pages consulted, so you can verify the information.
+
+**Example prompts**:
+
+| Goal | Prompt |
+|------|--------|
+| Clinical guidelines | "What does the latest ACMG guidance say about classifying VUS?" |
+| Treatment protocols | "Find the most recent NCCN guidelines for hereditary breast cancer." |
+| Regulatory updates | "Has the FDA approved any new therapies for EGFR-mutated NSCLC in the last year?" |
+
+Web Search is best for general web content, guidelines hosted on organization websites, and non-PubMed sources. For structured PubMed literature searches, use the [Biomedical Literature](#biomedical-literature) tool instead.
 
 ---
 
 ## Biomedical Literature
 
-The Biomedical Literature tool searches a biomedical literature database for published research, linking genes, diseases, chemicals, mutations, and species to peer-reviewed articles.
+The Biomedical Literature tool searches NCBI's biomedical literature database, a resource that provides entity-annotated access to PubMed articles. Use it to find publications related to specific genes, diseases, chemicals, mutations, or species.
 
 **Capabilities**:
 
-- Search by gene name, disease, chemical compound, or specific mutation.
-- Retrieve PubMed article titles, abstracts, and publication metadata.
-- Identify co-occurring biomedical entities within articles.
+- **Entity-based search**: Search by gene name, disease, chemical, or specific mutation with entity recognition.
+- **Article retrieval**: Return PubMed article titles, abstracts, and publication metadata (authors, journal, year).
+- **Entity co-occurrence**: Find articles that mention two or more entities together (e.g., a gene AND a disease).
+- **Annotated results**: Returned abstracts include highlighted biomedical entities for quick scanning.
 
 **Example prompts**:
 
-- "Find recent publications about BRCA2 and ovarian cancer."
-- "What has been published about the drug olaparib in relation to homologous recombination deficiency?"
-- "Search for papers mentioning the BRAF V600E mutation in melanoma."
+| Goal | Prompt |
+|------|--------|
+| Gene-disease literature | "Find recent publications about BRCA2 and ovarian cancer." |
+| Drug-mechanism research | "What has been published about olaparib in relation to homologous recombination deficiency?" |
+| Mutation-specific papers | "Search for papers mentioning the BRAF V600E mutation in melanoma." |
+| Gene function review | "Find review articles about the function of PTEN in cancer." |
+| Co-occurring entities | "Find papers that mention both TP53 and MDM2." |
+
+!!! tip "Access full articles"
+    Use the PMID to look up the full article on PubMed: `pubmed.ncbi.nlm.nih.gov/PMID`. Many articles are available in full text through PubMed Central.
+
+### Biomedical Literature vs. Web Search
+
+| Feature | Biomedical Literature | Web Search |
+|---------|----------------------|------------|
+| **Source** | PubMed-indexed literature | Entire web |
+| **Entity recognition** | Yes (genes, diseases, chemicals, mutations) | No |
+| **Structured metadata** | Yes (PMID, authors, journal) | Limited |
+| **Content type** | Peer-reviewed biomedical literature | Any web content |
+| **Best for** | Finding published evidence for variant interpretation | Finding guidelines, news, non-journal sources |
 
 ---
 
 ## Code Interpreter
 
-The Code Interpreter tool executes Python code in a sandboxed environment with access to common scientific libraries. It is useful for statistical analysis, custom calculations, and generating plots.
+The Code Interpreter gives AIVA access to a sandboxed Python execution environment equipped with scientific computing libraries. It enables statistical analysis, custom calculations, and publication-quality visualizations directly within the chat.
 
-**Available libraries**:
+### Capabilities
 
-- `pandas`: Data manipulation and analysis
-- `numpy`: Numerical computing
-- `scipy`: Statistical tests and scientific computing
-- `matplotlib`: Chart and plot generation
-
-**Capabilities**:
-
-- Perform statistical tests (t-tests, chi-squared, Fisher's exact, etc.).
-- Generate plots and visualizations (histograms, scatter plots, bar charts, box plots).
-- Run custom data transformations and calculations.
-- Process data fetched by other tools (e.g., query data with Genomic Data Query, then plot it with the Code Interpreter).
+- **Statistical analysis**: t-tests, chi-squared, Fisher's exact, Mann-Whitney U, correlation analysis, regression.
+- **Data visualization**: Histograms, bar charts, scatter plots, box plots, heatmaps, pie charts.
+- **Custom calculations**: Derive new metrics, apply custom filtering logic, transform and reshape data.
 
 **Example prompts**:
 
-- "Plot the allele frequency distribution for all variants in my sample."
-- "Run a Fisher's exact test comparing the number of pathogenic variants on chromosome 13 vs. chromosome 17."
-- "Create a bar chart showing the top 20 genes by variant count."
+| Goal | Prompt |
+|------|--------|
+| Distribution plot | "Plot the allele frequency distribution for all variants in my sample." |
+| Statistical test | "Run a Fisher's exact test comparing pathogenic variants on chromosome 13 vs. chromosome 17." |
+| Bar chart | "Create a bar chart showing the top 20 genes by variant count." |
+| Correlation | "Is there a correlation between CADD score and gnomAD allele frequency in my data?" |
+| Summary statistics | "Calculate summary statistics for the quality scores in my sample." |
+| Custom analysis | "For each gene with more than 5 variants, calculate the ratio of missense to synonymous variants." |
 
 !!! info "Plots appear inline"
-    Matplotlib charts generated by the Code Interpreter are rendered directly in the chat conversation as images. You can view and download them without leaving the chat.
+    Matplotlib charts are rendered as images directly in the conversation. You can view them at full resolution and download them without leaving the chat.
+
+!!! note "Data access"
+    The Code Interpreter does not have direct access to your database. To analyze your uploaded data with Python, AIVA first queries the data using the Genomic Data Query tool, then passes the results to the Code Interpreter. This happens automatically.
+
+### Tips for best results
+
+- **Be specific about the visualization type**: "Create a histogram" or "Make a scatter plot" helps AIVA choose the right chart.
+- **Specify axes and labels**: "Plot allele frequency on the x-axis and CADD score on the y-axis" produces clearer charts.
+- **Request statistical details**: "Include the p-value and confidence interval" ensures the output includes the numbers you need.
 
 ---
 
 ## Knowledge Graph
 
-The Knowledge Graph tool queries a curated graph database of gene-protein-drug interactions, enabling pathway and network analysis.
+The Knowledge Graph tool queries a curated network of gene-protein-drug interactions. It enables pathway exploration, drug-target discovery, and protein interaction analysis directly within AIVA Chat.
 
-**Capabilities**:
+### What is in the Knowledge Graph?
 
-- Explore gene-to-protein relationships.
-- Find drug-target interactions for specific genes or proteins.
-- Trace biological pathways and interaction networks.
-- Identify potential drug repurposing candidates based on gene/protein targets.
+```mermaid
+graph TD
+    %% Styling
+    classDef gene fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
+    classDef disease fill:#ffebee,stroke:#c62828,stroke-width:2px;
+    classDef drug fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    classDef other fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px;
+
+    %% Nodes
+    Gene[Gene / Protein]:::gene
+    Disease[Disease]:::disease
+    Drug[Drug / Chemical]:::drug
+    Phenotype[Effect / Phenotype]:::disease
+    Pathway[Pathway]:::other
+    Organs[Tissue / Organ]:::other
+    Toxin[Toxin / Pollutant]:::other
+
+    %% Directed Connections (Arrows)
+    Gene --> Disease
+    Gene --> Phenotype
+    Gene --> Pathway
+    Gene --> Toxin
+    Gene --> Organs
+
+    Drug --> Gene
+    Drug --> Disease
+    Drug --> Phenotype
+```
+
+### Capabilities
+
+- **Drug-target lookups**: Find which drugs target a specific gene or protein.
+- **Protein interaction networks**: Explore which proteins interact with a protein of interest.
+- **Pathway analysis**: Identify which biological pathways a gene or protein participates in.
+- **Network traversal**: Trace multi-hop relationships (e.g., from a gene to its protein product to interacting proteins to drugs targeting those proteins).
+- **Drug repurposing candidates**: Identify approved drugs that target proteins in the same pathway as your gene of interest.
 
 **Example prompts**:
 
-- "What drugs target the EGFR protein?"
-- "Show me the interaction network for TP53."
-- "Which proteins interact with BRCA1 and are targetable by approved drugs?"
-- "Trace the pathway from KRAS to downstream effectors."
+| Goal | Prompt |
+|------|--------|
+| Drug targets | "What drugs target the EGFR protein?" |
+| Compound queries | "Which proteins interact with BRCA1 and are targetable by approved drugs?" |
+| Pathway tracing | "Trace the pathway from KRAS to downstream effectors." |
+| Drug repurposing | "Are there any approved drugs that target proteins in the MAPK signaling pathway?" |
+| Gene-drug relationships | "What is the relationship between the ALK gene and crizotinib?" |
+
+!!! note "Graph scope"
+    The knowledge graph is curated from established databases and may not include every known interaction. AIVA automatically combines Knowledge Graph queries with [Web Search](#web-search) or [Biomedical Literature](#biomedical-literature) lookups.
 
 ---
 
 ## Clinical Trials
 
-The Clinical Trials tool searches ClinicalTrials.gov for active, completed, and recruiting trials relevant to your area of interest.
+The Clinical Trials tool searches ClinicalTrials.gov directly from AIVA Chat. Use it to find trials relevant to specific genes, variants, conditions, or interventions.
 
 **Capabilities**:
 
 - Search by condition, disease, gene, intervention, or drug name.
-- Filter by trial status (recruiting, active, completed).
-- Return trial titles, phases, sponsors, and registration numbers.
+- Filter by trial status (recruiting, active, completed) and phase (Phase 1, 2, 3, 4).
+- Retrieve trial titles, NCT numbers, sponsors, phases, enrollment status, and eligibility summaries.
 
 **Example prompts**:
 
-- "Are there any active clinical trials for TP53-mutated breast cancer?"
-- "Find recruiting trials for olaparib in ovarian cancer."
-- "What phase 3 trials are studying PARP inhibitors?"
+| Goal | Prompt |
+|------|--------|
+| Gene-specific trials | "Are there any active clinical trials for TP53-mutated breast cancer?" |
+| Drug-specific trials | "Find recruiting trials for olaparib in ovarian cancer." |
+| Phase filtering | "What phase 3 trials are studying PARP inhibitors?" |
+| Rare disease | "Are there any clinical trials for patients with PALB2 mutations?" |
+| Combination therapy | "Find trials combining immunotherapy with targeted therapy for BRAF-mutated melanoma." |
+| Eligibility | "What are the eligibility criteria for NCT04171700?" |
+
+!!! tip "Use NCT numbers for follow-up"
+    If you find a trial of interest, you can ask AIVA for more details using its NCT number, or visit `clinicaltrials.gov/study/NCTxxxxxxxx` directly.
+
+### Limitations
+
+- Results are sourced from ClinicalTrials.gov and may not include trials registered only on other registries (e.g., EU Clinical Trials Register, ANZCTR).
+- Trial information reflects what is publicly registered. Enrollment status may not always be current.
+
+!!! warning "Not a substitute for clinical judgment"
+    Clinical trial results from AIVA are informational. Decisions about patient enrollment should involve the treating physician and the trial's principal investigator.
 
 ---
 
 ## Phenotype-Gene Prioritization
 
-The Phenotype-Gene Prioritization tool maps clinical phenotype terms (HPO terms) to candidate genes, helping prioritize genes based on patient phenotypes.
+The Phenotype-Gene Prioritization tool maps clinical phenotype descriptions to ranked candidate genes. By inputting Human Phenotype Ontology (HPO) terms or plain-language phenotype descriptions, you receive a prioritized list of genes most likely associated with the observed phenotypes, a powerful aid for rare disease diagnosis and gene panel prioritization.
 
-**Capabilities**:
+### How it works
 
-- Accept Human Phenotype Ontology (HPO) terms as input.
-- Return ranked candidate genes with confidence scores.
-- Support multiple phenotype terms for combinatorial analysis.
+This tool uses a knowledge base of gene-phenotype associations derived from HPO, OMIM, and other curated resources to rank genes by their relevance to a set of input phenotypes.
 
-**Example prompts**:
+- **Input**: One or more HPO terms or clinical phenotype descriptions. You can also provide **negative phenotype terms** (phenotypes the patient does not have) to further refine the ranking.
+- **Output**: A ranked list of candidate genes with scores indicating the strength of association.
+- **Speed**: Results are returned in seconds.
 
-- "Given the phenotypes intellectual disability and seizures, what are the top candidate genes?"
-- "Map HPO terms HP:0001250 and HP:0001249 to candidate genes."
-- "Which genes are associated with cardiomyopathy and short stature?"
+!!! tip "More phenotypes improve specificity"
+    Providing multiple phenotype terms narrows the candidate gene list and increases the accuracy of the ranking. A single broad phenotype (e.g., "seizures") returns many candidates, while combining it with additional phenotypes produces a more focused result.
+
+### Limitations
+
+- This tool relies on known gene-phenotype associations. Novel or poorly characterized relationships may not be represented.
+- Results are probabilistic rankings, not diagnostic conclusions.
+
+!!! warning "Clinical interpretation required"
+    Phenotype-Gene Prioritization results are intended to assist in gene prioritization. They do not constitute a diagnosis. All candidate genes should be evaluated in the context of the patient's full clinical picture by a qualified professional.
 
 ---
 
-## MCP: Custom Tool Integration
+## Variant Classification
 
-The Model Context Protocol (MCP) integration allows you to connect your own external tools and servers to AIVA. This is an advanced feature for users who want to extend AIVA's capabilities with custom or proprietary data sources.
+The Variant Classification tool uses an AI agent to classify genomic variants using ACMG/AMP or AMP/ASCO/CAP guidelines directly within AIVA Chat. Unlike traditional rule-based classifiers, AIVA is **phenotype-aware**: it integrates the patient's clinical phenotype, inheritance pattern, and disease context into variant interpretation, performing extensive real-time literature review of genes in phenotype context.
+
+In [benchmarks against 8,387 clinically classified variants](https://mamidihealth.substack.com/p/benchmarking-aiva-how-phenotype-aware) from ClinGen's Evidence Repository across 11 disease categories, AIVA achieved an **F1 score of 80.5%**, outperforming InterVar (60.6%) and BIAS-2015 (75.3%), and leading in 9 of 11 disease categories.
 
 **Capabilities**:
 
-- Connect to any MCP-compatible server.
-- Expose custom tools that AIVA can invoke during conversations.
-- Integrate proprietary databases, internal APIs, or specialized analysis pipelines.
+- Classify variants according to ACMG/AMP guidelines for germline variants.
+- Classify variants according to AMP/ASCO/CAP guidelines for somatic variants.
+- Incorporate patient phenotype and clinical context to improve classification accuracy.
+- Return the applied criteria with supporting evidence for each classification.
 
-!!! info "Configuration required"
-    MCP tools must be configured by the user before they appear in AIVA's tool set. See the [API Reference](../api/index.md) for setup instructions.
+**Example prompt**:
+
+> "Classify this variant in the context of a patient with hereditary breast cancer: BRCA2 c.5946delT."
 
 ---
 
 ## Task Manager
 
-The Task Manager tool provides lightweight task tracking within a conversation. Use it to track action items, next steps, or analysis checkpoints.
+The Task Manager is an always-on internal tool that helps AIVA stay focused on your request. It breaks complex queries into discrete steps and tracks progress through multi-step analysis workflows. This tool cannot be disabled.
 
 **Capabilities**:
 
-- Create, update, and complete tasks within a conversation.
-- List outstanding tasks.
-- Organize multi-step analysis workflows.
-
-**Example prompts**:
-
-- "Add a task: review all VUS variants on chromosome 6."
-- "What tasks are still pending?"
-- "Mark the BRCA1 review task as complete."
+- Automatically decompose complex requests into trackable sub-tasks.
+- Track progress through multi-step analysis workflows.
+- Keep AIVA focused and organized when chaining multiple tools.
 
 ---
 
-## Enabling and Disabling Tools
+## Enabling and disabling tools
 
 You can control which tools AIVA has access to for a given conversation:
 
-1. Open the tool configuration panel in the chat interface.
+1. Open the tool configuration panel from the chat input area.
 2. Toggle individual tools on or off.
-3. AIVA will only use the enabled tools when responding to your queries.
+3. Click **Apply** to save your selection.
+
+AIVA will only use the enabled tools when responding to your queries.
+
+![Select Tools panel](../assets/images/screenshots/chat/tools.png)
 
 This is useful when you want to:
 
@@ -228,15 +342,3 @@ This is useful when you want to:
 - **Reduce latency**: Fewer available tools means AIVA spends less time evaluating which tool to use.
 - **Focus analysis**: Enable only the specific tools relevant to your current task.
 
----
-
-## Tool Combinations
-
-AIVA can chain multiple tools in a single response. For example:
-
-1. **Genomic Data Query** to fetch variant data from your sample.
-2. **Variant Annotation** to look up ClinVar classifications for specific variants.
-3. **Code Interpreter** to generate a visualization of the results.
-4. **Biomedical Literature** to find supporting literature for the findings.
-
-You do not need to prompt each tool separately. A single question like "Show me the rare pathogenic variants in my sample, look up their ClinVar entries, and plot the distribution by gene" can trigger all of these tools in sequence.

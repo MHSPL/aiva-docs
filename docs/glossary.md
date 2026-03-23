@@ -37,7 +37,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   An ACMG classification indicating strong evidence that a variant does not cause disease.
 
 **Biomedical Literature**
-:   AIVA's literature search tool. Searches PubMed-indexed articles with entity-level annotations for genes, diseases, chemicals, mutations, and species. See [Biomedical Literature](aiva-chat/biomedical-literature.md).
+:   AIVA's literature search tool. Searches PubMed-indexed articles with entity-level annotations for genes, diseases, chemicals, mutations, and species. See [Biomedical Literature](aiva-chat/ai-tools.md#biomedical-literature).
 
 ---
 
@@ -47,7 +47,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   An NCBI database of reported relationships between human variants and phenotypes, including clinical significance classifications submitted by clinical laboratories and research groups.
 
 **Code Interpreter**
-:   AIVA's sandboxed Python execution tool, providing access to pandas, numpy, scipy, and matplotlib for statistical analysis, custom calculations, and data visualization within chat conversations. See [Code Interpreter](aiva-chat/code-interpreter.md).
+:   AIVA's sandboxed Python execution tool, providing access to pandas, numpy, scipy, and matplotlib for statistical analysis, custom calculations, and data visualization within chat conversations. See [Code Interpreter](aiva-chat/ai-tools.md#code-interpreter).
 
 **Consequence (Variant Consequence)**
 :   The predicted functional effect of a variant on the gene product. Examples include missense_variant, synonymous_variant, frameshift_variant, stop_gained, and splice_donor_variant.
@@ -103,7 +103,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   A standardized system for describing variants in DNA, RNA, and protein sequences. Examples: c.5266dupC (coding DNA), p.Gln1756Profs*74 (protein).
 
 **HPO (Human Phenotype Ontology)**
-:   A standardized vocabulary for describing clinical phenotypes (observable characteristics) in human disease. Used by the [Phenotype-Gene Prioritization](aiva-chat/phenotype-gene-prioritization.md) tool for phenotype-to-gene mapping via a phenotype-gene mapping algorithm.
+:   A standardized vocabulary for describing clinical phenotypes (observable characteristics) in human disease. Used by the [Phenotype-Gene Prioritization](aiva-chat/ai-tools.md#phenotype-gene-prioritization) tool for phenotype-to-gene mapping via a phenotype-gene mapping algorithm.
 
 ---
 
@@ -120,7 +120,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 ## K
 
 **Knowledge Graph**
-:   AIVA's gene-protein-drug interaction network, built on a curated graph database. Enables pathway exploration, drug-target discovery, and protein interaction analysis. See [Knowledge Graph](aiva-chat/knowledge-graph.md).
+:   AIVA's gene-protein-drug interaction network, built on a curated graph database. Enables pathway exploration, drug-target discovery, and protein interaction analysis. See [Knowledge Graph](aiva-chat/ai-tools.md#knowledge-graph).
 
 ---
 
@@ -173,7 +173,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   A database of pharmacogenomic information including drug-gene associations, clinical annotations, and prescribing guidelines.
 
 **Phenotype-Gene Prioritization**
-:   AIVA's tool for mapping clinical phenotypes (HPO terms) to ranked candidate genes using a phenotype-gene mapping algorithm. Assists in rare disease diagnosis and gene panel design. See [Phenotype-Gene Prioritization](aiva-chat/phenotype-gene-prioritization.md).
+:   AIVA's tool for mapping clinical phenotypes (HPO terms) to ranked candidate genes using a phenotype-gene mapping algorithm. Assists in rare disease diagnosis and gene panel design. See [Phenotype-Gene Prioritization](aiva-chat/ai-tools.md#phenotype-gene-prioritization).
 
 **PolyPhen-2 (Polymorphism Phenotyping v2)**
 :   A computational tool that predicts the impact of amino acid substitutions on protein structure and function. Results are classified as Benign, Possibly Damaging, or Probably Damaging.

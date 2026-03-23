@@ -17,11 +17,12 @@ AIVA is more than a chatbot. It has access to a suite of specialized tools that 
 |------|-------------|
 | **Genomic Data Query** | Queries your uploaded variant data directly. Ask about specific genes, filter by allele frequency, count variants by consequence, all in natural language. |
 | **Web Search** | Searches the web and scrapes pages for up-to-date information on genes, diseases, therapies, and guidelines. |
-| **Variant Annotation** | Performs real-time lookups against ClinVar, gnomAD, CADD, SIFT, and PolyPhen for individual variants. |
+| **Variant Annotation** | Performs real-time lookups against ClinVar, gnomAD, SIFT, and other annotation databases for individual variants. |
 | **Biomedical Literature** | Searches biomedical literature by gene, disease, chemical, or mutation to find relevant publications. |
 | **Code Interpreter** | Executes Python code with pandas, numpy, scipy, and matplotlib for statistical analysis and custom visualizations. |
-| **Knowledge Graph** | Queries a gene-protein-drug interaction graph to explore biological relationships. |
+| **AIVA-KG** | Our internal knowledge graph (gene-disease-phenotype-drug-pathway) to explore biological relationships. |
 | **Clinical Trials** | Searches ClinicalTrials.gov for active and completed trials related to genes, diseases, or drugs. |
+| **Variant Classification** | Classifies genomic variants using ACMG/AMP or AMP/ASCO/CAP guidelines with structured evidence. |
 | **Phenotype-Gene Prioritization** | Performs phenotype-to-gene prioritization to identify candidate genes from clinical phenotype descriptions. |
 | **MCP Integration** | Connects to user-configured external tools via the Model Context Protocol for custom workflows. |
 | **Task Manager** | Tracks tasks and action items within your conversation for workflow management. |
@@ -36,41 +37,11 @@ For detailed documentation on each tool, see [AI Tools](ai-tools.md).
 
 <div class="card" markdown>
 
-### Starting a Conversation
-
-Create new conversations, search your history, rename and organize past chats, and manage the conversation sidebar.
-
-[:octicons-arrow-right-24: Starting a Conversation](starting-a-conversation.md)
-
-</div>
-
-<div class="card" markdown>
-
-### Querying Your Data
-
-Ask AIVA questions about your uploaded genomic data. Learn effective query patterns and how to interpret results.
-
-[:octicons-arrow-right-24: Querying Your Data](querying-data.md)
-
-</div>
-
-<div class="card" markdown>
-
 ### AI Tools Reference
 
 Full documentation for all tools available to AIVA, including capabilities, example prompts, and output formats.
 
 [:octicons-arrow-right-24: AI Tools](ai-tools.md)
-
-</div>
-
-<div class="card" markdown>
-
-### Example Workflows
-
-End-to-end examples showing how to combine multiple tools for common genomic analysis scenarios.
-
-[:octicons-arrow-right-24: Example Workflows](example-workflows.md)
 
 </div>
 
@@ -95,6 +66,8 @@ You do not need to tell AIVA which tool to use. Based on your question, it autom
 - "Plot the allele frequency distribution": AIVA uses the **Code Interpreter** to generate a matplotlib chart.
 - "Are there any clinical trials for TP53 mutations in breast cancer?": AIVA uses the **Clinical Trials** tool.
 
+![Select Tools panel](../assets/images/screenshots/chat/tools.png)
+
 ### Enabling and Disabling Tools
 
 You can control which tools AIVA has access to. Open the tool configuration panel in the chat interface to enable or disable individual tools. This is useful when you want to:
@@ -106,6 +79,8 @@ You can control which tools AIVA has access to. Open the tool configuration pane
 ### Model Selection
 
 AIVA offers a choice of language models for AIVA. Different models offer different tradeoffs between speed, cost, and reasoning capability. See [Model Selection](model-selection.md) for details.
+
+![AIVA Chat input bar](../assets/images/screenshots/chat/chat-input-bar.png)
 
 ---
 
