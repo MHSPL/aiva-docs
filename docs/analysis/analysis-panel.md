@@ -54,6 +54,6 @@ The Analysis Panel supports flexible card layouts:
 The Analysis Panel integrates with other AIVA features:
 
 - **Table View**: Variants identified in category cards can be located in the [Table View](tertiary-analysis.md) for detailed examination.
-- **Variant Flagging**: Flag variants directly from category card results using the [flagging system](../collaboration/variant-flagging.md).
+- **Variant Flagging**: Flag variants directly from category card results.
 - **ACMG Classification**: Apply [ACMG criteria](acmg-classification.md) to variants surfaced by category cards.
-- **Comments**: Include analysis findings in [comments](../collaboration/comments.md).
+- **Comments**: Add threaded comments to document your analysis findings.

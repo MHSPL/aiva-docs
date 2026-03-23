@@ -72,12 +72,12 @@ Link flagged variants, comments, and classifications from your samples directly 
 A typical report workflow in AIVA follows these stages:
 
 1. **Analyze your sample**: Use the [Table View](../analysis/index.md), [AIVA Chat](../aiva-chat/index.md), and analysis tools to explore your data.
-2. **Flag and classify variants**: [Flag variants](../collaboration/variant-flagging.md) of interest and apply [ACMG classifications](../analysis/acmg-classification.md).
-3. **Add comments**: Document your interpretation with [threaded comments](../collaboration/threaded-comments.md).
+2. **Flag and classify variants**: Flag variants of interest and apply [ACMG classifications](../analysis/acmg-classification.md).
+3. **Add comments**: Document your interpretation with threaded comments.
 4. **Create a report**: Start from a [template](templates.md) or a blank report.
 5. **Link evidence**: [Connect flagged variants and comments](sample-linking.md) to the relevant report sections.
 6. **AI Auto-Fill**: Use [AI Auto-Fill](ai-auto-fill.md) to generate or refine section content.
 7. **Review and export**: Finalize the report and export it.
 
 !!! tip "Reports and collaboration"
-    Reports created within a [project](../collaboration/projects.md) are accessible to all project members based on their role permissions. See [Sharing and Roles](../collaboration/sharing-and-roles.md) for details.
+    Reports created within a project are accessible to all project members based on their role permissions.

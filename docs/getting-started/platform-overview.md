@@ -230,4 +230,4 @@ flowchart LR
 
 Every module connects. Upload a file, analyze it with chat or the table view (or both), and produce a report. No manual data handoff between tools.
 
-For collaboration features like projects, role-based access, and variant flagging, see [Collaboration](../collaboration/index.md). For automating workflows, see [Playbooks](../playbooks/index.md).
+For automating workflows, see [Playbooks](../playbooks/index.md).

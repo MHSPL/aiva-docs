@@ -149,13 +149,7 @@ nav:
 
 
           - ACMG Classification: analysis/acmg-classification.md
-      - Collaboration:
-          - collaboration/index.md
-          - Projects: collaboration/projects.md
-          - Sharing & Roles: collaboration/sharing-and-roles.md
-          - Variant Flagging: collaboration/variant-flagging.md
-          - Threaded Comments: collaboration/threaded-comments.md
-          - Exporting Annotations: collaboration/exporting-flags-comments.md
+
       - Reports:
           - reports/index.md
           - Creating a Report: reports/creating-a-report.md
@@ -169,7 +163,6 @@ nav:
           - Sharing Playbooks: playbooks/sharing-playbooks.md
       - Variant Classifier:
           - classification/index.md
-          - Using the Classifier: classification/using-the-classifier.md
   - API Reference:
       - api/index.md
       - API Keys: api/api-keys.md

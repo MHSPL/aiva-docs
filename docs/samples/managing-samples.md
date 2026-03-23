@@ -17,7 +17,7 @@ Navigate to the **Samples** tab. The Samples page offers two ways to browse your
 
 ### Browse by Projects
 
-View your data organized by [project](../collaboration/projects.md). Each project groups related samples together, making it easy to find all samples for a specific study, patient cohort, or collaboration. Click a project to see its samples.
+View your data organized by project. Each project groups related samples together, making it easy to find all samples for a specific study, patient cohort, or collaboration. Click a project to see its samples.
 
 ### Browse by Samples
 
@@ -43,7 +43,7 @@ Each sample has associated metadata that you can view:
 - **Assembly**: Whether the sample is GRCh38 or GRCh37.
 - **Sample type**: The type of sample (e.g., WES, WGS).
 - **Status**: The current status of the sample (e.g., Ready, Processing, Error).
-- **Project assignment**: Which [project](../collaboration/projects.md) the sample belongs to, if any.
+- **Project assignment**: Which project the sample belongs to, if any.
 - **Clinical notes**: Any clinical notes associated with the sample in plain text.
 - **Phenotype terms**: Any phenotype terms associated with the sample.
 
@@ -59,20 +59,20 @@ To delete a sample:
 4. Confirm the deletion in the dialog that appears.
 
 !!! warning "Deletion is permanent"
-    Deleting a sample removes the sample record and all associated variant data from the database. This action cannot be undone. Any [flags](../collaboration/variant-flagging.md), [comments](../collaboration/threaded-comments.md), or [ACMG classifications](../analysis/acmg-classification.md) associated with variants in the sample will also be removed.
+    Deleting a sample removes the sample record and all associated variant data from the database. This action cannot be undone. Any flags, comments, or [ACMG classifications](../analysis/acmg-classification.md) associated with variants in the sample will also be removed.
 
 ---
 
 ## Assigning Samples to Projects
 
-Samples can be organized into [projects](../collaboration/projects.md) for collaboration and grouping:
+Samples can be organized into projects for collaboration and grouping:
 
 1. Navigate to the **Browse by Projects** tab in the **Samples** page.
 2. Click on **+New Project** button on top right to create a new project, or select an existing project.
 3. Click on **Add Sample** button on the top right to add/upload a sample to the project.
 4. Refresh the page and confirm the assignment.
 
-Once assigned, the sample is visible to all collaborators on that project according to their [roles](../collaboration/sharing-and-roles.md).
+Once assigned, the sample is visible to all collaborators on that project according to their role.
 
 !!! info "Samples in multiple projects"
     A sample can belong to multiple projects. Only users with access to a project can see the samples assigned to it. This lets you share the same sample with different teams by adding it to each team's project.
@@ -89,7 +89,7 @@ Projects are used to organize and collaborate on samples. You can create project
 2. Enter the email address of the person you want to add. The email must belong to an existing AIVA account.
 3. Confirm to add them as a project member.
 
-Once added, members can see all samples assigned to the project according to their [role](../collaboration/sharing-and-roles.md).
+Once added, members can see all samples assigned to the project according to their role.
 
 ### Deleting a project
 

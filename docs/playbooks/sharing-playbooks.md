@@ -26,7 +26,7 @@ Your playbook appears in the [marketplace](browsing-playbooks.md) and can be use
 
 ### Team (Private)
 
-Share a playbook within your team through a [project](../collaboration/projects.md).
+Share a playbook within your team through a project.
 
 1. Open the playbook.
 2. Click **Share with Team** or **Share to Project**.

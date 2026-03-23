@@ -114,12 +114,6 @@ Run tertiary analysis, pharmacogenomics, and ACMG classification.
 
 <div class="card" markdown>
 
-### Collaboration
-
-Share samples, flag variants, and discuss findings with your team.
-
-[:octicons-arrow-right-24: Collaboration](collaboration/index.md)
-
 </div>
 
 <div class="card" markdown>

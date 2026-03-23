@@ -98,4 +98,4 @@ From the Reports list view, you can:
 - **Filter** by date, sample, or template type.
 - **Duplicate** a report to use it as a starting point for a similar analysis.
 - **Delete** reports you no longer need.
-- **Share** reports with project collaborators (within a [project](../collaboration/projects.md)).
+- **Share** reports with project collaborators.

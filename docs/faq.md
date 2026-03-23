@@ -84,7 +84,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     No. AIVA has read-only access to your sample data. It can query, analyze, and visualize your data but cannot insert, update, or delete rows.
 
 ??? question "Can AIVA access other users' data?"
-    No. AIVA queries are scoped to samples you own or that have been shared with you through a [project](collaboration/projects.md). It cannot access data belonging to other accounts.
+    No. AIVA queries are scoped to samples you own or that have been shared with you through a project. It cannot access data belonging to other accounts.
 
 ??? question "My conversation seems to lose context in long chats. What can I do?"
     Very long conversations may exceed the language model's context window, causing it to lose track of earlier messages. Either switch to a model with 1M token capacity (e.g., Gemini PRO models) or start a new conversation and re-establish the key context in your first message. Keeping conversations focused on a single topic also helps maintain coherence.
@@ -97,13 +97,13 @@ Find answers to the most common questions about using AIVA. If your question is 
     Uploaded files are processed and stored on AIVA's secure cloud infrastructure. Parsed variant data is stored in a secure database. RLS (Row Level Security) is enabled to ensure data isolation.
 
 ??? question "Who can access my data?"
-    Only you can access your data by default. If you create a [project](collaboration/projects.md) and invite collaborators, they gain access to the samples assigned to that project based on their assigned role. AIVA staff do not access your data except as required for technical support with your explicit consent.
+    Only you can access your data by default. If you create a project and invite collaborators, they gain access to the samples assigned to that project based on their assigned role. AIVA staff do not access your data except as required for technical support with your explicit consent.
 
 ??? question "Is AIVA HIPAA compliant?"
     AIVA includes features designed for HIPAA compliance, including PHI detection and access controls. See [Compliance](compliance/index.md) for details on the security measures in place.
 
 ??? question "Can I delete my data?"
-    Yes. You can delete samples and projects from the [samples](samples/managing-samples.md) and [projects](collaboration/projects.md) tabs. Deleted samples and their associated data (flags, comments, etc.) are permanently removed from the database.
+    Yes. You can delete samples and projects from the **Samples** page. Deleted samples and their associated data (flags, comments, etc.) are permanently removed from the database.
 
 ??? question "Does AIVA send my data to external services?"
     When AIVA uses tools like Web Search, Biomedical Literature, or Clinical Trials, it sends search queries to external APIs, but it does **not** send your raw variant data. The Genomic Data Query tool runs queries locally against our database. Variant annotation lookups send individual variant identifiers (chromosome, position, alleles) to annotation services for lookup but do not transmit your full dataset.
@@ -172,4 +172,3 @@ If your question is not answered here, reach out through the **Help** modal in t
 - [:octicons-arrow-right-24: Samples and Uploads](samples/index.md)
 - [:octicons-arrow-right-24: AIVA Chat](aiva-chat/index.md)
 - [:octicons-arrow-right-24: Table View](analysis/index.md)
-- [:octicons-arrow-right-24: Collaboration](collaboration/index.md)

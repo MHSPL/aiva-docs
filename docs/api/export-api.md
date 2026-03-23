@@ -231,4 +231,3 @@ The response is a downloadable CSV file with `Content-Type: text/csv`.
 
 ## Related
 
-See [Exporting Annotations](../collaboration/exporting-flags-comments.md) for the UI-based export workflow.

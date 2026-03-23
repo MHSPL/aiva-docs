@@ -111,5 +111,5 @@ Now that you have data in AIVA, explore what you can do with it:
 
 - [:octicons-arrow-right-24: Ask AIVA about your data](../aiva-chat/index.md)
 - [:octicons-arrow-right-24: Explore the table view](../analysis/index.md)
-- [:octicons-arrow-right-24: Set up a project for collaboration](../collaboration/projects.md)
+
 - [:octicons-arrow-right-24: Review subscription tiers](subscription-tiers.md)

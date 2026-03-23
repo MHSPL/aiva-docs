@@ -43,7 +43,7 @@ A typical analysis workflow in AIVA proceeds through the following stages:
 
 1. **Upload and annotate**: [Upload a VCF file](../samples/vcf-upload.md) with optional Small Variant Annotation or Structural Variant Annotation.
 2. **Explore and analyze**: Open the [Tertiary Analysis](tertiary-analysis.md) view to browse, filter, and sort variants with AI chat side by side.
-3. **Flag and comment**: [Flag variants](../collaboration/variant-flagging.md) of interest and add [comments](../collaboration/threaded-comments.md) documenting your interpretation.
+3. **Flag and comment**: Flag variants of interest and add comments documenting your interpretation.
 4. **Classify**: Apply [ACMG criteria](acmg-classification.md) to variants requiring formal evidence-based classification.
-5. **Export and report**: [Export](../collaboration/exporting-flags-comments.md) your findings and generate clinical reports.
+5. **Export and report**: Export your findings and generate clinical [reports](../reports/index.md).
 

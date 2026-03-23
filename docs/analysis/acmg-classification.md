@@ -7,8 +7,6 @@ description: Classify variants using ACMG/AMP germline or AMP/ASCO/CAP somatic g
 
 The variant classifier is a default category card on the [Analysis Panel](analysis-panel.md) that appears for all samples. When reviewing a variant in the analysis panel, click **Classify Variant** to open the classifier. AIVA supports both **ACMG/AMP germline** and **AMP/ASCO/CAP somatic** classification frameworks.
 
-For details on the ACMG/AMP framework and how to use the public classifier, see [Using the Variant Classifier](../classification/using-the-classifier.md).
-
 ---
 
 ## Classification Frameworks

@@ -30,7 +30,7 @@ When generating content, AIVA considers:
 - **Variant data**: Total variant counts, distributions by consequence, chromosome, and gene.
 - **Flagged variants**: Variants you have flagged with their flag types and associated notes.
 - **ACMG classifications**: Formal classifications applied to variants using [ACMG criteria](../analysis/acmg-classification.md).
-- **Comments**: [Threaded comments](../collaboration/threaded-comments.md) attached to variants.
+- **Comments**: Threaded comments attached to variants.
 - **Section context**: The section type and title inform the tone and structure of the generated content.
 
 ---

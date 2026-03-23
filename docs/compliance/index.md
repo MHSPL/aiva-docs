@@ -65,7 +65,7 @@ Access to data is controlled at multiple levels:
 | Level | Control |
 |-------|---------|
 | **User** | Each user can only access their own uploaded samples by default. |
-| **Project** | Samples shared through [projects](../collaboration/projects.md) are accessible to project members based on their role. |
+| **Project** | Samples shared through projects are accessible to project members based on their role. |
 | **Role** | Project roles (Owner, Admin, Editor, Viewer) define what actions a user can perform. |
 | **API** | [API keys](../api/api-keys.md) inherit the permissions of the creating user. |
 | **AI Tools** | The Genomic Data Query tool is scoped to the user's accessible data. AIVA cannot query other users' data. |

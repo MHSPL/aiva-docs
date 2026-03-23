@@ -102,4 +102,3 @@ Ready to start using AIVA? Head back to the guides:
 
 - [:octicons-arrow-right-24: Upload your first sample](uploading-your-first-sample.md)
 - [:octicons-arrow-right-24: Explore the AIVA assistant](../aiva-chat/index.md)
-- [:octicons-arrow-right-24: Set up a collaborative project](../collaboration/projects.md)

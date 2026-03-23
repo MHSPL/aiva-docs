@@ -24,7 +24,7 @@ Sample linking connects your analysis evidence (flagged variants, threaded comme
 
 ### Step 1: Ensure Variants Are Flagged
 
-Before linking, flag the variants you want to include in the report using the [Variant Flagging](../collaboration/variant-flagging.md) system. Each flag type (Pathogenic, VUS, Benign, Review, Favorite) carries over into the report.
+Before linking, flag the variants you want to include in the report. Each flag type (Pathogenic, VUS, Benign, Review, Favorite) carries over into the report.
 
 ### Step 2: Open the Report Editor
 

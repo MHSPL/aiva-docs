@@ -51,7 +51,7 @@ When a job fails, the Job Manager displays the error message alongside the faile
     The file content does not match the expected format for its extension. For CSV/TSV files, ensure consistent column counts across all rows and that the header row is present. For VCF files, ensure the data lines match the header column definitions.
 
 ??? question "Download failed (cloud URLs)"
-    The cloud URL may be inaccessible due to expired credentials, incorrect permissions, or network issues. Verify that the URL is valid, the resource exists, and your credentials (if required) are current. See [VCF Upload](vcf-upload.md#authentication-and-access) for authentication details.
+    The cloud URL may be inaccessible due to expired credentials, incorrect permissions, or network issues. Verify that the URL is valid, the resource exists, and your credentials (if required) are current. See [VCF Upload](vcf-upload.md) for details.
 
 !!! note "Retrying a Failed Job"
     AIVA offers automatic retry functionality for failed jobs. By default, failed jobs will be automatically retried up to 3 times.

@@ -113,7 +113,7 @@ To save a customized report structure as a reusable template:
 Custom templates appear alongside the built-in templates when creating new reports.
 
 !!! tip "Organizational consistency"
-    If your team uses a standard report format, create a custom template once and share it through your [project](../collaboration/projects.md). All team members can then create reports with the same structure.
+    If your team uses a standard report format, create a custom template once and share it through your project. All team members can then create reports with the same structure.
 
 ---
 

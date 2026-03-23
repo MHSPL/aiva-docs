@@ -19,44 +19,13 @@ The AIVA Variant Classifier is a public, no-login-required tool for classifying 
 
 ---
 
-## In This Section
-
-<div class="grid-cards" markdown>
-
-<div class="card" markdown>
-
-### Using the Classifier
-
-Step-by-step guide to entering variant information, selecting ACMG criteria, and obtaining a classification.
-
-[:octicons-arrow-right-24: Using the Classifier](using-the-classifier.md)
-
-</div>
-
-<div class="card" markdown>
-
-</div>
-
-</div>
-
----
-
 ## How It Works
 
 1. Enter variant information (gene, variant notation, or genomic coordinates).
-2. Review and select applicable ACMG/AMP evidence criteria.
+2. Optionally provide patient context: phenotype/disease, age of onset, inheritance pattern, and any additional clinical details.
+3. Review and select applicable ACMG/AMP evidence criteria.
 3. The classifier calculates the five-tier classification based on the selected criteria.
 4. Review the classification and the evidence summary.
-
-The classification follows the standard ACMG/AMP five-tier system:
-
-| Classification | Criteria Combination |
-|---------------|---------------------|
-| **Pathogenic** | Strong pathogenic evidence (e.g., 1 Very Strong + 1 Strong, or 2 Strong) |
-| **Likely Pathogenic** | Moderate pathogenic evidence (e.g., 1 Strong + 1-2 Supporting) |
-| **Uncertain Significance (VUS)** | Insufficient or conflicting evidence |
-| **Likely Benign** | Moderate benign evidence (e.g., 1 Strong + 1 Supporting benign) |
-| **Benign** | Strong benign evidence (e.g., 1 Stand-Alone or 2 Strong benign) |
 
 ---
 

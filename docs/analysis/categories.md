@@ -73,5 +73,5 @@ Drag categories in the category selector to change their display order.
 ## Tips
 
 - **Create task-specific categories**: If you regularly perform a specific type of analysis (e.g., hereditary cancer panel review), create a category with exactly the cards you need.
-- **Share through projects**: Categories created within a [project](../collaboration/projects.md) are available to all project members.
+- **Share through projects**: Categories created within a project are available to all project members.
 - **Combine with AIVA Chat**: Use categories for structured analysis and [AIVA Chat](../aiva-chat/index.md) for ad-hoc questions and deep dives.

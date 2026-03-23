@@ -49,7 +49,7 @@ Select the reference genome build your file was aligned to. Currently **GRCh38 (
 
 #### Project assignment
 
-Optionally assign the sample to an existing [project](../collaboration/projects.md) for team collaboration. You can also assign samples to projects after upload.
+Optionally assign the sample to an existing project for team collaboration. You can also assign samples to projects after upload.
 
 #### Sample type
 

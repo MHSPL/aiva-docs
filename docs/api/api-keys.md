@@ -120,7 +120,7 @@ Revoked keys immediately stop working. Any scripts or integrations using the rev
 API keys inherit the permissions of the user account that created them:
 
 - Keys can access all samples belonging to the user.
-- Keys can access samples shared through [projects](../collaboration/projects.md) where the user is a member.
+- Keys can access samples shared through projects where the user is a member.
 - Keys are subject to the same [subscription tier](../getting-started/subscription-tiers.md) limits as the user account.
 
 ---

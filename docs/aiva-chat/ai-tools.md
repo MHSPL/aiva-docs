@@ -68,7 +68,7 @@ You can query variants using several identifier formats:
 | Multiple variants | "Look up ClinVar classifications for BRCA1 c.68_69delAG and BRCA2 c.5946delT." |
 
 !!! warning "In silico predictions are supportive evidence only"
-    Computational predictions should not be used as the sole basis for clinical classification. Always consider them alongside clinical data, population frequencies, and functional studies per [ACMG/AMP guidelines](../classification/using-the-classifier.md).
+    Computational predictions should not be used as the sole basis for clinical classification. Always consider them alongside clinical data, population frequencies, and functional studies per [ACMG/AMP guidelines](../analysis/acmg-classification.md).
 
 ### Batch vs. real-time annotation
 

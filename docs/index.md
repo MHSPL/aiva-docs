@@ -51,14 +51,6 @@ AIVA is your AI Clinical Analyst for whole genome interpretation. Upload FASTQ o
 
     [:octicons-arrow-right-24: Explore data](analysis/index.md)
 
--   :material-account-group:{ .lg .middle } **Collaboration**
-
-    ---
-
-    Create projects, invite team members with role-based access, flag variants, and hold threaded discussions at the row level.
-
-    [:octicons-arrow-right-24: Collaborate](collaboration/index.md)
-
 -   :material-file-document-edit:{ .lg .middle } **Reports**
 
     ---

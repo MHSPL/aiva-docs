@@ -29,8 +29,8 @@ The table view provides the full data exploration experience:
 - **All columns** are available via the column chooser, including VCF fields, INFO subfields, and Small Variant Annotation / Structural Variant Annotation columns.
 - **Filtering** lets you narrow the variant list using text, numeric, date, and multi-select filters.
 - **Sorting** by any column to prioritize variants of interest.
-- **Variant flagging** directly in the table to mark variants as Pathogenic, VUS, Benign, etc. See [Variant Flagging](../collaboration/variant-flagging.md).
-- **Threaded comments** on individual variants for discussion and documentation. See [Threaded Comments](../collaboration/threaded-comments.md).
+- **Variant flagging** directly in the table to mark variants as Pathogenic, VUS, Benign, etc.
+- **Threaded comments** on individual variants for discussion and documentation.
 - **ACMG classification** accessible from the variant row for evidence-based assessment. See [ACMG Classification](acmg-classification.md).
 
 ---
@@ -83,7 +83,7 @@ For variants requiring a formal assessment, open the [ACMG classifier](acmg-clas
 
 ### Step 5: Export
 
-Export your flagged and classified variants with [comments](../collaboration/exporting-flags-comments.md) for inclusion in clinical reports or team review.
+Export your flagged and classified variants for inclusion in clinical reports or team review.
 
 ---
 
