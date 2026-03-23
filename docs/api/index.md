@@ -138,7 +138,7 @@ Export variant flags and threaded comments in CSV format.
 
 ### MCP Setup
 
-Connect AIVA as an MCP server to Claude Desktop or other MCP-compatible clients.
+Connect AIVA as an MCP server to Claude Desktop, OpenAI Codex, and other MCP-compatible clients. (Redirects to AIVA Chat section.)
 
 [:octicons-arrow-right-24: MCP Setup](mcp-setup.md)
 

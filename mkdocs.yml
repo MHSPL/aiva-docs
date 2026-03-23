@@ -136,7 +136,10 @@ nav:
       - AIVA Chat:
           - aiva-chat/index.md
           - AI Tools: aiva-chat/ai-tools.md
-          - MCP Integration: aiva-chat/mcp-integration.md
+          - MCP Integration:
+              - aiva-chat/mcp/index.md
+              - Adding MCP Servers: aiva-chat/mcp/adding-mcp-servers.md
+              - Using AIVA MCP: aiva-chat/mcp/using-aiva-mcp.md
           - Model Selection: aiva-chat/model-selection.md
       - Table View:
           - data-table/index.md

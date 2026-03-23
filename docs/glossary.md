@@ -140,7 +140,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 ## M
 
 **MCP (Model Context Protocol)**
-:   An open standard for connecting AI assistants to external tools and data sources. AIVA supports [MCP integration](aiva-chat/mcp-integration.md) for custom tool connections.
+:   An open standard for connecting AI assistants to external tools and data sources. AIVA supports [MCP integration](aiva-chat/mcp/index.md) for custom tool connections.
 
 **Missense Variant**
 :   A single nucleotide change that results in a different amino acid in the protein. Missense variants may or may not affect protein function.

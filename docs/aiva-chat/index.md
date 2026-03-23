@@ -24,7 +24,7 @@ AIVA is more than a chatbot. It has access to a suite of specialized tools that 
 | **Clinical Trials** | Searches ClinicalTrials.gov for active and completed trials related to genes, diseases, or drugs. |
 | **Variant Classification** | Classifies genomic variants using ACMG/AMP or AMP/ASCO/CAP guidelines with structured evidence. |
 | **Phenotype-Gene Prioritization** | Performs phenotype-to-gene prioritization to identify candidate genes from clinical phenotype descriptions. |
-| **MCP Integration** | Connects to user-configured external tools via the Model Context Protocol for custom workflows. |
+| **MCP Integration** | Connects to user-configured external tools via the Model Context Protocol for custom workflows. See [MCP Integration](mcp/index.md). |
 | **Task Manager** | Tracks tasks and action items within your conversation for workflow management. |
 
 For detailed documentation on each tool, see [AI Tools](ai-tools.md).

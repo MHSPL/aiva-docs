@@ -122,7 +122,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Pro provides 10 credits per week and higher AI query limits, and includes standard support. All Plus features are included. Pro is designed for small to medium-sized teams.
 
 ??? question "What is the MCP integration?"
-    The Model Context Protocol (MCP) allows you to connect AIVA to external tools and services that you configure. This enables custom workflows tailored to your specific bioinformatics pipeline. MCP is available on Trial, Plus, and Pro tiers. See [MCP Integration](aiva-chat/mcp-integration.md).
+    The Model Context Protocol (MCP) allows you to connect AIVA to external tools and services that you configure. This enables custom workflows tailored to your specific bioinformatics pipeline. MCP is available on Trial, Plus, and Pro tiers. See [MCP Integration](aiva-chat/mcp/index.md).
 
 ---
 
