@@ -159,7 +159,7 @@ AIVA covers the full journey from raw sequencing data to a signed clinical repor
       <li>One-click export of filtered views to CSV, TSV, or direct to report</li>
       <li>Per-variant flagging, comments, and threaded review for clinical sign-off</li>
     </ul>
-    <a href="../data-table/" class="aiva-feature__link">Table View →</a>
+    <a href="../analysis/" class="aiva-feature__link">Table View →</a>
   </div>
 </div>
 

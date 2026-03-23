@@ -138,6 +138,6 @@ Select **Somatic Tumor-Only** when a matched normal sample is not available. Onl
 ## Next steps
 
 - [:octicons-arrow-right-24: Monitor your pipeline job](job-monitoring.md)
-- [:octicons-arrow-right-24: Review pharmacogenomic results](../analysis/pharmacogenomics.md)
+- [:octicons-arrow-right-24: Explore the table view](../analysis/index.md)
 - [:octicons-arrow-right-24: Explore your data in AIVA Chat](../aiva-chat/index.md)
 - [:octicons-arrow-right-24: Upload a VCF file directly](vcf-upload.md)

@@ -1,42 +1,43 @@
 ---
-title: Tertiary Analysis
-description: Perform per-sample tertiary analysis in AIVA with a side-by-side table view and AI chat workspace.
+title: Tertiary (Manual) Analysis
+description: Perform per-sample tertiary analysis in AIVA with the table view and a floating AI chat assistant.
 ---
 
-# Tertiary Analysis
+# Tertiary (Manual) Analysis
 
-Tertiary analysis in AIVA provides a unified workspace where the table view and AI chat are displayed side by side. This layout is designed for focused, per-sample variant interpretation. You can filter, sort, and flag variants in the table while simultaneously querying AIVA for context, literature, and computational analysis.
+Tertiary analysis in AIVA provides a workspace for focused, per-sample variant interpretation. The table view displays your variant data with full filtering, sorting, and column customization, while [AIVA Chat](../aiva-chat/index.md) is available as a floating bubble in the bottom right that expands into a chat panel scoped to the selected sample.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5em 0;">
+  <iframe src="https://www.youtube.com/embed/morOHD2wVpI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+</div>
 
 ---
 
 ## Accessing Tertiary Analysis
 
-1. Navigate to the **Analysis** section from the main navigation.
-2. Select a sample from the sample list.
-3. The tertiary analysis view opens with two panels:
-   - **Left panel**: The [Table View](../data-table/index.md) displaying the sample's variant data.
-   - **Right panel**: An [AIVA Chat](../aiva-chat/index.md) session scoped to the selected sample.
+1. Navigate to the **Samples** page.
+2. Select a sample from the sample list and click the **Analyze** button.
+3. The tertiary analysis view opens with the table view displaying the sample's variant data.
+4. Click the **AIVA Chat** bubble in the bottom right to open the AI assistant.
 
 ---
 
-## Layout and Workflow
+## Table View
 
-The side-by-side layout enables a continuous interpretation workflow:
+The table view provides the full data exploration experience:
 
-### Table View Panel
-
-The left panel provides the full table view experience:
-
-- **All columns** are available via the [column chooser](../data-table/navigation-and-layout.md#column-chooser), including VCF fields, INFO subfields, and Small Variant Annotation / Structural Variant Annotation columns.
-- **Filtering** lets you narrow the variant list using [text, numeric, date, and multi-select filters](../data-table/filtering.md).
+- **All columns** are available via the column chooser, including VCF fields, INFO subfields, and Small Variant Annotation / Structural Variant Annotation columns.
+- **Filtering** lets you narrow the variant list using text, numeric, date, and multi-select filters.
 - **Sorting** by any column to prioritize variants of interest.
 - **Variant flagging** directly in the table to mark variants as Pathogenic, VUS, Benign, etc. See [Variant Flagging](../collaboration/variant-flagging.md).
 - **Threaded comments** on individual variants for discussion and documentation. See [Threaded Comments](../collaboration/threaded-comments.md).
 - **ACMG classification** accessible from the variant row for evidence-based assessment. See [ACMG Classification](acmg-classification.md).
 
-### AI Chat Panel
+---
 
-The right panel provides a chat session connected to the selected sample's data:
+## AIVA Chat
+
+The floating chat bubble expands into an AI assistant connected to the selected sample's data:
 
 - AIVA can query the sample's data directly using the [Genomic Data Query tool](../aiva-chat/ai-tools.md#genomic-data-query).
 - Ask questions about specific variants visible in the table, or request summaries across the entire dataset.
@@ -64,7 +65,7 @@ Apply filters to reduce the variant list to candidates of interest:
 Scroll through the filtered variants and flag those requiring attention:
 
 1. Review each variant's annotation columns (Gene, Consequence, SIFT, PolyPhen, ClinVar).
-2. Flag variants using the appropriate category (Pathogenic, VUS, etc.).
+2. Flag variants using the appropriate category (Primary, Secondary, etc.).
 3. Add comments to document your initial impressions.
 
 ### Step 3: AI-assisted deep dive

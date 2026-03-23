@@ -98,7 +98,7 @@ Full documentation for all AI tools, query patterns, and example workflows.
 
 Browse, filter, and export your variant data interactively.
 
-[:octicons-arrow-right-24: Table View](data-table/index.md)
+[:octicons-arrow-right-24: Table View](analysis/index.md)
 
 </div>
 

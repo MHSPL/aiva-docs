@@ -29,7 +29,7 @@ View all your samples as cards across all projects. Each card displays:
 - **Owner**: The user who owns the sample.
 - **Status**: Processing status (e.g., Ready, Processing, Error).
 
-Click on any sample to open it in the [Table View](../data-table/index.md) for exploration and analysis.
+Click on any sample to open it in the [Table View](../analysis/tertiary-analysis.md) for exploration and analysis.
 
 ---
 

@@ -142,18 +142,12 @@ nav:
               - Using AIVA MCP: aiva-chat/mcp/using-aiva-mcp.md
           - Model Selection: aiva-chat/model-selection.md
       - Table View:
-          - data-table/index.md
-          - Navigation & Layout: data-table/navigation-and-layout.md
-          - Filtering: data-table/filtering.md
-          - Exporting Data: data-table/exporting-data.md
-          - Large Datasets: data-table/virtualization.md
-      - Analysis:
           - analysis/index.md
           - Tertiary Analysis: analysis/tertiary-analysis.md
-          - Analysis Hub: analysis/analysis-hub.md
+          - Analysis Panel: analysis/analysis-panel.md
           - Categories: analysis/categories.md
-          - Analysis Cards: analysis/analysis-cards.md
-          - Pharmacogenomics: analysis/pharmacogenomics.md
+
+
           - ACMG Classification: analysis/acmg-classification.md
       - Collaboration:
           - collaboration/index.md

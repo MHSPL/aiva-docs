@@ -74,4 +74,4 @@ The timestamped, user-attributed export supports compliance requirements by docu
 
 - **Export periodically**: For long-running projects, export flags and comments at regular intervals to maintain backup records outside of AIVA.
 - **Review before exporting**: Check the table view with flag filters applied to confirm that all relevant variants are flagged before generating the export.
-- **Combine with table view export**: For a complete picture, export both the [filtered table view](../data-table/exporting-data.md) and the flags/comments. The variant identifiers (CHROM, POS, REF, ALT) can be used to join the two exports in a spreadsheet or analysis tool.
+- **Combine with table view export**: For a complete picture, export both the filtered table view and the flags/comments. The variant identifiers (CHROM, POS, REF, ALT) can be used to join the two exports in a spreadsheet or analysis tool.

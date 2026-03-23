@@ -1,34 +1,21 @@
 ---
-title: ACMG Classification
-description: Apply ACMG/AMP variant classification criteria interactively in AIVA with auto-calculated pathogenicity.
+title: Variant Classification
+description: Classify variants using ACMG/AMP germline or AMP/ASCO/CAP somatic guidelines with manual criteria selection or AI-assisted classification.
 ---
 
-# ACMG Classification
+# Variant Classification
 
-AIVA includes an interactive ACMG/AMP variant classifier that lets you apply evidence-based criteria to individual variants. The classifier automatically calculates the five-tier pathogenicity classification based on the criteria you select.
+The variant classifier is a default category card on the [Analysis Panel](analysis-panel.md) that appears for all samples. When reviewing a variant in the analysis panel, click **Classify Variant** to open the classifier. AIVA supports both **ACMG/AMP germline** and **AMP/ASCO/CAP somatic** classification frameworks.
 
 For details on the ACMG/AMP framework and how to use the public classifier, see [Using the Variant Classifier](../classification/using-the-classifier.md).
 
 ---
 
-## Using the Classifier
+## Classification Frameworks
 
-### Step 1: Open the classifier
+### ACMG/AMP (Germline)
 
-1. Open a sample in the [Table View](../data-table/index.md) or [Tertiary Analysis](tertiary-analysis.md) view.
-2. Locate the variant you want to classify.
-3. Click the **ACMG Classification** action on the variant row.
-4. The classification panel opens, displaying all 28 criteria organized by category.
-
-### Step 2: Select applicable criteria
-
-1. Review each criterion and determine whether it applies to the variant based on available evidence.
-2. **Check** the criteria that are met. You can select any combination of pathogenic and benign criteria.
-3. For each selected criterion, you may add a note documenting the specific evidence (e.g., "gnomAD AF = 0.0001, absent in controls").
-
-### Step 3: Review the auto-calculated classification
-
-As you select criteria, the classifier automatically calculates the resulting classification using the ACMG/AMP combining rules. The classification updates in real time as you add or remove criteria.
+The standard five-tier classification for germline variants:
 
 | Classification | Meaning |
 |----------------|---------|
@@ -38,43 +25,56 @@ As you select criteria, the classifier automatically calculates the resulting cl
 | **Likely Benign** | The variant is probably not disease-causing (>90% certainty). |
 | **Benign** | The variant is non-pathogenic with strong supporting evidence. |
 
-### Step 4: Save the classification
+### AMP/ASCO/CAP (Somatic)
+
+The four-tier classification for somatic variants:
+
+| Tier | Meaning |
+|------|---------|
+| **Tier I** | Strong clinical significance: FDA-approved therapies or professional guidelines. |
+| **Tier II** | Potential clinical significance: investigational therapies or clinical trials. |
+| **Tier III** | Unknown clinical significance: no established evidence. |
+| **Tier IV** | Benign or likely benign: no known oncogenic role. |
+
+---
+
+## Classification Options
+
+When you click **Classify Variant**, you have two options:
+
+### Manual classification
+
+Select criteria yourself based on your review of the evidence:
+
+1. The classifier displays all applicable criteria organized by category.
+2. **Check** the criteria that are met. You can select any combination of pathogenic and benign criteria.
+3. For each selected criterion, add a note documenting the specific evidence (e.g., "gnomAD AF = 0.0001, absent in controls").
+4. The classification auto-calculates in real time as you add or remove criteria.
+5. Review and click **Save**.
+
+### AI classification
+
+Let AIVA classify the variant automatically:
+
+1. Click **AI Classify** to send the variant to an AI sub-agent.
+2. The sub-agent analyzes both the patient's **phenotype** and the variant's **annotations** (allele frequency, in silico predictions, ClinVar data, literature) to determine applicable criteria.
+3. Results are returned with the suggested classification, selected criteria, and **sources** for each piece of evidence used.
+4. Review the AI's reasoning and sources, adjust any criteria if needed, then click **Save**.
+
+!!! tip "AI classification is a starting point"
+    Always review the AI's suggested criteria and sources before saving. The AI provides a thorough initial assessment, but clinical judgment should guide the final classification.
+
+---
+
+## Saving and Visibility
 
 1. Review the selected criteria and the auto-calculated classification.
 2. Click **Save** to store the classification.
-3. The classification is associated with the variant and visible in the table view and to all project collaborators.
-
----
-
-## Evidence Tracking
-
-Each ACMG classification in AIVA includes:
-
-- The selected criteria with any associated notes.
-- The auto-calculated classification tier.
-- The user who performed the classification.
-- The timestamp of the classification.
-- A history of changes if the classification is updated over time.
-
-This evidence trail supports clinical documentation and audit requirements.
-
----
-
-## Collaborative Classification
-
-When a sample belongs to a [project](../collaboration/projects.md):
-
-- **Editors and Owners** can create and modify ACMG classifications.
-- **Viewers** can view existing classifications but cannot modify them.
-- Multiple team members can independently classify the same variant, allowing for comparison and consensus building.
+3. The classification is associated with the variant and visible in the table view.
 
 ---
 
 ## Tips
 
-!!! tip "Use AIVA to gather evidence"
-    Before classifying a variant, ask AIVA to look up relevant information: "What is the gnomAD allele frequency, ClinVar classification, and SIFT/PolyPhen prediction for chr17:41245466 G>A?" Use the results to inform your criteria selections.
-
 - **Document your reasoning**: Add notes to each selected criterion explaining the specific evidence.
-- **Start with population frequency**: Check gnomAD allele frequency first. If AF > 5%, the variant is classified as Benign (BA1). This eliminates many variants quickly.
 - **Revisit VUS variants**: Variants classified as VUS should be periodically re-evaluated as new evidence becomes available.

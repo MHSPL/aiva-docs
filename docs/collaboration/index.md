@@ -87,6 +87,6 @@ The collaboration workflow in AIVA follows a straightforward pattern:
 Collaboration features integrate with AIVA and the analysis tools:
 
 - **AIVA queries project data**: When working within a project, AIVA can query data from all samples in the project. Ask questions like "How many pathogenic-flagged variants are across all samples in this project?"
-- **Flags visible in the table view**: Flagged variants are highlighted in the [Table View](../data-table/index.md), so all team members see the same annotations.
+- **Flags visible in the table view**: Flagged variants are highlighted in the [Table View](../analysis/tertiary-analysis.md), so all team members see the same annotations.
 - **Comments as discussion threads**: Use [threaded comments](threaded-comments.md) to discuss variant interpretations directly on the variant row, keeping the conversation attached to the data.
 - **ACMG classification**: The [ACMG classifier](../analysis/acmg-classification.md) lets team members independently assess variants and compare classifications.

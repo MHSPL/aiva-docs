@@ -11,7 +11,7 @@ Threaded comments let you attach discussions directly to individual variants. Ea
 
 ## Adding a Comment
 
-1. Open a sample in the [Table View](../data-table/index.md).
+1. Open a sample in the [Table View](../analysis/tertiary-analysis.md).
 2. Locate the variant you want to comment on.
 3. Click the **Comment** action on the variant row.
 4. Type your comment in the text input.

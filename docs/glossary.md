@@ -167,7 +167,7 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 :   An ACMG classification indicating strong evidence that a variant causes disease.
 
 **Pharmacogenomics (PGx)**
-:   The study of how genetic variants affect an individual's response to drugs. See [Pharmacogenomics](analysis/pharmacogenomics.md).
+:   The study of how genetic variants affect an individual's response to drugs.
 
 **PharmGKB (Pharmacogenomics Knowledgebase)**
 :   A database of pharmacogenomic information including drug-gene associations, clinical annotations, and prescribing guidelines.

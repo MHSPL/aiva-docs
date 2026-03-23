@@ -71,7 +71,7 @@ Link flagged variants, comments, and classifications from your samples directly 
 
 A typical report workflow in AIVA follows these stages:
 
-1. **Analyze your sample**: Use the [Table View](../data-table/index.md), [AIVA Chat](../aiva-chat/index.md), and [Analysis](../analysis/index.md) tools to explore your data.
+1. **Analyze your sample**: Use the [Table View](../analysis/index.md), [AIVA Chat](../aiva-chat/index.md), and analysis tools to explore your data.
 2. **Flag and classify variants**: [Flag variants](../collaboration/variant-flagging.md) of interest and apply [ACMG classifications](../analysis/acmg-classification.md).
 3. **Add comments**: Document your interpretation with [threaded comments](../collaboration/threaded-comments.md).
 4. **Create a report**: Start from a [template](templates.md) or a blank report.

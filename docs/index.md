@@ -47,17 +47,9 @@ AIVA is your AI Clinical Analyst for whole genome interpretation. Upload FASTQ o
 
     ---
 
-    Filter, sort, and explore variant data at scale with a virtualized table built for millions of rows.
+    Filter, sort, and explore variant data at scale. Perform tertiary analysis with category-based workflows, pharmacogenomics, and ACMG classification.
 
-    [:octicons-arrow-right-24: Explore data](data-table/index.md)
-
--   :material-magnify:{ .lg .middle } **Analysis**
-
-    ---
-
-    Perform tertiary analysis with category-based workflows, pharmacogenomics insights, and ACMG variant classification.
-
-    [:octicons-arrow-right-24: Analyze data](analysis/index.md)
+    [:octicons-arrow-right-24: Explore data](analysis/index.md)
 
 -   :material-account-group:{ .lg .middle } **Collaboration**
 

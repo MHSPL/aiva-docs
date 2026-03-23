@@ -70,5 +70,5 @@ When a job fails, the Job Manager displays the error message alongside the faile
 
 - [:octicons-arrow-right-24: Upload a VCF file](vcf-upload.md)
 - [:octicons-arrow-right-24: Run secondary analysis](secondary-analysis.md)
-- [:octicons-arrow-right-24: View your data in the table](../data-table/index.md)
+- [:octicons-arrow-right-24: View your data in the table](../analysis/index.md)
 - [:octicons-arrow-right-24: Ask AIVA about your data](../aiva-chat/index.md)

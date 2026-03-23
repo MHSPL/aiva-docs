@@ -87,7 +87,7 @@ Once the job completes, head to the **Chat** tab to start exploring your data. T
 
 AIVA can query your data, run analyses, generate visualizations, and help you interpret results, all through conversation. See [AIVA Chat](../aiva-chat/index.md) to learn more.
 
-You can also browse your data directly in the [Table View](../data-table/index.md) from the **Samples** tab.
+You can also browse your data directly in the [Table View](../analysis/index.md) from the **Samples** tab.
 
 ## Troubleshooting
 
@@ -110,6 +110,6 @@ You can also browse your data directly in the [Table View](../data-table/index.m
 Now that you have data in AIVA, explore what you can do with it:
 
 - [:octicons-arrow-right-24: Ask AIVA about your data](../aiva-chat/index.md)
-- [:octicons-arrow-right-24: Explore the table view](../data-table/index.md)
+- [:octicons-arrow-right-24: Explore the table view](../analysis/index.md)
 - [:octicons-arrow-right-24: Set up a project for collaboration](../collaboration/projects.md)
 - [:octicons-arrow-right-24: Review subscription tiers](subscription-tiers.md)

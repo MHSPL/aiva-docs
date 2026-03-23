@@ -171,5 +171,5 @@ If your question is not answered here, reach out through the **Help** modal in t
 - [:octicons-arrow-right-24: Getting Started](getting-started/index.md)
 - [:octicons-arrow-right-24: Samples and Uploads](samples/index.md)
 - [:octicons-arrow-right-24: AIVA Chat](aiva-chat/index.md)
-- [:octicons-arrow-right-24: Table View](data-table/index.md)
+- [:octicons-arrow-right-24: Table View](analysis/index.md)
 - [:octicons-arrow-right-24: Collaboration](collaboration/index.md)

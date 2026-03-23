@@ -1,11 +1,11 @@
 ---
-title: Analysis
-description: Overview of AIVA's analysis capabilities including tertiary analysis, ACMG variant classification, and AI-assisted interpretation.
+title: Table View
+description: Overview of AIVA's table view capabilities for exploring and analyzing genomic data.
 ---
 
-# Analysis
+# Table View
 
-AIVA provides analysis tools that go beyond data exploration, supporting structured variant interpretation workflows used in clinical and research settings.
+AIVA's table view provides a comprehensive interface for exploring and analyzing genomic data, including VCF files and structural variants.
 
 ---
 
@@ -42,25 +42,8 @@ Apply ACMG/AMP criteria to variants with an interactive evidence-based classifie
 A typical analysis workflow in AIVA proceeds through the following stages:
 
 1. **Upload and annotate**: [Upload a VCF file](../samples/vcf-upload.md) with optional Small Variant Annotation or Structural Variant Annotation.
-2. **Explore in the table view**: Use the [Table View](../data-table/index.md) to browse, filter, and sort variants.
-3. **Tertiary analysis**: Open the [Tertiary Analysis](tertiary-analysis.md) view to work with the table view and AI chat simultaneously.
-4. **Flag and comment**: [Flag variants](../collaboration/variant-flagging.md) of interest and add [comments](../collaboration/threaded-comments.md) documenting your interpretation.
-5. **Classify**: Apply [ACMG criteria](acmg-classification.md) to variants requiring formal evidence-based classification.
-6. **Export and report**: [Export](../collaboration/exporting-flags-comments.md) your findings and generate clinical reports.
+2. **Explore and analyze**: Open the [Tertiary Analysis](tertiary-analysis.md) view to browse, filter, and sort variants with AI chat side by side.
+3. **Flag and comment**: [Flag variants](../collaboration/variant-flagging.md) of interest and add [comments](../collaboration/threaded-comments.md) documenting your interpretation.
+4. **Classify**: Apply [ACMG criteria](acmg-classification.md) to variants requiring formal evidence-based classification.
+5. **Export and report**: [Export](../collaboration/exporting-flags-comments.md) your findings and generate clinical reports.
 
----
-
-## AI-Assisted Analysis
-
-The [AIVA assistant](../aiva-chat/index.md) supports every stage of analysis:
-
-- **Data queries**: Ask AIVA to find specific variants, count categories, or summarize patterns in your data.
-- **Literature search**: Use AIVA to search biomedical literature, ClinVar, and the web for evidence relevant to specific variants or genes.
-- **Knowledge graph**: Query the gene-protein-drug interaction graph for pathway analysis and drug-target relationships.
-- **Statistical analysis**: Ask AIVA to run statistical tests or generate plots using the Code Interpreter.
-- **Clinical trials**: Search for relevant clinical trials based on genes, conditions, or interventions.
-
-See [AI Tools Reference](../aiva-chat/ai-tools.md) for a complete description of all tools available to AIVA.
-
-!!! tip "Combine tools for comprehensive interpretation"
-    For variant interpretation, a powerful pattern is to ask AIVA a compound question: "Look up ClinVar and gnomAD data for this variant, search for relevant literature, and check for related clinical trials." AIVA chains multiple tools to deliver a comprehensive answer.
