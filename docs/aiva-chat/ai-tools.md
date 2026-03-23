@@ -182,34 +182,7 @@ The Knowledge Graph tool queries a curated network of gene-protein-drug interact
 
 ### What is in the Knowledge Graph?
 
-```mermaid
-graph TD
-    %% Styling
-    classDef gene fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
-    classDef disease fill:#ffebee,stroke:#c62828,stroke-width:2px;
-    classDef drug fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    classDef other fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px;
-
-    %% Nodes
-    Gene[Gene / Protein]:::gene
-    Disease[Disease]:::disease
-    Drug[Drug / Chemical]:::drug
-    Phenotype[Effect / Phenotype]:::disease
-    Pathway[Pathway]:::other
-    Organs[Tissue / Organ]:::other
-    Toxin[Toxin / Pollutant]:::other
-
-    %% Directed Connections (Arrows)
-    Gene --> Disease
-    Gene --> Phenotype
-    Gene --> Pathway
-    Gene --> Toxin
-    Gene --> Organs
-
-    Drug --> Gene
-    Drug --> Disease
-    Drug --> Phenotype
-```
+![Knowledge Graph node types and relationships](../assets/images/screenshots/analysis/aiva-kg.png)
 
 ### Capabilities
 

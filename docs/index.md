@@ -101,4 +101,4 @@ AIVA is your AI Clinical Analyst for whole genome interpretation. Upload FASTQ o
 - **Lab directors** managing multi-user projects with audit-ready compliance.
 
 !!! info "Need help?"
-    Open the **Help** modal from the header at any time, or visit the [FAQ](faq.md) for answers to common questions.
+    Open the **Help** modal from the user profile dropdown menu at any time, or visit the [FAQ](faq.md) for answers to common questions.
