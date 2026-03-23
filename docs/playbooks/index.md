@@ -16,6 +16,21 @@ Playbooks are reusable, step-by-step instructions that guide the AIVA AI assista
 
 ---
 
+## Playbooks tabs
+
+![Playbooks Marketplace tabs](../assets/images/screenshots/playbooks/tabs.png)
+
+The Playbooks section is organized into four tabs:
+
+| Tab | Description |
+|-----|-------------|
+| **Marketplace** | Browse community-contributed playbooks across categories. |
+| **My Playbooks** | Playbooks you have created or forked. |
+| **Shared with me** | Playbooks shared directly with you by other users. |
+| **Saved** | Playbooks you have bookmarked for quick access. |
+
+---
+
 ## Using a playbook
 
 1. Navigate to the **Playbooks** section from the main navigation.

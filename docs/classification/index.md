@@ -21,9 +21,13 @@ The AIVA Variant Classifier is a public, no-login-required tool for classifying 
 
 ## How It Works
 
-1. Enter variant information (gene, variant notation, or genomic coordinates).
-2. Optionally provide patient context: phenotype/disease, age of onset, inheritance pattern, and any additional clinical details.
-3. Review and select applicable ACMG/AMP evidence criteria.
+![Variant Classification input form](../assets/images/screenshots/analysis/free-classifier-input.png)
+
+1. Select the **Classification Type** (ACMG/AMP 2015 Germline or Somatic) and **Assembly** (GRCh38 or GRCh37).
+2. Enter a variant using rsID, HGVS notation, or chromosome:position:ref:alt format.
+3. Optionally provide clinical context such as phenotype, cancer type, or additional details to improve classification accuracy.
+4. Click **Classify Variant** to run the analysis.
+5. Review and select applicable ACMG/AMP evidence criteria.
 3. The classifier calculates the five-tier classification based on the selected criteria.
 4. Review the classification and the evidence summary.
 

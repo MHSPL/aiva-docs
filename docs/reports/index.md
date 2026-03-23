@@ -46,9 +46,11 @@ Upload your own HTML template and manually fill in the report content using the 
 
 Let AIVA generate a report automatically based on your sample data, flagged variants, comments, and classifications.
 
+![Generate AI Report dialog](../assets/images/screenshots/reports/ai-report.png)
+
 1. Navigate to **Reports**
 2. Click **Use template** or select an existing template (upload your own HTML template).
-3. Click **AI Auto-Fill** to have AIVA populate the report sections.
+3. Click **AI Fill Report** to open the Generate AI Report dialog. Optionally add context or instructions (e.g., "Focus on cardiac-related genes") to guide the AI.
 4. Review and edit the generated content as needed.
 5. Click **Export** to download the report as HTML.
 

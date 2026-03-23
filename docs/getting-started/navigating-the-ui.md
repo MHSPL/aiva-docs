@@ -15,6 +15,8 @@ The interface is divided into three regions:
 
 The header bar runs across the top of every page and contains:
 
+![AIVA header navigation bar](../assets/images/screenshots/admin/navbar.png)
+
 - **Navigation Tabs**: The primary way to move between sections (see below).
 - **Subscription**: Access your subscription plan and upgrade options.
 - **Theme Toggle**: Switch between light and dark mode using the palette button in the header.
@@ -55,11 +57,14 @@ Additional sub-pages accessible from within pages:
 
 ## Theme Switching
 
-AIVA supports both light and dark color schemes.
+AIVA supports multiple color schemes and accent colors.
 
-- Click the **palette button** in the header to toggle between light and dark mode.
-- The platform also respects your operating system preference on first load. If your OS is set to dark mode, AIVA will start in dark mode automatically.
-- Your theme choice persists across sessions.
+![Theme appearance dropdown](../assets/images/screenshots/admin/theme.png)
+
+- Click the **palette button** in the header to open the Appearance panel.
+- **Mode**: Choose between Light, Grey, Dark, or System (follows your OS preference).
+- **Accent Color**: Pick from Teal, Blue, Indigo, Violet, Amber, Orange, or Emerald to personalize the interface.
+- Your theme and accent color choices persist across sessions.
 
 ## Next Steps
 
