@@ -28,6 +28,31 @@ Secondary analysis takes raw sequencing reads (FASTQ files) and runs a GPU-accel
 
 ---
 
+## Pipeline workflow
+
+```mermaid
+graph LR
+    A[FASTQ Files] --> B[Parabricks Secondary Analysis]
+    B --> C[BAM]
+    C --> D[VCF]
+    C --> E[PGx Analysis]
+    D --> F[Annotation]
+    F --> G[Parse & Load]
+    G --> H[Ready for Analysis]
+    E --> I[Star Alleles & Recommendations]
+    I --> H
+```
+
+1. **Download**: FASTQ files are downloaded from the provided cloud URLs.
+2. **Parabricks secondary analysis**: Reads are aligned to the reference genome and small variants (SNVs and indels) are called using GPU-accelerated tools (DeepVariant for germline, DeepSomatic for tumor workflows). Aligned reads are saved as BAM files with IGV links for visual review.
+3. **Annotation + PGx analysis** (parallel): Once Parabricks completes, two processes run in parallel:
+    - **Annotation**: Small Variant Annotation enriches the output VCF, which is then parsed and loaded into the AIVA database.
+    - **PGx analysis**: BAM files are used to assign pharmacogenomic star alleles, predict metabolizer phenotypes, and generate CPIC drug recommendations for 88 pharmacogenes. See [Pharmacogenomics](../analysis/pharmacogenomics.md).
+
+You can monitor each stage in real time using the [Job Manager](job-monitoring.md).
+
+---
+
 ## Starting a pipeline run
 
 Navigate to the **Samples** tab, click **Upload**, and select the **Secondary Analysis** tab.
@@ -72,30 +97,6 @@ For paired-end sequencing, both R1 and R2 URLs are required. Click **+ Add Lane*
 ### Step 5: Start the pipeline
 
 Click **Start Pipeline** to submit. The pipeline run is queued and processed in the background.
-
----
-
-## Pipeline workflow
-
-```mermaid
-graph LR
-    A[FASTQ Files] --> B[Alignment]
-    B --> C[Variant Calling]
-    C --> D[VCF Output]
-    D --> E[Annotation]
-    E --> G[Parse & Load]
-    G --> H[Ready for Analysis]
-```
-
-1. **Download**: FASTQ files are downloaded from the provided cloud URLs.
-2. **Alignment**: Reads are aligned to the reference genome using GPU-accelerated tools.
-3. **Variant calling**: Small variants (SNVs and indels) are called using the appropriate caller for your analysis type (DeepVariant for germline, DeepSomatic for tumor workflows).
-4. **BAM generation**: Aligned reads are saved as BAM files with IGV links for visual review.
-5. **PGx analysis**: Pharmacogenomic star alleles are assigned for key genes.
-6. **Annotation**: Small Variant Annotation enriches the output VCF.
-7. **Parse and load**: The VCF is parsed and loaded into the AIVA database.
-
-You can monitor each stage in real time using the [Job Manager](job-monitoring.md).
 
 ---
 

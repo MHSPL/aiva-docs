@@ -149,6 +149,7 @@ nav:
           - Analysis Panel: analysis/analysis-panel.md
           - Categories: analysis/categories.md
           - ACMG Classification: analysis/acmg-classification.md
+          - Pharmacogenomics: analysis/pharmacogenomics.md
       - Reports:
           - reports/index.md
       - Playbooks:

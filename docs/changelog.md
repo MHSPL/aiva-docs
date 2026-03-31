@@ -15,7 +15,8 @@ For real-time update notifications, check the "What's New" announcements in the 
 
 **New Features**
 
-- Introducing "Playbooks" for guided workflows. Create custom workflows to automate repetitive tasks and let the AIVA agent handle the step-by-step execution.
+- **Playbooks**: Reusable, step-by-step AI analysis playbooks for standardized genomic workflows. Browse community-contributed playbooks in the marketplace, create your own, or fork and customize existing ones. See [Playbooks](playbooks/index.md).
+- **Pharmacogenomics (PGx) analysis**: Automatically assign star alleles, predict metabolizer phenotypes, and generate CPIC drug recommendations for 88 pharmacogenes as part of the secondary analysis pipeline. See [Pharmacogenomics](analysis/pharmacogenomics.md).
 - **WES/WGS credit pricing**: Credits are now charged based on variant count per sample. WES samples (≤200k variants) cost 1 credit, WGS samples (>200k variants) cost 2 credits.
 
 **Improvements**

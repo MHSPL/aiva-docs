@@ -33,6 +33,16 @@ Apply ACMG/AMP criteria to variants with an interactive evidence-based classifie
 
 </div>
 
+<div class="card" markdown>
+
+### Pharmacogenomics
+
+Predict metabolizer phenotypes and generate CPIC drug recommendations for 88 pharmacogenes using star allele analysis.
+
+[:octicons-arrow-right-24: Pharmacogenomics](pharmacogenomics.md)
+
+</div>
+
 </div>
 
 ---
