@@ -8,7 +8,7 @@ description: Upload FASTQ files to AIVA for GPU-accelerated variant calling, BAM
 Secondary analysis takes raw sequencing reads (FASTQ files) and runs a GPU-accelerated small variant calling pipeline powered by NVIDIA Parabricks. The pipeline calls SNVs and indels, which are automatically loaded into AIVA for analysis, along with BAM files for visual review in IGV.
 
 !!! info "Subscription required"
-    Secondary analysis is available on <span class="tier-badge tier-pro">Pro</span> and <span class="tier-badge tier-enterprise">Enterprise</span> tiers. Each pipeline run consumes 3 credits.
+    Secondary analysis is available on <span class="tier-badge tier-pro">Pro</span> and <span class="tier-badge tier-enterprise">Enterprise</span> tiers. Each pipeline run consumes 3 credits. Pipeline outputs (tables and BAMs) count toward your tier's [storage slots](../getting-started/subscription-tiers.md#storage-slots).
 
 ---
 
@@ -22,6 +22,9 @@ Secondary analysis takes raw sequencing reads (FASTQ files) and runs a GPU-accel
 
 !!! note "VCF download not available"
     Called variants are loaded directly into AIVA for analysis. VCF file download is not currently supported.
+
+!!! note "Storage slot usage"
+    Each pipeline output counts as a storage slot. A **germline** pipeline uses **2 slots** (1 table + 1 BAM). A **somatic tumor-only** pipeline uses **2 slots** (1 table + 1 BAM). A **somatic paired** pipeline uses **3 slots** (1 table + 2 BAMs). Check your available slots on the [Subscription Tiers](../getting-started/subscription-tiers.md#storage-slots) page.
 
 ---
 

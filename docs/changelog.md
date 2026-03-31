@@ -1,6 +1,6 @@
 ---
 title: Changelog
-description: Release notes and version history for the AIVA platform.
+description: Release notes and update history for the AIVA platform.
 ---
 
 # Changelog
@@ -11,31 +11,23 @@ For real-time update notifications, check the "What's New" announcements in the 
 
 ---
 
-## Version 2.x (Current)
-
-### 2.x.x, YYYY-MM-DD
+## 2026-03-30
 
 **New Features**
 
-- Feature description here.
+- Introducing "Playbooks" for guided workflows. Create custom workflows to automate repetitive tasks and let the AIVA agent handle the step-by-step execution.
+- **WES/WGS credit pricing**: Credits are now charged based on variant count per sample. WES samples (≤200k variants) cost 1 credit, WGS samples (>200k variants) cost 2 credits.
 
 **Improvements**
 
-- Improvement description here.
+- Updated the Plus and Pro tier UI to display WES/WGS credit costs and storage slot counts (including BAMs).
 
-**Bug Fixes**
-
-- Bug fix description here.
-
-**Breaking Changes**
-
-- Breaking change description here (if any).
 
 ---
 
 <!-- Template for new releases:
 
-### X.Y.Z, YYYY-MM-DD
+## YYYY-MM-DD
 
 **New Features**
 
@@ -75,5 +67,5 @@ Each release entry includes the following sections as applicable:
 ## Staying Updated
 
 - **In-app announcements**: The "What's New" notification in the AIVA navigation bar highlights the most important changes.
-- **This changelog**: Comprehensive release notes for all versions.
-- **API versioning**: Breaking API changes are communicated through API version headers and this changelog. See [API Reference](api/index.md).
+- **This changelog**: Comprehensive release notes for all updates.
+- **API changes**: Breaking API changes are communicated through this changelog. See [API Reference](api/index.md).

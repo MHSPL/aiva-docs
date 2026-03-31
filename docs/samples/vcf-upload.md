@@ -60,7 +60,7 @@ Optionally tag the sample type for organizational purposes.
 For multi-sample VCF files, check **Split by sample** to create a separate table for each sample (max 100 samples per file). Splitting makes it easier to process variants for individual samples (faster query execution) compared to analyzing all samples together in a single large table. Leave unchecked to keep all samples together in a single table.
 
 !!! note "Credit usage"
-    Credits are charged per sample in the file regardless of whether you split or not.
+    Credits are charged per sample in the file regardless of whether you split or not. WES samples (≤200k variants) cost 1 credit and WGS samples (>200k variants) cost 2 credits.
 
 #### Annotation options (VCF only)
 
@@ -137,7 +137,7 @@ You can monitor each stage in real time using the [Job Manager](job-monitoring.m
 
 ## File size and credit limits
 
-Each file upload consumes **1 credit per sample** in the file. Credits and file size limits vary by tier:
+Each file upload consumes credits per sample: **1 credit for WES** (≤200k variants) or **2 credits for WGS** (>200k variants). Credits and file size limits vary by tier:
 
 | Tier | Credits per Week | Max File Size |
 |------|:----------------:|:-------------:|
@@ -147,9 +147,9 @@ Each file upload consumes **1 credit per sample** in the file. Credits and file 
 | <span class="tier-badge tier-pro">Pro</span> | 10 | 1 GB |
 | <span class="tier-badge tier-enterprise">Enterprise</span> | Unlimited | Unlimited |
 
-Credits are checked before the job starts and consumed when the job completes. Credits reset every Sunday.
+Credits reset every Sunday.
 
-For full plan details and credit costs, see [Subscription Tiers](../getting-started/subscription-tiers.md#credit-system).
+For full plan details, see [Credit system](../getting-started/subscription-tiers.md#credit-system) and [Storage slots](../getting-started/subscription-tiers.md#storage-slots).
 
 ---
 

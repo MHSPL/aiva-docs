@@ -108,4 +108,4 @@ Once added, members can see all samples assigned to the project according to the
 ## Tips
 
 - **Name your samples meaningfully**: Use patient IDs, experiment names, or descriptive labels so you can quickly find samples later.
-- **Clean up old samples**: Delete samples you no longer need to keep your workspace organized and within your [subscription tier's](../getting-started/subscription-tiers.md) storage limit.
+- **Clean up old samples**: Delete samples you no longer need to keep your workspace organized and free up [storage slots](../getting-started/subscription-tiers.md#storage-slots). BAM files from secondary analysis pipelines also count toward your slot limit.
