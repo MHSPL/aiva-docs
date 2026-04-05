@@ -11,6 +11,22 @@ For real-time update notifications, check the "What's New" announcements in the 
 
 ---
 
+## 2026-04-04
+
+**New Features**
+
+- **Optional SNV/Indel calling**: FASTQ uploads now allow disabling SNV/Indel downstream processing. When disabled, only BAM files and raw VCF are produced. Enabled by default.
+- **CNV calling**: Optional copy number variation analysis, available as an add-on for FASTQ uploads. Results are annotated and loaded into AIVA for analysis.
+- **SV calling**: Optional structural variant calling, available as an add-on for FASTQ uploads. Results are annotated and loaded into AIVA for analysis.
+- **VCF download link**: Sample cards now show a VCF download link alongside BAM files for all pipeline-processed samples.
+
+**Improvements**
+
+- **Haplotype phasing**: Read phasing is now always enabled for germline and somatic paired pipelines, adding haplotype information to all variant calls.
+- **Compressed VCF output**: Pipelines now output compressed VCF files, reducing storage costs.
+
+---
+
 ## 2026-03-30
 
 **New Features**

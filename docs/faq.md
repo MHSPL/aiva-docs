@@ -48,7 +48,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     See [VCF Upload](samples/vcf-upload.md) for VCF/CSV/TSV uploads, or [Secondary Analysis](samples/secondary-analysis.md) for FASTQ files.
 
 ??? question "What are the file size and credit limits?"
-    File size limits vary by tier: Trial (500 MB), Plus (750 MB), Pro (1 GB), Enterprise (unlimited). Free accounts cannot upload. Each upload also consumes credits (WES: 1 credit per sample, WGS: 2 credits per sample). Check your credit balance via the usage indicator in the header, or see [Subscription Tiers](getting-started/subscription-tiers.md#credit-system) for full details.
+    File size limits vary by tier: Trial (500 MB), Plus (750 MB), Pro (1 GB), Enterprise (unlimited). Free accounts cannot upload. Each upload also consumes credits (WES: 2 credits per sample, WGS: 3 credits per sample). Check your credit balance via the usage indicator in the header, or see [Subscription Tiers](getting-started/subscription-tiers.md#credit-system) for full details.
 
 ??? question "Can I upload files from cloud storage?"
     Yes. Plus, Pro, Trial, and Enterprise accounts can import files directly from Google Cloud Storage (`gs://`), Amazon S3 (`s3://`), Azure Blob Storage (`az://`), or public HTTPS URLs. See [VCF Upload](samples/vcf-upload.md#cloud-url-import).
@@ -65,8 +65,8 @@ Find answers to the most common questions about using AIVA. If your question is 
 ??? question "Can I upload multiple files at once?"
     AIVA processes one file upload at a time. You can submit multiple uploads in sequence, and each will be queued and processed independently. Monitor all jobs in the [Job Manager](samples/job-monitoring.md).
 
-??? question "Why was I charged 2 credits for a sample?"
-    Credit cost is based on variant count. Samples with more than 200,000 variants are classified as WGS and cost 2 credits, while samples with 200,000 or fewer variants are classified as WES and cost 1 credit. See [Credit system](getting-started/subscription-tiers.md#credit-system) for details.
+??? question "Why was I charged 3 credits for a sample?"
+    Credit cost is based on variant count. Samples with more than 200,000 variants are classified as WGS and cost 3 credits, while samples with 200,000 or fewer variants are classified as WES and cost 2 credits. See [Credit system](getting-started/subscription-tiers.md#credit-system) for details.
 
 ---
 
@@ -123,7 +123,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     Plus adds: more weekly credits and higher query limits, clinical reports with AI auto-fill, API access, and advanced AI capabilities. See [Subscription Tiers](getting-started/subscription-tiers.md).
 
 ??? question "What is the difference between Plus and Pro?"
-    Pro provides 10 credits per week (WES: 1 credit, WGS: 2 credits per sample), 5 storage slots (including BAMs from secondary analysis), and higher AI query limits. All Plus features are included. Pro is designed for small to medium-sized teams.
+    Pro provides 10 credits per week (WES: 2 credits, WGS: 3 credits per sample), 5 storage slots (including BAMs from secondary analysis), and higher AI query limits. All Plus features are included. Pro is designed for small to medium-sized teams.
 
 ??? question "What is the MCP integration?"
     The Model Context Protocol (MCP) allows you to connect AIVA to external tools and services that you configure. This enables custom workflows tailored to your specific bioinformatics pipeline. MCP is available on Trial, Plus, and Pro tiers. See [MCP Integration](aiva-chat/mcp/index.md).

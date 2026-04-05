@@ -8,7 +8,7 @@ description: Upload FASTQ files to AIVA for GPU-accelerated variant calling, BAM
 Secondary analysis takes raw sequencing reads (FASTQ files) and runs a GPU-accelerated small variant calling pipeline powered by NVIDIA Parabricks. The pipeline calls SNVs and indels, which are automatically loaded into AIVA for analysis, along with BAM files for visual review in IGV.
 
 !!! info "Subscription required"
-    Secondary analysis is available on <span class="tier-badge tier-pro">Pro</span> and <span class="tier-badge tier-enterprise">Enterprise</span> tiers. Each pipeline run consumes 3 credits. Pipeline outputs (tables and BAMs) count toward your tier's [storage slots](../getting-started/subscription-tiers.md#storage-slots).
+    Secondary analysis is available on <span class="tier-badge tier-pro">Pro</span> and <span class="tier-badge tier-enterprise">Enterprise</span> tiers. Base pipeline cost is 3 credits (WES) or 4 credits (WGS). Enabling SNV/Indel calling adds 2 (WES) or 3 (WGS) credits. Each optional add-on (PGx, CNV, SV) adds 1 credit. Pipeline outputs (tables and BAMs) count toward your tier's [storage slots](../getting-started/subscription-tiers.md#storage-slots).
 
 ---
 

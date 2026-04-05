@@ -44,18 +44,24 @@ Credits control how many samples you can upload each week. Every upload consumes
 
 | Upload type | Credits consumed |
 |-------------|-----------------|
-| WES upload (≤200k variants per sample) | 1 credit per sample |
-| WGS upload (>200k variants per sample) | 2 credits per sample |
-| Parabricks pipeline | 3 credits (2 at pipeline completion + 1 at parsing) |
+| VCF upload, WES (≤200k variants per sample) | 2 credits per sample |
+| VCF upload, WGS (>200k variants per sample) | 3 credits per sample |
+| Parabricks pipeline with SNV/Indel calling, WES | 5 credits (3 base + 2 SNV/Indel) |
+| Parabricks pipeline with SNV/Indel calling, WGS | 7 credits (4 base + 3 SNV/Indel) |
+| Parabricks pipeline without SNV/Indel calling, WES | 3 credits |
+| Parabricks pipeline without SNV/Indel calling, WGS | 4 credits |
+| PGx (Pharmacogenomics) add-on | +1 credit |
+| CNV (Copy Number Variation) add-on | +1 credit |
+| SV (Structural Variants) add-on | +1 credit |
 
 !!! info "How WES vs. WGS credit pricing works"
-    The credit charge for each sample is based on variant count. Samples with 200,000 or fewer variants are classified as WES (1 credit); samples with more than 200,000 variants are classified as WGS (2 credits).
+    The credit charge for each sample is based on variant count. Samples with 200,000 or fewer variants are classified as WES (2 credits); samples with more than 200,000 variants are classified as WGS (3 credits). Parabricks pipeline credits are based on the data type selected at upload time.
 
 ### How credits work
 
 - Credits **reset every Sunday** on a weekly cycle.
 - Credits are **checked at upload time** before the job starts. If you do not have enough credits, the upload is blocked.
-- Credits are **consumed** when the job completes: 1 credit for WES samples, 2 credits for WGS samples.
+- Credits are **consumed** when the job completes: 2 credits for WES samples, 3 credits for WGS samples.
 - The **Free tier cannot upload** samples. You must be on Trial or a paid tier to upload.
 - The **Trial tier expires after 7 days** and reverts to Free.
 
