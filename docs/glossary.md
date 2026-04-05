@@ -198,9 +198,6 @@ This glossary defines key terms used throughout the AIVA documentation. Terms ar
 **SNV (Single Nucleotide Variant)**
 :   A change in a single nucleotide at a specific position in the genome.
 
-**SSE (Server-Sent Events)**
-:   A web technology that enables a server to push real-time updates to a client over an HTTP connection. AIVA uses SSE for streaming chat responses and job status updates.
-
 **Structural Variant (SV)**
 :   A large-scale genomic alteration including deletions, duplications, inversions, and translocations, typically affecting 50 or more base pairs.
 

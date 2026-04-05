@@ -51,7 +51,7 @@ Full documentation for all tools available to AIVA, including capabilities, exam
 
 ## How It Works
 
-AIVA uses streaming server-sent events (SSE), which means:
+AIVA streams responses in real time, which means:
 
 - **Responses stream in real time**: You see the answer as it is generated, word by word, rather than waiting for the entire response.
 - **Tool calls are transparent**: When AIVA invokes a tool (e.g., querying your database), you see the tool name and a summary of what it did, so you can verify the approach.

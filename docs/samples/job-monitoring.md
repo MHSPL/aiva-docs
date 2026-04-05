@@ -33,7 +33,7 @@ Each job moves through a series of states as it progresses through the processin
 | **Failed** | An error occurred during processing. See the error details on the job entry for diagnostic information. |
 
 !!! note "Browser tab behavior"
-    SSE connections are maintained as long as your browser tab is active. If you close the tab and return later, the Job Manager reconnects automatically and displays the current state of all jobs. No progress is lost.
+    Jobs continue running in the background even if you close the browser tab. When you return, the Job Manager automatically shows the current status of all jobs.
 
 ---
 

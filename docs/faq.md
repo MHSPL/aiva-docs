@@ -148,7 +148,7 @@ Find answers to the most common questions about using AIVA. If your question is 
 
     - **High server load**: During peak usage, responses may take longer. Wait a moment and try again.
     - **Complex query**: Some queries (e.g., aggregations over millions of rows) require more processing time. AIVA will stream the response as it becomes available.
-    - **Network issues**: SSE streaming requires a stable connection. If your connection is intermittent, responses may appear to stall. Refresh the page and try again.
+    - **Network issues**: A stable internet connection is required for real-time responses. If your connection is intermittent, responses may appear to stall. Refresh the page and try again.
 
 ??? question "I see an error about exceeding my usage limit."
     Your subscription tier determines your credit balance and AI query usage. Check your current usage via the usage indicator in the header. Credits reset every Sunday. To continue, either wait for your credits to reset or [upgrade your plan](getting-started/subscription-tiers.md).
