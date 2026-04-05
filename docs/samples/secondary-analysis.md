@@ -5,10 +5,10 @@ description: Upload FASTQ files to AIVA for GPU-accelerated variant calling, BAM
 
 # Secondary Analysis
 
-Secondary analysis takes raw sequencing reads (FASTQ files) and runs a GPU-accelerated small variant calling pipeline powered by NVIDIA Parabricks. The pipeline calls SNVs and indels, which are automatically loaded into AIVA for analysis, along with BAM files for visual review in IGV.
+Secondary analysis takes raw sequencing reads (FASTQ files) and runs a GPU-accelerated variant calling pipeline powered by NVIDIA Parabricks. The pipeline calls SNVs and indels, with optional add-ons for copy number variation (CNV) and structural variant (SV) calling. All results are automatically loaded into AIVA for analysis, along with BAM files for visual review in IGV.
 
 !!! info "Subscription required"
-    Secondary analysis is available on <span class="tier-badge tier-pro">Pro</span> and <span class="tier-badge tier-enterprise">Enterprise</span> tiers. Base pipeline cost is 3 credits (WES) or 4 credits (WGS). Enabling SNV/Indel calling adds 2 (WES) or 3 (WGS) credits. Each optional add-on (PGx, CNV, SV) adds 1 credit. Pipeline outputs (tables and BAMs) count toward your tier's [storage slots](../getting-started/subscription-tiers.md#storage-slots).
+    Secondary analysis is available on <span class="tier-badge tier-pro">Pro</span> and <span class="tier-badge tier-enterprise">Enterprise</span> tiers. Alignment (FASTQ to BAM) costs 3 credits (WES) or 4 credits (WGS). Enabling SNV/Indel calling adds 2 (WES) or 3 (WGS) credits. Each optional add-on (PGx, CNV, SV) adds 1 credit. See [Credit costs](../getting-started/subscription-tiers.md#credit-costs) for a full breakdown. Pipeline outputs (tables and BAMs) count toward your tier's [storage slots](../getting-started/subscription-tiers.md#storage-slots).
 
 ---
 
@@ -16,12 +16,11 @@ Secondary analysis takes raw sequencing reads (FASTQ files) and runs a GPU-accel
 
 | Output | Description |
 |--------|-------------|
-| **Small variants (VCF)** | SNVs and indels, automatically loaded into AIVA for analysis |
+| **Small variants (VCF)** | SNVs and indels, automatically loaded into AIVA for analysis. A VCF download link is available on the sample card. |
 | **BAM** | Aligned reads for visual review via IGV links |
+| **CNV calls** | Copy number variation calls (optional add-on), annotated and loaded into AIVA |
+| **SV calls** | Structural variant calls (optional add-on), annotated and loaded into AIVA |
 | **PGx star alleles** | Pharmacogenomic star-allele assignments for key pharmacogenes |
-
-!!! note "VCF download not available"
-    Called variants are loaded directly into AIVA for analysis. VCF file download is not currently supported.
 
 !!! note "Storage slot usage"
     Each pipeline output counts as a storage slot. A **germline** pipeline uses **2 slots** (1 table + 1 BAM). A **somatic tumor-only** pipeline uses **2 slots** (1 table + 1 BAM). A **somatic paired** pipeline uses **3 slots** (1 table + 2 BAMs). Check your available slots on the [Subscription Tiers](../getting-started/subscription-tiers.md#storage-slots) page.
@@ -36,18 +35,26 @@ graph LR
     B --> C[BAM]
     C --> D[VCF]
     C --> E[PGx Analysis]
+    C --> J[CNV Calling]
+    C --> K[SV Calling]
     D --> F[Annotation]
     F --> G[Parse & Load]
     G --> H[Ready for Analysis]
     E --> I[Star Alleles & Recommendations]
     I --> H
+    J --> L[CNV Annotation]
+    L --> H
+    K --> M[SV Annotation]
+    M --> H
 ```
 
 1. **Download**: FASTQ files are downloaded from the provided cloud URLs.
-2. **Parabricks secondary analysis**: Reads are aligned to the reference genome and small variants (SNVs and indels) are called using GPU-accelerated tools (DeepVariant for germline, DeepSomatic for tumor workflows). Aligned reads are saved as BAM files with IGV links for visual review.
-3. **Annotation + PGx analysis** (parallel): Once Parabricks completes, two processes run in parallel:
+2. **Parabricks secondary analysis**: Reads are aligned to the reference genome and small variants (SNVs and indels) are called using GPU-accelerated tools (DeepVariant for germline, DeepSomatic for tumor workflows). Read phasing is automatically enabled for germline and somatic paired pipelines, adding haplotype information to all variant calls. Aligned reads are saved as BAM files with IGV links for visual review.
+3. **Annotation + downstream analysis** (parallel): Once Parabricks completes, multiple processes run in parallel:
     - **Annotation**: Small Variant Annotation enriches the output VCF, which is then parsed and loaded into the AIVA database.
     - **PGx analysis**: BAM files are used to assign pharmacogenomic star alleles, predict metabolizer phenotypes, and generate CPIC drug recommendations for 88 pharmacogenes. See [Pharmacogenomics](../analysis/pharmacogenomics.md).
+    - **CNV calling** (optional): Copy number variation analysis. Results are annotated and loaded into AIVA.
+    - **SV calling** (optional): Structural variant calling. Results are annotated and loaded into AIVA.
 
 You can monitor each stage in real time using the [Job Manager](job-monitoring.md).
 
@@ -71,6 +78,9 @@ Enter a **Sample Name**. This is the name that will appear in your sample list a
 | **Sequencer** | Illumina, PacBio, ONT, Ultima, MGI, Element | Both short-read and long-read sequencing platforms are supported. |
 | **Data Type** | WGS (Whole Genome), WES (Whole Exome) | Determines pipeline parameters. WES runs may require an interval file. |
 | **Reference** | GRCh38 (hg38) | The reference genome build for alignment. |
+| **SNV/Indel Calling** | Enabled (default), Disabled | When disabled, only BAM files and raw VCF are produced. |
+| **CNV Calling** | Off (default), On | Optional add-on for copy number variation analysis (+1 credit). |
+| **SV Calling** | Off (default), On | Optional add-on for structural variant calling (+1 credit). |
 
 Optionally assign the sample to a **Project** for team collaboration.
 

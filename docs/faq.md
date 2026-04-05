@@ -66,7 +66,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     AIVA processes one file upload at a time. You can submit multiple uploads in sequence, and each will be queued and processed independently. Monitor all jobs in the [Job Manager](samples/job-monitoring.md).
 
 ??? question "Why was I charged 3 credits for a sample?"
-    Credit cost is based on variant count. Samples with more than 200,000 variants are classified as WGS and cost 3 credits, while samples with 200,000 or fewer variants are classified as WES and cost 2 credits. See [Credit system](getting-started/subscription-tiers.md#credit-system) for details.
+    WGS samples cost 3 credits and WES samples cost 2 credits. For VCF uploads, AIVA automatically classifies each sample as WES or WGS based on variant count. See [Credit system](getting-started/subscription-tiers.md#credit-system) for details.
 
 ---
 
@@ -91,7 +91,7 @@ Find answers to the most common questions about using AIVA. If your question is 
     No. AIVA queries are scoped to samples you own or that have been shared with you through a project. It cannot access data belonging to other accounts.
 
 ??? question "My conversation seems to lose context in long chats. What can I do?"
-    Very long conversations may exceed the language model's context window, causing it to lose track of earlier messages. Either switch to a model with 1M token capacity (e.g., Gemini PRO models) or start a new conversation and re-establish the key context in your first message. Keeping conversations focused on a single topic also helps maintain coherence.
+    Very long conversations may exceed the language model's context window, causing it to lose track of earlier messages. Either switch to a model with 1M token capacity (e.g., Gemini Pro models) or start a new conversation and re-establish the key context in your first message. Keeping conversations focused on a single topic also helps maintain coherence.
 
 ---
 

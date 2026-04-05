@@ -60,7 +60,7 @@ Optionally tag the sample type for organizational purposes.
 For multi-sample VCF files, check **Split by sample** to create a separate table for each sample (max 100 samples per file). Splitting makes it easier to process variants for individual samples (faster query execution) compared to analyzing all samples together in a single large table. Leave unchecked to keep all samples together in a single table.
 
 !!! note "Credit usage"
-    Credits are charged per sample in the file regardless of whether you split or not. WES samples (≤200k variants) cost 2 credits and WGS samples (>200k variants) cost 3 credits.
+    Credits are charged per sample in the file regardless of whether you split or not. WES samples cost 2 credits and WGS samples cost 3 credits.
 
 #### Annotation options (VCF only)
 
@@ -137,7 +137,7 @@ You can monitor each stage in real time using the [Job Manager](job-monitoring.m
 
 ## File size and credit limits
 
-Each file upload consumes credits per sample: **2 credits for WES** (≤200k variants) or **3 credits for WGS** (>200k variants). Credits and file size limits vary by tier:
+Each file upload consumes credits per sample: **2 credits for WES** or **3 credits for WGS**. Credits and file size limits vary by tier:
 
 | Tier | Credits per Week | Max File Size |
 |------|:----------------:|:-------------:|

@@ -42,20 +42,36 @@ Credits control how many samples you can upload each week. Every upload consumes
 
 ### Credit costs
 
-| Upload type | Credits consumed |
-|-------------|-----------------|
-| VCF upload, WES (≤200k variants per sample) | 2 credits per sample |
-| VCF upload, WGS (>200k variants per sample) | 3 credits per sample |
-| Parabricks pipeline with SNV/Indel calling, WES | 5 credits (3 base + 2 SNV/Indel) |
-| Parabricks pipeline with SNV/Indel calling, WGS | 7 credits (4 base + 3 SNV/Indel) |
-| Parabricks pipeline without SNV/Indel calling, WES | 3 credits |
-| Parabricks pipeline without SNV/Indel calling, WGS | 4 credits |
-| PGx (Pharmacogenomics) add-on | +1 credit |
-| CNV (Copy Number Variation) add-on | +1 credit |
-| SV (Structural Variants) add-on | +1 credit |
+=== "VCF upload"
+
+    | Data type | Credits per sample |
+    |-----------|:------------------:|
+    | WES | 2 |
+    | WGS | 3 |
+
+=== "Parabricks pipeline"
+
+    **FASTQ to BAM (alignment):**
+
+    | Data type | Credits |
+    |-----------|:-------:|
+    | WES | 3 |
+    | WGS | 4 |
+
+    **Optional add-ons (added to alignment cost):**
+
+    | Add-on | WES | WGS |
+    |--------|:---:|:---:|
+    | SNV/Indel calling | +2 | +3 |
+    | CNV calling | +1 | +1 |
+    | SV calling | +1 | +1 |
+    | PGx analysis | +1 | +1 |
+
+    !!! example "Example"
+        A WES pipeline with SNV/Indel + PGx costs **6 credits** (3 alignment + 2 SNV/Indel + 1 PGx).
 
 !!! info "How WES vs. WGS credit pricing works"
-    The credit charge for each sample is based on variant count. Samples with 200,000 or fewer variants are classified as WES (2 credits); samples with more than 200,000 variants are classified as WGS (3 credits). Parabricks pipeline credits are based on the data type selected at upload time.
+    For VCF uploads, AIVA automatically classifies each sample as WES or WGS based on variant count. For Parabricks pipelines, the data type is selected at upload time.
 
 ### How credits work
 
