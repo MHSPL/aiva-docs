@@ -79,7 +79,7 @@ After submission, the upload enters the job processing pipeline. You can monitor
 
 ## Step 6: Start exploring your data
 
-Once the job completes, head to the **Chat** tab to start exploring your data. Type `@sample:` followed by your sample name to attach it to the conversation, then ask AIVA questions. For example:
+Once the job completes, head to the **Chat** tab to start exploring your data. Type `@samples:` followed by your sample name to attach it to the conversation, then ask AIVA questions. For example:
 
 - "Summarize the variants in this sample"
 - "Show me all pathogenic variants in BRCA1"

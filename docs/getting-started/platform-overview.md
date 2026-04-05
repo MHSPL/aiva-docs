@@ -84,7 +84,7 @@ AIVA covers the full journey from raw sequencing data to a signed clinical repor
         <span class="aiva-mockup__title">AIVA Chat</span>
       </div>
       <div class="aiva-mockup__body">
-        <div class="aiva-chat__msg aiva-chat__msg--user">List P/LP variants in @sample:patient007</div>
+        <div class="aiva-chat__msg aiva-chat__msg--user">List P/LP variants in @samples:patient007</div>
         <div class="aiva-chat__msg aiva-chat__msg--ai">
           <span class="aiva-chat__label">AIVA</span>
           Found 12 pathogenic variants. Showing top results by classification…

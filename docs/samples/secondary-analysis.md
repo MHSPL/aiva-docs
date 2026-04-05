@@ -67,7 +67,7 @@ Navigate to the **Samples** tab, click **Upload**, and select the **Secondary An
 
 ### Step 1: Name your sample
 
-Enter a **Sample Name**. This is the name that will appear in your sample list and is used for `@sample:` mentions in AIVA Chat.
+Enter a **Sample Name**. This is the name that will appear in your sample list and is used for `@samples:` mentions in AIVA Chat.
 
 ### Step 2: Configure the pipeline
 

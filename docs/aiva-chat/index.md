@@ -1,9 +1,9 @@
 ---
-title: AIVA Chat
+title: AIVA Capabilities
 description: Overview of AIVA's AI assistant (AIVA) with specialized genomic analysis tools, natural language queries, and real-time streaming responses.
 ---
 
-# AIVA Chat
+# AIVA Capabilities
 
 AIVA (AI-assisted Variant Analysis) is our AI Clinical Analyst agent, purpose-built for clinical variant analysis and interpretation. Instead of manually applying filters and reviewing variants, you can ask AIVA questions in plain English and receive answers backed by your actual sample data, published literature, and curated knowledge bases.
 
@@ -34,6 +34,16 @@ For detailed documentation on each tool, see [AI Tools](ai-tools.md).
 ## In This Section
 
 <div class="grid-cards" markdown>
+
+<div class="card" markdown>
+
+### Prompting guide
+
+Practical strategies and worked examples for effective prompts, including multi-sample analysis, clinical data integration, and prompt chaining.
+
+[:octicons-arrow-right-24: Prompting Guide](../prompting-guide/index.md)
+
+</div>
 
 <div class="card" markdown>
 

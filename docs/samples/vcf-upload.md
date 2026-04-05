@@ -41,7 +41,7 @@ Drag your file onto the upload zone, or click to browse your file system.
 
 #### Sample name
 
-Provide a human-readable name for the sample. This name is used for `@sample:` mentions in AIVA Chat. A descriptive name (e.g., "Patient_042_WES" or "BRCA_panel_run_7") makes it easier to identify samples later.
+Provide a human-readable name for the sample. This name is used for `@samples:` mentions in AIVA Chat. A descriptive name (e.g., "Patient_042_WES" or "BRCA_panel_run_7") makes it easier to identify samples later.
 
 #### Genome assembly
 

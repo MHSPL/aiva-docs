@@ -84,11 +84,21 @@ Upload, annotate, and manage your genomic data files.
 
 <div class="card" markdown>
 
-### AIVA Chat
+### AIVA Capabilities
 
 Full documentation for all AI tools, query patterns, and example workflows.
 
-[:octicons-arrow-right-24: AIVA Chat](aiva-chat/index.md)
+[:octicons-arrow-right-24: AIVA Capabilities](aiva-chat/index.md)
+
+</div>
+
+<div class="card" markdown>
+
+### Prompting guide
+
+Practical strategies and worked examples for writing effective prompts, including multi-sample analysis and clinical data integration.
+
+[:octicons-arrow-right-24: Prompting guide](prompting-guide/index.md)
 
 </div>
 

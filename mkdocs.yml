@@ -127,6 +127,11 @@ nav:
       - Navigating the UI: getting-started/navigating-the-ui.md
       - Your First Sample: getting-started/uploading-your-first-sample.md
       - Subscription Tiers: getting-started/subscription-tiers.md
+  - Prompting Guide:
+      - prompting-guide/index.md
+      - Multi-sample Analysis: prompting-guide/multi-sample-analysis.md
+      - Clinical Data: prompting-guide/clinical-data.md
+      - Upload Strategy: prompting-guide/upload-strategy.md
   - User Guide:
       - Quick Start: quick-start.md
       - Samples:
@@ -135,7 +140,7 @@ nav:
           - Secondary Analysis: samples/secondary-analysis.md
           - Job Monitoring: samples/job-monitoring.md
           - Managing Samples: samples/managing-samples.md
-      - AIVA Chat:
+      - AIVA Capabilities:
           - aiva-chat/index.md
           - AI Tools: aiva-chat/ai-tools.md
           - MCP Integration:

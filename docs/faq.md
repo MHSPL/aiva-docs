@@ -70,7 +70,7 @@ Find answers to the most common questions about using AIVA. If your question is 
 
 ---
 
-## AIVA Chat
+## AIVA Capabilities
 
 ??? question "What is AIVA?"
     AIVA (AI assisted Variant Analysis) is our AI Clinical Analyst. It can query your uploaded samples, search biomedical literature, annotate variants, generate charts, explore gene-drug interactions, and more, all through natural language conversation. See [AIVA Chat](aiva-chat/index.md) for a full overview.
@@ -177,5 +177,5 @@ If your question is not answered here, reach out through the **Help** modal in t
 
 - [:octicons-arrow-right-24: Getting Started](getting-started/index.md)
 - [:octicons-arrow-right-24: Samples and Uploads](samples/index.md)
-- [:octicons-arrow-right-24: AIVA Chat](aiva-chat/index.md)
+- [:octicons-arrow-right-24: AIVA Capabilities](aiva-chat/index.md)
 - [:octicons-arrow-right-24: Table View](analysis/index.md)

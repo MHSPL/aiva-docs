@@ -23,16 +23,25 @@ Upload, annotate, monitor, and manage genomic data samples.
 - [Job Monitoring](https://docs.aivaportal.com/samples/job-monitoring/): Track upload, annotation, and parsing jobs in real time using the Job Manager
 - [Managing Samples](https://docs.aivaportal.com/samples/managing-samples/): View, organize, delete, and assign genomic data samples to projects
 
-## AIVA Chat
+## AIVA Capabilities
 
 AI clinical analyst with specialized genomic analysis tools and natural language queries.
 
-- [AIVA Chat Overview](https://docs.aivaportal.com/aiva-chat/): Overview of the AI assistant with streaming responses and tool-based analysis
+- [AIVA Capabilities Overview](https://docs.aivaportal.com/aiva-chat/): Overview of the AI assistant with streaming responses and tool-based analysis
 - [AI Tools Reference](https://docs.aivaportal.com/aiva-chat/ai-tools/): Comprehensive reference for all tools available to the AI assistant including Genomic Data Query, Web Search, Variant Annotation (ClinVar, gnomAD, CADD, SIFT, PolyPhen), Biomedical Literature search, Code Interpreter, Knowledge Graph, Clinical Trials search, and Phenotype-Gene Prioritization
 - [Model Selection](https://docs.aivaportal.com/aiva-chat/model-selection/): Choose between different LLM models to balance speed, reasoning depth, and cost
 - [MCP Integration](https://docs.aivaportal.com/aiva-chat/mcp/): Extend AIVA with external tools via MCP, or connect AIVA's tools to other AI agents
 - [Adding MCP Servers to AIVA](https://docs.aivaportal.com/aiva-chat/mcp/adding-mcp-servers/): Connect external MCP tool servers to extend AIVA Chat with custom data sources and APIs
 - [Using AIVA MCP with Other Agents](https://docs.aivaportal.com/aiva-chat/mcp/using-aiva-mcp/): Connect AIVA's genomic analysis tools to Claude Desktop, OpenAI Codex, Claude Code, Cursor, and other MCP-compatible agents
+
+## Prompting Guide
+
+Practical prompting strategies and workflows for getting the most out of AIVA Chat.
+
+- [Prompting Guide Overview](https://docs.aivaportal.com/prompting-guide/): Best practices for writing effective prompts, referencing data, and chaining queries
+- [Multi-sample Analysis](https://docs.aivaportal.com/prompting-guide/multi-sample-analysis/): Workflows for querying multi-sample VCFs, per-sample breakdowns, and gene-specific cohort queries
+- [Clinical Data Integration](https://docs.aivaportal.com/prompting-guide/clinical-data/): Cross-reference clinical metadata with variant data for family-based analysis and segregation workflows
+- [Upload Strategy and Model Tips](https://docs.aivaportal.com/prompting-guide/upload-strategy/): Choosing between single and multiple VCF uploads, and selecting the right AI model for your analysis
 
 ## Table View
 
