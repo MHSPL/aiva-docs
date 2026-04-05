@@ -33,13 +33,12 @@ Secondary analysis takes raw sequencing reads (FASTQ files) and runs a GPU-accel
 graph LR
     A[FASTQ Files] --> B[Parabricks Secondary Analysis]
     B --> C[BAM]
-    C --> D[VCF]
+    C --> D[SNV/Indel Calling]
     C --> E[PGx Analysis]
     C --> J[CNV Calling]
     C --> K[SV Calling]
     D --> F[Annotation]
-    F --> G[Parse & Load]
-    G --> H[Ready for Analysis]
+    F --> H[Ready for Analysis]
     E --> I[Star Alleles & Recommendations]
     I --> H
     J --> L[CNV Annotation]
