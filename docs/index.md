@@ -13,6 +13,23 @@ AIVA is your AI Clinical Analyst for whole genome interpretation. Upload FASTQ o
   <iframe src="https://www.youtube.com/embed/scOVl_SwwD4?controls=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen title="AIVA Platform Demo"></iframe>
 </div>
 
+<div class="aiva-testimonials">
+  <div class="aiva-testimonial">
+    <div class="aiva-testimonial__quote">&ldquo;On average, it cuts my literature review time per variant by about 25%. I can ask follow-up questions and dig deeper into ontology resources directly within the platform. It doesn&rsquo;t replace my expertise, but it streamlines the process and lets me spend more time thinking critically about the variant instead of gathering evidence.&rdquo;</div>
+    <div class="aiva-testimonial__author">
+      <span class="aiva-testimonial__name">Shaurita Hutchins</span>
+      <span class="aiva-testimonial__role">PhD Researcher, University of Alabama at Birmingham</span>
+    </div>
+  </div>
+  <div class="aiva-testimonial">
+    <div class="aiva-testimonial__quote">&ldquo;I find AIVA very useful for analyzing personal genome data. This is the best AI enhanced genome annotation tool I&rsquo;ve found that is highly usable and at a reasonable price.&rdquo;</div>
+    <div class="aiva-testimonial__author">
+      <span class="aiva-testimonial__name">Eric Allen</span>
+      <span class="aiva-testimonial__role">Genomics &amp; AI/ML Senior Solutions Architect, Global HCLS, AWS</span>
+    </div>
+  </div>
+</div>
+
 ---
 
 ## Core Capabilities

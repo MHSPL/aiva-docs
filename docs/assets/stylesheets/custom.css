@@ -742,6 +742,72 @@
   opacity: .85;
 }
 
+/* ── Testimonials ──────────────────────────────────────────── */
+.aiva-testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.aiva-testimonial {
+  position: relative;
+  background: rgba(0, 150, 136, .04);
+  border-radius: 12px;
+  padding: 32px 28px 24px;
+  border: 1px solid rgba(0, 150, 136, .12);
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.aiva-testimonial:hover {
+  border-color: rgba(0, 150, 136, .3);
+  box-shadow: 0 4px 24px rgba(0, 150, 136, .08);
+}
+
+.aiva-testimonial::before {
+  content: "\201C";
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--md-primary-fg-color);
+  opacity: .25;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.aiva-testimonial__quote {
+  font-style: italic;
+  font-size: .92rem;
+  line-height: 1.7;
+  color: var(--md-typeset-color);
+  opacity: .85;
+  margin-bottom: 20px;
+  padding-top: 8px;
+}
+
+.aiva-testimonial__author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  border-top: 1px solid rgba(0, 150, 136, .12);
+  padding-top: 16px;
+}
+
+.aiva-testimonial__name {
+  font-weight: 700;
+  font-size: .85rem;
+  color: var(--md-typeset-color);
+}
+
+.aiva-testimonial__role {
+  font-size: .78rem;
+  color: var(--md-typeset-color);
+  opacity: .6;
+}
+
+
 /* ── Horizontal rules ──────────────────────────────────────── */
 .md-typeset hr {
   border: none;
