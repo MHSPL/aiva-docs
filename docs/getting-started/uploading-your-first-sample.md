@@ -11,7 +11,6 @@ This walkthrough takes you from file selection to viewing your data in the inter
 
 - A [verified AIVA account](account-setup.md).
 - A sample file in one of the supported formats: **VCF**, **CSV**, or **TSV**.
-- An active internet connection, lol.
 
 !!! info "File size limits"
     Upload limits depend on your [subscription tier](subscription-tiers.md).

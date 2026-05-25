@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the public documentation site for the **AIVA** (AI-assisted Variant Analysis) platform by MHS Precision Labs. It is a static documentation site built with **MkDocs Material** and deployed to GitHub Pages.
+This is the public documentation site for the **AIVA** (AI-assisted Variant Analysis) platform by Mamidi Health. It is a static documentation site built with **MkDocs Material** and deployed to GitHub Pages.
 
 Live site: https://mhspl.github.io/aiva-docs/
 
