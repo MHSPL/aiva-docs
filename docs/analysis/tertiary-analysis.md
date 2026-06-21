@@ -7,6 +7,9 @@ description: Perform per-sample tertiary analysis in AIVA with the table view an
 
 Tertiary analysis in AIVA provides a workspace for focused, per-sample variant interpretation. The table view displays your variant data with full filtering, sorting, and column customization, while [AIVA Chat](../aiva-chat/index.md) is available as a floating bubble in the bottom right that expands into a chat panel scoped to the selected sample.
 
+!!! tip "Used to filtering by hand?"
+    If you triage variants with filter cascades in tools like Franklin, VarSeq, or Alissa, see [From Filters to Prompts](../getting-started/from-filters-to-prompts.md). It maps every filter you know to an AIVA prompt and shows when to lean on chat versus the table below.
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5em 0;">
   <iframe src="https://www.youtube.com/embed/morOHD2wVpI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
 </div>

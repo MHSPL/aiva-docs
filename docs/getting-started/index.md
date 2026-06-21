@@ -17,6 +17,12 @@ See the complete AIVA workflow at a glance: from uploading FASTQ/VCF files throu
 
 [:octicons-arrow-right-24: Platform Overview](platform-overview.md)
 
+### From Filters to Prompts
+
+New to agentic analysis? If you are used to triaging variants with filters and tables in other tools, this guide maps what you already do to how you do it in AIVA.
+
+[:octicons-arrow-right-24: From Filters to Prompts](from-filters-to-prompts.md)
+
 ### Account Setup
 
 Create your account with a valid email, verify your email address, and configure profile settings.
@@ -46,9 +52,10 @@ Compare Free, Trial, Plus, Pro, and Enterprise plans to find the right level of 
 ## Recommended Path
 
 1. **[Read the platform overview](platform-overview.md)** to understand the end-to-end workflow.
-2. **[Create your account](account-setup.md)** and verify your email.
-3. **[Explore the interface](navigating-the-ui.md)** to understand where things live.
-4. **[Upload a sample file](uploading-your-first-sample.md)** and see your data in the samples tab.
-5. **[Review subscription tiers](subscription-tiers.md)** for more features and capabilities.
+2. **[See how agentic analysis maps to filter-and-table triage](from-filters-to-prompts.md)** if you are coming from another tool.
+3. **[Create your account](account-setup.md)** and verify your email.
+4. **[Explore the interface](navigating-the-ui.md)** to understand where things live.
+5. **[Upload a sample file](uploading-your-first-sample.md)** and see your data in the samples tab.
+6. **[Review subscription tiers](subscription-tiers.md)** for more features and capabilities.
 
 Once you are comfortable with the basics, continue to [Samples](../samples/index.md) for advanced upload options or [AIVA Chat](../aiva-chat/index.md) to start asking your AI assistant questions about your samples.
