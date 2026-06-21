@@ -57,6 +57,8 @@ plugins:
   - glightbox
   - minify:
       minify_html: true
+      htmlmin_opts:
+        remove_optional_attribute_quotes: false
 
 markdown_extensions:
   - abbr
