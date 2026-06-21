@@ -9,6 +9,9 @@ hide:
 
 AIVA is your AI Clinical Analyst for whole genome interpretation. Upload FASTQ or VCF files, annotate and classify variants, review evidence with an AI agent that understands your data, and generate clinical-grade reports, all from a single platform.
 
+!!! tip "Coming from filter-and-table tools? Start here"
+    If you interpret variants by building filter cascades in tools like Franklin, VarSeq, or Alissa, the [one-minute Filters to Prompts cheat sheet](cheat-sheet.md) shows the same filters written as prompts. It is the fastest way to get comfortable with agentic analysis.
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
   <iframe src="https://www.youtube.com/embed/scOVl_SwwD4?controls=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen title="AIVA Platform Demo"></iframe>
 </div>
@@ -112,7 +115,7 @@ AIVA is your AI Clinical Analyst for whole genome interpretation. Upload FASTQ o
 
 ## Who Is AIVA For?
 
-- **Clinical geneticists** triaging variants and writing diagnostic reports.
+- **Clinical geneticists** interpreting variants and writing diagnostic reports.
 - **Research scientists** exploring large WGS/WES datasets with AI assistance.
 - **Bioinformaticians** integrating AIVA into automated pipelines via the API.
 - **Lab directors** managing multi-user projects with audit-ready compliance.

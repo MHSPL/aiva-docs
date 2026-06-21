@@ -1,11 +1,14 @@
 ---
 title: From Filters to Prompts
-description: A mental-model guide for clinical geneticists moving from manual filter-and-table variant triage to agentic analysis with AIVA. Includes a filter-to-prompt translation table, a reframed triage workflow, and how to verify the agent's work.
+description: A mental-model guide for clinical geneticists moving from manual filter-and-table variant interpretation to agentic analysis with AIVA. Includes a filter-to-prompt translation table, a reframed interpretation workflow, and how to verify the agent's work.
 ---
 
 # From filters to prompts
 
-If you have triaged variants in tools like Franklin, VarSeq, Alissa, or Emedgene, you already have a mental model: build a filter cascade, watch the variant count drop, scan the surviving rows, and work each candidate by hand. AIVA does not take that model away. It sits on top of it. The difference is that **you describe the result you want, and the agent builds the filter, gathers the evidence, and shows its work**, instead of you clicking through every step.
+!!! tip "In a hurry?"
+    This is the in-depth version. For the one-minute summary, see the [Filters to Prompts cheat sheet](../cheat-sheet.md).
+
+If you have interpreted variants in tools like Franklin, VarSeq, Alissa, or Emedgene, you already have a mental model: build a filter cascade, watch the variant count drop, scan the surviving rows, and work each candidate by hand. AIVA does not take that model away. It sits on top of it. The difference is that **you describe the result you want, and the agent builds the filter, gathers the evidence, and shows its work**, instead of you clicking through every step.
 
 This page is the bridge. It maps what you already do to how you do it in AIVA, so the agentic workflow feels like a faster version of your current one rather than a new tool to learn from scratch.
 
@@ -18,7 +21,7 @@ This page is the bridge. It maps what you already do to how you do it in AIVA, s
 
 The work is the same. What changes is *who drives the mechanics* and *where your attention goes*.
 
-| | Manual triage (the tools you know) | Agentic analysis (AIVA) |
+| | Manual interpretation (the tools you know) | Agentic analysis (AIVA) |
 |---|---|---|
 | **How you start** | Build a filter cascade: PASS, gnomAD AF, consequence, gene panel | Ask in plain English for the same result |
 | **Who applies the logic** | You, click by click | The agent translates your request into a query and runs it |
@@ -63,7 +66,7 @@ That single prompt is an entire filter cascade. The agent runs it, returns the s
 
 ## A familiar workflow, reframed
 
-Here is a standard diagnostic triage, the kind you would do by hand, run as a conversation. Notice that each step is a decision point you control; the agent only does the gathering between your prompts.
+Here is a standard diagnostic review, the kind you would do by hand, run as a conversation. Notice that each step is a decision point you control; the agent only does the gathering between your prompts.
 
 === "Step 1: Narrow the field"
 
@@ -157,7 +160,7 @@ The most common onboarding worry is fair: *"How do I know the agent is right?"* 
 | Forgetting to attach the sample | Type `@` and select your sample so the agent knows what to query |
 | Asking for a 500-row list in chat | Count first, tighten filters, then list, or switch to the table |
 | Treating the answer as final | Ask for sources and confirm in the table before reporting |
-| Re-typing the same multi-step triage each time | Save it as a [Playbook](../playbooks/index.md) and reuse it per sample |
+| Re-typing the same multi-step review each time | Save it as a [Playbook](../playbooks/index.md) and reuse it per sample |
 | Abandoning the table | Use chat to narrow, the table to review and sign off |
 
 ---
@@ -172,7 +175,7 @@ The most common onboarding worry is fair: *"How do I know the agent is right?"* 
 
 Worked examples, prompt chaining, and patterns for multi-sample and clinical-data workflows.
 
-[:octicons-arrow-right-24: Prompting guide](../prompting-guide/index.md)
+[:octicons-arrow-right-24: Prompting guide](index.md)
 
 </div>
 
@@ -190,7 +193,7 @@ The filterable table view, variant flagging, comments, and the floating chat ass
 
 ### Playbooks
 
-Turn a triage workflow you repeat into a one-click, shareable analysis.
+Turn a review workflow you repeat into a one-click, shareable analysis.
 
 [:octicons-arrow-right-24: Playbooks](../playbooks/index.md)
 

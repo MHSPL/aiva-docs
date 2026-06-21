@@ -123,13 +123,14 @@ nav:
   - Getting Started:
       - getting-started/index.md
       - Platform Overview: getting-started/platform-overview.md
-      - From Filters to Prompts: getting-started/from-filters-to-prompts.md
+      - "Cheat Sheet: Filters to Prompts": cheat-sheet.md
       - Account Setup: getting-started/account-setup.md
       - Navigating the UI: getting-started/navigating-the-ui.md
       - Your First Sample: getting-started/uploading-your-first-sample.md
       - Subscription Tiers: getting-started/subscription-tiers.md
   - Prompting Guide:
       - prompting-guide/index.md
+      - "From Filters to Prompts (in depth)": prompting-guide/from-filters-to-prompts.md
       - Multi-sample Analysis: prompting-guide/multi-sample-analysis.md
       - Clinical Data: prompting-guide/clinical-data.md
       - Upload Strategy: prompting-guide/upload-strategy.md
